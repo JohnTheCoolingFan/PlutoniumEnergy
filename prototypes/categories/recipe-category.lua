@@ -17,16 +17,13 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 --]]
 
-if mods["real-nukes"] then
-	require("nukes-integration")
-end
-
-require("prototypes.item.items")
-require("prototypes.entity.entities")
-require("prototypes.entity.projectiles")
-require("prototypes.recipe.recipes")
-require("prototypes.technology.technologies")
-require("prototypes.categories.fuel-category")
-require("prototypes.categories.recipe-category")
---require("prototypes.fluid.fluids")
-	
+data:extend({
+	{
+		type = "recipe-category",
+		name = "alpha-decay"
+	},
+	{
+		type = "recipe-category",
+		name = "nucleosynthesis"
+	}
+})
