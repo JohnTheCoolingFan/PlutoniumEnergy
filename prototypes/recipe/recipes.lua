@@ -35,7 +35,7 @@ advanced_nuclear_fuel_reprocessing.results = {
 	}
 }
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
-advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing"
+advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
 data:extend({advanced_nuclear_fuel_reprocessing})
 
 data:extend({
