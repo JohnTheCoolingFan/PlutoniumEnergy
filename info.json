@@ -1,10 +1,11 @@
 {
 "name": "PlutoniumEnergy",
-"version": "1.0.1",
-"date": "2018-10-15",
+"version": "1.0.3",
 "title": "Plutonium Energy",
 "author": "JohnTheCoolingFan",
-"factorio_version": "0.16",
+"contact": "ivan8215145640@gmail.com",
+"homepage": "",
 "dependencies": ["base >= 0.16.0", "?real-nukes >= 0.0.1"],
-"description": "Plutonium nuclear fuel."
+"description": "Plutonium nuclear fuel.",
+"factorio_version": "0.16"
 }

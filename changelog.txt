@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 20.10.2018
+  Balancing:
+    - Added Uranium-238 excess neutron capture recipe for getting Pu-239
+  Minor Features:
+    - Localisation improvements
+---------------------------------------------------------------------------------------------------
+Version: 1.0.2
+Date: 20.10.2018
+  Minor Features:
+    - Added migration files (plutonium fuel cells => MOX fuel, plutonium centrifuge => industrial reactor). Old saves are now partialy compatible with 1.x.x
+---------------------------------------------------------------------------------------------------
 Version: 1.0.1
 Date: 15.10.2018
   Bugfixes:
@@ -11,7 +23,7 @@ Date: 14.10.18
     - Added Industrial reactor
     - Added MOX reactor
     - Plutonium fuel cell replaced with MOX fuel
-    - Full remake of 0.x.x. 1.0.0 incompatible with 0.x.x saves!
+    - Full remake of 0.x.x. 1.0.0 incompatible with 0.x.x saves! EDIT: compatible since 1.0.2
     - Removed Advanced Atomics optional dependency
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3

@@ -25,5 +25,9 @@ data:extend({
 	{
 		type = "recipe-category",
 		name = "nucleosynthesis"
+	},
+	{
+		type = "recipe-category",
+		name = "excess-neutron-capture"
 	}
 })

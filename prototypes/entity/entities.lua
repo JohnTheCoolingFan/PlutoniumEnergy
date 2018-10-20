@@ -91,15 +91,15 @@ patches_pic_discon.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MO
 patches_pic_discon.hr_version.variation_count = 12
 table.insert(entities, MOX_reactor)
 
-local centrifuge = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
-centrifuge.name = "industrial-reactor"
-centrifuge.icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png"
-centrifuge.crafting_categories = {"alpha-decay", "nucleosynthesis"}
-centrifuge.energy_usage = "420kW"
-centrifuge.module_specification.module_slots = 4
-centrifuge.working_visualisations[1].light.color = {r = 0.0, g = 0.15, b = 1.0}
-centrifuge.minable.result = "industrial-reactor"
-centrifuge.animation =
+local industrial_reactor = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
+industrial_reactor.name = "industrial-reactor"
+industrial_reactor.icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png"
+industrial_reactor.crafting_categories = {"alpha-decay", "nucleosynthesis", "excess-neutron-capture"}
+industrial_reactor.energy_usage = "420kW"
+industrial_reactor.module_specification.module_slots = 4
+industrial_reactor.working_visualisations[1].light.color = {r = 0.0, g = 0.15, b = 1.0}
+industrial_reactor.minable.result = "industrial-reactor"
+industrial_reactor.animation =
 {
 	layers =
 	{
@@ -175,5 +175,5 @@ centrifuge.animation =
 		}
 	}
 }
-table.insert(entities, centrifuge)
+table.insert(entities, industrial_reactor)
 data:extend(entities)

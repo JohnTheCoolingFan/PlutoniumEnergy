@@ -1,0 +1,12 @@
+{
+	"item":
+	[
+		["plutonium-fuel-cell", "MOX-fuel"],
+		["used-up-plutonium-fuel-cell", "used-up-MOX-fuel"],
+		["pluto-centrifuge", "industrial-reactor"]
+	],
+	"entity":
+	[
+		["pluto-centrifuge", "industrial-reactor"]
+	]
+}
