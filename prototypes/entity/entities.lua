@@ -26,6 +26,7 @@ MOX_reactor.icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png"
 MOX_reactor.minable.result = "MOX-reactor"
 MOX_reactor.minable.mining_time = 1
 MOX_reactor.max_health = 400
+MOX_reactor.burner.effectivity = 0.5
 MOX_reactor.burner.fuel_category = "MOX"
 MOX_reactor.collision_box = {{-1.3, -1.3}, {1.3, 1.3}}
 MOX_reactor.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}

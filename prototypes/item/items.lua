@@ -81,7 +81,7 @@ data:extend({
 		order = "r[plutonium-processing]-b[MOX-fuel]",
 		fuel_category = "MOX",
 		burnt_result = "used-up-MOX-fuel",
-		fuel_value = "12GJ",
+		fuel_value = "20GJ",
 		stack_size = 50
 	},
 	{

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.5
+Date: 22.10.2018
+  Balancing:
+    - MOX fuel energy amount increased to 20GJ (from 12GJ previously)
+    - Mox reactor efficiency decreased to 0.5 (1 previously)
+---------------------------------------------------------------------------------------------------
 Version: 1.0.4
 Date: 20.10.2018
   Fixes:
