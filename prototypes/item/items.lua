@@ -17,6 +17,11 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 --]]
 
+local MOX_fuel_icon = ""
+
+if settings.startup["PE-old-MOX-fuel-icon"].value then MOX_fuel_icon = "MOX-fuel-old"
+else MOX_fuel_icon = "MOX-fuel" end
+
 data:extend({
 	--common resources
 	{
@@ -74,7 +79,7 @@ data:extend({
 	{
 		type = "item",
 		name = "MOX-fuel",
-		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/"..MOX_fuel_icon..".png",
 		icon_size = 32,
 		flags = {"goes-to-main-inventory"},
 		subgroup = "intermediate-product",

@@ -1,8 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.7
+Date: 07.11.2018
+  Graphics:
+    - Remaked Plutonium ammo and Plutonium nuclear power technology icons.
+    - Remaked MOX reactor and Industrial centrifuge icons.
+    - MOX fuel icon changed to icon from RITEG mod (https://mods.factorio.com/mod/RITEG). Can de changed back in the settings
+---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 26.10.2018
   Fixes:
-    - Increased Mox reactor's collision box. Now you can put four of them close to each other.
+    - Decreased Mox reactor's collision box. Now you can put four of them close to each other.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.5
 Date: 22.10.2018
