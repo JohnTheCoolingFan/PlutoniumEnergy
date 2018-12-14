@@ -1,7 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.9
+Date: 14.12.2018
+  Localisation:
+    - Added Ukraine locale by IgorLutiy.
+    - Other locale improvements
+---------------------------------------------------------------------------------------------------
 Version: 1.0.8
 Dtae: 27.11.2018
-  Balancing
+  Balancing:
     - MOX Reactor "energy consumption" decreased by 0.5 (1 --> 0.5)
     - MOX Reactor energy source efficiency increased by 2 (0.5 --> 1)
 ---------------------------------------------------------------------------------------------------
