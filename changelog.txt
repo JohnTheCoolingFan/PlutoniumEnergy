@@ -3,7 +3,7 @@ Version: 1.0.10
 Date: 15.12.2018
   Localisation:
     - Added locale in German, Trad. Chinese and Simp. Chinese
-    - Changed Russian and English locale to correspond new locales
+    - Changed Russian, Ukrainian and English locale to correspond new locales
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 14.12.2018
