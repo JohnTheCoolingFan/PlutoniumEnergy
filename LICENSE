@@ -1,9 +1,7 @@
-License:
 No Commercial Use - You are not allowed to make money off my work.
 No Modification - Although I can't stop you from looking at my code, you are not allowed to distribute anything altered, or derived from my code without expressed permission first.
 Distribution - You are allowed to redistribute my mods as is. This includes being repackaged as part of a mod pack.
 Private Use - I am not impossing any limitations on private use, if you want to modify my work, or create your own using parts of mine, you are free to do so, as long as this altered or derived work does not become accessable to the public.
-That about covers the basics...
 Exceptions to the no modification rule include:
 Minor bug fixes/tweak for compatabillity reasons, such as altering the dependancies line in info.json to force a load order in a modpack.
 Config - Any config.lua file, including in the config mod may be edited and freely redistributed
