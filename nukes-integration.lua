@@ -17,18 +17,20 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 --]]
 
+-- For creation of used here textures used only base game textures and paint.net
+
 local nukes = {}
 
 local projectile = table.deepcopy(data.raw["artillery-projectile"]["nuke-shell"])
 projectile.name = "plutonium-nuke-shell"
 projectile.map_color = {r=0.2, g=0.2, b=0.2}
-projectile.picture.tint = {r=0.75, g=0, b=0.8}
-projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/nuke/plutonium-nuke-shoot-map-visualization.png"
+projectile.picture.filename = "__PlutoniumEnergy__/graphics/nuke/plutonium-nuke-shell.png"
+projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/nuke/plutonium-nuke-map-visualization.png"
 table.insert(nukes, projectile)
 
 local nuke = table.deepcopy(data.raw.ammo["nuke"])
 nuke.name = "plutonium-nuke"
-nuke.icons = {{icon = "__PlutoniumEnergy__/graphics/nuke/plutonium-nuke.png", tint = {r=0.75, g=0, b=0.8}}
+nuke.icon = "__PlutoniumEnergy__/graphics/nuke/plutonium-nuke-shell.png"
 nuke.ammo_type.action.action_delivery.projectile = "plutonium-nuke-shell"
 table.insert(nukes, nuke)
 
