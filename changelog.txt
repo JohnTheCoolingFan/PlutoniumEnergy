@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.11
+Date: 17.12.2018
+  Copyright:
+    - License changed from AGPLv3 to Bob's mods Copyright.
+    - Remaked Realistic Nukes integration and graphics.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 15.12.2018
   Localisation:
