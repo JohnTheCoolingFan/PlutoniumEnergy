@@ -2,7 +2,7 @@
 Version: 1.0.12
 Date: 17.02.2019
   Balancing:
-    - Replaced Pu-239 by Pu-28 in Pu cannon shell, Exp. Pu cannon shell and Pu rouds magazine recipes.
+    - Replaced Pu-239 by Pu-238 in Pu cannon shell, Exp. Pu cannon shell and Pu rouds magazine recipes.
     - 30x Pu-238 ingredient in Pu bomb recipe replaced with 15x Pu-238 and 10x Pu239
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.11
