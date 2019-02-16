@@ -160,7 +160,7 @@ data:extend({
 		ingredients =
 		{
 			{"piercing-rounds-magazine", 1},
-			{"plutonium-239", 1}
+			{"plutonium-238", 1}
 		},
 		result = "plutonium-rounds-magazine"
 	},
@@ -173,7 +173,8 @@ data:extend({
 		{
 			{"processing-unit", 20},
 			{"explosives", 10},
-			{"plutonium-238", 30}
+			{"plutonium-238", 15},
+			{"plutonium-239", 10}
 		},
 		result = "plutonium-atomic-bomb"
 	},
@@ -185,7 +186,7 @@ data:extend({
 		ingredients =
 		{
 			{"cannon-shell", 1},
-			{"plutonium-239", 1}
+			{"plutonium-238", 1}
 		},
 		result = "plutonium-cannon-shell"
 	},
@@ -197,7 +198,7 @@ data:extend({
 		ingredients =
 		{
 			{"explosive-cannon-shell", 1},
-			{"plutonium-239", 1}
+			{"plutonium-238", 1}
 		},
 		result = "explosive-plutonium-cannon-shell"
 	}
