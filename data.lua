@@ -9,5 +9,3 @@ require("prototypes.recipe.recipes")
 require("prototypes.technology.technologies")
 require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
---require("prototypes.fluid.fluids")
-	
