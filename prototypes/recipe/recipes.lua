@@ -150,7 +150,7 @@ data:extend({
 		result = "industrial-reactor",
 		requester_paste_multiplier= 10
 	},
-	
+
 	--ammo
 	{
 		type = "recipe",

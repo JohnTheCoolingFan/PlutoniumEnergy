@@ -75,7 +75,7 @@ data:extend({
 		},
 		order = "c-a"
 	},
-	
+
 	{
 		type = "technology",
 		name = "plutonium-ammo",

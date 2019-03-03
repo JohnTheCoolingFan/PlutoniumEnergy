@@ -55,7 +55,7 @@ data:extend({
 		order = "g[iodine]",
 		stack_size = 100
 	},]]
-	
+
 	--MOX fuel
 	{
 		type = "item",
@@ -80,7 +80,7 @@ data:extend({
 		order = "i[used-up-MOX-fuel]",
 		stack_size = 50
 	},
-	
+
 	--machines
 	{
 		type = "item",
@@ -104,7 +104,7 @@ data:extend({
 		place_result = "industrial-reactor",
 		stack_size = 50
 	},
-	
+
 	--ammo
 	{
 		type = "ammo",
