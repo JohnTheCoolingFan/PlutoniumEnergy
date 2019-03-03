@@ -10,7 +10,7 @@ data:extend({
 		name = "plutonium-239",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "intermediate-product",
 		order = "g[plutonium-239]",
 		stack_size = 100
@@ -20,7 +20,7 @@ data:extend({
 		name = "plutonium-238",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "intermediate-product",
 		order = "g[plutonium-238]",
 		stack_size = 100
@@ -62,7 +62,7 @@ data:extend({
 		name = "MOX-fuel",
 		icon = "__PlutoniumEnergy__/graphics/icons/"..MOX_fuel_icon..".png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "intermediate-product",
 		order = "r[plutonium-processing]-b[MOX-fuel]",
 		fuel_category = "MOX",
@@ -75,7 +75,7 @@ data:extend({
 		name = "used-up-MOX-fuel",
 		icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		subgroup = "intermediate-product",
 		order = "i[used-up-MOX-fuel]",
 		stack_size = 50
@@ -87,7 +87,7 @@ data:extend({
 		name = "MOX-reactor",
 		icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
+		flags = {},
 		subgroup = "energy",
 		order = "f[nuclear-energy]-b[MOX-reactor]",
 		place_result = "MOX-reactor",
@@ -98,7 +98,7 @@ data:extend({
 		name = "industrial-reactor",
 		icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png",
 		icon_size = 32,
-		flags = {"goes-to-quickbar"},
+		flags = {},
 		subgroup = "production-machine",
 		order = "g[industrial-reactor]",
 		place_result = "industrial-reactor",
@@ -111,7 +111,7 @@ data:extend({
 		name = "plutonium-rounds-magazine",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		ammo_type =
 		{
 			category = "bullet",
@@ -150,7 +150,7 @@ data:extend({
 		name = "plutonium-cannon-shell",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		ammo_type =
 		{
 			category = "cannon-shell",
@@ -183,7 +183,7 @@ data:extend({
 		name = "explosive-plutonium-cannon-shell",
 		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		ammo_type =
 		{
 			category = "cannon-shell",
@@ -216,7 +216,7 @@ data:extend({
 		name = "plutonium-atomic-bomb",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
 		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		ammo_type =
 		{
 			range_modifier = 5,
