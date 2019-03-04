@@ -4,7 +4,7 @@
 "title": "Plutonium Energy",
 "author": "JohnTheCoolingFan",
 "contact": "ivan8215145640@gmail.com",
-"homepage": "",
+"homepage": "https://discord.gg/grHVhE2",
 "dependencies": ["base >= 0.17.0", "?real-nukes >= 0.0.1"],
 "description": "Plutonium nuclear fuel.",
 "factorio_version": "0.17"
