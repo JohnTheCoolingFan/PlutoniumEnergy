@@ -25,36 +25,6 @@ data:extend({
 		order = "g[plutonium-238]",
 		stack_size = 100
 	},
-	--[[{ Unused items.
-		type = "item",
-		name = "plutonium-dioxide",
-		icon = "__PlutoniumEnergy__/graphics/icons/raw-plutonium.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[plutonium-dioxide]",
-		stack_size = 100
-	},
-	{
-		type = "item",
-		name = "uranium-dioxide",
-		icon = "__PlutoniumEnergy__/graphics/icons/raw-plutonium.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[uranium-dioxide]",
-		stack_size = 100
-	},
-	{
-		type = "item",
-		name = "iodine",
-		icon = "__PlutoniumEnergy__/graphics/icons/iodine.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[iodine]",
-		stack_size = 100
-	},]]
 
 	--MOX fuel
 	{
