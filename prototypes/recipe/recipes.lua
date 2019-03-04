@@ -20,6 +20,7 @@ advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/ad
 data:extend({advanced_nuclear_fuel_reprocessing})
 
 data:extend({
+	-- Isotope-to-isotope recipes
 	{
 		type = "recipe",
 		name = "plutonium-238-nuclesynthesis",
@@ -151,7 +152,7 @@ data:extend({
 		requester_paste_multiplier= 10
 	},
 
-	--ammo
+	-- Ammo
 	{
 		type = "recipe",
 		name = "plutonium-rounds-magazine",

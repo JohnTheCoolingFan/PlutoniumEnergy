@@ -4,7 +4,7 @@ if settings.startup["PE-old-MOX-fuel-icon"].value then MOX_fuel_icon = "MOX-fuel
 else MOX_fuel_icon = "MOX-fuel" end
 
 data:extend({
-	--common resources
+	-- Common resources
 	{
 		type = "item",
 		name = "plutonium-239",
@@ -26,7 +26,7 @@ data:extend({
 		stack_size = 100
 	},
 
-	--MOX fuel
+	-- MOX fuel
 	{
 		type = "item",
 		name = "MOX-fuel",
@@ -51,7 +51,7 @@ data:extend({
 		stack_size = 50
 	},
 
-	--machines
+	-- Machines
 	{
 		type = "item",
 		name = "MOX-reactor",
@@ -75,7 +75,7 @@ data:extend({
 		stack_size = 50
 	},
 
-	--ammo
+	-- Ammo
 	{
 		type = "ammo",
 		name = "plutonium-rounds-magazine",
