@@ -81,81 +81,13 @@ industrial_reactor.energy_usage = "420kW"
 industrial_reactor.module_specification.module_slots = 4
 industrial_reactor.working_visualisations[1].light.color = {r = 0.0, g = 0.15, b = 1.0}
 industrial_reactor.minable.result = "industrial-reactor"
-industrial_reactor.animation =
-{
-	layers =
-	{
-		-- C part
-		{
-			filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png",
-			priority = "high",
-			blend_mode = "additive",
-			line_length = 8,
-			width = 96,
-			height = 104,
-			frame_count = 64,
-			shift = util.by_pixel(0, -27),
-
-			hr_version =
-			{
-				filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png",
-				priority = "high",
-				scale = 0.5,
-				blend_mode = "additive",
-				line_length = 8,
-				width = 190,
-				height = 207,
-				frame_count = 64,
-				shift = util.by_pixel(0, -27.25),
-			}
-		},
-		-- B part
-		{
-			filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png",
-			priority = "high",
-			blend_mode = "additive",
-			line_length = 8,
-			width = 65,
-			height = 103,
-			frame_count = 64,
-			shift = util.by_pixel(16.5, 0.5),
-			hr_version =
-			{
-				filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-B-light.png",
-				priority = "high",
-				scale = 0.5,
-				blend_mode = "additive",
-				line_length = 8,
-				width = 131,
-				height = 206,
-				frame_count = 64,
-				shift = util.by_pixel(16.75, 0.5),
-			}
-		},
-		-- A part
-		{
-			filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-A-light.png",
-			priority = "high",
-			blend_mode = "additive",
-			line_length = 8,
-			width = 55,
-			height = 98,
-			frame_count = 64,
-			shift = util.by_pixel(-23.5, -2),
-			hr_version =
-			{
-				filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-A-light.png",
-				priority = "high",
-				scale = 0.5,
-				blend_mode = "additive",
-				line_length = 8,
-				width = 108,
-				height = 197,
-				frame_count = 64,
-				shift = util.by_pixel(-23.5, -1.75),
-			}
-		}
-	}
-}
+indreact_anim = industrial_reactor.animation.layers
+indreact_anim[1].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png"
+indreact_anim[1].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png"
+indreact_anim[2].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png"
+indreact_anim[2].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-B-light.png"
+indreact_anim[3].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-A-light.png"
+indreact_anim[3].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-A-light.png"
 table.insert(entities, industrial_reactor)
+
 data:extend(entities)
