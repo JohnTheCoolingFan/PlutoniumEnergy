@@ -1,6 +1,4 @@
-if mods["real-nukes"] then
-	require("nukes-integration")
-end
+if mods["real-nukes"] then require("nukes-integration") end
 
 require("prototypes.item.items")
 require("prototypes.entity.entities")
