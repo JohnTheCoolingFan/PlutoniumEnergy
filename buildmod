@@ -1,0 +1,9 @@
+#!/bin/bash
+
+filename="$(cat info.json | jq -r ".name")_$(cat info.json | jq -r ".version")"
+mkdir "../$filename"
+cp -r * "../$filename/"
+rm "../$filename/buildmod"
+7z a "../$filename.zip" "../$filename"
+rm -rf "../$filename"
+mv "../$filename.zip" ~/.factorio/mods/
