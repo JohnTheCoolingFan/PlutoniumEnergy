@@ -1,14 +1,17 @@
 local MOX_fuel_icon = ""
 
-if settings.startup["PE-old-MOX-fuel-icon"].value then MOX_fuel_icon = "MOX-fuel-old"
-else MOX_fuel_icon = "MOX-fuel" end
+if settings.startup["PE-old-icons"].value then
+	icons = "-old"
+else
+	icons = ""
+end
 
 data:extend({
 	-- Common resources
 	{
 		type = "item",
 		name = "plutonium-239",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "intermediate-product",
@@ -30,7 +33,7 @@ data:extend({
 	{
 		type = "item",
 		name = "MOX-fuel",
-		icon = "__PlutoniumEnergy__/graphics/icons/"..MOX_fuel_icon..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "intermediate-product",
@@ -79,7 +82,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-rounds-magazine",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -118,7 +121,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-cannon-shell",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -151,7 +154,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "explosive-plutonium-cannon-shell",
-		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -184,7 +187,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-atomic-bomb",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb"..icons..".png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =

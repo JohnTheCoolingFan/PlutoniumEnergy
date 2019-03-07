@@ -1,5 +1,11 @@
 require "util"
 
+if settings.startup["PE-old-icons"].value then
+	icons = "-old"
+else
+	icons = ""
+end
+
 -- Change kovarex recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
 
@@ -19,7 +25,7 @@ advanced_nuclear_fuel_reprocessing.results = {
 	}
 }
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
-advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
+advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing"..icons..".png"
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 data:extend({advanced_nuclear_fuel_reprocessing})
 
@@ -53,7 +59,7 @@ data:extend({
 		enabled = false,
 		category = "alpha-decay",
 		ingredients = {{"plutonium-239", 5}},
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239-alpha-decay.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239-alpha-decay"..icons..".png",
 		icon_size = 32,
 		subgroup = "raw-material",
 		order = "m[plutonium-239-decay]",
@@ -73,7 +79,7 @@ data:extend({
 		enabled = false,
 		category = "excess-neutron-capture",
 		ingredients = {{"uranium-238", 10}},
-		icon = "__PlutoniumEnergy__/graphics/icons/uranium-238-excess-neutron-capture.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/uranium-238-excess-neutron-capture"..icons..".png",
 		icon_size = 32,
 		subgroup = "raw-material",
 		order = "m[excess-neutron-capture]",
@@ -107,7 +113,7 @@ data:extend({
 		enabled = false,
 		category = "centrifuging",
 		ingredients = {{"used-up-MOX-fuel", 5}},
-		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png",
+		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing"..icons..".png",
 		icon_size = 32,
 		subgroup = "intermediate-product",
 		order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
