@@ -112,7 +112,7 @@ data:extend({
 		},
 		magazine_size = 10,
 		subgroup = "ammo",
-		order = "a[basic-clips]-c[uranium-rounds-magazine]",
+		order = "a[basic-clips]-d[plutonium-rounds-magazine]",
 		stack_size = 200
 	},
 	{
@@ -145,7 +145,7 @@ data:extend({
 			}
 		},
 		subgroup = "ammo",
-		order = "d[cannon-shell]-c[uranium]",
+		order = "d[cannon-shell]-d[plutonium]",
 		stack_size = 200
 	},
 	{
@@ -178,7 +178,7 @@ data:extend({
 			}
 		},
 		subgroup = "ammo",
-		order = "d[explosive-cannon-shell]-c[uranium]",
+		order = "d[explosive-cannon-shell]-d[plutonium]",
 		stack_size = 200
 	},
 	{
