@@ -4,7 +4,7 @@ if settings.startup["PE-old-MOX-fuel-icon"].value then MOX_fuel_icon = "MOX-fuel
 else MOX_fuel_icon = "MOX-fuel" end
 
 data:extend({
-	--common resources
+	-- Common resources
 	{
 		type = "item",
 		name = "plutonium-239",
@@ -25,38 +25,8 @@ data:extend({
 		order = "g[plutonium-238]",
 		stack_size = 100
 	},
-	--[[{ Unused items.
-		type = "item",
-		name = "plutonium-dioxide",
-		icon = "__PlutoniumEnergy__/graphics/icons/raw-plutonium.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[plutonium-dioxide]",
-		stack_size = 100
-	},
-	{
-		type = "item",
-		name = "uranium-dioxide",
-		icon = "__PlutoniumEnergy__/graphics/icons/raw-plutonium.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[uranium-dioxide]",
-		stack_size = 100
-	},
-	{
-		type = "item",
-		name = "iodine",
-		icon = "__PlutoniumEnergy__/graphics/icons/iodine.png",
-		icon_size = 32,
-		flags = {"goes-to-main-inventory"},
-		subgroup = "intermediate-product",
-		order = "g[iodine]",
-		stack_size = 100
-	},]]
 
-	--MOX fuel
+	-- MOX fuel
 	{
 		type = "item",
 		name = "MOX-fuel",
@@ -81,7 +51,7 @@ data:extend({
 		stack_size = 50
 	},
 
-	--machines
+	-- Machines
 	{
 		type = "item",
 		name = "MOX-reactor",
@@ -105,7 +75,7 @@ data:extend({
 		stack_size = 50
 	},
 
-	--ammo
+	-- Ammo
 	{
 		type = "ammo",
 		name = "plutonium-rounds-magazine",
