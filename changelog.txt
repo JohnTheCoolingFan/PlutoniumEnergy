@@ -9,6 +9,8 @@ Date: 07.03.2019
       - Advanced nuclear fuel reprocessing recipe
       - MOX fuel reprocessing recipe
       - Plutonium ammo
+  Graphics:
+    - Added new icons for Plutonium items which can be disabled with corresponding mod setting (old setting for MOX fuel removed)
   Locale:
     - RUS:
       - Пушечный снаряд ==> Крупнокалиберный снаряд (В соответствии с оригинальным переводом)
