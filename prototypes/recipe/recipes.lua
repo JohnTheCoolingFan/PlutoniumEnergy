@@ -110,7 +110,7 @@ data:extend({
 		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png",
 		icon_size = 32,
 		subgroup = "intermediate-product",
-		order = "r[uranium-processing]-c[MOX-fuel-reprocessing]",
+		order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
 		main_product = "",
 		results =
 		{
