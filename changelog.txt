@@ -8,6 +8,7 @@ Date: 07.03.2019
       - MOX fuel
       - Advanced nuclear fuel reprocessing recipe
       - MOX fuel reprocessing recipe
+      - Plutonium ammo
   Locale:
     - RUS:
       - Пушечный снаряд ==> Крупнокалиберный снаряд (В соответствии с оригинальным переводом)
