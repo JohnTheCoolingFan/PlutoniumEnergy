@@ -1,5 +1,8 @@
 require "util"
 
+-- Change kovarex recipe order
+data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
+
 local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
 advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
 advanced_nuclear_fuel_reprocessing.enabled = false
@@ -17,6 +20,7 @@ advanced_nuclear_fuel_reprocessing.results = {
 }
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
+advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 data:extend({advanced_nuclear_fuel_reprocessing})
 
 data:extend({
