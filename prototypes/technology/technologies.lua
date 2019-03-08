@@ -48,7 +48,7 @@ data:extend({
 	{
 		type = "technology",
 		name = "MOX-fuel-reprocessing",
-		icon = "__PlutoniumEnergy__/graphics/technology/plutonium-fuel-reprocessing.png",
+		icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-reprocessing.png",
 		icon_size = 128,
 		effects =
 		{
