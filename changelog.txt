@@ -1,9 +1,14 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.0.17
-date: 07.03.2019
+Version: 1.0.18
+Date: 08.03.2019
   Locale:
-    - Some fixes in RU locale
-    - Updated UA locale
+    - Updated German, Trad. Chinese and Simp. Chinese locale by Schallfalke (https://mods.factorio.com/user/Schallfalke)
+---------------------------------------------------------------------------------------------------
+Version: 1.0.17
+Date: 07.03.2019
+  Locale:
+    - Some fixes in Russian locale
+    - Updated Ukrainian locale
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.16
 Date: 07.03.2019
@@ -51,8 +56,8 @@ Date: 17.12.2018
 Version: 1.0.10
 Date: 15.12.2018
   Localisation:
-    - Added locale in German, Trad. Chinese and Simp. Chinese
-    - Changed Russian, Ukrainian and English locale to correspond new locales
+    - Added locale in German, Trad. Chinese and Simp. Chinese by Schallfalke (https://mods.factorio.com/user/Schallfalke)
+    - Updated Russian, Ukrainian and English locale to correspond new locales
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 14.12.2018
