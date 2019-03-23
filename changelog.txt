@@ -8,6 +8,7 @@ Date: 09.03.2019
     - Removed integration with realistic nukes
   Locale:
     - Added technology descriptions
+    - Fixes in locales
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.18
 Date: 08.03.2019
