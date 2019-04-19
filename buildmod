@@ -1,9 +1,9 @@
-#!/bin/bash
+#! /bin/bash
 
 MODNAME="$(cat info.json | jq -r ".name")"
 MODVERSION="$(cat info.json | jq -r ".version")"
 mkdir "../$MODNAME"_"$MODVERSION"
 rsync -a --exclude 'buildmod' * "../$MODNAME"_"$MODVERSION/"
 rm ~/.factorio/mods/"$MODNAME"*
-7z a -sdel "../$MODNAME"_"$MODVERSION.zip" "../$MODNAME"_"$MODVERSION"
+7z a -sdel "../$MODNAME"_"$MODVERSION.zip" "../$MODNAME"_"$MODVERSION" > /dev/null
 mv "../$MODNAME"_"$MODVERSION.zip" ~/.factorio/mods/
