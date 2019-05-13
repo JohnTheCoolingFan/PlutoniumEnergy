@@ -18,6 +18,21 @@ plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.repea
 plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.radius = 55
 data:extend({plutonium_atomic_explosion})
 
+if mods["AtomicArtillery"] then
+    local projs = {}
+    local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
+    plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
+    plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonoium-atomic-shell.png"
+    plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].repeat_count = 110
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].damage.amount = 1650
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.repeat_count = 4400
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.radius = 55
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
+    table.insert(projs, plutonium_atomic_artillery_projectile)
+    data:extend(projs)
+end
+
 data:extend({
 	{
     type = "projectile",
