@@ -1,4 +1,5 @@
 require("prototypes.item.items")
+require("prototypes.item.ammo")
 require("prototypes.entity.entities")
 require("prototypes.entity.projectiles")
 require("prototypes.recipe.recipes")
