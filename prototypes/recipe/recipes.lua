@@ -1,4 +1,4 @@
-require "util"
+require("ammo")
 
 if settings.startup["PE-old-icons"].value then
 	icons = "-old"
@@ -160,57 +160,5 @@ data:extend({
 		},
 		result = "industrial-reactor",
 		requester_paste_multiplier= 10
-	},
-
-	-- Ammo
-	{
-		type = "recipe",
-		name = "plutonium-rounds-magazine",
-		enabled = false,
-		energy_required = 10,
-		ingredients =
-		{
-			{"piercing-rounds-magazine", 1},
-			{"plutonium-238", 1}
-		},
-		result = "plutonium-rounds-magazine"
-	},
-	{
-		type = "recipe",
-		name = "plutonium-atomic-bomb",
-		enabled = false,
-		energy_required = 50,
-		ingredients =
-		{
-			{"processing-unit", 20},
-			{"explosives", 10},
-			{"plutonium-238", 15},
-			{"plutonium-239", 10}
-		},
-		result = "plutonium-atomic-bomb"
-	},
-	{
-		type = "recipe",
-		name = "plutonium-cannon-shell",
-		enabled = false,
-		energy_required = 10,
-		ingredients =
-		{
-			{"cannon-shell", 1},
-			{"plutonium-238", 1}
-		},
-		result = "plutonium-cannon-shell"
-	},
-	{
-		type = "recipe",
-		name = "explosive-plutonium-cannon-shell",
-		enabled = false,
-		energy_required = 10,
-		ingredients =
-		{
-			{"explosive-cannon-shell", 1},
-			{"plutonium-238", 1}
-		},
-		result = "explosive-plutonium-cannon-shell"
 	}
 })

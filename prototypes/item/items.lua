@@ -1,3 +1,5 @@
+require("ammo")
+
 local MOX_fuel_icon = ""
 
 if settings.startup["PE-old-icons"].value then
