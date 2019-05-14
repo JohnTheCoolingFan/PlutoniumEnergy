@@ -20,6 +20,7 @@ data:extend({plutonium_atomic_explosion})
 
 if mods["AtomicArtillery"] then
     local projs = {}
+
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
     plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
     plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonoium-atomic-shell.png"
@@ -30,6 +31,12 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.radius = 55
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
     table.insert(projs, plutonium_atomic_artillery_projectile)
+
+    local plutonium_atomic_artillery_wave = util.table.deepcopy(data.raw["projectile"]["atomic-artillery-wave"])
+    plutonium_atomic_artillery_wave.name = "plutonium-atomic-artillery-wave"
+    plutonium_atomic_artillery_wave.action[2].action_delivery.target_effects.damage.amount = 1650
+    table.insert(projs, plutonium_atomic_artillery_wave)
+
     data:extend(projs)
 end
 
