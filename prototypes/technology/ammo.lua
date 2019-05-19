@@ -1,5 +1,3 @@
-log("[PE] ammo techs loading")
-
 data:extend({
     {
 		type = "technology",
