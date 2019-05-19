@@ -1,4 +1,4 @@
-local ammo = {}
+local ammo_recipes = {}
 
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
@@ -10,9 +10,10 @@ if mods["AtomicArtillery"] then
         {"radar", 1}
     }
     plutonium_atomic_artillery_shell.result = "plutonium-atomic-artillery-shell"
+    table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
 end
 
-data:extend(ammo)
+data:extend(ammo_recipes)
 
 data:extend({
     -- Ammo

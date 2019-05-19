@@ -1,10 +1,12 @@
-require("ammo")
-
 if settings.startup["PE-old-icons"].value then
 	icons = "-old"
 else
 	icons = ""
 end
+
+require("ammo")
+
+local recipes = {}
 
 -- Change kovarex recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
@@ -27,7 +29,9 @@ advanced_nuclear_fuel_reprocessing.results = {
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing"..icons..".png"
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
-data:extend({advanced_nuclear_fuel_reprocessing})
+table.insert(recipes, advanced_nuclear_fuel_reprocessing)
+
+data:extend(recipes)
 
 data:extend({
 	-- Isotope-to-isotope recipes

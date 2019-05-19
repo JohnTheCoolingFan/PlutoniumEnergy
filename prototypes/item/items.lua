@@ -1,5 +1,3 @@
-require("ammo")
-
 local MOX_fuel_icon = ""
 
 if settings.startup["PE-old-icons"].value then
@@ -7,6 +5,8 @@ if settings.startup["PE-old-icons"].value then
 else
 	icons = ""
 end
+
+require("ammo")
 
 data:extend({
 	-- Common resources
