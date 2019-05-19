@@ -1,4 +1,6 @@
-require("ammo")
+require("prototypes.technology.ammo")
+
+log("[PE] loading techs")
 
 data:extend({
 	{

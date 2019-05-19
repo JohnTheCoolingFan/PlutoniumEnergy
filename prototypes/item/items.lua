@@ -6,7 +6,7 @@ else
 	icons = ""
 end
 
-require("ammo")
+require("prototypes.item.ammo")
 
 data:extend({
 	-- Common resources

@@ -18,7 +18,7 @@ plutonium_atomic_explosion.action.action_delivery.target_effects[1].repeat_count
 plutonium_atomic_explosion.action.action_delivery.target_effects[3].damage.amount = 600
 plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.repeat_count = 3000
 plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.radius = 55
-table.insert(projectiles, plutonium_cannon_explosion)
+table.insert(projectiles, plutonium_atomic_explosion)
 
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])

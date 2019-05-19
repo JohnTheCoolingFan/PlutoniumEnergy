@@ -5,7 +5,7 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
     plutonium_atomic_artillery_shell.ingredients = {
         {"plutonium-atomic-bomb", 1},
-        {"exploive-plutonium-cannon-shell", 3},
+        {"explosive-plutonium-cannon-shell", 3},
         {"rocket-control-unit", 2},
         {"radar", 1}
     }

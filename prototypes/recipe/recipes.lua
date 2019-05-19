@@ -4,7 +4,7 @@ else
 	icons = ""
 end
 
-require("ammo")
+require("prototypes.recipe.ammo")
 
 local recipes = {}
 

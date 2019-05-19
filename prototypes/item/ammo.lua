@@ -82,7 +82,7 @@ data:extend({
 			}
 		},
 		subgroup = "ammo",
-		order = "d[cannon-shell]-d[plutonium]",
+		order = "d[explosive-cannon-shell]-c[yplutonium]",
 		stack_size = 200
 	},
 	{
@@ -115,7 +115,7 @@ data:extend({
 			}
 		},
 		subgroup = "ammo",
-		order = "d[explosive-cannon-shell]-d[plutonium]",
+		order = "d[explosive-cannon-shell]-c[zplutonium]",
 		stack_size = 200
 	},
 	{

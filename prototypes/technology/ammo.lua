@@ -1,9 +1,11 @@
+log("[PE] ammo techs loading")
+
 data:extend({
     {
 		type = "technology",
 		name = "plutonium-ammo",
-		icon_size = 128,
 		icon = "__PlutoniumEnergy__/graphics/technology/plutonium-ammo.png",
+        icon_size = 128,
 		effects = {
 			{
 				type = "unlock-recipe",
