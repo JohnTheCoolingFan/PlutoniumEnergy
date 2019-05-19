@@ -9,7 +9,7 @@ if mods["AtomicArtillery"] then
 	table.insert(ammo, plutonium_atomic_artillery_shell)
 end
 
-data:extend(ammo)
+if ammo[1] then data:extend(ammo) end
 
 data:extend({
     -- Ammo
