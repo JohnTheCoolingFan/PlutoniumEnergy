@@ -1,11 +1,3 @@
-local MOX_fuel_icon = ""
-
-if settings.startup["PE-old-icons"].value then
-	icons = "-old"
-else
-	icons = ""
-end
-
 require("prototypes.item.ammo")
 
 data:extend({
@@ -13,7 +5,7 @@ data:extend({
 	{
 		type = "item",
 		name = "plutonium-239",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "intermediate-product",
@@ -35,7 +27,7 @@ data:extend({
 	{
 		type = "item",
 		name = "MOX-fuel",
-		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
 		icon_size = 32,
 		flags = {},
 		subgroup = "intermediate-product",

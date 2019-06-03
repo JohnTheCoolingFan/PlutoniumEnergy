@@ -16,7 +16,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-rounds-magazine",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -55,7 +55,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-cannon-shell",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -88,7 +88,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "explosive-plutonium-cannon-shell",
-		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
@@ -121,7 +121,7 @@ data:extend({
 	{
 		type = "ammo",
 		name = "plutonium-atomic-bomb",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb"..icons..".png",
+		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
 		icon_size = 32,
 		flags = {},
 		ammo_type =
