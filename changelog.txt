@@ -3,6 +3,8 @@ Version: 1.0.23
 Date: 03.06.2019
   Graphics:
     - Removed old icons.
+  Fixes:
+    - Changed internal name of some items to avoid other mods conflicts (For example, APM Nuclear, error caused by migration and occurs only in existing saves)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.22
 Date: 19.05.2019
