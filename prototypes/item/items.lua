@@ -32,7 +32,7 @@ data:extend({
 		flags = {},
 		subgroup = "intermediate-product",
 		order = "r[uranium-processing]-b[MOX-fuel]",
-		fuel_category = "MOX",
+		fuel_category = "PE-MOX",
 		burnt_result = "used-up-MOX-fuel",
 		fuel_value = "20GJ",
 		stack_size = 50
