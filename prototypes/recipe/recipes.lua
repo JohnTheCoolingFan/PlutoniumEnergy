@@ -41,12 +41,8 @@ data:extend({
 		icon_size = 32,
 		subgroup = "raw-material",
 		order = "l[plutonium-238-nuclesynthesis]",
-		results =
-		{
-			{
-				name = "plutonium-238",
-				amount = 5
-			}
+		results = {
+			{name = "plutonium-238", amount = 5}
 		}
 	},
 	{
@@ -61,12 +57,8 @@ data:extend({
 		icon_size = 32,
 		subgroup = "raw-material",
 		order = "m[plutonium-239-decay]",
-		results =
-		{
-			{
-				name = "uranium-235",
-				amount = 2
-			}
+		results = {
+			{name = "uranium-235", amount = 2}
 		}
 	},
 	{
@@ -81,12 +73,8 @@ data:extend({
 		icon_size = 32,
 		subgroup = "raw-material",
 		order = "m[excess-neutron-capture]",
-		results =
-		{
-			{
-				name = "plutonium-239",
-				amount = 2
-			}
+		results = {
+			{name = "plutonium-239", amount = 2}
 		}
 	},
 	{
@@ -94,8 +82,7 @@ data:extend({
 		name = "MOX-fuel",
 		energy_required = 10,
 		enabled = false,
-		ingredients =
-		{
+		ingredients = {
 			{"iron-plate", 10},
 			{"uranium-235", 1},
 			{"plutonium-239", 3},
@@ -116,8 +103,7 @@ data:extend({
 		subgroup = "intermediate-product",
 		order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
 		main_product = "",
-		results =
-		{
+		results = {
 			{
 				name = "plutonium-239",
 				amount = 1
@@ -134,8 +120,7 @@ data:extend({
 		name = "MOX-reactor",
 		energy_required = 8,
 		enabled = false,
-		ingredients =
-		{
+		ingredients = {
 			{"concrete", 600},
 			{"steel-plate", 600},
 			{"advanced-circuit", 600},
@@ -149,8 +134,7 @@ data:extend({
 		name = "industrial-reactor",
 		energy_required = 4,
 		enabled = false,
-		ingredients =
-		{
+		ingredients = {
 			{"concrete", 150},
 			{"steel-plate", 75},
 			{"advanced-circuit", 120},

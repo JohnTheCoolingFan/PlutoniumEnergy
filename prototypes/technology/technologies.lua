@@ -6,8 +6,7 @@ data:extend({
 		name = "plutonium-nuclear-power",
 		icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png",
 		icon_size = 128,
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "MOX-fuel"
@@ -34,10 +33,8 @@ data:extend({
 			}
 		},
 		prerequisites = {"nuclear-power"},
-		unit =
-		{
-			ingredients =
-			{
+		unit = {
+			ingredients = {
 				{"automation-science-pack", 1},
 				{"logistic-science-pack", 1},
 				{"chemical-science-pack", 1}
@@ -52,8 +49,7 @@ data:extend({
 		name = "MOX-fuel-reprocessing",
 		icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-reprocessing.png",
 		icon_size = 128,
-		effects =
-		{
+		effects = {
 			{
 				type = "unlock-recipe",
 				recipe = "MOX-fuel-reprocessing"
@@ -64,10 +60,8 @@ data:extend({
 			}
 		},
 		prerequisites = {"plutonium-nuclear-power"},
-		unit =
-		{
-			ingredients =
-			{
+		unit = {
+			ingredients = {
 				{"automation-science-pack", 1},
 				{"logistic-science-pack", 1},
 				{"chemical-science-pack", 1}

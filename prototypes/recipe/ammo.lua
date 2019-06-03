@@ -22,8 +22,7 @@ data:extend({
 		name = "plutonium-rounds-magazine",
 		enabled = false,
 		energy_required = 10,
-		ingredients =
-		{
+		ingredients = {
 			{"piercing-rounds-magazine", 1},
 			{"plutonium-238", 1}
 		},
@@ -34,8 +33,7 @@ data:extend({
 		name = "plutonium-atomic-bomb",
 		enabled = false,
 		energy_required = 50,
-		ingredients =
-		{
+		ingredients = {
 			{"processing-unit", 20},
 			{"explosives", 10},
 			{"plutonium-238", 15},
@@ -48,8 +46,7 @@ data:extend({
 		name = "plutonium-cannon-shell",
 		enabled = false,
 		energy_required = 10,
-		ingredients =
-		{
+		ingredients = {
 			{"cannon-shell", 1},
 			{"plutonium-238", 1}
 		},
@@ -60,8 +57,7 @@ data:extend({
 		name = "explosive-plutonium-cannon-shell",
 		enabled = false,
 		energy_required = 10,
-		ingredients =
-		{
+		ingredients = {
 			{"explosive-cannon-shell", 1},
 			{"plutonium-238", 1}
 		},

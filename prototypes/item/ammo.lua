@@ -19,29 +19,24 @@ data:extend({
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
 		icon_size = 32,
 		flags = {},
-		ammo_type =
-		{
+		ammo_type = {
 			category = "bullet",
-			action =
-			{
+			action = {
 				type = "direct",
-				action_delivery =
-				{
+				action_delivery = {
 					type = "instant",
-					source_effects =
-					{
+					source_effects = {
 						type = "create-explosion",
 						entity_name = "explosion-gunshot"
 					},
-					target_effects =
-					{
+					target_effects = {
 						{
 							type = "create-entity",
 							entity_name = "explosion-hit"
 						},
 						{
 							type = "damage",
-							damage = { amount = 36, type = "physical"}
+							damage = {amount = 36, type = "physical"}
 						}
 					}
 				}
@@ -58,23 +53,19 @@ data:extend({
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
 		icon_size = 32,
 		flags = {},
-		ammo_type =
-		{
+		ammo_type = {
 			category = "cannon-shell",
 			target_type = "direction",
-			action =
-			{
+			action = {
 				type = "direct",
-				action_delivery =
-				{
+				action_delivery = {
 					type = "projectile",
 					projectile = "plutonium-cannon-projectile",
 					starting_speed = 1,
 					direction_deviation = 0.1,
 					range_deviation = 0.1,
 					max_range = 35,
-					source_effects =
-					{
+					source_effects = {
 						type = "create-explosion",
 						entity_name = "explosion-gunshot"
 					}
@@ -91,23 +82,19 @@ data:extend({
 		icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
 		icon_size = 32,
 		flags = {},
-		ammo_type =
-		{
+		ammo_type = {
 			category = "cannon-shell",
 			target_type = "direction",
-			action =
-			{
+			action = {
 				type = "direct",
-				action_delivery =
-				{
+				action_delivery = {
 					type = "projectile",
 					projectile = "explosive-plutonium-cannon-projectile",
 					starting_speed = 1,
 					direction_deviation = 0.1,
 					range_deviation = 0.1,
 					max_range = 35,
-					source_effects =
-					{
+					source_effects = {
 						type = "create-explosion",
 						entity_name = "explosion-gunshot"
 					}
@@ -124,22 +111,18 @@ data:extend({
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
 		icon_size = 32,
 		flags = {},
-		ammo_type =
-		{
+		ammo_type = {
 			range_modifier = 5,
 			cooldown_modifier = 2.5,
 			target_type = "position",
 			category = "rocket",
-			action =
-			{
+			action = {
 				type = "direct",
-				action_delivery =
-				{
+				action_delivery = {
 					type = "projectile",
 					projectile = "plutonium-atomic-rocket",
 					starting_speed = 0.05,
-					source_effects =
-					{
+					source_effects = {
 						type = "create-entity",
 						entity_name = "explosion-hit"
 					}
