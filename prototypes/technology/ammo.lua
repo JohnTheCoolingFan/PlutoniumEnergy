@@ -36,7 +36,7 @@ data:extend({
         type = "technology",
         name = "plutonium-atomic-bomb",
         icon_size = 128,
-        icon = "__base__/graphics/technology/atomic-bomb.png",
+        icon = "__base__/graphics/technology/atomic-bomb.png", -- TODO
         effects = {
             {
 				type = "unlock-recipe",
