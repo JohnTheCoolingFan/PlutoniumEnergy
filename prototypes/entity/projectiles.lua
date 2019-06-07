@@ -14,10 +14,10 @@ table.insert(projectiles, plutonium_cannon_explosion)
 
 local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
 plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
-plutonium_atomic_rocket.action.action_delivery.target_effects[1].repeat_count = 150
-plutonium_atomic_rocket.action.action_delivery.target_effects[3].damage.amount = 600
-plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.repeat_count = 3000
-plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.radius = 55
+plutonium_atomic_rocket.action.action_delivery.target_effects[1].repeat_count = 140
+plutonium_atomic_rocket.action.action_delivery.target_effects[3].damage.amount = 560
+plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.repeat_count = 2800
+plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.radius = 50
 table.insert(projectiles, plutonium_atomic_rocket)
 
 if mods["AtomicArtillery"] then

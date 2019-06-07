@@ -6,6 +6,7 @@ Date: <unknown>
     - Removed production science pack from Plutonium ammo technology ingredients.
     - Added Plutonium atomic bomb technology.
     - Moved plutonium atomic bomb recipe from Plutonium ammo technology to a new separate technology.
+    - Plutonium atomic bomb nerfed by ~10%
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 03.06.2019
