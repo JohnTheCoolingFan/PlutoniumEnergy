@@ -6,6 +6,6 @@
 "contact": "ivan8215145640@gmail.com",
 "homepage": "https://discord.gg/grHVhE2",
 "dependencies": ["base >= 0.17.0", "?AtomicArtillery"],
-"description": "Plutonium nuclear fuel.",
+"description": "Adds processing of plutonium, excess product from nuclear fuel cells reprocessing. Plutonium can be used to create ammo (even plutonium atomic bomb) and to create Energy as MOX fuel",
 "factorio_version": "0.17"
 }
