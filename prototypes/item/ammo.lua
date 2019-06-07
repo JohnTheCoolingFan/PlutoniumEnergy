@@ -1,5 +1,3 @@
-local ammo = {}
-
 if mods["AtomicArtillery"] then
 	local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 	plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
@@ -7,9 +5,8 @@ if mods["AtomicArtillery"] then
 	plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
 	plutonium_atomic_artillery_shell.ammo_type.action.action_delivery.starting_speed = 1.1
 	table.insert(ammo, plutonium_atomic_artillery_shell)
+	data:extend({plutonium_atomic_artillery_shell})
 end
-
-if ammo[1] then data:extend(ammo) end
 
 data:extend({
     -- Ammo
