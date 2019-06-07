@@ -12,6 +12,8 @@ Date: <unknown>
     - Added Plutonium atomic bomb technology.
     - Moved plutonium atomic bomb recipe from Plutonium ammo technology to a new separate technology.
     - Plutonium atomic bomb nerfed by ~10%
+  Graphics:
+    - Fixed tint color for some projectiles
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 03.06.2019
