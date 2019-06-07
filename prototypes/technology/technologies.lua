@@ -39,10 +39,10 @@ data:extend({
 				{"logistic-science-pack", 1},
 				{"chemical-science-pack", 1}
 			},
-			time = 25,
-			count = 1200
+			time = 35,
+			count = 1000
 		},
-		order = "c-a"
+		order = "e-p-b-d"
 	},
 	{
 		type = "technology",
