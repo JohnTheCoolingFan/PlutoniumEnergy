@@ -2,13 +2,13 @@ local projectiles = {}
 
 local plutonium_cannon_shell_explosion = util.table.deepcopy(data.raw["explosion"]["big-explosion"])
 plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
-plutonium_cannon_shell_explosion.animations[1].tint = {r = 0.4, g = 0.4, b = 0.4}
+plutonium_cannon_shell_explosion.animations[1].tint = {r = 0.1, g = 0.9, b = 0.7}
 table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
 for k, v in pairs(plutonium_cannon_explosion.animations) do
-  v.tint = {r = 0.4, g = 0.4, b = 0.4}
+  v.tint = {r = 0.1, g = 0.9, b = 0.7}
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
