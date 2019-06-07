@@ -12,13 +12,13 @@ for k, v in pairs(plutonium_cannon_explosion.animations) do
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
-local plutonium_atomic_explosion = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
-plutonium_atomic_explosion.name = "plutonium-atomic-rocket"
-plutonium_atomic_explosion.action.action_delivery.target_effects[1].repeat_count = 150
-plutonium_atomic_explosion.action.action_delivery.target_effects[3].damage.amount = 600
-plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.repeat_count = 3000
-plutonium_atomic_explosion.action.action_delivery.target_effects[5].action.radius = 55
-table.insert(projectiles, plutonium_atomic_explosion)
+local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
+plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
+plutonium_atomic_rocket.action.action_delivery.target_effects[1].repeat_count = 150
+plutonium_atomic_rocket.action.action_delivery.target_effects[3].damage.amount = 600
+plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.repeat_count = 3000
+plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.radius = 55
+table.insert(projectiles, plutonium_atomic_rocket)
 
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
