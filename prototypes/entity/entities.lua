@@ -28,38 +28,38 @@ MOX_reactor.working_light_picture.hr_version.filename = "__PlutoniumEnergy__/gra
 MOX_reactor.working_light_picture.hr_version.scale = 0.3
 MOX_reactor.light.color = {r = 0.0, g = 0.15, b = 1.0}
 MOX_reactor.heat_buffer.connections = {
-	{
-		position = {-1, -1},
-		direction = defines.direction.north
-	},
-	{
-		position = {1, -1},
-		direction = defines.direction.north
-	},
-	{
-		position = {1, -1},
-		direction = defines.direction.east
-	},
-	{
-		position = {1, 1},
-		direction = defines.direction.east
-	},
-	{
-		position = {1, 1},
-		direction = defines.direction.south
-	},
-	{
-		position = {-1, 1},
-		direction = defines.direction.south
-	},
-	{
-		position = {-1, 1},
-		direction = defines.direction.west
-	},
-	{
-		position = {-1, -1},
-		direction = defines.direction.west
-	}
+    {
+        position = {-1, -1},
+        direction = defines.direction.north
+    },
+    {
+        position = {1, -1},
+        direction = defines.direction.north
+    },
+    {
+        position = {1, -1},
+        direction = defines.direction.east
+    },
+    {
+        position = {1, 1},
+        direction = defines.direction.east
+    },
+    {
+        position = {1, 1},
+        direction = defines.direction.south
+    },
+    {
+        position = {-1, 1},
+        direction = defines.direction.south
+    },
+    {
+        position = {-1, 1},
+        direction = defines.direction.west
+    },
+    {
+        position = {-1, -1},
+        direction = defines.direction.west
+    }
 }
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
 patches_pic_con.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
