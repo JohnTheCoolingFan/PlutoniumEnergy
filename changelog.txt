@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.25
+Date: <unknown>
+  Balancing:
+    - Plutonium ammo technology unit count 5000 ==> 1250
+    - Removed production science pack from Plutonium ammo technology ingredients.
+---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 03.06.2019
   Fixes:
