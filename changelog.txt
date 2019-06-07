@@ -11,7 +11,8 @@ Date: <unknown>
     - MOX fuel reprocessing technology unit count 1500 ==> 200
     - Added Plutonium atomic bomb technology.
     - Moved plutonium atomic bomb recipe from Plutonium ammo technology to a new separate technology.
-    - Plutonium atomic bomb nerfed by ~10%
+    - Plutonium atomic bomb nerfed by nearly 10%
+    - Plutonium atomic artillery shell buff (relatively from uranium shell) 10% ==> 40%
   Graphics:
     - Fixed tint color for some projectiles
 ---------------------------------------------------------------------------------------------------
