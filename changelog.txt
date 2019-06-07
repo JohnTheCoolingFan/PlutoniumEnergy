@@ -4,6 +4,8 @@ Date: <unknown>
   Balancing:
     - Plutonium ammo technology unit count 5000 ==> 1250
     - Removed production science pack from Plutonium ammo technology ingredients.
+    - Added Plutonium atomic bomb technology.
+    - Moved plutonium atomic bomb recipe from Plutonium ammo technology to a new separate technology.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.24
 Date: 03.06.2019
