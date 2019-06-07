@@ -7,6 +7,8 @@ Date: <unknown>
     - Plutonium nuclear power technology unit count 1200 ==> 1000
     - Plutonium nuclear power technology time unit 25 ==> 35
     - Added production science pack to MOX fuel reprocessing technology.
+    - MOX fuel reprocessing technology time unit 25 ==> 30
+    - MOX fuel reprocessing technology unit count 1500 ==> 200
     - Added Plutonium atomic bomb technology.
     - Moved plutonium atomic bomb recipe from Plutonium ammo technology to a new separate technology.
     - Plutonium atomic bomb nerfed by ~10%
