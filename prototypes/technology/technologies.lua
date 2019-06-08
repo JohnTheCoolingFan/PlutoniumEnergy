@@ -35,7 +35,7 @@ data:extend({
             count = 400
         },
         order = "e-p-b-d"
-      },
+    },
     {
         type = "technology",
         name = "plutonium-nuclear-power",
