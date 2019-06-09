@@ -5,7 +5,7 @@ data:extend({
         type = "technology",
         name = "plutonium-processing",
         icon_size = 128,
-        icon = "__base__/graphics/technology/uranium-processing.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-processing.png",
         effects = {
             {
                 type = "unlock-recipe",
