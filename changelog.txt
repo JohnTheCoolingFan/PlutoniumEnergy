@@ -48,7 +48,7 @@ Date: 19.05.2019
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.20
 Date: 19.05.2019
-  Mod integration:
+  Integration:
     - Added integration with AtomicArtillery (https://mods.factorio.com/mod/AtomicArtillery).
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.19
@@ -56,7 +56,7 @@ Date: 09.03.2019
   Graphics:
     - Updated Plutonium nuclear power and Plutonium ammo technology icons.
     - Updated thumbnail.
-  Mod integration:
+  Integration:
     - Removed integration with realistic nukes.
   Locale:
     - Added technology descriptions.
@@ -205,14 +205,14 @@ Version: 0.3.0
 Date: 20.09.2018
   Major Features:
     - Added Plutonium ammo (uranium ammo analogue).
-  Mod integration:
+  Integration:
     - Added integration with Realistic nukes mod (https://mods.factorio.com/mod/real-nukes). Added plutonium nuke.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.10
 Date: 02.08.2018
   Balancing:
     - Changed energy amount given by plutonium fuel cell from 10GJ to 12 GJ.
-  Mod integration:
+  Integration:
     - Added integration with Advanced atomics mod (https://mods.factorio.com/mod/Advanced-Atomics). PE's plutonium-239 will be disabled if Advanced atomics is installed.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.9
