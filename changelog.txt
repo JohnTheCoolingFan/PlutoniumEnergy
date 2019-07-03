@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 03.07.2019
+  Minor Features:
+    - Added setting to disable MOX reactor recipe.
+  Locale:
+    - Added locale for MOX fuel category.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 02.07.2019
   Fixes:
