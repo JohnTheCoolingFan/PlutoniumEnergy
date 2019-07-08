@@ -8,3 +8,5 @@ require("prototypes.categories.recipe-category")
 
 -- TODO:
 -- Discuss about integration in RealisticReactors
+-- Rework plutonium processing scheme
+-- Add plutonium fuel
