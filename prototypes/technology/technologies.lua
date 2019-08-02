@@ -18,10 +18,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "plutonium-238-nuclesynthesis"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "uranium-238-excess-neutron-capture"
             }
         },
         prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
