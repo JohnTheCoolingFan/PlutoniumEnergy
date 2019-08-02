@@ -54,22 +54,6 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "uranium-238-excess-neutron-capture",
-        localised_name = {"recipe-name.uranium-238-excess-neutron-capture"},
-        energy_required = 10,
-        enabled = false,
-        category = "excess-neutron-capture",
-        ingredients = {{"uranium-238", 10}},
-        icon = "__PlutoniumEnergy__/graphics/icons/uranium-238-excess-neutron-capture.png",
-        icon_size = 32,
-        subgroup = "raw-material",
-        order = "m[excess-neutron-capture]",
-        results = {
-            {name = "PE-plutonium-239", amount = 2}
-        }
-    },
-    {
-        type = "recipe",
         name = "MOX-fuel",
         energy_required = 10,
         enabled = false,
