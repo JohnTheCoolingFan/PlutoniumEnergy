@@ -50,7 +50,7 @@ Version: 1.0.22
 Date: 19. 05. 2019
   Fixes:
     - Fixed error caused by 1.0.20 migration script.
-  Minor changes:
+  Minor Features:
     - Removed "1.0.20.lua" migration file.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.21
@@ -88,7 +88,7 @@ Date: 07. 03. 2019
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.16
 Date: 07. 03. 2019
-  Changes:
+  Minor Changes:
     - Code optimisations and useless files deletions.
   Fixes:
     - Fixed order for:
@@ -108,12 +108,12 @@ Date: 03. 03. 2019
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 26. 02. 2019
-  Changes:
+  Minor Features:
     - Added thumbnail.png.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.13
 Date: 26. 02. 2019
-  Changes:
+  Minor Features:
     - Update to Factorio 0.17.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.12
@@ -130,13 +130,13 @@ Date: 17. 12. 2018
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.10
 Date: 15. 12. 2018
-  Localisation:
+  Locale:
     - Added locale in German, Trad. Chinese and Simp. Chinese by Schallfalke (https://mods.factorio.com/user/Schallfalke).
     - Updated Russian, Ukrainian and English locale to correspond new locales.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
 Date: 14. 12. 2018
-  Localisation:
+  Locale:
     - Added Ukrainian locale by IgorLutiy.
     - Other locale improvements.
 ---------------------------------------------------------------------------------------------------
@@ -231,16 +231,16 @@ Date: 02. 08. 2018
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 04. 05. 2018
-  Changes:
+  Minor Features:
     - Removed dependency of JohnCore because it was stupid.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 22. 03. 2018
-  Changes:
+  Minor Features:
     - Some texture and item order improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.7
 Date: 18. 12. 2017
-  Changes:
+  Minor Features:
     - Updated for 0.16
     - Added changelog.txt
