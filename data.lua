@@ -5,7 +5,3 @@ require("prototypes.recipe.recipes")
 require("prototypes.technology.technologies")
 require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
-
--- TODO:
--- Discuss about integration in RealisticReactors
--- Rework plutonium processing scheme
