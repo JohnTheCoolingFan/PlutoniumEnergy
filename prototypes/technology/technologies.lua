@@ -93,3 +93,4 @@ data:extend({
     }
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
+if settings.startup['PE-disable-U238-excess-neutron-capture-recipe'].value then data.raw['technology']['plutonium-processing'].effects[4] = nil end
