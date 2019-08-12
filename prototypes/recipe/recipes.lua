@@ -120,7 +120,7 @@ data:extend({
     }
 })
 
-if not settings.startup['PE-disable-U238-excess-neutron-capture-recipe'] then
+if not settings.startup['PE-disable-U238-excess-neutron-capture-recipe'].value then
     data:extend({
         {
             type = "recipe",
