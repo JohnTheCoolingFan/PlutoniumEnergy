@@ -82,7 +82,7 @@ industrial_reactor.energy_usage = "420kW"
 industrial_reactor.module_specification.module_slots = 4
 industrial_reactor.working_visualisations[1].light.color = {r = 0.0, g = 0.15, b = 1.0}
 industrial_reactor.minable.result = "industrial-reactor"
-indreact_anim = industrial_reactor.animation.layers
+local indreact_anim = industrial_reactor.animation.layers
 indreact_anim[1].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png"
 indreact_anim[1].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png"
 indreact_anim[2].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png"
