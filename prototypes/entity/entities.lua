@@ -1,6 +1,7 @@
 require "util"
 local entities = {}
 
+-- TODO: Fix heated reactor graphics
 local MOX_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
 MOX_reactor.name = "MOX-reactor"
 MOX_reactor.icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png"
