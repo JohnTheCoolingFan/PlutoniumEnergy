@@ -73,6 +73,9 @@ patches_pic_discon.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/M
 patches_pic_discon.variation_count = 12
 patches_pic_discon.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png"
 patches_pic_discon.hr_version.variation_count = 12
+MOX_reactor.heat_picture.scale = 0.6
+MOX_reactor.heat_picture.hr_version.scale = 0.3
+MOX_reactor.heat_glow.scale = 0.6
 table.insert(entities, MOX_reactor)
 
 local industrial_reactor = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
