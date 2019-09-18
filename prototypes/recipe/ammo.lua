@@ -2,7 +2,9 @@ local ammo_recipes = {}
 
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
+
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
+
     plutonium_atomic_artillery_shell.ingredients = {
         {"plutonium-atomic-bomb", 1},
         {"explosive-plutonium-cannon-shell", 3},
