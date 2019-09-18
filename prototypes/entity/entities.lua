@@ -7,7 +7,6 @@ local MOX_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
 MOX_reactor.name = "MOX-reactor"
 MOX_reactor.icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png"
 MOX_reactor.minable.result = "MOX-reactor"
-MOX_reactor.minable.mining_time = 1
 MOX_reactor.max_health = 400
 
 MOX_reactor.consumption = "20MW"
