@@ -26,7 +26,11 @@ lower_layer.hr_version.width = 192
 lower_layer.hr_version.height = 192
 
 MOX_reactor.heat_lower_layer_picture.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png'
+MOX_reactor.heat_lower_layer_picture.width = 96
+MOX_reactor.heat_lower_layer_picture.height = 96
 MOX_reactor.heat_lower_layer_picture.hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png'
+MOX_reactor.heat_lower_layer_picture.hr_version.width = 192
+MOX_reactor.heat_lower_layer_picture.hr_version.height = 192
 
 MOX_reactor.picture.layers[1].scale = 0.6
 MOX_reactor.picture.layers[1].hr_version.scale = 0.3
