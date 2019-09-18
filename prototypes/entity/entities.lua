@@ -20,7 +20,8 @@ lower_layer.height = 92
 lower_layer.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes.png"
 lower_layer.hr_version.width = 192
 lower_layer.hr_version.height = 192
--- TODO: heat_lower_layer_picture
+MOX_reactor.heat_lower_layer_picture.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png'
+MOX_reactor.heat_lower_layer_picture.hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png'
 MOX_reactor.picture.layers[1].scale = 0.6
 MOX_reactor.picture.layers[1].hr_version.scale = 0.3
 MOX_reactor.picture.layers[2].scale = 0.6
