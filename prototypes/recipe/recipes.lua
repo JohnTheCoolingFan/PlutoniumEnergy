@@ -6,13 +6,16 @@ local recipes = {}
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
 
 local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
+
 advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
+advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
+
 advanced_nuclear_fuel_reprocessing.enabled = false
+
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
 advanced_nuclear_fuel_reprocessing.results = {{name = "uranium-238", amount = 5}, {name = "PE-plutonium-239", amount = 2}}
-advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
-advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
+
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 table.insert(recipes, advanced_nuclear_fuel_reprocessing)
 
