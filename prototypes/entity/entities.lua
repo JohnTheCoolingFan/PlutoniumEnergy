@@ -20,6 +20,7 @@ lower_layer.height = 92
 lower_layer.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes.png"
 lower_layer.hr_version.width = 192
 lower_layer.hr_version.height = 192
+-- TODO: heat_lower_layer_picture
 MOX_reactor.picture.layers[1].scale = 0.6
 MOX_reactor.picture.layers[1].hr_version.scale = 0.3
 MOX_reactor.picture.layers[2].scale = 0.6
@@ -28,7 +29,7 @@ MOX_reactor.working_light_picture.filename = "__PlutoniumEnergy__/graphics/entit
 MOX_reactor.working_light_picture.scale = 0.6
 MOX_reactor.working_light_picture.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-lights-color.png"
 MOX_reactor.working_light_picture.hr_version.scale = 0.3
-MOX_reactor.light.color = {r = 0.0, g = 0.15, b = 1.0}
+MOX_reactor.light.color = {r = 0.0, g = 0.82, b = 0.9}
 MOX_reactor.heat_buffer.connections = {
     {
         position = {-1, -1},
@@ -63,6 +64,9 @@ MOX_reactor.heat_buffer.connections = {
         direction = defines.direction.west
     }
 }
+MOX_reactor.heat_buffer.heat_picture.scale = 0.6
+MOX_reactor.heat_duffer.heat_picture.hr_version.scale = 0.3
+MOX_reactor.heat_buffer.heat_glow.scale = 0.6
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
 patches_pic_con.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
 patches_pic_con.variation_count = 12
@@ -73,9 +77,8 @@ patches_pic_discon.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/M
 patches_pic_discon.variation_count = 12
 patches_pic_discon.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png"
 patches_pic_discon.hr_version.variation_count = 12
-MOX_reactor.heat_picture.scale = 0.6
-MOX_reactor.heat_picture.hr_version.scale = 0.3
-MOX_reactor.heat_glow.scale = 0.6
+-- TODO: heat_connection_patches_connected
+-- TODO: heat_connection_patches_disconnected
 table.insert(entities, MOX_reactor)
 
 local industrial_reactor = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
