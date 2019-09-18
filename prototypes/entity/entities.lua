@@ -85,15 +85,11 @@ MOX_reactor.heat_buffer.heat_glow.scale = 0.6
 
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
 patches_pic_con.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
-patches_pic_con.variation_count = 12
 patches_pic_con.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png"
-patches_pic_con.hr_version.variation_count = 12
 
 local patches_pic_discon = MOX_reactor.connection_patches_disconnected.sheet
 patches_pic_discon.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
-patches_pic_discon.variation_count = 12
 patches_pic_discon.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png"
-patches_pic_discon.hr_version.variation_count = 12
 
 -- TODO: heat_connection_patches_connected
 -- TODO: heat_connection_patches_disconnected
