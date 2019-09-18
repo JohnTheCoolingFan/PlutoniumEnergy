@@ -91,8 +91,13 @@ local patches_pic_discon = MOX_reactor.connection_patches_disconnected.sheet
 patches_pic_discon.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
 patches_pic_discon.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png"
 
--- TODO: heat_connection_patches_connected
--- TODO: heat_connection_patches_disconnected
+local patches_pic_con_heat = MOX_reactor.heat_connection_patches_connected.sheet
+patches_pic_con_heat.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png'
+patches_pic_con_heat.hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png'
+
+local patches_pic_discon_heat = MOX_reactor.heat_connection_patches_disconnected.sheet
+patches_pic_discon_heat.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png'
+patches_pic_discon_heat.hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png'
 table.insert(entities, MOX_reactor)
 
 
