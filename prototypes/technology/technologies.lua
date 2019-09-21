@@ -43,8 +43,8 @@ data:extend({
         icon_size = 128,
         effects = {
             {
-            	type = "unlock-recipe",
-            	recipe = "MOX-fuel"
+                type = "unlock-recipe",
+                recipe = "MOX-fuel"
             },
             {
                 type = "unlock-recipe",

@@ -5,12 +5,14 @@ plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
 plutonium_cannon_shell_explosion.animations[1].tint = {r = 0.1, g = 0.9, b = 0.7}
 table.insert(projectiles, plutonium_cannon_shell_explosion)
 
+
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
 for k, v in pairs(plutonium_cannon_explosion.animations) do
     v.tint = {r = 0.1, g = 0.9, b = 0.7}
 end
 table.insert(projectiles, plutonium_cannon_explosion)
+
 
 local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
 plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
@@ -20,17 +22,22 @@ plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.repeat_c
 plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.radius = 50
 table.insert(projectiles, plutonium_atomic_rocket)
 
+
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
+
     plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
+
     plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
     plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].repeat_count = 140
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].damage.amount = 2100
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.repeat_count = 5600
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.radius = 70
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[5].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
+
 
     local plutonium_atomic_artillery_wave = util.table.deepcopy(data.raw["projectile"]["atomic-artillery-wave"])
     plutonium_atomic_artillery_wave.name = "plutonium-atomic-artillery-wave"
