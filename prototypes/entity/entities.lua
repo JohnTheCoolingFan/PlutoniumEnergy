@@ -33,7 +33,9 @@ MOX_reactor.heat_lower_layer_picture.hr_version.width = 192
 MOX_reactor.heat_lower_layer_picture.hr_version.height = 192
 
 MOX_reactor.picture.layers[1].scale = 0.6
+MOX_reactor.picture.layers[1].shift = util.by_pixel(-4, -6)
 MOX_reactor.picture.layers[1].hr_version.scale = 0.3
+MOX_reactor.picture.layers[1].hr_version.shift = util.by_pixel(-3, -7)
 MOX_reactor.picture.layers[2].scale = 0.6
 MOX_reactor.picture.layers[2].hr_version.scale = 0.3
 
@@ -80,7 +82,7 @@ MOX_reactor.heat_buffer.connections = {
 }
 
 MOX_reactor.heat_buffer.heat_picture.scale = 0.6
-MOX_reactor.heat_duffer.heat_picture.hr_version.scale = 0.3
+MOX_reactor.heat_buffer.heat_picture.hr_version.scale = 0.3
 MOX_reactor.heat_buffer.heat_glow.scale = 0.6
 
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
