@@ -11,9 +11,9 @@ Plutonium nuclear fuel and weapons. Full description coming soon.
 *   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
 *   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
 
-### Join my [Discord server](https://discord.gg/grHVhE2) to get latest news about my mods and just to talk with each other. It's mainly Russian, but everyone is welcome.
+#### Join my [Discord server](https://discord.gg/grHVhE2) to get latest news about my mods and just to talk with each other. It's mainly Russian, but everyone is welcome.
 [![Discord server](https://discordapp.com/api/guilds/370167294439063564/widget.png?style=banner2)](https://discord.gg/grHVhE2)
-You can support me on [Patreon](https://www.patreon.com/JohnTheCoolingFan). Your support is very important for me!
+#### You can support me on [Patreon](https://www.patreon.com/JohnTheCoolingFan). Your support is very important for me!
 
 #### Other mods about nuclear energy:
 
