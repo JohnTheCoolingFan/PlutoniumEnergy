@@ -9,6 +9,7 @@ local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"
 
 advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
 advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
+advanced_nuclear_fuel_reprocessing.icon_size = 32
 
 advanced_nuclear_fuel_reprocessing.enabled = false
 
