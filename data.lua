@@ -7,5 +7,5 @@ require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
 
 -- TODO: Support for Schall Uranium Processing (https://mods.factorio.com/mod/PlutoniumEnergy/discussion/5de1876b082e2b000b966564) (https://mods.factorio.com/mod/SchallUraniumProcessing)
---       Done: locale using references. TODO: swap locale strings when mod is detected. Also do recipe names without output count
+--       I have and idea to make PE's recipes similar to SUP's recipes.
 -- TODO: Remake icons for x64 size
