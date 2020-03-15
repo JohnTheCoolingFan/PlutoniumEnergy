@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 16.03.2020
+  Minor Features:
+    - Added support for Schall Uranium Processing - locale is proper now when using PE with SUP, no naming confusion
+---------------------------------------------------------------------------------------------------
 Version: 1.1.7
 Date: 29.01.2020
   Minor Features:
