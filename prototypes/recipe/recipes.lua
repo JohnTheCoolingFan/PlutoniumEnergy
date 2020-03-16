@@ -27,7 +27,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
-        localised_name = {(mods['SchallUraniumProcessing'] and "recipe-name.plutonium-238-nuclesynthesis") or 'recipe-name.SUP-plutonium-238-nucleosynthesis'},
+        localised_name = {(mods['SchallUraniumProcessing'] and "recipe-name.plutonium-238-nuclesynthesis") or 'recipe-name.SUP-plutonium-238-nuclesynthesis'},
         show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
