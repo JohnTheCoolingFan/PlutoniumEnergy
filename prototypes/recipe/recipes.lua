@@ -27,7 +27,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
-        localised_name = {(mods['SchallUraniumProcessing'] and "recipe-name.plutonium-238-nuclesynthesis") or 'recipe-name.SUP-plutonium-238-nuclesynthesis'},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-238-nuclesynthesis") and 'recipe-name.SUP-plutonium-238-nuclesynthesis'},
         show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
@@ -44,7 +44,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-239-alpha-decay",
-        localised_name = {(mods['SchallUraniumProcessing'] and "recipe-name.plutonium-239-alpha-decay") or 'recipe-name.SUP-plutonium-239-alpha-decay'},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-239-alpha-decay") and 'recipe-name.SUP-plutonium-239-alpha-decay'},
         show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
@@ -61,7 +61,7 @@ data:extend({
     {
         type = "recipe",
         name = "uranium-238-excess-neutron-capture",
-        localised_name = {(mods['SchallUraniumProcessing'] and "recipe-name.uranium-238-excess-neutron-capture") or 'recipe-name.SUP-uranium-238-excess-neutron-capture'},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.uranium-238-excess-neutron-capture") and 'recipe-name.SUP-uranium-238-excess-neutron-capture'},
         show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
