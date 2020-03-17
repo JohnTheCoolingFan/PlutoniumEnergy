@@ -3,7 +3,7 @@ Version: 1.1.8
 Date: 17.03.2020
   Minor Features:
     - Added support for Schall Uranium Processing. Item names are consistent now. Added a setting
-			to choose a prosuct of advanced nuclear fuel reprocessing.
+      to choose a prosuct of advanced nuclear fuel reprocessing.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.7
 Date: 29.01.2020
@@ -73,7 +73,7 @@ Date: 03. 06. 2019
     - Removed old icons.
   Fixes:
     - Changed internal name of some items to avoid other mods conflicts (For example, APM Nuclear,
-			error caused by migration and occurs only in existing saves)
+      error caused by migration and occurs only in existing saves)
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.22
 Date: 19. 05. 2019
@@ -108,7 +108,7 @@ Version: 1.0.18
 Date: 08. 03. 2019
   Locale:
     - Updated German, Trad. Chinese and Simp. Chinese locale by Schallfalke
-			(https://mods.factorio.com/user/Schallfalke).
+      (https://mods.factorio.com/user/Schallfalke).
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.17
 Date: 07. 03. 2019
@@ -128,7 +128,7 @@ Date: 07. 03. 2019
       - Plutonium ammo
   Graphics:
     - Added new icons for Plutonium items which can be disabled with corresponding mod setting
-			(old setting for MOX fuel removed).
+      (old setting for MOX fuel removed).
   Locale:
     - Пушечный снаряд ==> Крупнокалиберный снаряд (В соответствии с оригинальным переводом).
 ---------------------------------------------------------------------------------------------------
@@ -151,7 +151,7 @@ Version: 1.0.12
 Date: 17. 02. 2019
   Balancing:
     - Replaced Pu-239 by Pu-238 in Pu cannon shell, Exp. Pu cannon shell and Pu rouds magazine
-			recipes.
+      recipes.
     - 30x Pu-238 ingredient in Pu bomb recipe replaced with 15x Pu-238 and 10x Pu239.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.11
@@ -164,7 +164,7 @@ Version: 1.0.10
 Date: 15. 12. 2018
   Locale:
     - Added locale in German, Trad. Chinese and Simp. Chinese by Schallfalke
-			(https://mods.factorio.com/user/Schallfalke).
+      (https://mods.factorio.com/user/Schallfalke).
     - Updated Russian, Ukrainian and English locale to correspond new locales.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.9
@@ -185,7 +185,7 @@ Date: 07. 11. 2018
     - Remaked Plutonium ammo and Plutonium nuclear power technology icons.
     - Remaked MOX reactor and Industrial centrifuge icons.
     - MOX fuel icon changed to icon from RITEG mod (https://mods.factorio.com/mod/RITEG).
-			Can de changed back in the settings.
+      Can de changed back in the settings.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.6
 Date: 26. 10. 2018
@@ -214,7 +214,7 @@ Version: 1.0.2
 Date: 20. 10. 2018
   Minor Features:
     - Added migration files (plutonium fuel cells => MOX fuel,
-			plutonium centrifuge => industrial reactor).
+      plutonium centrifuge => industrial reactor).
       Old saves are now partialy compatible with 1.x.x.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.1
@@ -248,7 +248,7 @@ Version: 0.3.1
 Date: 23. 09. 2018
   Copyright:
     - Plutonium Energy mod is now licenses under GNU AGPL license,
-			0.3.0 was removed from the mod page.
+      0.3.0 was removed from the mod page.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 20. 09. 2018
@@ -256,7 +256,7 @@ Date: 20. 09. 2018
     - Added Plutonium ammo (uranium ammo analogue).
   Integration:
     - Added integration with Realistic nukes mod (https://mods.factorio.com/mod/real-nukes).
-			Added plutonium nuke.
+      Added plutonium nuke.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.10
 Date: 02. 08. 2018
