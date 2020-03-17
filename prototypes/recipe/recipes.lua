@@ -15,7 +15,7 @@ advanced_nuclear_fuel_reprocessing.enabled = false
 
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
-advanced_nuclear_fuel_reprocessing.results = {{name = "uranium-238", amount = 5}, {name = "PE-plutonium-239", amount = 2}}
+advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "PE-plutonium-239", amount = 2}}
 
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 table.insert(recipes, advanced_nuclear_fuel_reprocessing)
@@ -27,7 +27,8 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
-        localised_name = {"recipe-name.plutonium-238-nuclesynthesis"},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-238-nuclesynthesis") and 'recipe-name.SUP-plutonium-238-nuclesynthesis'},
+        show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
         category = "nucleosynthesis",
@@ -43,7 +44,8 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-239-alpha-decay",
-        localised_name = {"recipe-name.plutonium-239-alpha-decay"},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-239-alpha-decay") and 'recipe-name.SUP-plutonium-239-alpha-decay'},
+        show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
         category = "alpha-decay",
@@ -59,7 +61,8 @@ data:extend({
     {
         type = "recipe",
         name = "uranium-238-excess-neutron-capture",
-        localised_name = {"recipe-name.uranium-238-excess-neutron-capture"},
+        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.uranium-238-excess-neutron-capture") and 'recipe-name.SUP-uranium-238-excess-neutron-capture'},
+        show_amount_in_title = false,
         energy_required = 10,
         enabled = false,
         category = "excess-neutron-capture",
