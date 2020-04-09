@@ -1,9 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 09.04.2020
+  Minor Features:
+    - Added Polish locale by Guru [TSM]#8528
+---------------------------------------------------------------------------------------------------
 Version: 1.1.8
 Date: 17.03.2020
   Minor Features:
     - Added support for Schall Uranium Processing. Item names are consistent now. Added a setting
-      to choose a prosuct of advanced nuclear fuel reprocessing.
+      to choose a product of advanced nuclear fuel reprocessing.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.7
 Date: 29.01.2020
