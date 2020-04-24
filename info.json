@@ -1,12 +1,12 @@
 {
 "name": "PlutoniumEnergy",
-"version": "1.1.9",
+"version": "1.1.10",
 "title": "Plutonium Energy",
 "author": "JohnTheCoolingFan",
 "contact": "https://discord.gg/grHVhE2",
 "homepage": "https://discord.gg/grHVhE2",
 "dependencies": [
-    "base >= 0.18.0",
+    "base >= 0.18.21",
     "? AtomicArtillery",
     "? SchallUraniumProcessing"
 ],

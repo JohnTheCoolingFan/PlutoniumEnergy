@@ -18,8 +18,9 @@ local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atom
 plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
 plutonium_atomic_rocket.action.action_delivery.target_effects[1].repeat_count = 140
 plutonium_atomic_rocket.action.action_delivery.target_effects[3].damage.amount = 560
-plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.repeat_count = 2800
-plutonium_atomic_rocket.action.action_delivery.target_effects[5].action.radius = 50
+plutonium_atomic_rocket.action.action_delivery.target_effects[6].radius = 10 -- 7 * 1.4 = 9.8
+plutonium_atomic_rocket.action.action_delivery.target_effects[7].action.repeat_count = 2800
+plutonium_atomic_rocket.action.action_delivery.target_effects[7].action.radius = 50 -- 35 * 1.4 = 49
 table.insert(projectiles, plutonium_atomic_rocket)
 
 
