@@ -115,15 +115,17 @@ industrial_reactor.crafting_categories = {"alpha-decay", "nucleosynthesis", "exc
 industrial_reactor.module_specification.module_slots = 4
 industrial_reactor.energy_usage = "420kW"
 
-industrial_reactor.working_visualisations[1].light.color = {r = 0.0, g = 0.15, b = 1.0}
+industrial_reactor.working_visualisations[1] = {effect="uranium-glow", light={intensity=0.6, size=9.9, shift={0.0, 0.0}, color={r=0.0, g=0.15, b=1.0}}}
 
-local indreact_anim = industrial_reactor.animation.layers
-indreact_anim[1].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png"
-indreact_anim[1].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png"
-indreact_anim[2].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png"
-indreact_anim[2].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-B-light.png"
-indreact_anim[3].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-A-light.png"
-indreact_anim[3].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-A-light.png"
+if industrial_reactor.animation then
+    local indreact_anim = industrial_reactor.animation.layers
+    indreact_anim[1].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png"
+    indreact_anim[1].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png"
+    indreact_anim[2].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png"
+    indreact_anim[2].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-B-light.png"
+    indreact_anim[3].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-A-light.png"
+    indreact_anim[3].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-A-light.png"
+end
 table.insert(entities, industrial_reactor)
 
 data:extend(entities)
