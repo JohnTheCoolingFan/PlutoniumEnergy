@@ -103,7 +103,7 @@ data:extend({
         order = "d[explosive-cannon-shell]-c[zplutonium]",
         stack_size = 200
     },
-    {
+    --[[{
         type = "ammo",
         name = "plutonium-atomic-bomb",
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
@@ -130,5 +130,5 @@ data:extend({
         subgroup = "ammo",
         order = "d[rocket-launcher]-c[atomic-bomb]",
         stack_size = 10
-    }
+    }]]
 })

@@ -30,7 +30,7 @@ data:extend({
         },
         result = "plutonium-rounds-magazine"
     },
-    {
+    --[[{
         type = "recipe",
         name = "plutonium-atomic-bomb",
         enabled = false,
@@ -42,7 +42,7 @@ data:extend({
             {"PE-plutonium-239", 10}
         },
         result = "plutonium-atomic-bomb"
-    },
+    },]]
     {
         type = "recipe",
         name = "plutonium-cannon-shell",

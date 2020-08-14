@@ -13,7 +13,7 @@ for k, v in pairs(plutonium_cannon_explosion.animations) do
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
-
+--[[
 local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
 plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
 plutonium_atomic_rocket.action.action_delivery.target_effects[1].repeat_count = 140
@@ -22,7 +22,7 @@ plutonium_atomic_rocket.action.action_delivery.target_effects[6].radius = 10 -- 
 plutonium_atomic_rocket.action.action_delivery.target_effects[7].action.repeat_count = 2800
 plutonium_atomic_rocket.action.action_delivery.target_effects[7].action.radius = 50 -- 35 * 1.4 = 49
 table.insert(projectiles, plutonium_atomic_rocket)
-
+]]
 
 if mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
