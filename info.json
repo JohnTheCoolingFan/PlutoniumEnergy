@@ -11,5 +11,5 @@
         "? SchallUraniumProcessing"
     ],
     "description": "Adds processing of plutonium, excess product from nuclear reaction. Plutonium can be used to create ammo (even plutonium atomic bomb) and to create energy as MOX fuel.",
-    "factorio_version": "0.18"
+    "factorio_version": "1.0"
 }
