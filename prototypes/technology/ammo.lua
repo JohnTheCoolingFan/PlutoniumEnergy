@@ -32,7 +32,7 @@ data:extend({
         },
         order = "e-a-c"
     },
-    {
+    --[[{
         type = "technology",
         name = "plutonium-atomic-bomb",
         icon_size = 128,
@@ -57,7 +57,7 @@ data:extend({
             time = 60
         },
         order = "e-a-c"
-    }
+    }]]
 })
 
 if mods["AtomicArtillery"] then
