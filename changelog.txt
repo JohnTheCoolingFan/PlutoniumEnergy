@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.16
+Date: 15.08.2020
+  Minor Features:
+    - Icon sprites are now mipmaps and 64x64 max size
+  Graphics:
+    - Fixed MOX reactor's heat pipes texture misalignment
+---------------------------------------------------------------------------------------------------
 Version: 1.1.15
 Date: 15.08.2020
   Minor Features:
