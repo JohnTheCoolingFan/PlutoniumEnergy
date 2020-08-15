@@ -6,7 +6,8 @@ local MOX_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
 
 MOX_reactor.name = "MOX-reactor"
 MOX_reactor.icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png"
-MOX_reactor.icon_size = 32
+MOX_reactor.icon_size = 64
+MOX_reactor.icon_mipmaps = 4
 MOX_reactor.minable.result = "MOX-reactor"
 MOX_reactor.max_health = 400
 
@@ -108,7 +109,8 @@ local industrial_reactor = util.table.deepcopy(data.raw["assembling-machine"]["c
 
 industrial_reactor.name = "industrial-reactor"
 industrial_reactor.icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png"
-industrial_reactor.icon_size = 32
+industrial_reactor.icon_size = 64
+industrial_reactor.icon_mipmaps = 4
 industrial_reactor.minable.result = "industrial-reactor"
 
 industrial_reactor.crafting_categories = {"alpha-decay", "nucleosynthesis", "excess-neutron-capture"}

@@ -15,7 +15,8 @@ data:extend({
         type = "ammo",
         name = "plutonium-rounds-magazine",
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         flags = {},
         ammo_type = {
             category = "bullet",
@@ -49,7 +50,8 @@ data:extend({
         type = "ammo",
         name = "plutonium-cannon-shell",
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         flags = {},
         ammo_type = {
             category = "cannon-shell",
@@ -78,7 +80,8 @@ data:extend({
         type = "ammo",
         name = "explosive-plutonium-cannon-shell",
         icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         flags = {},
         ammo_type = {
             category = "cannon-shell",
@@ -107,7 +110,8 @@ data:extend({
         type = "ammo",
         name = "plutonium-atomic-bomb",
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         flags = {},
         ammo_type = {
             range_modifier = 5,

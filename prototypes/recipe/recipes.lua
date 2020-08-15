@@ -25,7 +25,8 @@ local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"
 
 advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
 advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
-advanced_nuclear_fuel_reprocessing.icon_size = 32
+advanced_nuclear_fuel_reprocessing.icon_size = 64
+advanced_nuclear_fuel_reprocessing.icon_mipamps = 4
 
 advanced_nuclear_fuel_reprocessing.enabled = false
 
@@ -51,7 +52,8 @@ data:extend({
         category = "nucleosynthesis",
         ingredients = {{"uranium-238", 10}},
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238-nucleosynthesis.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         subgroup = "raw-material",
         order = "l[plutonium-238-nuclesynthesis]",
         results = {
@@ -69,7 +71,8 @@ data:extend({
         category = "alpha-decay",
         ingredients = {{"PE-plutonium-239", 5}},
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239-alpha-decay.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         subgroup = "raw-material",
         order = "m[plutonium-239-decay]",
         results = {
@@ -87,7 +90,8 @@ data:extend({
         category = "excess-neutron-capture",
         ingredients = {{"uranium-238", 10}},
         icon = "__PlutoniumEnergy__/graphics/icons/uranium-238-excess-neutron-capture.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         subgroup = "raw-material",
         order = "m[excess-neutron-capture]",
         results = {
@@ -116,7 +120,8 @@ data:extend({
         category = "centrifuging",
         ingredients = {{"used-up-MOX-fuel", 5}},
         icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png",
-        icon_size = 32,
+        icon_size = 64,
+        icon_mipmaps = 4,
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
         main_product = "",
