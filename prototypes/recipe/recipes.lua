@@ -1,5 +1,21 @@
 require("prototypes.recipe.ammo")
 
+local recipe_names = {}
+
+if mods['SchallUraniumProcessing'] then
+    recipe_names = {
+        ['plutonium-238-nucleosynthesis']      = 'recipe-name.SUP-plutonium-238-nucleosynthesis',
+        ['plutonium-239-alpha-decay']          = 'recipe-name.SUP-plutonium-239-alpha-decay',
+        ['uranium-238-excess-neutron-capture'] = 'recipe-name.SUP-uranium-238-excess-neutron-capture'
+    }
+else
+    recipe_names = {
+        ['plutonium-238-nucleosynthesis']      = 'recipe-name.plutonium-238-nucleosynthesis',
+        ['plutonium-239-alpha-decay']          = 'recipe-name.plutonium-239-alpha-decay',
+        ['uranium-238-excess-neutron-capture'] = 'recipe-name.uranium-238-excess-neutron-capture'
+    }
+end
+
 local recipes = {}
 
 -- Change kovarex recipe order
@@ -27,7 +43,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
-        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-238-nuclesynthesis") and 'recipe-name.SUP-plutonium-238-nuclesynthesis'},
+        localised_name = recipe_names['plutonium-238-nucleosynthesis'],
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
@@ -45,7 +61,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-239-alpha-decay",
-        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.plutonium-239-alpha-decay") and 'recipe-name.SUP-plutonium-239-alpha-decay'},
+        localised_name = recipe_names['plutonium-239-slpha-decay'],
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
@@ -63,7 +79,7 @@ data:extend({
     {
         type = "recipe",
         name = "uranium-238-excess-neutron-capture",
-        localised_name = {(mods['SchallUraniumProcessing'] or "recipe-name.uranium-238-excess-neutron-capture") and 'recipe-name.SUP-uranium-238-excess-neutron-capture'},
+        localised_name = recipe_names['uranium-238-excess-neutron-capture'],
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
