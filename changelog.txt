@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.13
+Date: 15.08.2020
+  Fixes:
+    - Fixed error on load when using with atomic artillery (plutonium atomic bomb replaced with
+      regular atomic bomb in recipe)
+---------------------------------------------------------------------------------------------------
 Version: 1.1.12
 Date: 14.08.2020
   Fixes:
