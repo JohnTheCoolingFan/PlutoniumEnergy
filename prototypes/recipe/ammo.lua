@@ -6,7 +6,7 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
 
     plutonium_atomic_artillery_shell.ingredients = {
-        {"atomic-bomb", 1}, -- FIXME
+        {"plutonium-atomic-bomb", 1},
         {"explosive-plutonium-cannon-shell", 3},
         {"rocket-control-unit", 2},
         {"radar", 1}
@@ -30,7 +30,7 @@ data:extend({
         },
         result = "plutonium-rounds-magazine"
     },
-    --[[{
+    {
         type = "recipe",
         name = "plutonium-atomic-bomb",
         enabled = false,
@@ -42,7 +42,7 @@ data:extend({
             {"PE-plutonium-239", 10}
         },
         result = "plutonium-atomic-bomb"
-    },]]
+    },
     {
         type = "recipe",
         name = "plutonium-cannon-shell",
