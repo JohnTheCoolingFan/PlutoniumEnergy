@@ -6,7 +6,7 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
 
     plutonium_atomic_artillery_shell.ingredients = {
-        {"plutonium-atomic-bomb", 1},
+        {"atomic-bomb", 1}, -- FIXME
         {"explosive-plutonium-cannon-shell", 3},
         {"rocket-control-unit", 2},
         {"radar", 1}
