@@ -43,7 +43,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
-        localised_name = recipe_names['plutonium-238-nucleosynthesis'],
+        localised_name = {recipe_names['plutonium-238-nucleosynthesis']},
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
@@ -61,7 +61,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-239-alpha-decay",
-        localised_name = recipe_names['plutonium-239-slpha-decay'],
+        localised_name = {recipe_names['plutonium-239-alpha-decay']},
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
@@ -79,7 +79,7 @@ data:extend({
     {
         type = "recipe",
         name = "uranium-238-excess-neutron-capture",
-        localised_name = recipe_names['uranium-238-excess-neutron-capture'],
+        localised_name = {recipe_names['uranium-238-excess-neutron-capture']},
         show_amount_in_title = false,
         always_show_products = true,
         energy_required = 10,
