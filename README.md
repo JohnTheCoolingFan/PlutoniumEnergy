@@ -7,7 +7,6 @@ And with energy generation part comes along destructive part. This mod also adds
 [Video comparison](https://youtu.be/HY6p4fRM6Uk)
 ![Uranium and Plutonium atomic bombs comparison](https://imgur.com/P1cqH06.png)
 
-
 #### Available languages:
 
 *   English (en) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
