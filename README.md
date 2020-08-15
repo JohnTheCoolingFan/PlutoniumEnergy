@@ -1,6 +1,12 @@
-Plutonium nuclear fuel and weapons. Full description coming soon.
+# Plutonium Energy
 
-### Please report any issues/suggestions in ["discussion" tab](https://mods.factorio.com/mod/PlutoniumEnergy/discussion) or on [GitHub](https://github.com/JohnTheCoolingFan/PlutoniumEnergy).
+This mod adds new material - plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), so it allow to pack them more densily to increase energy production.
+![Isotope recipes](https://imgur.com/cf4jZiS.png)
+![Other recipes and reactor stats](https://imgur.com/eRwJsi2.png)
+And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one. And if you installed mods that add uranium artillery shell / bomb, this mod also adds a plutonium variant (Currently supported only Atomic Artillery mod).
+[Video comparison](https://youtu.be/HY6p4fRM6Uk)
+![Uranium and Plutonium atomic bombs comparison](https://imgur.com/P1cqH06.png)
+
 
 #### Available languages:
 
