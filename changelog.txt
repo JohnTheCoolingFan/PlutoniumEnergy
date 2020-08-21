@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.18
+Date: 21.08.2020
+  Integration:
+    - Added support for Bob's Metals, Chemicals and Intermediates.
+      PE's plutonium-239 will be replaced by Bob's MCI one. Also removes some recipes.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.17
 Date: 19.08.2020
   Fixes:
