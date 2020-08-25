@@ -5,9 +5,15 @@ if mods['bobwarfare'] then
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
 
-    plutonium_atomic_artillery_shell.ingredients = {
+    plutonium_atomic_artillery_shell.normal.ingredients = {
         {"steel-plate", 8},
         {"plastic-bar", 8},
+        {"explosives", 30},
+        {"plutonium-239", 30}
+    }
+    plutonium_atomic_artillery_shell.expensive.ingredients = {
+        {"steel-plate", 16},
+        {"plastic-bar", 16},
         {"explosives", 30},
         {"plutonium-239", 30}
     }
