@@ -61,7 +61,7 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[6].radius = 10
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.repeat_count = 2800
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.radius = 50
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
+    --plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 
 
