@@ -15,9 +15,10 @@ if mods['bobwarfare'] then
         {"steel-plate", 16},
         {"plastic-bar", 16},
         {"explosives", 30},
-        {"plutonium-239", 30}
+        {"PE-plutonium-239", 30}
     }
-    plutonium_atomic_artillery_shell.result = "plutonium-atomic-artillery-shell"
+    plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
+    plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
     table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
 
 elseif mods["AtomicArtillery"] then
