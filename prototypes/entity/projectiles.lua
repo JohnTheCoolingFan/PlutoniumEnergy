@@ -48,7 +48,29 @@ plutonium_atomic_rocket.action.action_delivery.target_effects[18].action.radius 
 table.insert(projectiles, plutonium_atomic_rocket)
 
 
-if mods["AtomicArtillery"] then
+if mods['bobwarfare'] then
+    local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
+
+    plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
+
+    plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].repeat_count = 140
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].damage.amount = 560
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[6].radius = 10
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.repeat_count = 2800
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.radius = 50
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.action_delivery.projectile = "plutonium-atomic-artillery-wave"
+    table.insert(projectiles, plutonium_atomic_artillery_projectile)
+
+
+    --[[local plutonium_atomic_artillery_wave = util.table.deepcopy(data.raw["projectile"]["atomic-artillery-wave"])
+    plutonium_atomic_artillery_wave.name = "plutonium-atomic-artillery-wave"
+    plutonium_atomic_artillery_wave.action[2].action_delivery.target_effects.damage.amount = 5600
+    table.insert(projectiles, plutonium_atomic_artillery_wave)]]
+
+elseif mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
 
     plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
@@ -68,6 +90,7 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_wave.name = "plutonium-atomic-artillery-wave"
     plutonium_atomic_artillery_wave.action[2].action_delivery.target_effects.damage.amount = 5600
     table.insert(projectiles, plutonium_atomic_artillery_wave)
+
 end
 
 data:extend(projectiles)
