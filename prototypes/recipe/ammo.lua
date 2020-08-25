@@ -9,7 +9,7 @@ if mods['bobwarfare'] then
         {"steel-plate", 8},
         {"plastic-bar", 8},
         {"explosives", 30},
-        {"plutonium-239", 30}
+        {"PE-plutonium-239", 30}
     }
     plutonium_atomic_artillery_shell.expensive.ingredients = {
         {"steel-plate", 16},
