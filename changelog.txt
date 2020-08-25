@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.19
+Date: 25.08.2020
+  Fixes:
+    - Fixed Plutonium Atomic Artillery shell icon
+  Balancing:
+    - Plutonium Atomic Artillery Shell recipe:
+      Explosive plutonium cannon shell 3 -> 4
+      Rocket control unit 2 -> 3
+---------------------------------------------------------------------------------------------------
 Version: 1.1.18
 Date: 21.08.2020
   Integration:
