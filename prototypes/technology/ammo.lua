@@ -60,6 +60,8 @@ data:extend({
     }
 })
 
-if mods["AtomicArtillery"] then
+if mods['bobwarfare'] then
+    table.insert(data.raw['technology']['bob-atomic-artillery-shell'].effects, {type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell'})
+elseif mods["AtomicArtillery"] then
     table.insert(data.raw["technology"]["plutonium-ammo"].effects, {type = "unlock-recipe", recipe = "plutonium-atomic-artillery-shell"})
 end
