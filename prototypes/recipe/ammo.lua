@@ -1,6 +1,20 @@
 local ammo_recipes = {}
 
-if mods["AtomicArtillery"] then
+if mods['bobwarfare'] then
+    local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
+
+    plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
+
+    plutonium_atomic_artillery_shell.ingredients = {
+        {"steel-plate", 8},
+        {"plastic-bar", 8},
+        {"explosives", 30},
+        {"plutonium-239", 30}
+    }
+    plutonium_atomic_artillery_shell.result = "plutonium-atomic-artillery-shell"
+    table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
+
+elseif mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
@@ -13,6 +27,7 @@ if mods["AtomicArtillery"] then
     }
     plutonium_atomic_artillery_shell.result = "plutonium-atomic-artillery-shell"
     table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
+
 end
 
 if ammo_recipes[1] then data:extend(ammo_recipes) end
