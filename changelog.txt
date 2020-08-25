@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.20
+Date: 26.08.2020
+  Fixes:
+    - Fixed error on load when Atomic Artillery, PE and Bob's Warfare are enabled
+  Integration:
+    - Plutonium Atomic Artillery shell is now available with Bob's Warfare mod.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.19
 Date: 25.08.2020
   Fixes:
