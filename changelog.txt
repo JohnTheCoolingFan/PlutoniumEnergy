@@ -5,6 +5,12 @@ Date: 26.08.2020
     - Fixed error on load when Atomic Artillery, PE and Bob's Warfare are enabled
   Integration:
     - Plutonium Atomic Artillery shell is now available with Bob's Warfare mod.
+  Balancing:
+    - Plutonium atomic bomb:
+      Removed processing unit from recipe
+      Removed Pu-238 from recipe
+      Pu-239 10x -> 35x
+      Added x10 Rocket control unit
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.19
 Date: 25.08.2020
