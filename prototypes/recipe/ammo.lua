@@ -18,7 +18,7 @@ if mods['bobwarfare'] then
         {"PE-plutonium-239", 30}
     }
     plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
-    plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
+    plutonium_atomic_artillery_shell.expensive.result = "plutonium-atomic-artillery-shell"
     table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
 
 elseif mods["AtomicArtillery"] then
