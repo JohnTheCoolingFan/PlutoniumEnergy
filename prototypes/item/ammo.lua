@@ -1,4 +1,16 @@
-if mods["AtomicArtillery"] then
+if mods['bobwarfare'] then
+    local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
+
+    plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
+    plutonium_atomic_artillery_shell.icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png"
+    plutonium_atomic_artillery_shell.icons = nil
+    plutonium_atomic_artillery_shell.icon_size = 64
+    plutonium_atomic_artillery_shell.icon_mipmaps = 4
+
+    plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
+    data:extend({plutonium_atomic_artillery_shell})
+
+elseif mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
@@ -7,7 +19,6 @@ if mods["AtomicArtillery"] then
     plutonium_atomic_artillery_shell.icon_mipmaps = 4
 
     plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
-    plutonium_atomic_artillery_shell.ammo_type.action.action_delivery.starting_speed = 1.1
     data:extend({plutonium_atomic_artillery_shell})
 end
 
