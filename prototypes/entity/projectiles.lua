@@ -105,6 +105,7 @@ if mods['SchallArtillery'] then
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[2].damage.amount = 560
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.repeat_count = 2800
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.radius = 50
+    table.insert(projectiles, sc_plutonium_aa_pj)
 
 end
 
