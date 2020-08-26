@@ -18,7 +18,7 @@ data:extend({
                 recipe = "explosive-plutonium-cannon-shell"
             }
         },
-        prerequisites = {"plutonium-nuclear-power", "uranium-ammo"},
+        prerequisites = {"plutonium-processing", "uranium-ammo"},
         unit = {
             count = 1250,
             ingredients = {
@@ -43,7 +43,7 @@ data:extend({
                 recipe = "plutonium-atomic-bomb"
             }
         },
-        prerequisites = {"plutonium-nuclear-power", "atomic-bomb"},
+        prerequisites = {"plutonium-processing", "atomic-bomb"},
         unit = {
             count = 6000,
             ingredients = {
@@ -64,4 +64,7 @@ if mods['bobwarfare'] then
     table.insert(data.raw['technology']['bob-atomic-artillery-shell'].effects, {type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell'})
 elseif mods["AtomicArtillery"] then
     table.insert(data.raw["technology"]["plutonium-ammo"].effects, {type = "unlock-recipe", recipe = "plutonium-atomic-artillery-shell"})
+end
+if mods['SchallArtillery'] then
+    table.insert(data.raw['technology']['Schall-artillery-shell-2'].effects, {type = 'unlock-recipe', recipe = 'Schall-plutonium-atomic-artillery-shell'})
 end
