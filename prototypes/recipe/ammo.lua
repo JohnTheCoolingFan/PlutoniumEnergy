@@ -37,6 +37,20 @@ elseif mods["AtomicArtillery"] then
 
 end
 
+if mods['SchallArtillery'] then
+    local sc_plutonium_aa_sh = util.table.deepcopy(data.raw['recipe']['Schall-atomic-artillery-shell'])
+
+    sc_plutonium_aa_sh.name = 'Schall-plutonium-atomic-artillery-shell'
+
+    sc_plutonium_aa_sh.ingredients = {
+        {'explosive-cannon-shell', 6},
+        {'radar', 1},
+        {'rocket-control-unit', 12},
+        {'explosives', 15},
+        {'PE-plutonium-239', 35}
+    }
+    sc_plutonium_aa_sh.result = 'Schall-atomic-artillery-shell'
+
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
 data:extend({
