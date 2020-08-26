@@ -50,6 +50,9 @@ if mods['SchallArtillery'] then
         {'PE-plutonium-239', 35}
     }
     sc_plutonium_aa_sh.result = 'Schall-atomic-artillery-shell'
+    table.insert(ammo_recipes, sc_plutonium_aa_sh)
+
+end
 
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
