@@ -18,7 +18,7 @@ data:extend({
                 recipe = "explosive-plutonium-cannon-shell"
             }
         },
-        prerequisites = {"plutonium-nuclear-power", "uranium-ammo"},
+        prerequisites = {"plutonium-processing", "uranium-ammo"},
         unit = {
             count = 1250,
             ingredients = {
@@ -43,7 +43,7 @@ data:extend({
                 recipe = "plutonium-atomic-bomb"
             }
         },
-        prerequisites = {"plutonium-nuclear-power", "atomic-bomb"},
+        prerequisites = {"plutonium-processing", "atomic-bomb"},
         unit = {
             count = 6000,
             ingredients = {
