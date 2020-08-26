@@ -93,6 +93,21 @@ elseif mods["AtomicArtillery"] then
 
 end
 
+if mods['SchallArtillery'] then
+    local sc_plutonium_aa_pj = util.table.deepcopy(data.raw['artillery-projectile']['Schall-atomic-artillery-projetcile'])
+
+    sc_plutonium_aa_pj.name = 'Schall-plutonium-atomic-artillery-projectile'
+
+    sc_plutonium_aa_pj.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    sc_plutonium_aa_pj.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].repeat_count = 140
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[2].damage.amount = 560
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.repeat_count = 2800
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.radius = 50
+
+end
+
 data:extend(projectiles)
 
 data:extend({
