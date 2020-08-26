@@ -27,9 +27,9 @@ if mods['SchallArtillery'] then
     local sc_plutonium_aa_sh = util.table.deepcopy(data.raw['ammo']['Schall-atomic-artillery-shell'])
 
     sc_plutonium_aa_sh.name = 'Schall-plutonium-atomic-artillery-shell'
+    sc_plutonium_aa_sh.icons = nil
     sc_plutonium_aa_sh.icon = '__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png'
     sc_plutonium_aa_sh.icon_size = 64
-    sc_plutonium_aa_sh.icons = nil
     sc_plutonium_aa_sh.icon_mipmaps = 4
 
     sc_plutonium_aa_sh.projectile = 'Schall-plutonium-atomic-artillery-projectile'
