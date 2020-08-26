@@ -24,7 +24,7 @@ elseif mods["AtomicArtillery"] then
 end
 
 if mods['SchallArtillery'] then
-    local sc_plutonium_aa_sh = util.table.deepcopy(data/raw['ammo']['Schall-atomic-artillery-shell'])
+    local sc_plutonium_aa_sh = util.table.deepcopy(data.raw['ammo']['Schall-atomic-artillery-shell'])
 
     sc_plutonium_aa_sh.name = 'Schall-plutonium-atomic-artillery-shell'
     sc_plutonium_aa_sh.icon = '__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png'
