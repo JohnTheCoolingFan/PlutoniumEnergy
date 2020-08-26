@@ -49,7 +49,7 @@ if mods['SchallArtillery'] then
         {'explosives', 15},
         {'PE-plutonium-239', 35}
     }
-    sc_plutonium_aa_sh.result = 'Schall-atomic-artillery-shell'
+    sc_plutonium_aa_sh.result = 'Schall-plutonium-atomic-artillery-shell'
     table.insert(ammo_recipes, sc_plutonium_aa_sh)
 
 end
