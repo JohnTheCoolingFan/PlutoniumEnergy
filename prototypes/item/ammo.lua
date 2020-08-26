@@ -2,7 +2,7 @@ if mods['bobwarfare'] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
-    plutonium_atomic_artillery_shell.icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png"
+    plutonium_atomic_artillery_shell.icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png" -- TODO
     plutonium_atomic_artillery_shell.icons = nil
     plutonium_atomic_artillery_shell.icon_size = 64
     plutonium_atomic_artillery_shell.icon_mipmaps = 4
@@ -14,13 +14,29 @@ elseif mods["AtomicArtillery"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
-    plutonium_atomic_artillery_shell.icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png"
+    plutonium_atomic_artillery_shell.icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png" -- TODO
     plutonium_atomic_artillery_shell.icon_size = 64
     plutonium_atomic_artillery_shell.icon_mipmaps = 4
 
     plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
     data:extend({plutonium_atomic_artillery_shell})
+
 end
+
+if mods['SchallArtillery'] then
+    local sc_plutonium_aa_sh = util.table.deepcopy(data/raw['ammo']['Schall-atomic-artillery-shell'])
+
+    sc_plutonium_aa_sh.name = 'Schall-plutonium-atomic-artillery-shell'
+    sc_plutonium_aa_sh.icon = '__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png'
+    sc_plutonium_aa_sh.icon_size = 64
+    sc_plutonium_aa_sh.icons = nil
+    sc_plutonium_aa_sh.icon_mipmaps = 4
+
+    sc_plutonium_aa_sh.projectile = 'Schall-plutonium-atomic-artillery-projectile'
+    data:extend({sc_plutonium_aa_sh})
+
+end
+
 
 data:extend({
     -- Ammo
