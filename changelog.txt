@@ -4,6 +4,8 @@ Date: 26.08.2020
   Balancing:
     - Replaced plutonium nuclear power dependency with plutonium processing in plutonium ammo and
       plutonium atomic bomb technologies
+  Integration:
+    - Added Plutonium atomic artillery shell for Schall Artilllery
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.20
 Date: 26.08.2020
