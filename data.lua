@@ -2,7 +2,7 @@ require("prototypes.item.items")
 require("prototypes.entity.entities")
 require("prototypes.entity.projectiles")
 require("prototypes.recipe.recipes")
-require("prototypes.technology.technologies")
+require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
 
