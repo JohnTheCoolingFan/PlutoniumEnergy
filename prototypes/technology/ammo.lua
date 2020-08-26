@@ -65,3 +65,6 @@ if mods['bobwarfare'] then
 elseif mods["AtomicArtillery"] then
     table.insert(data.raw["technology"]["plutonium-ammo"].effects, {type = "unlock-recipe", recipe = "plutonium-atomic-artillery-shell"})
 end
+if mods['SchallArtillery'] then
+    table.insert(data.raw['technology']['Schall-artillery-shell-2'].effects, {type = 'unlock-recipe', recipe = 'Schall-plutonium-atomic-artillery-shell'})
+end
