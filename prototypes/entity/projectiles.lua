@@ -27,7 +27,7 @@ else
 end
 plutonium_atomic_rocket.action.action_delivery.target_effects[7+index_offset].damage.amount = 560                   -- 400 * 1.4
 plutonium_atomic_rocket.action.action_delivery.target_effects[10+index_offset].radius = 20                          -- 14 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_min_radius = 16.5 -- Rough numbers
+plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_min_radius = 16.5              -- Rough numbers
 plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_max_radius = 17.5
 plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_min = 45
 plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_max = 60
