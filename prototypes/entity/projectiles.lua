@@ -98,7 +98,7 @@ elseif mods["AtomicArtillery"] then
     table.insert(projectiles, plutonium_atomic_artillery_wave)
 
 end
---[[
+
 if mods['SchallArtillery'] then --TODO
     local sc_plutonium_aa_pj = util.table.deepcopy(data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'])
 
@@ -107,13 +107,36 @@ if mods['SchallArtillery'] then --TODO
     sc_plutonium_aa_pj.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
     sc_plutonium_aa_pj.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[1].repeat_count = 140
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[7].damage.amount = 560
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[3].action.repeat_count = 2800
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[3].action.radius = 50
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[7+index_offset].damage.amount = 560                   -- 400 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[10+index_offset].radius = 20                          -- 14 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[11+index_offset].spawn_min_radius = 16.5              -- Rough numbers
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[11+index_offset].spawn_max_radius = 17.5
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[11+index_offset].spawn_min = 45
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[11+index_offset].spawn_max = 60
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[12+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[12+index_offset].action.radius = 10                   -- 7 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[12+index_offset].action.action_delivery.starting_speed = 0.5*0.8 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[13+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[13+index_offset].action.radius = 50                   -- 35 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[13+index_offset].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[14+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[14+index_offset].action.radius = 36                   -- 26 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[14+index_offset].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[15+index_offset].action.repeat_count = 980            -- 700 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[15+index_offset].action.radius = 6                    -- 4 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[15+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[16+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[16+index_offset].action.radius = 11                   -- 8 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[16+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[17+index_offset].action.repeat_count = 420            -- 300 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[17+index_offset].action.radius = 36                   -- 26 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[17+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[18+index_offset].action.repeat_count = 14             -- 10 * 1.4
+    sc_plutonium_aa_pj.action.action_delivery.target_effects[18+index_offset].action.radius = 11                   -- 8 * 1.4
+
     table.insert(projectiles, sc_plutonium_aa_pj)
 
-end]]
+end
 
 data:extend(projectiles)
 
