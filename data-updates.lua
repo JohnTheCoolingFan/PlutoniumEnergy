@@ -13,5 +13,3 @@ if mods['bobplates'] then
     -- Ammo
     data.raw['recipe']['plutonium-atomic-bomb'].ingredients[3][1] = 'plutonium-239'
 end
-
-if settings.startup['PE-disable-MOX-reactor'].value then data.raw['item']['MOX-fuel'].feul_category = 'nuclear' end
