@@ -98,7 +98,7 @@ elseif mods["AtomicArtillery"] then
     table.insert(projectiles, plutonium_atomic_artillery_wave)
 
 end
-
+--[[
 if mods['SchallArtillery'] then --TODO
     local sc_plutonium_aa_pj = util.table.deepcopy(data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'])
 
@@ -113,7 +113,7 @@ if mods['SchallArtillery'] then --TODO
     sc_plutonium_aa_pj.action.action_delivery.target_effects[3].action.radius = 50
     table.insert(projectiles, sc_plutonium_aa_pj)
 
-end
+end]]
 
 data:extend(projectiles)
 
