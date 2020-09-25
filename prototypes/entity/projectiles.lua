@@ -45,7 +45,7 @@ plutonium_atomic_rocket.action.action_delivery.target_effects[15+index_offset].a
 plutonium_atomic_rocket.action.action_delivery.target_effects[15+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
 plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
 plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.radius = 11                   -- 8 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
+plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4 --TODO
 plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.repeat_count = 420            -- 300 * 1.4
 plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.radius = 36                   -- 26 * 1.4
 plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
