@@ -1,15 +1,15 @@
 {
     "name": "PlutoniumEnergy",
-    "version": "1.1.22",
+    "version": "1.1.24",
     "title": "Plutonium Energy",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/grHVhE2",
     "homepage": "https://discord.gg/grHVhE2",
     "dependencies": [
         "base >= 1.0.0",
-        "? AtomicArtillery",
+        "? AtomicArtillery >= 0.2.0",
         "? SchallUraniumProcessing",
-        "? SchallArtillery",
+        "? SchallArtillery >= 1.0.0",
         "? bobplates",
         "? bobwarfare",
         "? AtomicRocketScreenBurn"
