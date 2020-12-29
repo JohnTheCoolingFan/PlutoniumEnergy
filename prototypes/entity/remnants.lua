@@ -9,8 +9,8 @@ MOX_reactor.name = 'MOX-reactor-remnants'
 MOX_reactor.icon = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png'
 MOX_reactor.animation.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/remnants/MOX-reactor-remnants.png'
 MOX_reactor.animation.scale = 0.6
-MOX_reactor.animation.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/remnants/hr-MOX-reactor-remnants.png'
-MOX_reactor.animation.scale = 0.3
+MOX_reactor.animation.hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/remnants/hr-MOX-reactor-remnants.png'
+MOX_reactor.animation.hr_version.scale = 0.3
 
 table.insert(remnants, MOX_reactor)
 
