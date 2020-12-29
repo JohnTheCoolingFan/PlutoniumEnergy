@@ -3,6 +3,7 @@ Version: 1.1.27
 Date: 29.12.2020
   Graphics:
     - Updated graphics for MOX reactor and Industrial reactor.
+    - Added remnants for MOX reactor.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.26
 Date: 24.11.2020
