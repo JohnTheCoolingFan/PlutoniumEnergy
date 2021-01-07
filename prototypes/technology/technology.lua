@@ -82,6 +82,30 @@ data:extend({
             count = 200
         },
         order = "e-p-b-d"
-    }
+    },
+    {
+        type = "technology",
+        name = "plutonium-enrichment-process",
+        icon_size = 128,
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-processing.png", -- TODO
+        effects = {
+            {
+                type = 'unlock-recipe',
+                recipe = 'plutonium-enrichment-process'
+            }
+        },
+        prerequisites = {"plutonium-processing", "kovarex-enrichment-process"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30,
+            count = 2000
+        },
+        order = "e-p-b-d"
+    },
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
