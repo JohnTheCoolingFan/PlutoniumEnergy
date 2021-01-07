@@ -32,7 +32,8 @@ advanced_nuclear_fuel_reprocessing.enabled = false
 
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
-advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "plutonium-239", amount = 2}}
+--advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "plutonium-239", amount = 2}}
+table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-239', 2})
 
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 table.insert(recipes, advanced_nuclear_fuel_reprocessing)
