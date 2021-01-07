@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.0
+Version: 1.2.0
 Date: 07.12.2021
   Minor Features:
     - Removed prefix from internal names, should improve compatibility.
