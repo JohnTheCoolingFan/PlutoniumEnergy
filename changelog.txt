@@ -4,7 +4,7 @@ Date: 07.12.2021
   Balancning:
     - Removed Uranium-238 excess neutron capture recipe
     - Removed Plutonium-239 alpha decay recipe
-    - Added Plutonium enrichment process (name may be changed in future)
+    - Added Plutonium enrichment process (name may be changed in future) and corresponding research
       Allows to convert Pu-238 and U-238 to Pu-239 and U-235
   Minor Features:
     - Removed prefix from internal names, should improve compatibility.
