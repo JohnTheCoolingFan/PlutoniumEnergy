@@ -10,7 +10,7 @@ require("prototypes.categories.recipe-category")
 -- TODO for next release:
 --   - New plutonium enrichment process
 --     In:              Out:
---       - 10x U-235      5x U-235
+--       - 10x U-235      12x U-235
 --       - 20x U-238      10x U-238
 --       - 30x Pu-239     45x Pu-239
 --       - 10x Pu-238     2x Pu-238
