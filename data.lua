@@ -7,5 +7,6 @@ require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 require("prototypes.categories.recipe-category")
 
+-- TODO: new recipe graphics
 -- TODO: add remnants (MOX reactor)
 -- TODO: Support for SChall Artillery (https://mods.factorio.com/mod/SchallArtillery)
