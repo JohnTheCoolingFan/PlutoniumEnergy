@@ -32,7 +32,7 @@ advanced_nuclear_fuel_reprocessing.enabled = false
 
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
-advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "PE-plutonium-239", amount = 2}}
+advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "plutonium-239", amount = 2}}
 
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 table.insert(recipes, advanced_nuclear_fuel_reprocessing)
@@ -57,7 +57,7 @@ data:extend({
         subgroup = "raw-material",
         order = "l[plutonium-238-nuclesynthesis]",
         results = {
-            {name = "PE-plutonium-238", amount = 5}
+            {name = "plutonium-238", amount = 5}
         }
     },
     {
@@ -69,7 +69,7 @@ data:extend({
         energy_required = 10,
         enabled = false,
         category = "alpha-decay",
-        ingredients = {{"PE-plutonium-239", 5}},
+        ingredients = {{"plutonium-239", 5}},
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239-alpha-decay.png",
         icon_size = 64,
         icon_mipmaps = 4,
@@ -95,7 +95,7 @@ data:extend({
         subgroup = "raw-material",
         order = "m[excess-neutron-capture]",
         results = {
-            {name = "PE-plutonium-239", amount = 2}
+            {name = "plutonium-239", amount = 2}
         }
     },
     {
@@ -106,8 +106,8 @@ data:extend({
         ingredients = {
             {"iron-plate", 10},
             {"uranium-235", 1},
-            {"PE-plutonium-239", 3},
-            {"PE-plutonium-238", 15}
+            {"plutonium-239", 3},
+            {"plutonium-238", 15}
         },
         result = "MOX-fuel",
         result_count = 10
@@ -127,11 +127,11 @@ data:extend({
         main_product = "",
         results = {
             {
-                name = "PE-plutonium-239",
+                name = "plutonium-239",
                 amount = 1
             },
             {
-                name = "PE-plutonium-238",
+                name = "plutonium-238",
                 amount = 5
             }
         },

@@ -4,7 +4,7 @@ data:extend({
 	-- Common resources
 	{
 		type = "item",
-		name = "PE-plutonium-239",
+		name = "plutonium-239",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
 		icon_size = 64,
         icon_mipmaps = 4,
@@ -15,7 +15,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "PE-plutonium-238",
+		name = "plutonium-238",
 		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238.png",
 		icon_size = 64,
         icon_mipmaps = 4,
