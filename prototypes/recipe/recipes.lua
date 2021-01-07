@@ -124,7 +124,7 @@ data:extend({
             {'plutonium-238', 2},
             {'uranium-235',   11},
             {'uranium-238',   10}
-        }
+        },
         allow_decomposition = false
     },
     {
