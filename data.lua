@@ -15,8 +15,6 @@ require("prototypes.categories.recipe-category")
 --       - 30x Pu-239     45x Pu-239
 --       - 10x Pu-238     2x Pu-238
 --   - Remove excess nutron capture recipe
---   - Remove prefix
-
 
 -- TODO: add remnants (MOX reactor)
 -- TODO: Support for Schall Uranium Processing (https://mods.factorio.com/mod/PlutoniumEnergy/discussion/5de1876b082e2b000b966564) (https://mods.factorio.com/mod/SchallUraniumProcessing)
