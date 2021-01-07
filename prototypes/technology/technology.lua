@@ -18,10 +18,6 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "plutonium-238-nuclesynthesis"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "uranium-238-excess-neutron-capture"
             }
         },
         prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
@@ -73,10 +69,6 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "MOX-fuel-reprocessing"
             },
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-239-alpha-decay"
-            }
         },
         prerequisites = {"plutonium-nuclear-power"},
         unit = {
