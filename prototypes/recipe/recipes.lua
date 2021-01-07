@@ -16,10 +16,12 @@ else
     }
 end
 
+
 local recipes = {}
 
 -- Change kovarex recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
+
 
 local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
 
@@ -27,22 +29,20 @@ advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
 advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
 advanced_nuclear_fuel_reprocessing.icon_size = 64
 advanced_nuclear_fuel_reprocessing.icon_mipamps = 4
-
 advanced_nuclear_fuel_reprocessing.enabled = false
-
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
 --advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "plutonium-239", amount = 2}}
 table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-239', 2})
-
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
 table.insert(recipes, advanced_nuclear_fuel_reprocessing)
+
 
 data:extend(recipes)
 
 data:extend({
     -- Isotope-to-isotope recipes
-    {
+    { -- The only way to get plutonium-238 initially
         type = "recipe",
         name = "plutonium-238-nuclesynthesis",
         localised_name = {recipe_names['plutonium-238-nucleosynthesis']},
@@ -61,7 +61,7 @@ data:extend({
             {name = "plutonium-238", amount = 5}
         }
     },
-    {
+    --[[{ -- Removal reason: useless (there's no need to convert one to another)
         type = "recipe",
         name = "plutonium-239-alpha-decay",
         localised_name = {recipe_names['plutonium-239-alpha-decay']},
@@ -79,8 +79,8 @@ data:extend({
         results = {
             {name = "uranium-235", amount = 2}
         }
-    },
-    {
+    },]]
+    --[[{ -- Removal reason: useless (partially replaced by enrichment process)
         type = "recipe",
         name = "uranium-238-excess-neutron-capture",
         localised_name = {recipe_names['uranium-238-excess-neutron-capture']},
@@ -98,7 +98,7 @@ data:extend({
         results = {
             {name = "plutonium-239", amount = 2}
         }
-    },
+    },]]
     {
         type = "recipe",
         name = "MOX-fuel",
