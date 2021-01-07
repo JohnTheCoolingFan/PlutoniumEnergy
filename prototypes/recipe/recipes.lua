@@ -103,7 +103,7 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-enrichment-process",
-        energy_required = 60,
+        energy_required = 120,
         enabled = false,
         category = "centrifuging",
         --ingredients = {{"uranium-235", 40}, {"uranium-238", 5}},
@@ -120,9 +120,9 @@ data:extend({
         main_product = "",
         --results = {{"uranium-235", 41}, {"uranium-238", 2}},
         results = {
-            {'plutonium-239', 32},
+            {'plutonium-239', 34},
             {'plutonium-238', 2},
-            {'uranium-235',   12},
+            {'uranium-235',   11},
             {'uranium-238',   10}
         }
         allow_decomposition = false
