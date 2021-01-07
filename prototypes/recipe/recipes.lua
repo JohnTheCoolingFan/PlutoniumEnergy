@@ -139,6 +139,33 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "plutonium-enrichment-process",
+        energy_required = 60,
+        enabled = false,
+        category = "centrifuging",
+        --ingredients = {{"uranium-235", 40}, {"uranium-238", 5}},
+        ingredients = {
+            {'plutonium-239', 30},
+            {'plutonium-238', 10},
+            {'uranium-235',   10},
+            {'uranium-238',   20}
+        },
+        icon = "__base__/graphics/icons/kovarex-enrichment-process.png",
+        icon_size = 64, icon_mipmaps = 4,
+        subgroup = "intermediate-product",
+        order = "r[uranium-processing]-e[plutonium-enrichment-process]",
+        main_product = "",
+        --results = {{"uranium-235", 41}, {"uranium-238", 2}},
+        results = {
+            {'plutonium-239', 32},
+            {'plutonium-238', 2},
+            {'uranium-235',   12},
+            {'uranium-238',   10}
+        }
+        allow_decomposition = false
+    },
+    {
+        type = "recipe",
         name = "MOX-reactor",
         energy_required = 8,
         enabled = false,
