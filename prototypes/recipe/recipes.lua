@@ -61,44 +61,6 @@ data:extend({
             {name = "plutonium-238", amount = 5}
         }
     },
-    --[[{ -- Removal reason: useless (there's no need to convert one to another)
-        type = "recipe",
-        name = "plutonium-239-alpha-decay",
-        localised_name = {recipe_names['plutonium-239-alpha-decay']},
-        show_amount_in_title = false,
-        always_show_products = true,
-        energy_required = 10,
-        enabled = false,
-        category = "alpha-decay",
-        ingredients = {{"plutonium-239", 5}},
-        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239-alpha-decay.png",
-        icon_size = 64,
-        icon_mipmaps = 4,
-        subgroup = "raw-material",
-        order = "m[plutonium-239-decay]",
-        results = {
-            {name = "uranium-235", amount = 2}
-        }
-    },]]
-    --[[{ -- Removal reason: useless (partially replaced by enrichment process)
-        type = "recipe",
-        name = "uranium-238-excess-neutron-capture",
-        localised_name = {recipe_names['uranium-238-excess-neutron-capture']},
-        show_amount_in_title = false,
-        always_show_products = true,
-        energy_required = 10,
-        enabled = false,
-        category = "excess-neutron-capture",
-        ingredients = {{"uranium-238", 10}},
-        icon = "__PlutoniumEnergy__/graphics/icons/uranium-238-excess-neutron-capture.png",
-        icon_size = 64,
-        icon_mipmaps = 4,
-        subgroup = "raw-material",
-        order = "m[excess-neutron-capture]",
-        results = {
-            {name = "plutonium-239", amount = 2}
-        }
-    },]]
     {
         type = "recipe",
         name = "MOX-fuel",
