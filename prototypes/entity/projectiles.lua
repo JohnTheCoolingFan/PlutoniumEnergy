@@ -101,7 +101,7 @@ elseif mods["AtomicArtillery"] then
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 end
 
-if mods['SchallArtillery'] then --TODO
+if mods['SchallArtillery'] then
     local sc_plutonium_aa_pj = util.table.deepcopy(data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'])
 
     sc_plutonium_aa_pj.name = 'Schall-plutonium-atomic-artillery-projectile'
