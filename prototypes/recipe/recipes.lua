@@ -113,7 +113,7 @@ data:extend({
             {'uranium-235',   10},
             {'uranium-238',   20}
         },
-        icon = "__base__/graphics/icons/kovarex-enrichment-process.png",
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-enrichment-process.png",
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-e[plutonium-enrichment-process]",

@@ -87,7 +87,7 @@ data:extend({
         type = "technology",
         name = "plutonium-enrichment-process",
         icon_size = 128,
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-processing.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
         effects = {
             {
                 type = 'unlock-recipe',
