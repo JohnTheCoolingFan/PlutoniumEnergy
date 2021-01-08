@@ -52,7 +52,7 @@ data:extend({
             }
         },
         fuel_category = "chemical",
-        fuel_value = "2.42GJ",               -- 2 times the wtored power...
+        fuel_value = "2.42GJ",               -- 2 times the stored power...
         fuel_acceleration_multiplier = 1.75, -- ...only half the effects
         fuel_top_speed_multiplier = 1.075,
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
