@@ -86,7 +86,7 @@ data:extend({
     {
         type = "technology",
         name = "plutonium-enrichment-process",
-        icon_size = 128,
+        icon_size = 256, icon_mipmaps = 4,
         icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
         effects = {
             {
