@@ -2,10 +2,14 @@
 Version: 1.2.0
 Date: 08.12.2021
   Balancning:
+    - Removed industrial reactor
     - Removed Uranium-238 excess neutron capture recipe
     - Removed Plutonium-239 alpha decay recipe
+    - Removed Plutonium-238 nucleosynthesis recipe
     - Added Plutonium enrichment process (name may be changed in future) and corresponding research
       Allows to convert Pu-238 and U-238 to Pu-239 and U-235
+    - Changed output of advanced nuclear fuel reprocessing
+      Added 3x plutonium-238 as a product
   Minor Features:
     - Removed prefix from internal names, should improve compatibility.
 ---------------------------------------------------------------------------------------------------
