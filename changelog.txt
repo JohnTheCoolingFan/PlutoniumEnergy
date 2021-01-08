@@ -10,6 +10,10 @@ Date: 08.12.2021
       Allows to convert Pu-238 and U-238 to Pu-239 and U-235
     - Changed output of advanced nuclear fuel reprocessing
       Added 3x plutonium-238 as a product
+  Major features:
+    - Added Plutonium fuel
+      Purpose is the same as uranium (nuclear) fuel. One item golds 2 times more energy than
+      nuclear rocket fuel, but effects are halved.
   Minor Features:
     - Removed prefix from internal names, should improve compatibility.
 ---------------------------------------------------------------------------------------------------
