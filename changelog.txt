@@ -16,6 +16,8 @@ Date: 08.12.2021
       nuclear rocket fuel, but effects are halved.
   Minor Features:
     - Removed prefix from internal names, should improve compatibility.
+  Graphics:
+    - Added MOX reactor remnants (yes they weren't added in prevoous update)
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.27
 Date: 29.12.2020
