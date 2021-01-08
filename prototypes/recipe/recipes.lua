@@ -20,7 +20,7 @@ end
 local recipes = {}
 
 -- Change kovarex recipe order
-data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-d[kovarex-enrichment-process]"
+data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-e[kovarex-enrichment-process]"
 
 
 local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
@@ -67,7 +67,7 @@ data:extend({
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
-        order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
+        order = "r[uranium-processing]-d[MOX-fuel-reprocessing]",
         main_product = "",
         results = {
             {
@@ -108,7 +108,7 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-enrichment-process.png",
         icon_size = 64, icon_mipmaps = 4,
         subgroup = "intermediate-product",
-        order = "r[uranium-processing]-e[plutonium-enrichment-process]",
+        order = "r[uranium-processing]-f[plutonium-enrichment-process]",
         main_product = "",
         --results = {{"uranium-235", 41}, {"uranium-238", 2}},
         results = {
