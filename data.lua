@@ -5,7 +5,6 @@ require("prototypes.entity.projectiles")
 require("prototypes.recipe.recipes")
 require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
-require("prototypes.categories.recipe-category")
 
 -- TODO: chemical fuel from plutonium
 -- TODO: better advanced reprocessing process (used-up fuel + acid = components)

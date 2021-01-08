@@ -64,17 +64,5 @@ data:extend({
 		order = "f[nuclear-energy]-b[MOX-reactor]",
 		place_result = "MOX-reactor",
 		stack_size = 10
-	},
-	{
-		type = "item",
-		name = "industrial-reactor",
-		icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png",
-		icon_size = 64,
-        icon_mipmaps = 4,
-		flags = {},
-		subgroup = "production-machine",
-		order = "g[industrial-reactor]",
-		place_result = "industrial-reactor",
-		stack_size = 50
 	}
 })

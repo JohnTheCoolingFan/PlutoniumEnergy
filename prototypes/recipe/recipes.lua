@@ -121,19 +121,5 @@ data:extend({
         },
         result = "MOX-reactor",
         requester_paste_multiplier = 1
-    },
-    {
-        type = "recipe",
-        name = "industrial-reactor",
-        energy_required = 4,
-        enabled = false,
-        ingredients = {
-            {"concrete", 150},
-            {"steel-plate", 75},
-            {"advanced-circuit", 120},
-            {"iron-gear-wheel", 120}
-        },
-        result = "industrial-reactor",
-        requester_paste_multiplier= 10
     }
 })

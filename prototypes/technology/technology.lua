@@ -9,15 +9,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "industrial-reactor"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "advanced-nuclear-fuel-reprocessing"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-238-nuclesynthesis"
             }
         },
         prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
