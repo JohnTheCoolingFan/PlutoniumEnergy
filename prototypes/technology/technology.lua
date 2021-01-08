@@ -84,6 +84,10 @@ data:extend({
             {
                 type = 'unlock-recipe',
                 recipe = 'plutonium-enrichment-process'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'plutonium-fuel'
             }
         },
         prerequisites = {"plutonium-processing", "kovarex-enrichment-process"},

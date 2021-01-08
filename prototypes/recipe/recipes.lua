@@ -83,6 +83,17 @@ data:extend({
     },
     {
         type = "recipe",
+        name = "plutonium-fuel",
+        energy_required = 90,
+        enabled = false,
+        category = "centrifuging",
+        ingredients = {{"plutonium-239", 1}, {"nuclear-fuel", 1}},
+        icon = "__base__/graphics/icons/nuclear-fuel.png", -- TODO
+        icon_size = 64, icon_mipmaps = 4,
+        result = "plutonium-fuel"
+    },
+    {
+        type = "recipe",
         name = "plutonium-enrichment-process",
         energy_required = 120,
         enabled = false,
