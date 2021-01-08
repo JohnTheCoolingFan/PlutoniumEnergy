@@ -11,6 +11,7 @@ MOX_reactor.icon_size = 64
 MOX_reactor.icon_mipmaps = 4
 MOX_reactor.minable.result = "MOX-reactor"
 MOX_reactor.max_health = 400
+MOX_reactor.corpse = 'MOX-reactor-remnants'
 
 MOX_reactor.consumption = "20MW"
 MOX_reactor.energy_source.fuel_category = "MOX"
