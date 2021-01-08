@@ -57,7 +57,7 @@ data:extend({
         fuel_top_speed_multiplier = 1.075,
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
-        order = "q[plutonium-rocket-fuel]",
+        order = "q[xplutonium-rocket-fuel]",
         stack_size = 1
     },
 
