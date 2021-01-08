@@ -41,26 +41,6 @@ table.insert(recipes, advanced_nuclear_fuel_reprocessing)
 data:extend(recipes)
 
 data:extend({
-    -- Isotope-to-isotope recipes
-    { -- The only way to get plutonium-238 initially
-        type = "recipe",
-        name = "plutonium-238-nuclesynthesis",
-        localised_name = {recipe_names['plutonium-238-nucleosynthesis']},
-        show_amount_in_title = false,
-        always_show_products = true,
-        energy_required = 10,
-        enabled = false,
-        category = "nucleosynthesis",
-        ingredients = {{"uranium-238", 10}},
-        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238-nucleosynthesis.png",
-        icon_size = 64,
-        icon_mipmaps = 4,
-        subgroup = "raw-material",
-        order = "l[plutonium-238-nuclesynthesis]",
-        results = {
-            {name = "plutonium-238", amount = 5}
-        }
-    },
     {
         type = "recipe",
         name = "MOX-fuel",
