@@ -6,5 +6,5 @@ require("prototypes.recipe.recipes")
 require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 
--- TODO: better advanced reprocessing process (used-up fuel + acid = components)
+-- TODO: better advanced reprocessing process (used-up fuel + acid [in chemical plant] = components)
 -- TODO: Support for Schall Artillery (https://mods.factorio.com/mod/SchallArtillery)
