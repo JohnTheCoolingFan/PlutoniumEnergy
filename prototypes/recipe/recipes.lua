@@ -88,7 +88,7 @@ data:extend({
         enabled = false,
         category = "centrifuging",
         ingredients = {{"plutonium-239", 1}, {"nuclear-fuel", 1}},
-        icon = "__base__/graphics/icons/nuclear-fuel.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
         icon_size = 64, icon_mipmaps = 4,
         result = "plutonium-fuel"
     },
