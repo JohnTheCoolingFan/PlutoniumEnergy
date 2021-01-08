@@ -29,7 +29,7 @@ data:extend({
     {
         type = "item",
         name = "plutonium-fuel",
-        icon = "__base__/graphics/icons/nuclear-fuel.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
         icon_size = 64, icon_mipmaps = 4,
         pictures =
         {
@@ -37,7 +37,7 @@ data:extend({
             {
                 {
                     size = 64,
-                    filename = "__base__/graphics/icons/nuclear-fuel.png", -- TODO
+                    filename = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
                     scale = 0.25,
                     mipmap_count = 4
                 },
@@ -45,7 +45,7 @@ data:extend({
                     draw_as_light = true,
                     flags = {"light"},
                     size = 64,
-                    filename = "__base__/graphics/icons/nuclear-fuel-light.png",  -- TODO
+                    filename = "__base__/graphics/icons/nuclear-fuel-light.png",
                     scale = 0.25,
                     mipmap_count = 4
                 }
@@ -57,7 +57,7 @@ data:extend({
         fuel_top_speed_multiplier = 1.075,
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
-        order = "r[uranium-rocket-fuel]",
+        order = "q[plutonium-rocket-fuel]",
         stack_size = 1
     },
 
