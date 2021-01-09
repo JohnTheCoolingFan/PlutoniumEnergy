@@ -1,6 +1,7 @@
 -- TODO: redo reactor graphics with new glow.
 
 require "util"
+
 local entities = {}
 
 local MOX_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
