@@ -21,6 +21,8 @@ Date: 08.12.2021
   Fixes:
     - Probably fixed many incompatibilities with other mods. Plutonium atomic bomb no longer rely
       on 'vanilla' atomic bomb and defines all its stats in the code directly
+  Locale:
+    - Some locales are not updated, they will be updated as soon as possible in the next updates.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.27
 Date: 29.12.2020
