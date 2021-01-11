@@ -102,6 +102,6 @@ data:extend({
             count = 2000
         },
         order = "e-p-b-d"
-    },
+    }
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
