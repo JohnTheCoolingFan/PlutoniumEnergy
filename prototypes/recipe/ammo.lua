@@ -9,13 +9,13 @@ if mods['bobwarfare'] then
         {"steel-plate", 8},
         {"plastic-bar", 8},
         {"explosives", 30},
-        {"PE-plutonium-239", 30}
+        {"plutonium-239", 30}
     }
     plutonium_atomic_artillery_shell.expensive.ingredients = {
         {"steel-plate", 16},
         {"plastic-bar", 16},
         {"explosives", 30},
-        {"PE-plutonium-239", 30}
+        {"plutonium-239", 30}
     }
     plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
     plutonium_atomic_artillery_shell.expensive.result = "plutonium-atomic-artillery-shell"
@@ -47,7 +47,7 @@ if mods['SchallArtillery'] then
         {'radar', 1},
         {'rocket-control-unit', 12},
         {'explosives', 15},
-        {'PE-plutonium-239', 35}
+        {'plutonium-239', 35}
     }
     sc_plutonium_aa_sh.result = 'Schall-plutonium-atomic-artillery-shell'
     table.insert(ammo_recipes, sc_plutonium_aa_sh)
@@ -65,7 +65,7 @@ data:extend({
         energy_required = 10,
         ingredients = {
             {"piercing-rounds-magazine", 1},
-            {"PE-plutonium-238", 1}
+            {"plutonium-238", 1}
         },
         result = "plutonium-rounds-magazine"
     },
@@ -77,7 +77,7 @@ data:extend({
         ingredients = {
             {"rocket-control-unit", 10},
             {"explosives", 10},
-            {"PE-plutonium-239", 35}
+            {"plutonium-239", 35}
         },
         result = "plutonium-atomic-bomb"
     },
@@ -88,7 +88,7 @@ data:extend({
         energy_required = 10,
         ingredients = {
             {"cannon-shell", 1},
-            {"PE-plutonium-238", 1}
+            {"plutonium-238", 1}
         },
         result = "plutonium-cannon-shell"
     },
@@ -99,7 +99,7 @@ data:extend({
         energy_required = 10,
         ingredients = {
             {"explosive-cannon-shell", 1},
-            {"PE-plutonium-238", 1}
+            {"plutonium-238", 1}
         },
         result = "explosive-plutonium-cannon-shell"
     }

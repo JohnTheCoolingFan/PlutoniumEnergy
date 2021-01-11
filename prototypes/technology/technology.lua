@@ -9,19 +9,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "industrial-reactor"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "advanced-nuclear-fuel-reprocessing"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-238-nuclesynthesis"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "uranium-238-excess-neutron-capture"
             }
         },
         prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
@@ -73,10 +61,6 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "MOX-fuel-reprocessing"
             },
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-239-alpha-decay"
-            }
         },
         prerequisites = {"plutonium-nuclear-power"},
         unit = {
@@ -90,7 +74,34 @@ data:extend({
             count = 200
         },
         order = "e-p-b-d"
-    }
+    },
+    {
+        type = "technology",
+        name = "plutonium-enrichment-process",
+        icon_size = 256, icon_mipmaps = 4,
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
+        effects = {
+            {
+                type = 'unlock-recipe',
+                recipe = 'plutonium-enrichment-process'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'plutonium-fuel'
+            }
+        },
+        prerequisites = {"plutonium-processing", "kovarex-enrichment-process"},
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1}
+            },
+            time = 30,
+            count = 2000
+        },
+        order = "e-p-b-d"
+    },
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
-if settings.startup['PE-disable-U238-excess-neutron-capture-recipe'].value then data.raw['technology']['plutonium-processing'].effects[4] = nil end

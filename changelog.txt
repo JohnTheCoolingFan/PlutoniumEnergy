@@ -1,4 +1,29 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 08.12.2021
+  Balancning:
+    - Removed industrial reactor
+    - Removed Uranium-238 excess neutron capture recipe
+    - Removed Plutonium-239 alpha decay recipe
+    - Removed Plutonium-238 nucleosynthesis recipe
+    - Added Plutonium enrichment process (name may be changed in future) and corresponding research
+      Allows to convert Pu-238 and U-238 to Pu-239 and U-235
+    - Changed output of advanced nuclear fuel reprocessing
+      Added 3x plutonium-238 as a product
+  Major features:
+    - Added Plutonium fuel
+      Purpose is the same as uranium (nuclear) fuel. One item golds 2 times more energy than
+      nuclear rocket fuel, but effects are halved.
+  Minor Features:
+    - Removed prefix from internal names, should improve compatibility.
+  Graphics:
+    - Added MOX reactor remnants (yes they weren't added in prevoous update)
+  Fixes:
+    - Probably fixed many incompatibilities with other mods. Plutonium atomic bomb no longer rely
+      on 'vanilla' atomic bomb and defines all its stats in the code directly
+  Locale:
+    - Some locales are not updated, they will be updated as soon as possible in the next updates.
+---------------------------------------------------------------------------------------------------
 Version: 1.1.27
 Date: 29.12.2020
   Graphics:

@@ -43,7 +43,7 @@ data:extend({
                 recipe = "plutonium-atomic-bomb"
             }
         },
-        prerequisites = {"plutonium-processing", "atomic-bomb"},
+        prerequisites = {"plutonium-enrichment-process", "atomic-bomb"},
         unit = {
             count = 6000,
             ingredients = {

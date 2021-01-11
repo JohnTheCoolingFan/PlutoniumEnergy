@@ -1,6 +1,7 @@
 -- TODO: redo reactor graphics with new glow.
 
 require "util"
+
 local entities = {}
 
 local MOX_reactor = util.table.deepcopy(data.raw["reactor"]["nuclear-reactor"])
@@ -11,9 +12,10 @@ MOX_reactor.icon_size = 64
 MOX_reactor.icon_mipmaps = 4
 MOX_reactor.minable.result = "MOX-reactor"
 MOX_reactor.max_health = 400
+MOX_reactor.corpse = 'MOX-reactor-remnants'
 
 MOX_reactor.consumption = "20MW"
-MOX_reactor.energy_source.fuel_category = "PE-MOX"
+MOX_reactor.energy_source.fuel_category = "MOX"
 
 MOX_reactor.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
 MOX_reactor.selection_box = {{-1.45, -1.45}, {1.45, 1.45}}
@@ -105,30 +107,5 @@ patches_pic_discon_heat.layers[1].filename = '__PlutoniumEnergy__/graphics/entit
 patches_pic_discon_heat.layers[1].hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png'
 table.insert(entities, MOX_reactor)
 
-
-local industrial_reactor = util.table.deepcopy(data.raw["assembling-machine"]["centrifuge"])
-
-industrial_reactor.name = "industrial-reactor"
-industrial_reactor.icon = "__PlutoniumEnergy__/graphics/icons/industrial-reactor.png"
-industrial_reactor.icon_size = 64
-industrial_reactor.icon_mipmaps = 4
-industrial_reactor.minable.result = "industrial-reactor"
-
-industrial_reactor.crafting_categories = {"alpha-decay", "nucleosynthesis", "excess-neutron-capture"}
-industrial_reactor.module_specification.module_slots = 4
-industrial_reactor.energy_usage = "420kW"
-
-industrial_reactor.working_visualisations[1] = {effect="uranium-glow", light={intensity=0.6, size=9.9, shift={0.0, 0.0}, color={r=0.0, g=0.15, b=1.0}}}
-
-if industrial_reactor.animation then
-    local indreact_anim = industrial_reactor.animation.layers
-    indreact_anim[1].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-C-light.png"
-    indreact_anim[1].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-C-light.png"
-    indreact_anim[2].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-B-light.png"
-    indreact_anim[2].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-B-light.png"
-    indreact_anim[3].filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/industrial-reactor-A-light.png"
-    indreact_anim[3].hr_version.filename = "__PlutoniumEnergy__/graphics/entity/industrial-reactor/hr-industrial-reactor-A-light.png"
-end
-table.insert(entities, industrial_reactor)
 
 data:extend(entities)
