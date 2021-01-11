@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 11.01.2021
+  Integration:
+    - Updated Bob's Metals, Chemicals and Intermediates compatibility code
+  Fixes:
+    - Fixed typo in 1.2.0 release date
+---------------------------------------------------------------------------------------------------
 Version: 1.2.0
-Date: 08.12.2021
+Date: 08.01.2021
   Balancning:
     - Removed industrial reactor
     - Removed Uranium-238 excess neutron capture recipe
