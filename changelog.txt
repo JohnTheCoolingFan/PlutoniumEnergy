@@ -3,6 +3,7 @@ Version: 1.2.2
 Date: 11.01.2021
   Locale:
     - Updated Polish localisation (by TheNextJake)
+    - Updated German localisation (using Google Translate)
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 11.01.2021
