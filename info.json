@@ -1,10 +1,10 @@
 {
     "name": "PlutoniumEnergy",
-    "version": "1.2.4",
+    "version": "1.2.5",
     "title": "Plutonium Energy",
     "author": "JohnTheCoolingFan",
-    "contact": "https://discord.gg/grHVhE2",
-    "homepage": "https://discord.gg/grHVhE2",
+    "contact": "https://discord.gg/KPnETvMDYk",
+    "homepage": "https://discord.gg/KPnETvMDYk",
     "dependencies": [
         "base >= 1.1.0",
         "? AtomicArtillery >= 0.2.1",
