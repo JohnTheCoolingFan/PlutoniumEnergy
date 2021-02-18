@@ -71,18 +71,6 @@ data:extend({
     },
     {
         type = "recipe",
-        name = "plutonium-atomic-bomb",
-        enabled = false,
-        energy_required = 50,
-        ingredients = {
-            {"rocket-control-unit", 10},
-            {"explosives", 10},
-            {"plutonium-239", 35}
-        },
-        result = "plutonium-atomic-bomb"
-    },
-    {
-        type = "recipe",
         name = "plutonium-cannon-shell",
         enabled = false,
         energy_required = 10,
@@ -102,5 +90,17 @@ data:extend({
             {"plutonium-238", 1}
         },
         result = "explosive-plutonium-cannon-shell"
+    },
+    {
+        type = "recipe",
+        name = "plutonium-atomic-bomb",
+        enabled = false,
+        energy_required = 50,
+        ingredients = {
+            {"rocket-control-unit", 10},
+            {"explosives", 10},
+            {"plutonium-239", 35}
+        },
+        result = "plutonium-atomic-bomb"
     }
 })
