@@ -1,4 +1,4 @@
-if settings.startup['enable-plutonium-ammo'] then
+if settings.startup['enable-plutonium-ammo'].value then
     data:extend({
         {
             type = "technology",

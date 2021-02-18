@@ -56,7 +56,7 @@ end
 
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
-if settings.startup['enable-plutonium-ammo'] then
+if settings.startup['enable-plutonium-ammo'].value then
     data:extend({
         -- Ammo
         {
