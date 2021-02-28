@@ -56,19 +56,46 @@ end
 
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
-data:extend({
-    -- Ammo
-    {
-        type = "recipe",
-        name = "plutonium-rounds-magazine",
-        enabled = false,
-        energy_required = 10,
-        ingredients = {
-            {"piercing-rounds-magazine", 1},
-            {"plutonium-238", 1}
+if settings.startup['enable-plutonium-ammo'].value then
+    data:extend({
+        -- Ammo
+        {
+            type = "recipe",
+            name = "plutonium-rounds-magazine",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"piercing-rounds-magazine", 1},
+                {"plutonium-238", 1}
+            },
+            result = "plutonium-rounds-magazine"
         },
-        result = "plutonium-rounds-magazine"
-    },
+        {
+            type = "recipe",
+            name = "plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"cannon-shell", 1},
+                {"plutonium-238", 1}
+            },
+            result = "plutonium-cannon-shell"
+        },
+        {
+            type = "recipe",
+            name = "explosive-plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"explosive-cannon-shell", 1},
+                {"plutonium-238", 1}
+            },
+            result = "explosive-plutonium-cannon-shell"
+        }
+    })
+end
+
+data:extend({
     {
         type = "recipe",
         name = "plutonium-atomic-bomb",
@@ -80,27 +107,5 @@ data:extend({
             {"plutonium-239", 35}
         },
         result = "plutonium-atomic-bomb"
-    },
-    {
-        type = "recipe",
-        name = "plutonium-cannon-shell",
-        enabled = false,
-        energy_required = 10,
-        ingredients = {
-            {"cannon-shell", 1},
-            {"plutonium-238", 1}
-        },
-        result = "plutonium-cannon-shell"
-    },
-    {
-        type = "recipe",
-        name = "explosive-plutonium-cannon-shell",
-        enabled = false,
-        energy_required = 10,
-        ingredients = {
-            {"explosive-cannon-shell", 1},
-            {"plutonium-238", 1}
-        },
-        result = "explosive-plutonium-cannon-shell"
     }
 })

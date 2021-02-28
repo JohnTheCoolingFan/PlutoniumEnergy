@@ -8,3 +8,4 @@ require("prototypes.categories.fuel-category")
 
 -- TODO: New screenshots, better overview
 -- TODO: better advanced reprocessing process (used-up fuel + acid [in chemical plant] = components)
+-- TODO: SchallRadioactiveWaste. Check if integration is already there and add if not.

@@ -1,37 +1,42 @@
+if settings.startup['enable-plutonium-ammo'].value then
+    data:extend({
+        {
+            type = "technology",
+            name = "plutonium-ammo",
+            icon = "__PlutoniumEnergy__/graphics/technology/plutonium-ammo.png",
+            icon_size = 128,
+            effects = {
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-rounds-magazine"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "plutonium-cannon-shell"
+                },
+                {
+                    type = "unlock-recipe",
+                    recipe = "explosive-plutonium-cannon-shell"
+                }
+            },
+            prerequisites = {"plutonium-processing", "uranium-ammo"},
+            unit = {
+                count = 1250,
+                ingredients = {
+                    {"automation-science-pack", 1},
+                    {"logistic-science-pack", 1},
+                    {"chemical-science-pack", 1},
+                    {"military-science-pack", 1},
+                    {"utility-science-pack", 1}
+                },
+                time = 50
+            },
+            order = "e-a-c"
+        }
+    })
+end
+
 data:extend({
-    {
-        type = "technology",
-        name = "plutonium-ammo",
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-ammo.png",
-        icon_size = 128,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-rounds-magazine"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-cannon-shell"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "explosive-plutonium-cannon-shell"
-            }
-        },
-        prerequisites = {"plutonium-processing", "uranium-ammo"},
-        unit = {
-            count = 1250,
-            ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"military-science-pack", 1},
-                {"utility-science-pack", 1}
-            },
-            time = 50
-        },
-        order = "e-a-c"
-    },
     {
         type = "technology",
         name = "plutonium-atomic-bomb",
