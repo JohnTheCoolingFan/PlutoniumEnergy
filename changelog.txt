@@ -5,6 +5,9 @@ Date: 18.02.2021
     - Added a setting to enable/disable plutonium ammo.
   Locale:
     - Updated Russian locale for plutonium rounds magazine to match the original game translation
+  Fixes:
+    - Fixed compatibility with Bob's Metals, Chemicals and Intermidiates: Pu-238 now can be
+      produced.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
 Date: 07.02.2021
