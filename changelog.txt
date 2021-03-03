@@ -6,11 +6,11 @@ Date: 03.03.2021
     - Fixed Plutonium Ammo technology description in zh-Cn locale.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
-Date: 18.02.2021
+Date: 28.02.2021
   Major Features:
     - Added a setting to enable/disable plutonium ammo.
   Locale:
-    - Updated Russian locale for plutonium rounds magazine to match the original game translation
+    - Updated Russian locale for plutonium rounds magazine to match the original game translation.
   Fixes:
     - Fixed compatibility with Bob's Metals, Chemicals and Intermidiates: Pu-238 now can be
       produced.
