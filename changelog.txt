@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.6
+Date: 03.03.2021
+  Locale:
+    - Updated German (de), Trad. Chinese (zh-TW) and Simp. Chinese (zh-CN).
+    - Fixed Plutonium Ammo technology description in zh-Cn locale.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.5
 Date: 18.02.2021
   Major Features:
