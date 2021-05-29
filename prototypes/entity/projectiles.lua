@@ -10,8 +10,8 @@ table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
-for k, v in pairs(plutonium_cannon_explosion.animations) do
-    v.tint = {r = 0.1, g = 0.9, b = 0.7}
+for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
+    spritesheet.tint = {r = 0.1, g = 0.9, b = 0.7}
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
