@@ -1,21 +1,5 @@
 require("prototypes.recipe.ammo")
 
-local recipe_names = {}
-
-if mods['SchallUraniumProcessing'] then
-    recipe_names = {
-        ['plutonium-238-nucleosynthesis']      = 'recipe-name.SUP-plutonium-238-nucleosynthesis',
-        ['plutonium-239-alpha-decay']          = 'recipe-name.SUP-plutonium-239-alpha-decay',
-        ['uranium-238-excess-neutron-capture'] = 'recipe-name.SUP-uranium-238-excess-neutron-capture'
-    }
-else
-    recipe_names = {
-        ['plutonium-238-nucleosynthesis']      = 'recipe-name.plutonium-238-nucleosynthesis',
-        ['plutonium-239-alpha-decay']          = 'recipe-name.plutonium-239-alpha-decay',
-        ['uranium-238-excess-neutron-capture'] = 'recipe-name.uranium-238-excess-neutron-capture'
-    }
-end
-
 
 local recipes = {}
 
