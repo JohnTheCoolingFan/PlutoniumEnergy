@@ -120,32 +120,20 @@ data:extend({
     })
 
 if mods["IndustrialRevolution"] then
-    local recipe_ingredients = {
-
-        ["MOX-fuel"] = {
-            {"lead-plate-special", 10},
-            {"uranium-238", 19},
-            {"plutonium-239", 1}
-        },
-
-        ["MOX-reactor"] = {
-
-            {"lead-plate-special", 240},
-            {"computer-mk3", 6},
-            {"heat-pipe", 8},
-            {"graphite", 120},
-            {"refined-concrete", 480},
-        },
-        ["plutonium-fuel"] = {
-
-            {"rocket-fuel", 1},
-            {"plutonium-239", 1}
-        }
-
+    data.raw['MOX-fuel'].ingredients = {
+        {"lead-plate-special", 10},
+        {"uranium-238", 19},
+        {"plutonium-239", 1}
     }
-    for recipe, ingredients in pairs(recipe_ingredients) do
-        if data.raw.recipe[recipe] then
-            data.raw.recipe[recipe].ingredients = ingredients
-        end
-    end
+    data.raw['MOX-reactor'].ingredients = {
+        {"lead-plate-special", 240},
+        {"computer-mk3", 6},
+        {"heat-pipe", 8},
+        {"graphite", 120},
+        {"refined-concrete", 480},
+    }
+    data.raw['plutonium-fuel'].ingredients = {
+        {"rocket-fuel", 1},
+        {"plutonium-239", 1}
+    }
 end
