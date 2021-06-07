@@ -57,6 +57,61 @@ end
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
 if settings.startup['enable-plutonium-ammo'].value then
+
+if mods["IndustrialRevolution"] then
+
+	--adds lead plates to the ammo recipes
+	 data:extend({ {
+            type = "recipe",
+            name = "plutonium-rounds-magazine",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"piercing-rounds-magazine", 1},
+				{"lead-plate", 2},
+                {"plutonium-238", 1}
+            },
+            result = "plutonium-rounds-magazine"
+        },
+        {
+            type = "recipe",
+            name = "plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"cannon-shell", 1},
+				{"lead-plate", 4},
+                {"plutonium-238", 1}
+            },
+            result = "plutonium-cannon-shell"
+        },
+        {
+            type = "recipe",
+            name = "explosive-plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = {
+                {"explosive-cannon-shell", 1},
+				{"lead-plate", 4},
+                {"plutonium-238", 1}
+            },
+            result = "explosive-plutonium-cannon-shell"
+        },
+        -- makes an atomic artillery shell, IR2's replacement for an atomic bomb
+        {
+            type = "recipe",
+            name = "plutonium-atomic-artillery-shell",
+            energy_required = 60,
+            ingredients = {
+                {"artillery-shell", 1},
+                {"lead-plate", 30},
+				{"plutonium-239", 20}
+            },
+            result = "atomic-artillery-shell"
+        },
+	})
+		else
+
     data:extend({
         -- Ammo
         {
@@ -93,6 +148,8 @@ if settings.startup['enable-plutonium-ammo'].value then
             result = "explosive-plutonium-cannon-shell"
         }
     })
+
+end
 end
 
 data:extend({
