@@ -1,5 +1,5 @@
 if settings.startup['enable-plutonium-ammo'].value then
-    if mods ["IndustrialRevolution"] then
+    if mods["IndustrialRevolution"] then
         data:extend({
                 {
                     type = "technology",
@@ -30,7 +30,7 @@ if settings.startup['enable-plutonium-ammo'].value then
                             {"military-science-pack", 1},
                             {"utility-science-pack", 1}
                         },
-                        time = 60,
+                        time = 60
                     },
                     order = "e-a-c"
                 }
@@ -97,10 +97,7 @@ if settings.startup['enable-plutonium-ammo'].value then
                         time = 50
                     },
                     order = "e-a-c"
-                }
-            })
-
-        data:extend({
+                },
                 {
                     type = "technology",
                     name = "plutonium-atomic-bomb",
