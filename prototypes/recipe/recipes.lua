@@ -136,4 +136,44 @@ if mods["IndustrialRevolution"] then
         {"rocket-fuel", 1},
         {"plutonium-239", 1}
     }
+    data.raw["recipe"]["MOX-fuel-reprocessing"].results = {
+        {
+            name = "plutonium-239",
+            amount = 1
+        },
+        {
+            name = "plutonium-238",
+            amount = 5
+        },
+        {
+            name = "steel-scrap",
+            amount = 2
+        },
+        {
+            name = "lead-scrap",
+            amount = 1
+        }
+    }
+    data.raw["recipe"]["advanced-nuclear-fuel-reprocessing"].results = {
+        {
+            name = "plutonium-239",
+            amount = 1
+        },
+        {
+            name = "plutonium-238",
+            amount = 3
+        },
+        {
+            name = "steel-scrap",
+            amount = 10
+        },
+        {
+            name = "lead-scrap",
+            amount = 5
+        },
+        {
+            name = "uranium-238",
+            amount = 4
+        },
+    }
 end
