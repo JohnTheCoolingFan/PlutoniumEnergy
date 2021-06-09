@@ -120,19 +120,19 @@ data:extend({
     })
 
 if mods["IndustrialRevolution"] then
-    data.raw['MOX-fuel'].ingredients = {
+    data.raw['recipe']['MOX-fuel'].ingredients = {
         {"lead-plate-special", 10},
         {"uranium-238", 19},
         {"plutonium-239", 1}
     }
-    data.raw['MOX-reactor'].ingredients = {
+    data.raw['recipe']['MOX-reactor'].ingredients = {
         {"lead-plate-special", 240},
         {"computer-mk3", 6},
         {"heat-pipe", 8},
         {"graphite", 120},
         {"refined-concrete", 480},
     }
-    data.raw['plutonium-fuel'].ingredients = {
+    data.raw['recipe']['plutonium-fuel'].ingredients = {
         {"rocket-fuel", 1},
         {"plutonium-239", 1}
     }
