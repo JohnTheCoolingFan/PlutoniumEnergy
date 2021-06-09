@@ -174,6 +174,6 @@ if mods["IndustrialRevolution"] then
         {
             name = "uranium-238",
             amount = 4
-        },
+        }
     }
 end
