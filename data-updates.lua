@@ -9,6 +9,6 @@ end
 
 if mods['IndustrialRevolution'] then
     data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir2-ammo'
-    data.raw['item']['plutonium-238'].subgroup = 'ir2-pure'
-    data.raw['item']['plutonium-239'].subgroup = 'ir2-pure'
+    data.raw['item']['plutonium-238'].subgroup = 'pure'
+    data.raw['item']['plutonium-239'].subgroup = 'pure'
 end
