@@ -11,7 +11,7 @@ if mods['IndustrialRevolution'] then
     data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir2-ammo'
     data.raw['item']['plutonium-238'].subgroup = 'pure'
     data.raw['item']['plutonium-239'].subgroup = 'pure'
-    data.raw['item']['plutonium-fuel'].subgroup = 'ir2-fuel'
+    data.raw['item']['plutonium-fuel'].subgroup = 'ir2-fuels'
     data.raw['item']['MOX-fuel'].order = 'ib'
     data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
 end
