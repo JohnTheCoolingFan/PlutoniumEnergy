@@ -16,7 +16,6 @@ advanced_nuclear_fuel_reprocessing.icon_mipamps = 4
 advanced_nuclear_fuel_reprocessing.enabled = false
 advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
 advanced_nuclear_fuel_reprocessing.energy_required = 100
---advanced_nuclear_fuel_reprocessing.results = {{name = ((mods['SchallUraniumProcessing'] and settings.startup['PE-SUP-advanced-nfr-uranium-concentrate'].value) and "uranium-concentrate") or 'uranium-238', amount = 5}, {name = "plutonium-239", amount = 2}}
 table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-239', 2})
 table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-238', 3})
 advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
@@ -82,7 +81,6 @@ data:extend({
             energy_required = 120,
             enabled = false,
             category = "centrifuging",
-            --ingredients = {{"uranium-235", 40}, {"uranium-238", 5}},
             ingredients = {
                 {'plutonium-239', 30},
                 {'plutonium-238', 10},
@@ -94,7 +92,6 @@ data:extend({
             subgroup = "intermediate-product",
             order = "r[uranium-processing]-f[plutonium-enrichment-process]",
             main_product = "",
-            --results = {{"uranium-235", 41}, {"uranium-238", 2}},
             results = {
                 {'plutonium-239', 32},
                 {'plutonium-238', 2},
