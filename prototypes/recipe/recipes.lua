@@ -180,4 +180,5 @@ if mods["IndustrialRevolution"] then
     -- Subgroup and ordering fixes
     data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'ir2-fuels'
     data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'ir2-fuels'
+    data.raw['recipe']['MOX-fuel'].category = 'centrifuging'
 end
