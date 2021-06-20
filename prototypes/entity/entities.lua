@@ -49,8 +49,6 @@ MOX_reactor.working_light_picture.scale = 0.6
 MOX_reactor.working_light_picture.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-lights-color.png"
 MOX_reactor.working_light_picture.hr_version.scale = 0.3
 
---MOX_reactor.light.color = {r = 0.0, g = 0.82, b = 0.9}
-
 MOX_reactor.heat_buffer.connections = {
     {
         position = {-1, -1},
@@ -88,7 +86,6 @@ MOX_reactor.heat_buffer.connections = {
 
 MOX_reactor.heat_buffer.heat_picture.layers[1].scale = 0.6
 MOX_reactor.heat_buffer.heat_picture.layers[1].hr_version.scale = 0.3
---MOX_reactor.heat_buffer.heat_glow.scale = 0.6
 
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
 patches_pic_con.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"

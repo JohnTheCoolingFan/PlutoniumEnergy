@@ -10,55 +10,11 @@ table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
-for k, v in pairs(plutonium_cannon_explosion.animations) do
-    v.tint = {r = 0.1, g = 0.9, b = 0.7}
+for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
+    spritesheet.tint = {r = 0.1, g = 0.9, b = 0.7}
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
-
-
---[[
--- atomic rocket * 1.4
-local plutonium_atomic_rocket = util.table.deepcopy(data.raw["projectile"]["atomic-rocket"])
-plutonium_atomic_rocket.name = "plutonium-atomic-rocket"
-plutonium_atomic_rocket.action.action_delivery.target_effects[1].radius = 17                           -- math.ceil(12 * 1.4)
-plutonium_atomic_rocket.action.action_delivery.target_effects[2].radius = 13                           -- 9 * 1.4 = 12.6
-local index_offset = 0
-if plutonium_atomic_rocket.action.action_delivery.target_effects[4] and plutonium_atomic_rocket.action.action_delivery.target_effects[4].effect and plutonium_atomic_rocket.action.action_delivery.target_effects[4].effect == 'screen-burn'then
-    index_offset = 0
-else
-    index_offset = -1
-end
-plutonium_atomic_rocket.action.action_delivery.target_effects[7+index_offset].damage.amount = 560                   -- 400 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[10+index_offset].radius = 20                          -- 14 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_min_radius = 16.5              -- Rough numbers
-plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_max_radius = 17.5
-plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_min = 45
-plutonium_atomic_rocket.action.action_delivery.target_effects[11+index_offset].spawn_max = 60
-plutonium_atomic_rocket.action.action_delivery.target_effects[12+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[12+index_offset].action.radius = 10                   -- 7 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[12+index_offset].action.action_delivery.starting_speed = 0.5*0.8 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[13+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[13+index_offset].action.radius = 50                   -- 35 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[13+index_offset].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[14+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[14+index_offset].action.radius = 36                   -- 26 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[14+index_offset].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[15+index_offset].action.repeat_count = 980            -- 700 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[15+index_offset].action.radius = 6                    -- 4 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[15+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.repeat_count = 1400           -- 1000 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.radius = 11                   -- 8 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[16+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.repeat_count = 420            -- 300 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.radius = 36                   -- 26 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[17+index_offset].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[18+index_offset].action.repeat_count = 14             -- 10 * 1.4
-plutonium_atomic_rocket.action.action_delivery.target_effects[18+index_offset].action.radius = 11                   -- 8 * 1.4
-table.insert(projectiles, plutonium_atomic_rocket)
-
-
-index_offset = 0 ]]
 
 if mods['bobwarfare'] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.7
+Date: 09.06.2021
+  Balancing:
+    - Reduced cost of MOX reactor (600 -> 400)
+  Integration:
+    - Added support for Industrial Revolution 2
+      by kosa, tritium seeker on discord
+---------------------------------------------------------------------------------------------------
 Version: 1.2.6
 Date: 03.03.2021
   Locale:

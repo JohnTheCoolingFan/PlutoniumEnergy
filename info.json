@@ -1,6 +1,6 @@
 {
     "name": "PlutoniumEnergy",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "title": "Plutonium Energy",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/KPnETvMDYk",
@@ -12,7 +12,8 @@
         "? SchallArtillery >= 1.0.0",
         "? bobplates",
         "? bobwarfare",
-        "? AtomicRocketScreenBurn"
+        "? AtomicRocketScreenBurn",
+        "? IndustrialRevolution >= 2.0.0"
     ],
     "description": "Adds processing of plutonium, excess product from nuclear reaction. Plutonium can be used to create ammo (even plutonium atomic bomb) and to create energy as MOX fuel.",
     "factorio_version": "1.1"
