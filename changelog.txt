@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.8
+Date: 24.06.2021
+  Integration:
+    - Added support for Space Exploration by Polish DeathCare
+      Plutonium-238 and Plutonium-239 can be sent using delivery cannons
+---------------------------------------------------------------------------------------------------
 Version: 1.2.7
 Date: 09.06.2021
   Balancing:
