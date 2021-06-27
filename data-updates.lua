@@ -3,6 +3,7 @@ data.raw['item']['MOX-fuel'].icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel
 if mods['bobplates'] then
     -- Disable some recipes
     data.raw['technology']['plutonium-enrichment-process'].hidden = true
+    -- I'll leave this here just in case, although this shouldn't be required
     if data.raw['technology']['plutonium-atomic-bomb'] then
         data.raw['technology']['plutonium-atomic-bomb'].prerequisites = {'atomic-bomb'}
     end
