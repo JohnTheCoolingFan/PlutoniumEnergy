@@ -18,4 +18,11 @@ if mods['IndustrialRevolution'] then
     data.raw['item']['MOX-fuel'].order = 'ib'
     data.raw['item']['plutonium-fuel'].order = 'fb'
     data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
+
+    -- IR2 compat was moved here
+    data.raw['technology']['plutonium-ammo'].unit.count = 2000
+    data.raw['technology']['plutonium-ammo'].unit.time = 60
+    table.insert(data.raw['technology']['plutonium-ammo'].unit.ingredients, {'utility-science-pack', 1})
+
+    data.raw['technology']['plutonium-atomic-bomb'] = {{type='recipe', recipe='plutonium-atomic-artillery-shell'}}
 end
