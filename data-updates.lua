@@ -3,7 +3,9 @@ data.raw['item']['MOX-fuel'].icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel
 if mods['bobplates'] then
     -- Disable some recipes
     data.raw['technology']['plutonium-enrichment-process'].hidden = true
-    data.raw['technology']['plutonium-atomic-bomb'].prerequisites = {'atomic-bomb'}
+    if data.raw['technology']['plutonium-atomic-bomb'] then
+        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = {'atomic-bomb'}
+    end
     --data.raw['technology']['plutonium-processing'].effects = {} -- Broken. Why did I do this in the first place?
 end
 

@@ -1,4 +1,5 @@
 if settings.startup['enable-plutonium-ammo'].value then
+    -- TODO: calculate the diff and make so that technology is updated conditionally after it's created.
     if mods["IndustrialRevolution"] then
         data:extend({
                 {

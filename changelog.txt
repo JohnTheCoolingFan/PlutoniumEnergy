@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.9
+Date: 27.06.2021
+  Fixes:
+    - Fixed error on load with Bob's Metals, Chemicals and Intermediates and disabled plutonium
+      ammo
+---------------------------------------------------------------------------------------------------
 Version: 1.2.8
 Date: 24.06.2021
   Integration:
