@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.10
+Date: 27.06.2021
+  Fixes:
+    - Fixed error on load in edge-case when plutonium ammo is disabled (and so Plutonium Atomic
+      Bomb) but some other mod depends on the technology.
+      It was caused by IR2 compatibility code changing the logic of how this setting works.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.9
 Date: 27.06.2021
   Fixes:
