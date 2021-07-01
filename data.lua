@@ -6,6 +6,7 @@ require("prototypes.recipe.recipes")
 require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 
+-- TODO: Balancing, more Pu-238
 -- TODO: New screenshots, better overview
 -- TODO: better advanced reprocessing process (used-up fuel + acid [in chemical plant] = components)
 -- TODO: SchallRadioactiveWaste. Check if integration is already there and add if not.
