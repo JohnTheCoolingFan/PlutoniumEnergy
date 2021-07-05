@@ -4,6 +4,8 @@ Date: 2021-07-05
   Integration:
     - Updated support for Space Exploration by Polish DeathCare
       Plutonium atomic bomb can now be packed into weapon delivery cannons
+  Minor features:
+    - Updated release dates in changelog to ISO8601 (calendar, extended format)
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.10
 Date: 2021-06-27
