@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.11
+Date: 05.07.2021
+  Integration:
+    - Updated support for Space Exploration by Polish DeathCare
+      Plutonium atomic bomb can now be packed into weapon delivery cannons
+---------------------------------------------------------------------------------------------------
 Version: 1.2.10
 Date: 27.06.2021
   Fixes:
