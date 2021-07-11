@@ -10,6 +10,7 @@
         "? AtomicArtillery >= 0.2.1",
         "? SchallUraniumProcessing",
         "? SchallArtillery >= 1.0.0",
+        "? SchallRadioactiveWaste",
         "? bobplates",
         "? bobwarfare",
         "? AtomicRocketScreenBurn",
