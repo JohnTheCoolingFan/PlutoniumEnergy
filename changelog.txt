@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.1250
+Date: 2021-07-11
+  Integration:
+    - Added support for Schall Radioactive Waste. Pu-238, Pu-239 and used up MOX fuel can be now
+      incinerated
+---------------------------------------------------------------------------------------------------
 Version: 1.2.11
 Date: 2021-07-05
   Integration:

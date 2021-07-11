@@ -26,3 +26,10 @@ if mods['IndustrialRevolution'] then
 
     data.raw['technology']['plutonium-atomic-bomb'] = {{type='recipe', recipe='plutonium-atomic-artillery-shell'}}
 end
+
+if mods['SchallRadioactiveWaste'] then
+    ---@diagnostic disable: undefined-global
+    SchallRadioactiveWaste_add_incineration_recipe('used-up-MOX-fuel', 1.25, 0.75)
+    SchallRadioactiveWaste_add_incineration_recipe('plutonium-238', 1.5, 0.5)
+    SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 1.5, 0.5)
+end
