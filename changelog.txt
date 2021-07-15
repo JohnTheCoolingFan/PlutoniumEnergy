@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.13
 Date: 2021-07-15
+  Integration:
+    - Updated integration with SchallRadioactiveWaste, added radioactive contamination effects
   Balancing:
     - Changed Schall Radioactive Waste integration values to be more realistic.
   Fixes:
