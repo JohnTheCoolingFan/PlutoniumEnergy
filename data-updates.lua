@@ -29,9 +29,9 @@ end
 
 if mods['SchallRadioactiveWaste'] then
     ---@diagnostic disable: undefined-global
-    SchallRadioactiveWaste_add_incineration_recipe('used-up-MOX-fuel', 2.1, 0.9)
-    SchallRadioactiveWaste_add_incineration_recipe('plutonium-238', 2.35, 0.85)
-    SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 2.35, 0.85)
+    SchallRadioactiveWaste_add_incineration_recipe('used-up-MOX-fuel', 22.3, 0.9)
+    SchallRadioactiveWaste_add_incineration_recipe('plutonium-238', 3, 0.85)
+    SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 700, 0.85)
 
     SchallRadioactiveWaste_add_radioactive_effects('plutonium-atomic-rocket', 84, 2.8, 70)
     if data.raw['artillery-projectile']['plutonium-atomic-artillery-projectile'] then

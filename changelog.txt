@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.14
+Date: 2021-07-15
+  Balancing:
+    - Tweaked the values for Schall Radioactive Waste integration, now they should be much more
+      reasonable.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.13
 Date: 2021-07-15
   Integration:
