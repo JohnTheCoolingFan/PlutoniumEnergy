@@ -1,5 +1,15 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.2.1250
+Version: 1.2.13
+Date: 2021-07-15
+  Integration:
+    - Updated integration with SchallRadioactiveWaste, added radioactive contamination effects
+  Balancing:
+    - Changed Schall Radioactive Waste integration values to be more realistic.
+  Fixes:
+    - Fixed Atomic Artillery projectile (for all integrations present)
+    - Fixed previous version number in changelog
+---------------------------------------------------------------------------------------------------
+Version: 1.2.12
 Date: 2021-07-11
   Integration:
     - Added support for Schall Radioactive Waste. Pu-238, Pu-239 and used up MOX fuel can be now
