@@ -7,7 +7,7 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_shell.icon_size = 64
     plutonium_atomic_artillery_shell.icon_mipmaps = 4
 
-    plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
+    plutonium_atomic_artillery_shell.ammo_type.action.action_delivery.projectile = "plutonium-atomic-artillery-projectile"
     data:extend({plutonium_atomic_artillery_shell})
 
 elseif mods["AtomicArtillery"] then
@@ -18,7 +18,7 @@ elseif mods["AtomicArtillery"] then
     plutonium_atomic_artillery_shell.icon_size = 64
     plutonium_atomic_artillery_shell.icon_mipmaps = 4
 
-    plutonium_atomic_artillery_shell.projectile = "plutonium-atomic-artillery-projectile"
+    plutonium_atomic_artillery_shell.ammo_type.action.action_delivery.projectile = "plutonium-atomic-artillery-projectile"
     data:extend({plutonium_atomic_artillery_shell})
 
 end
@@ -33,7 +33,7 @@ if mods['SchallArtillery'] then
     sc_plutonium_aa_sh.icon_size = 64
     sc_plutonium_aa_sh.icon_mipmaps = 4
 
-    sc_plutonium_aa_sh.projectile = 'Schall-plutonium-atomic-artillery-projectile'
+    sc_plutonium_aa_sh.ammo_type.action.action_delivery.projectile = 'Schall-plutonium-atomic-artillery-projectile'
     data:extend({sc_plutonium_aa_sh})
 
 end
