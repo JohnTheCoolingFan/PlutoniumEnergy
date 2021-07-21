@@ -149,7 +149,7 @@ data:extend({
         flags = {},
         ammo_type = {
             range_modifier = 5,
-            cooldown_modifier = 2.5,
+            cooldown_modifier = 10,
             target_type = "position",
             category = "rocket",
             action = {
