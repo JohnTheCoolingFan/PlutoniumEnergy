@@ -49,7 +49,7 @@ data:extend({
         {
             type = 'recipe',
             name = 'used-up-uranium-fuel-cell-solution-centrifuging',
-            icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+            icon = '__PlutoniumEnergy__/graphics/icons/used-up-uranium-fuel-cell-solution-centrifuging.png',
             icon_size = 64,
             icon_mipmamps = 4,
             category = 'centrifuging',
