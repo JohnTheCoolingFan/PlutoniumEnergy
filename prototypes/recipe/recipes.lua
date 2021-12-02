@@ -3,27 +3,6 @@ require("prototypes.recipe.ammo")
 -- Change kovarex recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
 
---[[
-local recipes = {}
-
-local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
-
-advanced_nuclear_fuel_reprocessing.name = "advanced-nuclear-fuel-reprocessing"
-advanced_nuclear_fuel_reprocessing.icon = "__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png"
-advanced_nuclear_fuel_reprocessing.icon_size = 64
-advanced_nuclear_fuel_reprocessing.icon_mipamps = 4
-advanced_nuclear_fuel_reprocessing.enabled = false
-advanced_nuclear_fuel_reprocessing.ingredients = {{"used-up-uranium-fuel-cell", 10}}
-advanced_nuclear_fuel_reprocessing.energy_required = 90
-table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-239', 1})
-table.insert(advanced_nuclear_fuel_reprocessing.results, {'plutonium-238', 3})
-advanced_nuclear_fuel_reprocessing.order = "r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]"
-table.insert(recipes, advanced_nuclear_fuel_reprocessing)
-
-
-data:extend(recipes)
-]]
-
 data:extend({
         {
             type = 'recipe',
