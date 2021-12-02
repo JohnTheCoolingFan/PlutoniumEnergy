@@ -40,7 +40,7 @@ data:extend({
             },
             energy_required = 90,
             results = {
-                {type = 'fluid', name = 'used-up-nuclear-fuel-solution', amount = 500}
+                {type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 500}
             },
             order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product',
@@ -48,14 +48,14 @@ data:extend({
         },
         {
             type = 'recipe',
-            name = 'used-up-nuclear-fuel-solution-centrifuging',
+            name = 'used-up-uranium-fuel-cell-solution-centrifuging',
             icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
             icon_size = 64,
             icon_mipmamps = 4,
             category = 'centrifuging',
             enabled = false,
             ingredients = {
-                {type = 'item', name = 'used-up-nuclear-fuel-solution-barrel', amount = 10}
+                {type = 'item', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 10}
             },
             energy_required = 60,
             results = {
