@@ -1,11 +1,10 @@
 require("prototypes.recipe.ammo")
 
-
-local recipes = {}
-
 -- Change kovarex recipe order
-data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-e[kovarex-enrichment-process]"
+data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
 
+--[[
+local recipes = {}
 
 local advanced_nuclear_fuel_reprocessing = util.table.deepcopy(data.raw["recipe"]["nuclear-fuel-reprocessing"])
 
@@ -23,10 +22,53 @@ table.insert(recipes, advanced_nuclear_fuel_reprocessing)
 
 
 data:extend(recipes)
+]]
 
 data:extend({
         {
-            type = "recipe",
+            type = 'recipe',
+            name = 'advanced-nuclear-fuel-reprocessing',
+            localised_name = {'recipe-name.advanced-nuclear-fuel-reprocessing'},
+            icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+            icon_size = 64,
+            icon_mipmamps = 4,
+            category = 'chemistry',
+            enabled = false,
+            ingredients = {
+                {type = 'item', name = 'used-up-uranium-fuel-cell', amount = 10},
+                {type = 'fluid', name = 'sulfuric-acid', amount = 400}
+            },
+            energy_required = 90,
+            results = {
+                {type = 'fluid', name = 'used-up-nuclear-fuel-solution', amount = 500}
+            },
+            order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
+            subgroup = 'intermediate-product',
+            show_amount_in_title = false
+        },
+        {
+            type = 'recipe',
+            name = 'used-up-nuclear-fuel-solution-centrifuging',
+            icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+            icon_size = 64,
+            icon_mipmamps = 4,
+            category = 'centrifuging',
+            enabled = false,
+            ingredients = {
+                {type = 'item', name = 'used-up-nuclear-fuel-solution-barrel', amount = 10}
+            },
+            energy_required = 60,
+            results = {
+                {type = 'item', name = 'uranium-238', amount = 5},
+                {type = 'item', name = 'plutonium-239', amount = 1},
+                {type = 'item', name = 'plutonium-238', amount = 4},
+                {type = 'item', name = 'empty-barrel', amount = 10}
+            },
+            order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
+            subgroup = 'intermediate-product'
+        },
+        {
+            type = 'recipe',
             name = "MOX-fuel",
             energy_required = 10,
             enabled = false,
@@ -50,7 +92,7 @@ data:extend({
             icon_size = 64,
             icon_mipmaps = 4,
             subgroup = "intermediate-product",
-            order = "r[uranium-processing]-d[MOX-fuel-reprocessing]",
+            order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
             main_product = "",
             results = {
                 {
