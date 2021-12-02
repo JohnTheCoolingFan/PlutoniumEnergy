@@ -5,6 +5,7 @@ require("prototypes.entity.projectiles")
 require("prototypes.recipe.recipes")
 require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
+require("prototypes.fluid.fluids")
 
 -- TODO: Balancing, more Pu-238
 -- TODO: New screenshots, better overview
