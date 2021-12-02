@@ -10,6 +10,10 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "advanced-nuclear-fuel-reprocessing"
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'used-up-nuclear-fuel-solution-centrifuging'
             }
         },
         prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
