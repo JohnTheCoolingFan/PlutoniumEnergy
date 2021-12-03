@@ -38,10 +38,10 @@ data:extend({
             },
             energy_required = 60,
             results = {
-                {type = 'item', name = 'uranium-238', amount = 5},
+                {type = 'item', name = 'uranium-238',   amount = 5},
                 {type = 'item', name = 'plutonium-239', amount = 1},
                 {type = 'item', name = 'plutonium-238', amount = 4},
-                {type = 'item', name = 'empty-barrel', amount = 10}
+                {type = 'item', name = 'empty-barrel',  amount = 10}
             },
             order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product'
