@@ -17,7 +17,7 @@ data:extend({
                 {type = 'item', name = 'used-up-uranium-fuel-cell', amount = 10},
                 {type = 'fluid', name = 'sulfuric-acid', amount = 400}
             },
-            energy_required = 45,
+            energy_required = 30,
             results = {
                 {type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 500}
             },
