@@ -24,7 +24,13 @@ data:extend({
             order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product',
             show_amount_in_title = false,
-            always_show_products = true
+            always_show_products = true,
+            crafting_machine_tint = {
+                primary = {r = 0.651, g = 0.851, b = 0.075, a = 1.000}, -- #A6D913
+                secondary = {r = 0.525, g = 0.694, b = 0.039, a = 1.000}, -- #86b10a
+                tertiary = {r = 0.475, g = 0.541, b = 0.282, a = 1.000}, -- #798a48
+                quaternary = {r = 0.753, g = 0.863, b = 0.075, a = 1.000} -- #c0dc13
+            }
         },
         {
             type = 'recipe',
