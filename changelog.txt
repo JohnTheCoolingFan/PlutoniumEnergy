@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 2021-12-08
+  Balancing:
+    - Changed Advanced nuclear fuel reprocessing recipe time from 30 seconds to 8
+  Minor changes:
+    - Added recipe tint for Advanced nuclear fuel reprocessing
+---------------------------------------------------------------------------------------------------
 Version: 1.3.2
 Date: 2021-12-07
   Fixes:
