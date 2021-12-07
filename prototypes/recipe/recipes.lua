@@ -23,7 +23,8 @@ data:extend({
             },
             order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product',
-            show_amount_in_title = false
+            show_amount_in_title = false,
+            always_show_products = true
         },
         {
             type = 'recipe',
