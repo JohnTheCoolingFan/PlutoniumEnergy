@@ -45,9 +45,10 @@ data:extend({
             },
             energy_required = 60,
             results = {
-                {type = 'item', name = 'uranium-238',   amount = 5},
-                {type = 'item', name = 'plutonium-239', amount = 2},
-                {type = 'item', name = 'plutonium-238', amount = 6},
+                {type = 'item', name = 'uranium-238',   amount = 8},
+                {type = 'item', name = 'uranium-238',   amount = 2, probability = 0.50},
+                {type = 'item', name = 'plutonium-239', amount = 1, probability = 0.25},
+                {type = 'item', name = 'plutonium-238', amount = 6, probability = 0.75},
                 {type = 'item', name = 'empty-barrel',  amount = 10}
             },
             order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
