@@ -113,8 +113,6 @@ data:extend({
             ingredients = {
                 {'plutonium-239', 30},
                 {'plutonium-238', 10},
-                {'uranium-235',   10},
-                {'uranium-238',   20}
             },
             icon = "__PlutoniumEnergy__/graphics/icons/plutonium-enrichment-process.png",
             icon_size = 64, icon_mipmaps = 4,
@@ -124,8 +122,6 @@ data:extend({
             results = {
                 {'plutonium-239', 32},
                 {'plutonium-238', 2},
-                {'uranium-235',   12},
-                {'uranium-238',   10}
             },
             allow_decomposition = false
         },
