@@ -39,7 +39,7 @@ Version: 1.2.15
 Date: 2021-07-21
   Balancing:
     - Changed cooldown modifier for Plutonium Atomic Bomb from 2.5 to 10, same as vanilla
-    - Lowered Pu-239 from advanced nuclear fule reprocessing from 2 to 1
+    - Lowered Pu-239 from advanced nuclear fuel reprocessing from 2 to 1
     - Lowered time needed for advanced nuclear fuel reprocessing from 100 to 90
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.14
