@@ -25,7 +25,7 @@ data:extend({
 		stack_size = 100
 	},
 
-    -- Plutonium nuclear fuel
+    -- Plutonium nuclear fuel (the one that burns)
     {
         type = "item",
         name = "plutonium-fuel",
