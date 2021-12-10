@@ -146,6 +146,7 @@ if mods["IndustrialRevolution"] then
         {"rocket-fuel", 1},
         {"plutonium-239", 1}
     }
+    data.raw['recipe']['plutonium-fuel'].energy_required = 90
     data.raw['recipe']['plutonium-fuel'].category = 'chemistry'
     -- Add Shielded Steel plate to recipes
     data.raw['recipe']['MOX-fuel'].ingredients = {
