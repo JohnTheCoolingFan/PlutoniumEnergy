@@ -10,7 +10,8 @@ Date: 2021-12-08
       3-6  of Pu-238
       25% chance for 1 Pu-239
     - Removed Uranium input/output from Plutonium enrichment process
-    - Reduced Plutonium enrichment process time from 120 to 80
+    - Reduced Plutonium enrichment process time from 120 seconds to 80
+    - Reduced plutonium fuel crafting time from 90 seconds to 40
   Minor changes:
     - Added recipe tint for Advanced nuclear fuel reprocessing
 ---------------------------------------------------------------------------------------------------
