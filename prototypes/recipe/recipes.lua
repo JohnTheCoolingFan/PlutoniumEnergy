@@ -95,7 +95,7 @@ data:extend({
         {
             type = "recipe",
             name = "plutonium-fuel",
-            energy_required = 90,
+            energy_required = 40,
             enabled = false,
             category = "centrifuging",
             ingredients = {{"plutonium-239", 1}, {"nuclear-fuel", 1}},
