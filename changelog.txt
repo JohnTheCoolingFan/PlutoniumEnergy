@@ -4,9 +4,8 @@ Date: 2021-12-08
   Balancing:
     - Changed Advanced nuclear fuel reprocessing recipe time from 30 seconds to 8
     - Changed Used-up uranium fuel cell solution centrifuging recipe results:
-      100% chance for 8 U-238
-      75% chance for 6 Pu-238
-      50% chance for 2 U-238
+      8-10 of U-238
+      3-6  of Pu-238
       25% chance for 1 Pu-239
     - Removed Uranium input/output from Plutonium enrichment process
   Minor changes:
