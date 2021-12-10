@@ -106,7 +106,7 @@ data:extend({
         {
             type = "recipe",
             name = "plutonium-enrichment-process",
-            energy_required = 120,
+            energy_required = 80,
             enabled = false,
             category = "centrifuging",
             ingredients = {
