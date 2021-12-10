@@ -14,12 +14,12 @@ data:extend({
             category = 'chemistry',
             enabled = false,
             ingredients = {
-                {type = 'item', name = 'used-up-uranium-fuel-cell', amount = 10},
-                {type = 'fluid', name = 'sulfuric-acid', amount = 400}
+                {type = 'item', name = 'used-up-uranium-fuel-cell', amount = 1},
+                {type = 'fluid', name = 'sulfuric-acid', amount = 25}
             },
-            energy_required = 8,
+            energy_required = 1,
             results = {
-                {type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 500}
+                {type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 50}
             },
             order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product',
