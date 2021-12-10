@@ -2,12 +2,15 @@
 Version: 1.3.3
 Date: 2021-12-08
   Balancing:
-    - Changed Advanced nuclear fuel reprocessing recipe time from 30 seconds to 8
+    - Changed Advanced nuclear fuel reprocessing recipe time from 30 seconds to 1
+    - Changed Advanced nuclear fuel reprocessing results and ingredients:
+      1 used-up cell and 25 of sulfuric acid result in 50 of solution
     - Changed Used-up uranium fuel cell solution centrifuging recipe results:
       8-10 of U-238
       3-6  of Pu-238
       25% chance for 1 Pu-239
     - Removed Uranium input/output from Plutonium enrichment process
+    - Reduced Plutonium enrichment process time from 120 to 80
   Minor changes:
     - Added recipe tint for Advanced nuclear fuel reprocessing
 ---------------------------------------------------------------------------------------------------
