@@ -16,7 +16,7 @@ MOX_reactor.consumption = "20MW"
 MOX_reactor.energy_source.fuel_category = "MOX"
 
 MOX_reactor.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
-MOX_reactor.selection_box = {{-1.45, -1.45}, {1.45, 1.45}}
+MOX_reactor.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
 
 local lower_layer = MOX_reactor.lower_layer_picture
 lower_layer.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes.png"
