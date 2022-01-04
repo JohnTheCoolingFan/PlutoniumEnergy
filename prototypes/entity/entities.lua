@@ -101,4 +101,22 @@ patches_pic_discon_heat.layers[1].hr_version.filename = '__PlutoniumEnergy__/gra
 table.insert(entities, MOX_reactor)
 
 
+local breeder_reactor = util.table.deepcopy(data.raw['reactor']['nuclear-reactor'])
+
+-- TODO: icon
+-- TODO: remnants
+breeder_reactor.name = 'breeder-reactor'
+
+breeder_reactor.consumption = '5MW'
+breeder_reactor.energy_source.fuel_category = 'nuclear-breeder'
+breeder_reactor.energy_source.light_flicker.minimum_intensity = 0.4
+breeder_reactor.energy_source.light_flicker.maximum_intensity = 0.7
+
+breeder_reactor.collision_box = {{-3.2, -3.2}, {3.2, 3.2}}
+breeder_reactor.selection_box = {{-3.5, -3.5}, {3.5, 3.5}}
+
+
+table.insert(entities, breeder_reactor)
+
+
 data:extend(entities)
