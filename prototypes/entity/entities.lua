@@ -27,8 +27,6 @@ lower_layer.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-react
 lower_layer.hr_version.width = 192
 lower_layer.hr_version.height = 192
 
-
--- Might error because uses local variables
 MOX_reactor.heat_lower_layer_picture = apply_heat_pipe_glow
 {
     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
