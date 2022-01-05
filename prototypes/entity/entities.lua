@@ -78,15 +78,15 @@ data:extend({
                         filename = '__base__/graphics/entity/nuclear-reactor/reactor-shadow.png',
                         width = 263,
                         height = 162,
-                        scale = 0.6,
-                        shift = {1.625, 0},
+                        scale = 0.2,
+                        shift = {1.625 * 0.6, 0},
                         draw_as_shadow = true,
                         hr_version = {
                             filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-shadow.png',
                             width = 525,
                             height = 323,
-                            scale = 0.3,
-                            shift = {1.625, 0},
+                            scale = 0.25,
+                            shift = {1.625 * 0.6, 0},
                             draw_as_shadow = true
                         }
                     }
