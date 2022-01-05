@@ -175,6 +175,7 @@ data:extend({
                         filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches.png',
                         width = 64,
                         height = 64,
+                        scale = 0.5,
                         variation_count = 8,
                     }
                 }
