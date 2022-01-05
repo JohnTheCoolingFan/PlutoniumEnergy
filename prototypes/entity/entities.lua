@@ -1,5 +1,3 @@
--- TODO: redo reactor graphics with new glow.
-
 require "util"
 
 data:extend({
@@ -30,7 +28,6 @@ data:extend({
             collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
             selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
             damaged_trigger_effect = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
-            --TODO: reexamine heat pipes sprites and maybe remake them, adjust shifts
             lower_layer_picture = {
                 filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes.png',
                 width = 92,
