@@ -152,16 +152,17 @@ data:extend({
                     }
                 },
                 heat_picture = apply_heat_pipe_glow {
-                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
+                    filename = '__base__/graphics/entity/nuclear-reactor/reactor-heated.png',
                     width = 96,
                     height = 96,
-                    shift = util.by_pixel(1, -7),
+                    shift = util.by_pixel(-4, -16),
+                    scale = 0.6,
                     hr_version = {
-                        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
+                        filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-heated.png',
                         width = 192,
                         height = 192,
-                        scale = 0.5,
-                        shift = util.by_pixel(3, -6.5)
+                        scale = 0.3,
+                        shift = util.by_pixel(-2, -16)
                     }
                 }
             },
@@ -198,7 +199,7 @@ data:extend({
                 }
             },
             heat_connection_patches_connected = {
-                sheet = {
+                sheet = apply_heat_pipe_glow {
                     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                     width = 32,
                     height = 32,
@@ -212,8 +213,8 @@ data:extend({
                     }
                 }
             },
-            heat_connection_patches_disconnected = {
-                sheet = {
+            heat_connection_patches_disconnected  = {
+                sheet = apply_heat_pipe_glow {
                     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                     width = 32,
                     height = 32,
