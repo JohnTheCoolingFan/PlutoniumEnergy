@@ -137,6 +137,20 @@ data:extend({
             },
             result = "MOX-reactor",
             requester_paste_multiplier = 1
+        },
+        {
+            type = "recipe",
+            name = "breeder-reactor",
+            energy_required = 8,
+            enabled = false,
+            ingredients = {
+                {"concrete", 1000},
+                {"steel-plate", 1000},
+                {"advanced-circuit", 1000},
+                {"copper-plate", 1000}
+            },
+            result = "breeder-reactor",
+            requester_paste_multiplier = 1
         }
     })
 
