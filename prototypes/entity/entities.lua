@@ -40,7 +40,7 @@ data:extend({
                     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes.png',
                     width = 192,
                     height = 192,
-                    scale = 0.5
+                    scale = 0.5,
                     shift = util.by_pixel(-1, -5)
                 }
             },
@@ -50,7 +50,7 @@ data:extend({
                 height = 96,
                 shift = util.by_pixel(-3, -4),
                 hr_version = {
-                    filename = '__PlutoniumEnergy__/graphics/Entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
+                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
                     width = 192,
                     height = 192,
                     scale = 0.5,
@@ -198,12 +198,12 @@ data:extend({
             },
             heat_connection_patches_connected = {
                 sheet = {
-                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png'
+                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                     width = 32,
                     height = 32,
-                    variation_count = 8
+                    variation_count = 8,
                     hr_version = {
-                        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png'
+                        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png',
                         width = 64,
                         height = 64,
                         variation_count = 8,
@@ -213,13 +213,13 @@ data:extend({
             },
             heat_connection_patches_disconnected = {
                 sheet = {
-                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png'
+                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                     width = 32,
                     height = 32,
                     variation_count = 8,
                     y = 32,
                     hr_version = {
-                        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png'
+                        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-connect-patches-heated.png',
                         width = 64,
                         height = 64,
                         variation_count = 8,
@@ -229,10 +229,10 @@ data:extend({
                 }
             },
 
-            vehicle_impact_sound = data.raw['reactor']['nuclear-reactor'].vehicle_impact_sound
-            open_sound = data.raw['reactor']['nuclear-reactor'].open_sound
-            close_sound = data.raw['reactor']['nuclear-reactor'].close_sound
-            working_sound = data.raw['reactor']['nuclear-reactor'].working_sound
+            vehicle_impact_sound = data.raw['reactor']['nuclear-reactor'].vehicle_impact_sound,
+            open_sound = data.raw['reactor']['nuclear-reactor'].open_sound,
+            close_sound = data.raw['reactor']['nuclear-reactor'].close_sound,
+            working_sound = data.raw['reactor']['nuclear-reactor'].working_sound,
             meltdown_action = data.raw['reactor']['nuclear-reactor'].meltdown_action
         }
     })
