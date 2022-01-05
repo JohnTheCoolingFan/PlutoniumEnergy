@@ -78,7 +78,7 @@ data:extend({
                         filename = '__base__/graphics/entity/nuclear-reactor/reactor-shadow.png',
                         width = 263,
                         height = 162,
-                        scale = 0.2,
+                        scale = 0.5,
                         shift = {1.625 * 0.6, 0},
                         draw_as_shadow = true,
                         hr_version = {
