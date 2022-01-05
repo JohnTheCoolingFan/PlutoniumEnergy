@@ -33,26 +33,26 @@ data:extend({
             --TODO: reexamine heat pipes sprites and maybe remake them, adjust shifts
             lower_layer_picture = {
                 filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes.png',
-                width = 96,
+                width = 92,
                 height = 92,
                 shift = util.by_pixel(-2, -4),
                 hr_version = {
                     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes.png',
                     width = 192,
-                    height = 192,
+                    height = 188,
                     scale = 0.5,
                     shift = util.by_pixel(-1, -5)
                 }
             },
             heat_lower_layer_picture = apply_heat_pipe_glow {
                 filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
-                width = 96,
-                height = 96,
+                width = 92,
+                height = 92,
                 shift = util.by_pixel(-3, -4),
                 hr_version = {
                     filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
                     width = 192,
-                    height = 192,
+                    height = 188,
                     scale = 0.5,
                     shift = util.by_pixel(-0.5, -4.5)
                 }
