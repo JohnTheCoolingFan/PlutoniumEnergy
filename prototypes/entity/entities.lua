@@ -18,6 +18,7 @@ MOX_reactor.energy_source.fuel_category = "MOX"
 MOX_reactor.collision_box = {{-1.2, -1.2}, {1.2, 1.2}}
 MOX_reactor.selection_box = {{-1.5, -1.5}, {1.5, 1.5}}
 
+--TODO: reexamine heat pipes sprites and maybe remake them, adjust shifts
 local lower_layer = MOX_reactor.lower_layer_picture
 lower_layer.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes.png"
 lower_layer.width = 96
@@ -26,12 +27,36 @@ lower_layer.hr_version.filename = "__PlutoniumEnergy__/graphics/entity/MOX-react
 lower_layer.hr_version.width = 192
 lower_layer.hr_version.height = 192
 
-MOX_reactor.heat_lower_layer_picture.layers[1].filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png'
-MOX_reactor.heat_lower_layer_picture.layers[1].width = 96
-MOX_reactor.heat_lower_layer_picture.layers[1].height = 96
-MOX_reactor.heat_lower_layer_picture.layers[1].hr_version.filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png'
-MOX_reactor.heat_lower_layer_picture.layers[1].hr_version.width = 192
-MOX_reactor.heat_lower_layer_picture.layers[1].hr_version.height = 192
+
+-- Might error because uses local variables
+MOX_reactor.heat_lower_layer_picture = apply_heat_pipe_glow
+{
+    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
+    width = 96,
+    height = 96,
+    shift = util.by_pixel(-3, -4),
+    hr_version = {
+        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
+        width = 192,
+        height = 192,
+        scale = 0.5,
+        shift = util.by_pixel(-0.5, -4.5)
+    }
+}
+MOX_reactor.heat_buffer.heat_picture = apply_heat_pipe_glow
+{
+    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
+    width = 96,
+    height = 96,
+    shift = util.by_pixel(1, -7),
+    hr_version = {
+        filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/hr-MOX-reactor-pipes-heated.png',
+        width = 192,
+        height = 192,
+        scale = 0.5,
+        shift = util.by_pixel(3, -6.5)
+    }
+}
 
 MOX_reactor.picture.layers[1].scale = 0.6
 MOX_reactor.picture.layers[1].shift = util.by_pixel(-4, -6)
@@ -79,9 +104,6 @@ MOX_reactor.heat_buffer.connections = {
         direction = defines.direction.west
     }
 }
-
-MOX_reactor.heat_buffer.heat_picture.layers[1].scale = 0.6
-MOX_reactor.heat_buffer.heat_picture.layers[1].hr_version.scale = 0.3
 
 local patches_pic_con = MOX_reactor.connection_patches_connected.sheet
 patches_pic_con.filename = "__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png"
