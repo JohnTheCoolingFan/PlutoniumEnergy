@@ -100,5 +100,17 @@ data:extend({
         order = "f[nuclear-energy]-b[MOX-reactor]",
         place_result = "MOX-reactor",
         stack_size = 10
+    },
+    {
+        type = "item",
+        name = "breeder-reactor",
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png", -- TODO
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = "energy",
+        order = "f[nuclear-energy]-c[breeder-reactor]",
+        place_result = "breeder-reactor",
+        stack_size = 10
     }
 })
