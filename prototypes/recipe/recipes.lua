@@ -4,6 +4,7 @@ require("prototypes.recipe.ammo")
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
 
 data:extend({
+        -- Advanced nuclear fuel reprocessing
         {
             type = 'recipe',
             name = 'advanced-nuclear-fuel-reprocessing',
@@ -53,6 +54,8 @@ data:extend({
             order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
             subgroup = 'intermediate-product'
         },
+
+        -- MOX fuel and reprocessing
         {
             type = 'recipe',
             name = "MOX-fuel",
@@ -92,6 +95,8 @@ data:extend({
             },
             allow_decomposition = false
         },
+
+        -- Plutonium fuel (chemical fuel)
         {
             type = "recipe",
             name = "plutonium-fuel",
@@ -103,6 +108,8 @@ data:extend({
             icon_size = 64, icon_mipmaps = 4,
             result = "plutonium-fuel"
         },
+
+        -- Plutonium enrichment process
         {
             type = "recipe",
             name = "plutonium-enrichment-process",
@@ -124,6 +131,8 @@ data:extend({
             },
             allow_decomposition = false
         },
+
+        -- Reactors
         {
             type = "recipe",
             name = "MOX-reactor",
@@ -152,6 +161,8 @@ data:extend({
             result = "breeder-reactor",
             requester_paste_multiplier = 1
         },
+
+        -- Breeder fuel cell
         {
             type = 'recipe',
             name = 'breeder-fuel-cell',
