@@ -61,7 +61,7 @@ data:extend({
         stack_size = 1
     },
 
-    -- MOX fuel
+    -- MOX fuel (nuclear)
     {
         type = "item",
         name = "MOX-fuel",
