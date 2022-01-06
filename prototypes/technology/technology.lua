@@ -116,6 +116,14 @@ data:extend({
             {
                 type = 'unlock-recipe',
                 name = 'breeder-reactor'
+            },
+            {
+                type = 'unlock-recipe',
+                name = 'breeder-fuel-cell'
+            },
+            {
+                type = 'unlock-recipe',
+                name = 'breeder-fuel-cell-reprocessing'
             }
         },
         prerequisites = {'plutonium-processing'},
