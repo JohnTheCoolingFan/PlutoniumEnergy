@@ -106,6 +106,31 @@ data:extend({
             count = 2000
         },
         order = "e-p-b-d"
+    },
+    {
+        type = 'technology',
+        name = 'nuclear-breeding',
+        icon_size = 256, icon_mipmaps = 4,
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        effects = {
+            {
+                type = 'unlock-recipe',
+                name = 'breeder-reactor'
+            }
+        },
+        prerequisites = {'plutonium-processing'},
+        unit = {
+            ingredients = {
+                {'automation-science-pack', 1},
+                {'logistic-science-pack', 1},
+                {'chemical-science-pack', 1},
+                {'production-science-pack', 1}
+            },
+            -- TODO: adjust balance
+            time = 30,
+            count = 1000
+        },
+        order = 'e-p-d-b'
     }
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
