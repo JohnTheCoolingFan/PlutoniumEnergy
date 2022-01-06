@@ -140,6 +140,24 @@ data:extend({
             result_count = 5,
             allow_decomposition = false
         },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-reprocessing',
+            category = 'centrifuging',
+            energy_required = 100,
+            enabled = false,
+            -- icon -- TODO
+            ingredients = {
+                {'breeder-fuel-cell', 10}
+            },
+            subgroup = 'intermediate-product',
+            order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
+            results = {
+                {'plutonium-238', 20},
+                {'plutonium-239', 1}
+            },
+            allow_decomposition = false
+        },
 
         -- Plutonium fuel (chemical fuel)
         {
