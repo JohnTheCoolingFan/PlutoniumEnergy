@@ -88,6 +88,35 @@ data:extend({
         stack_size = 50
     },
 
+    -- Breeder fuel cell (nuclear)
+    {
+        type = 'item',
+        name = 'breder-fuel-cell',
+        -- TODO
+        icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel.png',
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = 'intermediate-product',
+        order = 'r[uranium-processing]-c[breeder-fuel-cell]',
+        fuel_category = 'nuclear-breeder',
+        burnt_result = 'used-up-MOX-fuel-cell',
+        fuel_value = '10GJ',
+        stack_size = 20
+    },
+    {
+        type = 'item',
+        name = 'used-up-breeder-fuel-cell',
+        -- TODO
+        icon = '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel.png',
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = 'intermediate-product',
+        order = 'j[used-up-breeder-fuel-cell]',
+        stack_size = 20
+    }
+
     -- Machines
     {
         type = "item",
