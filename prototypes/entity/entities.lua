@@ -237,7 +237,7 @@ data:extend({
         {
             type = 'reactor',
             name = 'breeder-reactor',
-            icon  = '__base__/graphics/icons/nuclear-reactor.png',
+            icon  = '__base__/graphics/icons/nuclear-reactor.png', -- TODO
             icon_size = 64, icon_mipmaps = 4,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 0.5, result = 'breeder-reactor'},
