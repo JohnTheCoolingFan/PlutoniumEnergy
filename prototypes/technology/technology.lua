@@ -111,19 +111,19 @@ data:extend({
         type = 'technology',
         name = 'nuclear-breeding',
         icon_size = 256, icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
                 type = 'unlock-recipe',
-                name = 'breeder-reactor'
+                recipe = 'breeder-reactor'
             },
             {
                 type = 'unlock-recipe',
-                name = 'breeder-fuel-cell'
+                recipe = 'breeder-fuel-cell'
             },
             {
                 type = 'unlock-recipe',
-                name = 'breeder-fuel-cell-reprocessing'
+                recipe = 'breeder-fuel-cell-reprocessing'
             }
         },
         prerequisites = {'plutonium-processing'},
@@ -142,13 +142,13 @@ data:extend({
     },
     {
         type = 'technology',
-        name = 'breeder-fuel-cell-from-uranium',
+        name = 'breeder-fuel-cell-from-uranium-cell',
         icon_size = 256, icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
                 type = 'unlock-recipe',
-                name = 'breeder-fuel-cell-from-uranium'
+                recipe = 'breeder-fuel-cell-from-uranium-cell'
             }
         },
         prerequisites = {'nuclear-breeding', 'nuclear-fuel-reprocessing'},
@@ -168,11 +168,11 @@ data:extend({
         type = 'technology',
         name = 'breeder-fuel-cell-from-MOX-fuel',
         icon_size = 256, icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
                 type = 'unlock-recipe',
-                name = 'breeder-fuel-cell-from-MOX-fuel'
+                recipe = 'breeder-fuel-cell-from-MOX-fuel'
             }
         },
         prerequisites = {'nuclear-breeding', 'MOX-fuel-reprocessing'},
@@ -180,7 +180,7 @@ data:extend({
             ingredients = {
                 {'automation-science-pack', 1},
                 {'logistic-science-pack', 1},
-                {'chemical-science-paсk', 1},
+                {'chemical-science-pack', 1},
                 {'production-science-pack', 1}
             },
             time = 30,
