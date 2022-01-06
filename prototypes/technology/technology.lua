@@ -139,6 +139,54 @@ data:extend({
             count = 1000
         },
         order = 'e-p-d-b'
+    },
+    {
+        type = 'technology',
+        name = 'breeder-fuel-cell-from-uranium',
+        icon_size = 256, icon_mipmaps = 4,
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        effects = {
+            {
+                type = 'unlock-recipe',
+                name = 'breeder-fuel-cell-from-uranium'
+            }
+        },
+        prerequisites = {'nuclear-breeding', 'nuclear-fuel-reprocessing'},
+        unit = {
+            ingredients = {
+                {'automation-science-pack', 1},
+                {'logistic-science-pack', 1},
+                {'chemical-science-pack', 1},
+                {'production-science-pack', 1}
+            },
+            time = 30,
+            count = 100
+        },
+        order = 'e-p-d-b'
+    },
+    {
+        type = 'technology',
+        name = 'breeder-fuel-cell-from-MOX-fuel',
+        icon_size = 256, icon_mipmaps = 4,
+        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-processing.png', -- TODO
+        effects = {
+            {
+                type = 'unlock-recipe',
+                name = 'breeder-fuel-cell-from-MOX-fuel'
+            }
+        },
+        prerequisites = {'nuclear-breeding', 'MOX-fuel-reprocessing'},
+        unit = {
+            ingredients = {
+                {'automation-science-pack', 1},
+                {'logistic-science-pack', 1},
+                {'chemical-science-paсk', 1},
+                {'production-science-pack', 1}
+            },
+            time = 30,
+            count = 100
+        },
+        order = 'e-p-d-b'
     }
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
