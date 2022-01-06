@@ -324,7 +324,7 @@ data:extend({
                     }
                 }
             },
-            working_light_picture = {
+            working_light_picture = { -- TODO: deciding color
                 filename = '__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png',
                 blend_mode = 'additive',
                 draw_as_glow = true,
