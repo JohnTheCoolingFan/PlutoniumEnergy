@@ -250,7 +250,7 @@ data:extend({
                 type = 'burner',
                 fuel_category = 'nuclear-breeder',
                 effectivity = 1,
-                fuel_incentory_size = 1,
+                fuel_inventory_size = 1,
                 burnt_inventory_size = 1,
                 light_flicker = {
                     color = {0,0,0},
