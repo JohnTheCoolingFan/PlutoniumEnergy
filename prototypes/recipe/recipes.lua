@@ -151,6 +151,49 @@ data:extend({
             },
             result = "breeder-reactor",
             requester_paste_multiplier = 1
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 10},
+                {'plutonium-239', 1},
+                {'uranium-238', 19}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-from-uranium-cell',
+            category = 'centrifuging',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 5},
+                {'used-up-uranium-fuel-cell', 5},
+                {'plutonium-239', 1}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5,
+            allow_decomposition = false
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-from-MOX-fuel',
+            category = 'centrifuging',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 5},
+                {'used-up-MOX-fuel', 5},
+                {'uranium-238', 10}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5,
+            allow_decomposition = false
         }
     })
 
