@@ -262,33 +262,31 @@ data:extend({
             selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
             damaged_trigger_effect = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
             lower_layer_picture = { -- TODO
-                filename = '__base__/graphics/entity/nuclear-reactor/reactor-pipes.png',
-                width = 156,
-                height = 156,
+                filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes.png',
+                width = 220,
+                height = 220,
                 shift = util.by_pixel(-2, -4),
-                scale = 1.4,
                 hr_version = {
-                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png',
-                    width = 320,
-                    height = 316,
-                    scale = 0.7,
+                    filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-pipes.png',
+                    width = 448,
+                    height = 444,
+                    scale = 0.5,
                     shift = util.by_pixel(-1, -5)
                 }
             },
             heat_lower_layer_picture = { -- TODO
-                filename = '__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png',
-                width = 156,
-                height = 156,
+                filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes-heated.png',
+                width = 220,
+                height = 220,
                 shift = util.by_pixel(-3, -4),
-                scale = 1.4,
                 hr_version = {
-                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png',
-                    width = 320,
-                    height = 316,
-                    scale = 0.7,
+                    filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-pipes-heated.png',
+                    width = 448,
+                    height = 444,
+                    scale = 0.5,
                     shift = util.by_pixel(-0.5, -4.5)
                 }
-            }
+            },
 
             picture = {
                 layers = {
@@ -431,33 +429,33 @@ data:extend({
                 }
             },
 
-            connection_patches_connected = { -- TODO
+            connection_patches_connected = {
                 sheet = {
-                    filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+                    filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches.png",
                     width = 32,
                     height = 32,
-                    variation_count = 12,
+                    variation_count = 16,
                     hr_version = {
-                        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches.png",
+                        filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-connect-patches.png",
                         width = 64,
                         height = 64,
-                        variation_count = 12,
+                        variation_count = 16,
                         scale = 0.5
                     }
                 }
             },
-            connection_patches_disconnected = { -- TODO
+            connection_patches_disconnected = {
                 sheet = {
-                    filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches.png",
+                    filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches.png",
                     width = 32,
                     height = 32,
-                    variation_count = 12,
+                    variation_count = 16,
                     y = 32,
                     hr_version = {
-                        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches.png",
+                        filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-connect-patches.png",
                         width = 64,
                         height = 64,
-                        variation_count = 12,
+                        variation_count = 16,
                         y = 64,
                         scale = 0.5
                     }
@@ -465,31 +463,31 @@ data:extend({
             },
             heat_connection_patches_connected = { -- TODO
                 sheet = apply_heat_pipe_glow {
-                    filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+                    filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches-heated.png",
                     width = 32,
                     height = 32,
-                    variation_count = 12,
+                    variation_count = 16,
                     hr_version = {
-                        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+                        filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-connect-patches-heated.png",
                         width = 64,
                         height = 64,
-                        variation_count = 12,
+                        variation_count = 16,
                         scale = 0.5
                     }
                 }
             },
             heat_connection_patches_disconnected = { -- TODO
                 sheet = apply_heat_pipe_glow {
-                    filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+                    filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches-heated.png",
                     width = 32,
                     height = 32,
-                    variation_count = 12,
+                    variation_count = 16,
                     y = 32,
                     hr_version = {
-                        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+                        filename = "__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-connect-patches-heated.png",
                         width = 64,
                         height = 64,
-                        variation_count = 12,
+                        variation_count = 16,
                         y = 64,
                         scale = 0.5
                     }
