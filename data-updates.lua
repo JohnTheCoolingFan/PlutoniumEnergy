@@ -24,7 +24,7 @@ if mods['IndustrialRevolution'] then
     data.raw['technology']['plutonium-ammo'].unit.time = 60
     table.insert(data.raw['technology']['plutonium-ammo'].unit.ingredients, {'utility-science-pack', 1})
 
-    data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='recipe', recipe='plutonium-atomic-artillery-shell'}}
+    table.insert(data.raw['technology']['plutonium-atomic-bomb'].effects, {type='recipe', recipe='plutonium-atomic-artillery-shell'})
 end
 
 if mods['SchallRadioactiveWaste'] then
