@@ -19,11 +19,11 @@ if mods['IndustrialRevolution'] then
     data.raw['item']['plutonium-fuel'].order = 'fb'
     data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
 
-    -- IR2 compat was moved here
     data.raw['technology']['plutonium-ammo'].unit.count = 2000
     data.raw['technology']['plutonium-ammo'].unit.time = 60
 
-    table.insert(data.raw['technology']['plutonium-atomic-bomb'].effects, {type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'})
+    -- Note to future self: atomic bombs are replaced by artillery shells in IR2
+    data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'}}
 end
 
 if mods['SchallRadioactiveWaste'] then
