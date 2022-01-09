@@ -1,4 +1,4 @@
-data.raw['item']['MOX-fuel'].icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel.png'
+log('[PlutoniumEnergy] final fixes stage. plutonium atomic bomb ingredients: '..serpent.dump(data.raw['technology']['plutonium-ammo'].unit))
 
 if mods['bobplates'] then
     -- Disable some recipes
@@ -22,9 +22,8 @@ if mods['IndustrialRevolution'] then
     -- IR2 compat was moved here
     data.raw['technology']['plutonium-ammo'].unit.count = 2000
     data.raw['technology']['plutonium-ammo'].unit.time = 60
-    table.insert(data.raw['technology']['plutonium-ammo'].unit.ingredients, {'utility-science-pack', 1})
 
-    table.insert(data.raw['technology']['plutonium-atomic-bomb'].effects, {type='recipe', recipe='plutonium-atomic-artillery-shell'})
+    table.insert(data.raw['technology']['plutonium-atomic-bomb'].effects, {type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'})
 end
 
 if mods['SchallRadioactiveWaste'] then
