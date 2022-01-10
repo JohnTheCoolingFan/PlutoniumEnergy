@@ -36,9 +36,9 @@ Other my mods:
 
 # Support
 
-If you would like to support me, you can donate me using BTC, BCH or SLP (images are too large, so it's just a link):
-[Bitcoin Cash (BCH)](https://imgur.com/tBASbzf.png= 50x)
-[Bitcoint (BTC)](https://imgur.com/NwaMwIX.png =50x)
-[SLP](https://imgur.com/0Kga1Ee.png =50x)
+If you would like to support me, you can donate me using BTC, BCH or ETH (images are too large, so it's just a link):
+[Bitcoin Cash (BCH)](https://imgur.com/tBASbzf.png)
+[Bitcoint (BTC)](https://imgur.com/NwaMwIX.png)
+[Ethereum (ETH)](https://imgur.com/IkvweGC.png)
 
 You can also contact me on discord, if you would like to dontae some other way.
