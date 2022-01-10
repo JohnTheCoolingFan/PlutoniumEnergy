@@ -126,7 +126,7 @@ data:extend({
                 recipe = 'breeder-fuel-cell-reprocessing'
             }
         },
-        prerequisites = {'plutonium-processing'},
+        prerequisites = {'plutonium-processing', 'kovarex-enrichment-process'},
         unit = {
             ingredients = {
                 {'automation-science-pack', 1},
