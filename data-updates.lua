@@ -1,5 +1,3 @@
-log('[PlutoniumEnergy] final fixes stage. plutonium atomic bomb ingredients: '..serpent.dump(data.raw['technology']['plutonium-ammo'].unit))
-
 if mods['bobplates'] then
     -- Disable some recipes
     data.raw['technology']['plutonium-enrichment-process'].hidden = true
@@ -19,11 +17,15 @@ if mods['IndustrialRevolution'] then
     data.raw['item']['plutonium-fuel'].order = 'fb'
     data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
 
-    data.raw['technology']['plutonium-ammo'].unit.count = 2000
-    data.raw['technology']['plutonium-ammo'].unit.time = 60
+    if data.raw['technology']['plutonium-ammo'] then
+        data.raw['technology']['plutonium-ammo'].unit.count = 2000
+        data.raw['technology']['plutonium-ammo'].unit.time = 60
+    end
 
-    -- Note to future self: atomic bombs are replaced by artillery shells in IR2
-    data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'}}
+    if data.raw['technology']['plutonium-atomic-bomb'] then
+        -- Note to future self: atomic bombs are replaced by artillery shells in IR2
+        data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'}}
+    end
 end
 
 if mods['SchallRadioactiveWaste'] then
