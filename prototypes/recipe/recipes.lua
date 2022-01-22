@@ -30,7 +30,8 @@ data:extend({
                 secondary = {r = 0.525, g = 0.694, b = 0.039, a = 1.000}, -- #86b10a
                 tertiary = {r = 0.475, g = 0.541, b = 0.282, a = 1.000}, -- #798a48
                 quaternary = {r = 0.753, g = 0.863, b = 0.075, a = 1.000} -- #c0dc13
-            }
+            },
+            allow_decomposition = false
         },
         {
             type = 'recipe',
@@ -51,7 +52,8 @@ data:extend({
                 {type = 'item', name = 'empty-barrel',  amount = 10}
             },
             order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
-            subgroup = 'intermediate-product'
+            subgroup = 'intermediate-product',
+            allow_decomposition = false
         },
         {
             type = 'recipe',
