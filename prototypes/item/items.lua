@@ -92,8 +92,7 @@ data:extend({
     {
         type = 'item',
         name = 'breeder-fuel-cell',
-        -- TODO
-        icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel.png',
+        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
@@ -133,7 +132,7 @@ data:extend({
     {
         type = "item",
         name = "breeder-reactor",
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/breeder-reactor.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
