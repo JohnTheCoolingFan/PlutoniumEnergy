@@ -16,7 +16,7 @@ data:extend({
                 recipe = 'used-up-uranium-fuel-cell-solution-centrifuging'
             }
         },
-        prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing"},
+        prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing", "fluid-handling"},
         unit = {
             ingredients = {
                 {"automation-science-pack", 1},
