@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.10
+Date: 2022-05-07
+  Balancing:
+    - Added Used-up uraniume fuel cell solution centrifuging to productivity
+      whitelist. Only the actual products are affected by productivity, no
+      barrel multiplication here.
+---------------------------------------------------------------------------------------------------
 Version: 1.3.9
 Date: 2022-04-26
   Fixes:
