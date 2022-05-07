@@ -250,6 +250,13 @@ if mods["IndustrialRevolution"] then
         {"graphite", 60},
         {"refined-concrete", 200},
     }
+    data.raw['recipe']['breeder-reactor'].ingredients = {
+        {"lead-plate-special", 200},
+        {"computer-mk3", 6},
+        {"heat-pipe", 12},
+        {"graphite", 160},
+        {"refined-concrete", 500}
+    }
     -- Add lead scrap to reprocessing recipes
     data.raw["recipe"]["MOX-fuel-reprocessing"].results = {
         {
