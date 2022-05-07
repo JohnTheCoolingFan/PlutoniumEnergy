@@ -152,8 +152,8 @@ data:extend({
             category = 'centrifuging',
             energy_required = 100,
             enabled = false,
-            icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png', -- TODO
-            icon_size = 64, icon_mipmaps = 4,
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png',
+            icon_size = 64,
             ingredients = {
                 {'used-up-breeder-fuel-cell', 10}
             },
