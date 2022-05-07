@@ -115,6 +115,8 @@ data:extend({
         {
             type = 'recipe',
             name = 'breeder-fuel-cell-from-uranium-cell',
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
+            icon_size = 64,
             category = 'centrifuging',
             energy_required = 10,
             enabled = false,
@@ -130,6 +132,8 @@ data:extend({
         {
             type = 'recipe',
             name = 'breeder-fuel-cell-from-MOX-fuel',
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel.png',
+            icon_size = 64,
             category = 'centrifuging',
             energy_required = 10,
             enabled = false,
