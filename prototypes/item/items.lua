@@ -106,8 +106,7 @@ data:extend({
     {
         type = 'item',
         name = 'used-up-breeder-fuel-cell',
-        -- TODO
-        icon = '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel.png',
+        icon = '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png',
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
