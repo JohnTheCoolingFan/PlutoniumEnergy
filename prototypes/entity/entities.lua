@@ -237,7 +237,7 @@ data:extend({
         {
             type = 'reactor',
             name = 'breeder-reactor',
-            icon  = '__base__/graphics/icons/nuclear-reactor.png', -- TODO
+            icon  = '__PlutoniumEnergy__/graphics/icons/breeder-reactor.png',
             icon_size = 64, icon_mipmaps = 4,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 0.5, result = 'breeder-reactor'},
@@ -261,7 +261,7 @@ data:extend({
             collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
             selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
             damaged_trigger_effect = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
-            lower_layer_picture = { -- TODO
+            lower_layer_picture = { -- TODO: connect pipes nicely
                 filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes.png',
                 width = 220,
                 height = 220,
@@ -274,7 +274,7 @@ data:extend({
                     shift = util.by_pixel(-1, -5)
                 }
             },
-            heat_lower_layer_picture = { -- TODO
+            heat_lower_layer_picture = { -- TODO: connect pipes nicely
                 filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes-heated.png',
                 width = 220,
                 height = 220,
@@ -322,8 +322,8 @@ data:extend({
                     }
                 }
             },
-            working_light_picture = { -- TODO: deciding color
-                filename = '__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png',
+            working_light_picture = {
+                filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-lights-color.png',
                 blend_mode = 'additive',
                 draw_as_glow = true,
                 width = 160,
@@ -331,7 +331,7 @@ data:extend({
                 shift = { -0.03125, -0.1875 },
                 scale = 1.4,
                 hr_version = {
-                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-lights-color.png',
+                    filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/hr-breeder-reactor-lights-color.png',
                     blend_mode = 'additive',
                     draw_as_glow = true,
                     width = 320,
