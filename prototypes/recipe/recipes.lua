@@ -155,7 +155,7 @@ data:extend({
             icon = '__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png', -- TODO
             icon_size = 64, icon_mipmaps = 4,
             ingredients = {
-                {'breeder-fuel-cell', 10}
+                {'used-up-breeder-fuel-cell', 10}
             },
             subgroup = 'intermediate-product',
             order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
