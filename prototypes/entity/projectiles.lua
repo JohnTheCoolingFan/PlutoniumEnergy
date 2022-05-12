@@ -1,6 +1,6 @@
 local sounds = require("__base__.prototypes.entity.sounds")
 
-local plutonium_atomic_rocket_action = 
+local plutonium_atomic_rocket_action =
 {
     type = "direct",
     action_delivery =

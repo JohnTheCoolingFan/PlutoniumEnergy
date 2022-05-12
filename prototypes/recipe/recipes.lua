@@ -4,6 +4,7 @@ require("prototypes.recipe.ammo")
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
 
 data:extend({
+        -- Advanced nuclear fuel reprocessing
         {
             type = 'recipe',
             name = 'advanced-nuclear-fuel-reprocessing',
@@ -55,6 +56,8 @@ data:extend({
             subgroup = 'intermediate-product',
             allow_decomposition = false
         },
+
+        -- MOX fuel and reprocessing
         {
             type = 'recipe',
             name = "MOX-fuel",
@@ -94,6 +97,76 @@ data:extend({
             },
             allow_decomposition = false
         },
+
+        -- Breeder fuel cell
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 10},
+                {'plutonium-239', 1},
+                {'uranium-238', 19}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-from-uranium-cell',
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
+            icon_size = 64,
+            category = 'centrifuging',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 5},
+                {'used-up-uranium-fuel-cell', 5},
+                {'plutonium-239', 1}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5,
+            allow_decomposition = false
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-from-MOX-fuel',
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel.png',
+            icon_size = 64,
+            category = 'centrifuging',
+            energy_required = 10,
+            enabled = false,
+            ingredients = {
+                {'iron-plate', 5},
+                {'used-up-MOX-fuel', 5},
+                {'uranium-238', 10}
+            },
+            result = 'breeder-fuel-cell',
+            result_count = 5,
+            allow_decomposition = false
+        },
+        {
+            type = 'recipe',
+            name = 'breeder-fuel-cell-reprocessing',
+            category = 'centrifuging',
+            energy_required = 100,
+            enabled = false,
+            icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png',
+            icon_size = 64,
+            ingredients = {
+                {'used-up-breeder-fuel-cell', 10}
+            },
+            subgroup = 'intermediate-product',
+            order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
+            results = {
+                {'plutonium-238', 20},
+                {'plutonium-239', 1}
+            },
+            allow_decomposition = false
+        },
+
+        -- Plutonium fuel (chemical fuel)
         {
             type = "recipe",
             name = "plutonium-fuel",
@@ -105,6 +178,8 @@ data:extend({
             icon_size = 64, icon_mipmaps = 4,
             result = "plutonium-fuel"
         },
+
+        -- Plutonium enrichment process
         {
             type = "recipe",
             name = "plutonium-enrichment-process",
@@ -126,6 +201,8 @@ data:extend({
             },
             allow_decomposition = false
         },
+
+        -- Reactors
         {
             type = "recipe",
             name = "MOX-reactor",
@@ -138,6 +215,20 @@ data:extend({
                 {"copper-plate", 400}
             },
             result = "MOX-reactor",
+            requester_paste_multiplier = 1
+        },
+        {
+            type = "recipe",
+            name = "breeder-reactor",
+            energy_required = 8,
+            enabled = false,
+            ingredients = {
+                {"concrete", 1000},
+                {"steel-plate", 1000},
+                {"advanced-circuit", 1000},
+                {"copper-plate", 1000}
+            },
+            result = "breeder-reactor",
             requester_paste_multiplier = 1
         }
     })
@@ -162,6 +253,13 @@ if mods["IndustrialRevolution"] then
         {"heat-pipe", 4},
         {"graphite", 60},
         {"refined-concrete", 200},
+    }
+    data.raw['recipe']['breeder-reactor'].ingredients = {
+        {"lead-plate-special", 200},
+        {"computer-mk3", 6},
+        {"heat-pipe", 12},
+        {"graphite", 160},
+        {"refined-concrete", 500}
     }
     -- Add lead scrap to reprocessing recipes
     data.raw["recipe"]["MOX-fuel-reprocessing"].results = {

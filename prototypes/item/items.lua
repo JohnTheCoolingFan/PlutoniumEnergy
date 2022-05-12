@@ -61,7 +61,7 @@ data:extend({
         stack_size = 1
     },
 
-    -- MOX fuel
+    -- MOX fuel (nuclear)
     {
         type = "item",
         name = "MOX-fuel",
@@ -88,6 +88,33 @@ data:extend({
         stack_size = 50
     },
 
+    -- Breeder fuel cell (nuclear)
+    {
+        type = 'item',
+        name = 'breeder-fuel-cell',
+        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = 'intermediate-product',
+        order = 'r[uranium-processing]-c[breeder-fuel-cell]',
+        fuel_category = 'nuclear-breeder',
+        burnt_result = 'used-up-breeder-fuel-cell',
+        fuel_value = '10GJ',
+        stack_size = 20
+    },
+    {
+        type = 'item',
+        name = 'used-up-breeder-fuel-cell',
+        icon = '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png',
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = 'intermediate-product',
+        order = 'j[used-up-breeder-fuel-cell]',
+        stack_size = 20
+    },
+
     -- Machines
     {
         type = "item",
@@ -99,6 +126,18 @@ data:extend({
         subgroup = "energy",
         order = "f[nuclear-energy]-b[MOX-reactor]",
         place_result = "MOX-reactor",
+        stack_size = 10
+    },
+    {
+        type = "item",
+        name = "breeder-reactor",
+        icon = "__PlutoniumEnergy__/graphics/icons/breeder-reactor.png",
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = "energy",
+        order = "f[nuclear-energy]-c[breeder-reactor]",
+        place_result = "breeder-reactor",
         stack_size = 10
     }
 })
