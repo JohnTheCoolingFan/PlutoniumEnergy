@@ -413,6 +413,7 @@ data:extend({
                     }
                 },
 
+                -- TODO: fix lr version
                 heat_picture = apply_heat_pipe_glow {
                     filename = '__base__/graphics/entity/nuclear-reactor/reactor-heated.png',
                     width = 168,
