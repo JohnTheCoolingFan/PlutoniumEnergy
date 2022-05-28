@@ -7,7 +7,8 @@ require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 require("prototypes.fluid.fluids")
 
--- TODO: New screenshots, better overview
+-- TODO: icons for breeder technologies
+-- TODO: improve compatibility with Realistic Reactors
 
 -- Space Exploration compatibility by Polish DeathCare
 
