@@ -249,11 +249,9 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
     plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].repeat_count = 140
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].damage.amount = 560
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[6].radius = 10
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.repeat_count = 2800
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].action.radius = 50
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].damage.amount = 560
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[13].action.repeat_count = 2800
+    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[13].action.radius = 50
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 
 elseif mods['IndustrialRevolution'] then
