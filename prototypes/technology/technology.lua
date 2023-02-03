@@ -1,5 +1,8 @@
 require("prototypes.technology.ammo")
 
+-- TODO: update technology icons
+-- TODO: re-visit the technology costs and breeder fuel cells techs
+
 data:extend({
     {
         type = "technology",
@@ -16,12 +19,12 @@ data:extend({
                 recipe = 'used-up-uranium-fuel-cell-solution-centrifuging'
             }
         },
-        prerequisites = {"uranium-processing", "nuclear-fuel-reprocessing", "fluid-handling"},
+        prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing", "fluid-handling" },
         unit = {
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 }
             },
             time = 30,
             count = 400
@@ -43,12 +46,12 @@ data:extend({
                 recipe = "MOX-reactor"
             }
         },
-        prerequisites = {"plutonium-processing"},
+        prerequisites = { "plutonium-processing" },
         unit = {
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 }
             },
             time = 35,
             count = 1000
@@ -66,13 +69,13 @@ data:extend({
                 recipe = "MOX-fuel-reprocessing"
             },
         },
-        prerequisites = {"plutonium-nuclear-power"},
+        prerequisites = { "plutonium-nuclear-power" },
         unit = {
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 }
             },
             time = 30,
             count = 200
@@ -94,13 +97,13 @@ data:extend({
                 recipe = 'plutonium-fuel'
             }
         },
-        prerequisites = {"plutonium-processing", "kovarex-enrichment-process"},
+        prerequisites = { "plutonium-processing", "kovarex-enrichment-process" },
         unit = {
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1}
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack", 1 },
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 }
             },
             time = 30,
             count = 2000
@@ -126,13 +129,13 @@ data:extend({
                 recipe = 'breeder-fuel-cell-reprocessing'
             }
         },
-        prerequisites = {'plutonium-processing', 'kovarex-enrichment-process'},
+        prerequisites = { 'plutonium-processing', 'kovarex-enrichment-process' },
         unit = {
             ingredients = {
-                {'automation-science-pack', 1},
-                {'logistic-science-pack', 1},
-                {'chemical-science-pack', 1},
-                {'production-science-pack', 1}
+                { 'automation-science-pack', 1 },
+                { 'logistic-science-pack', 1 },
+                { 'chemical-science-pack', 1 },
+                { 'production-science-pack', 1 }
             },
             -- TODO: adjust balance
             time = 30,
@@ -151,13 +154,13 @@ data:extend({
                 recipe = 'breeder-fuel-cell-from-uranium-cell'
             }
         },
-        prerequisites = {'nuclear-breeding', 'nuclear-fuel-reprocessing'},
+        prerequisites = { 'nuclear-breeding', 'nuclear-fuel-reprocessing' },
         unit = {
             ingredients = {
-                {'automation-science-pack', 1},
-                {'logistic-science-pack', 1},
-                {'chemical-science-pack', 1},
-                {'production-science-pack', 1}
+                { 'automation-science-pack', 1 },
+                { 'logistic-science-pack', 1 },
+                { 'chemical-science-pack', 1 },
+                { 'production-science-pack', 1 }
             },
             time = 30,
             count = 100
@@ -175,13 +178,13 @@ data:extend({
                 recipe = 'breeder-fuel-cell-from-MOX-fuel'
             }
         },
-        prerequisites = {'nuclear-breeding', 'MOX-fuel-reprocessing'},
+        prerequisites = { 'nuclear-breeding', 'MOX-fuel-reprocessing' },
         unit = {
             ingredients = {
-                {'automation-science-pack', 1},
-                {'logistic-science-pack', 1},
-                {'chemical-science-pack', 1},
-                {'production-science-pack', 1}
+                { 'automation-science-pack', 1 },
+                { 'logistic-science-pack', 1 },
+                { 'chemical-science-pack', 1 },
+                { 'production-science-pack', 1 }
             },
             time = 30,
             count = 100
