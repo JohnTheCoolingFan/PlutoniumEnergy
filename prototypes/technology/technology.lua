@@ -24,7 +24,8 @@ data:extend({
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 }
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 }
             },
             time = 30,
             count = 400
@@ -51,7 +52,8 @@ data:extend({
             ingredients = {
                 { "automation-science-pack", 1 },
                 { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 }
+                { "chemical-science-pack", 1 },
+                { "production-science-pack", 1 }
             },
             time = 35,
             count = 1000
@@ -163,7 +165,7 @@ data:extend({
                 { 'production-science-pack', 1 }
             },
             time = 30,
-            count = 100
+            count = 500
         },
         order = 'e-p-d-b'
     },
@@ -187,7 +189,7 @@ data:extend({
                 { 'production-science-pack', 1 }
             },
             time = 30,
-            count = 100
+            count = 500
         },
         order = 'e-p-d-b'
     }

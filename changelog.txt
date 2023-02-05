@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.5
+Date: 2023-02-05
+  Balancing:
+    - Added production science pack requirement to plutonium processing and
+      plutonium nuclear power
+    - Breeder fuel cells from other used cells technologies now require 500
+      units instead of 100 
+---------------------------------------------------------------------------------------------------
 Version: 1.4.4
 Date: 2023-01-24
   Balancing:
