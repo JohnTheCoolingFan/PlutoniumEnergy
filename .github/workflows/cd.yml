@@ -14,25 +14,28 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Install rfmp
-        uses: baptiste0928/cargo-install@v1.3.0
+      - name: Download rfmp
+        uses: robinraju/release-downloader@v1.7
         with:
-          crate: rfmp
+          repository: JohnTheCoolingFan/rfmp
+          fileName: rfmp-linux
+          latest: true
       
       - name: Get full mod file name
         run: |
-          MFNAME=$(jq '.name + "_" + .version + ".zip"' info.json)
+          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' info.json)
           echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
-          echo "$MFNAME" > mod-file-name.txt
 
       - name: Pack a mod
-        run: rfmp --no-clean --install-dir .
+        run: |
+          chmod +x ./rfmp-linux
+          ./rfmp-linux --no-clean --install-dir .
         
       - name: Upload packed mod as an artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: packed-mod
-          path: ${{ env.MODFILENAME }}
+          path: ./${{ env.MODFILENAME }}
       
       - name: Upload mod name as an artifact
         uses: actions/upload-artifact@v3.1.2
@@ -52,13 +55,13 @@ jobs:
           name: packed-mod
       
       - name: Download info.json
-        uses: actions/download-artifact@3.0.2
+        uses: actions/download-artifact@v3.0.2
         with:
           name: info-json
       
       - name: Set up environment and file names
         run: |
-          MFNAME=$(jq '.name + "_" + .version + ".zip"' info.json)
+          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' info.json)
           echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
       
       - name: Upload file to release
