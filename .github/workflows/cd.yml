@@ -68,3 +68,29 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.MODFILENAME }}
+
+  release-mod-portal:
+    name: Release on Mod Portal
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download mod
+        uses: actions/download-artifact@v3.0.2
+        with:
+          name: packed-mod
+      
+      - name: Download info.json
+        uses: actions/download-artifact@v3.0.2
+        with:
+          name: info-json
+      
+      - name: Set up environment and file names
+        run: |
+          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' info.json)
+          echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
+          
+      - name: Upload file to mod portal
+        run: |
+          UPLOAD_URL=$(curl -X POST -d mod="$(jq -r .name info.json)" -H "Authorization:Bearer ${{ secrets.factorio_token }}" https://mods.factorio.com/api/v2/mods/releases/init_upload | jq -r ".upload_url")
+          curl -X POST -s -F "file=@$MODFILENAME" $UPLOAD_URL
