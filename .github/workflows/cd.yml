@@ -1,0 +1,67 @@
+name: release
+
+# Controls when the workflow will run
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install rfmp
+        uses: baptiste0928/cargo-install@v1.3.0
+        with:
+          crate: rfmp
+      
+      - name: Get full mod file name
+        run: |
+          MFNAME=$(jq '.name + "_" + .version + ".zip"' info.json)
+          echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
+          echo "$MFNAME" > mod-file-name.txt
+
+      - name: Pack a mod
+        run: rfmp --no-clean --install-dir .
+        
+      - name: Upload packed mod as an artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: packed-mod
+          path: ${{ env.MODFILENAME }}
+      
+      - name: Upload mod name as an artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: info-json
+          path: info.json
+        
+  release-github:
+    name: Release on github
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download mod
+        uses: actions/download-artifact@v3.0.2
+        with:
+          name: packed-mod
+      
+      - name: Download info.json
+        uses: actions/download-artifact@3.0.2
+        with:
+          name: info-json
+      
+      - name: Set up environment and file names
+        run: |
+          MFNAME=$(jq '.name + "_" + .version + ".zip"' info.json)
+          echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
+      
+      - name: Upload file to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ env.MODFILENAME }}
