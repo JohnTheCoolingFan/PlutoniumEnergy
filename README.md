@@ -1,11 +1,14 @@
 # Plutonium Energy
 
-This mod adds new material - plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), so it allow to pack them more densily to increase energy production.
-![Isotope recipes](https://imgur.com/cf4jZiS.png)
-![Other recipes and reactor stats](https://imgur.com/eRwJsi2.png)
-And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one. And if you installed mods that add uranium artillery shell / bomb, this mod also adds a plutonium variant (Currently supported only Atomic Artillery mod).
+This mod adds new material - plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows some interestingg designs.
+[Google spreadsheet with various info](https://docs.google.com/spreadsheets/d/1ErBNFJ-bGifedeo_S45z2P69XyfoaVpoCdMMLYrjy2k/edit?usp=sharing)
+![MOX reactor overview](https://imgur.com/H5eEPbn.png)
+![Advanced nuclear fuel reprocessing overview](https://imgur.com/1kE8Q3r.png)
+![MOX reactor close-up](https://i.imgur.com/r1qVtf1.png)
+And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one. And if you installed mods that add uranium artillery shell / bomb, this mod also adds a plutonium variant (See optional dependencies for an estimated list of mods supported for this feature).
 [Video comparison](https://youtu.be/HY6p4fRM6Uk)
 ![Uranium and Plutonium atomic bombs comparison](https://imgur.com/P1cqH06.png)
+
 
 #### Available languages:
 
@@ -15,11 +18,16 @@ And with energy generation part comes along destructive part. This mod also adds
 *   German / Deutsch (de) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
 *   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
 *   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
-*   Polish / Polski (pl) orifinally by Guru [TSM]#8528, updated by [TheNextJake](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/commit/4ef7d64d2df110ac6eecc9e2320bfe089bab6c7f) and pava
+*   Polish / Polski (pl) by Guru [TSM]#8528
 
-#### Join my [Discord server](https://discord.gg/grHVhE2) to get latest news about my mods and just to talk with each other. It's mainly Russian, but everyone is welcome.
-[![Discord server](https://discordapp.com/api/guilds/370167294439063564/widget.png?style=banner2)](https://discord.gg/grHVhE2)
-#### You can support me on [Patreon](https://www.patreon.com/JohnTheCoolingFan). Your support is very important for me!
+#### Mod compatibility
+
+I didn't do much of specialised compatibility with otehr mods unless specified (here or in optional dependencies).
+
+* Krastorio 2 compatibility mod made by Midnighttigger: https://mods.factorio.com/mod/plutoniumenergy-krastorio2
+
+#### Join my [Discord server](https://discord.gg/rqkaeYJhzS) to get latest news about my mods and just to talk with each other. It's mainly Russian, but everyone is welcome.
+[![Discord server](https://discordapp.com/api/guilds/370167294439063564/widget.png?style=banner2)](https://discord.gg/KPnETvMDYk)
 
 #### Other mods about nuclear energy:
 
@@ -34,6 +42,8 @@ Other my mods:
 *   [No Artillery Map Reveal](https://mods.factorio.com/mods/John_TheCF/NoArtilleryMapReveal)
 *   [Placeable-off-grid](https://mods.factorio.com/mod/PlaceableOffGrid)
 
+Mod source code is also available at [Gitlab](https://gitlab.com/JohnTheCoolingFan/PlutoniumEnergy) (Mirrored from github)
+
 # Support
 
 If you would like to support me, you can donate me using BTC, BCH or ETH (images are too large, so it's just a link):
@@ -41,4 +51,4 @@ If you would like to support me, you can donate me using BTC, BCH or ETH (images
 [Bitcoint (BTC)](https://imgur.com/NwaMwIX.png)
 [Ethereum (ETH)](https://imgur.com/IkvweGC.png)
 
-You can also contact me on discord, if you would like to dontae some other way.
+You can also contact me on discord, if you would like to donate in some other way.
