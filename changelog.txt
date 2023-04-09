@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.6
+Date: 2023-04-09
+  Minor changes:
+    - Added recipe tints to recipes done in centrifuge, using Centrifuge Tint
+      System mod
+---------------------------------------------------------------------------------------------------
 Version: 1.4.5
 Date: 2023-02-05
   Balancing:
