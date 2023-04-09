@@ -52,6 +52,9 @@ data:extend({
             { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.25 },
             { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 }
         },
+        crafting_machine_tint = {
+            primary = { r = 0.651, g = 0.851, b = 0.075, a = 1.000 } -- #A6D913
+        },
         order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
         subgroup = 'intermediate-product',
         allow_decomposition = false
@@ -85,6 +88,9 @@ data:extend({
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
         main_product = "",
+        crafting_machine_tint = {
+            primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
+        },
         results = {
             {
                 name = "plutonium-239",
@@ -125,6 +131,9 @@ data:extend({
             { 'used-up-uranium-fuel-cell', 5 },
             { 'plutonium-239',             1 }
         },
+        crafting_machine_tint = {
+            primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
+        },
         result = 'breeder-fuel-cell',
         result_count = 5,
         allow_decomposition = false
@@ -141,6 +150,9 @@ data:extend({
             { 'iron-plate',       5 },
             { 'used-up-MOX-fuel', 5 },
             { 'uranium-238',      10 }
+        },
+        crafting_machine_tint = {
+            primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
         result = 'breeder-fuel-cell',
         result_count = 5,
@@ -159,6 +171,9 @@ data:extend({
         },
         subgroup = 'intermediate-product',
         order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
+        crafting_machine_tint = {
+            primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
+        },
         results = {
             { 'plutonium-238', 20 },
             { 'plutonium-239', 1 }
@@ -177,6 +192,9 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
         icon_size = 64,
         icon_mipmaps = 4,
+        crafting_machine_tint = {
+            primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
+        },
         result = "plutonium-fuel"
     },
 
@@ -197,6 +215,9 @@ data:extend({
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-f[plutonium-enrichment-process]",
         main_product = "",
+        crafting_machine_tint = {
+            primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
+        },
         results = {
             { 'plutonium-239', 32 },
             { 'plutonium-238', 2 },
