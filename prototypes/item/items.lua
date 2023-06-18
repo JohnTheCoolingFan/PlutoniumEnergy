@@ -1,36 +1,37 @@
 require("prototypes.item.ammo")
 
 data:extend({
-	-- Common resources
-	{
-		type = "item",
-		name = "plutonium-239",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
-		icon_size = 64,
+    -- Common resources
+    {
+        type = "item",
+        name = "plutonium-239",
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
+        icon_size = 64,
         icon_mipmaps = 4,
-		flags = {},
-		subgroup = "intermediate-product",
-		order = "g[plutonium-239]",
-		stack_size = 100
-	},
-	{
-		type = "item",
-		name = "plutonium-238",
-		icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238.png",
-		icon_size = 64,
+        flags = {},
+        subgroup = "intermediate-product",
+        order = "g[plutonium-239]",
+        stack_size = 100
+    },
+    {
+        type = "item",
+        name = "plutonium-238",
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238.png",
+        icon_size = 64,
         icon_mipmaps = 4,
-		flags = {},
-		subgroup = "intermediate-product",
-		order = "g[plutonium-238]",
-		stack_size = 100
-	},
+        flags = {},
+        subgroup = "intermediate-product",
+        order = "g[plutonium-238]",
+        stack_size = 100
+    },
 
     -- Plutonium nuclear fuel (the one that burns)
     {
         type = "item",
         name = "plutonium-fuel",
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
-        icon_size = 64, icon_mipmaps = 4,
+        icon_size = 64,
+        icon_mipmaps = 4,
         pictures =
         {
             layers =
@@ -43,7 +44,7 @@ data:extend({
                 },
                 {
                     draw_as_light = true,
-                    flags = {"light"},
+                    flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/nuclear-fuel-light.png",
                     scale = 0.25,
@@ -68,6 +69,24 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
         icon_size = 64,
         icon_mipmaps = 4,
+        pictures = {
+            layers = {
+                {
+                    size = 64,
+                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
+                    scale = 0.25,
+                    mipmap_count = 4,
+                },
+                {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+                    scale = 0.25,
+                    mipmap_count = 4
+                }
+            }
+        },
         flags = {},
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-b[MOX-fuel]",
@@ -95,6 +114,24 @@ data:extend({
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
         icon_size = 64,
         icon_mipmaps = 4,
+        pictures = {
+            layers = {
+                {
+                    size = 64,
+                    filename = "__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png",
+                    scale = 0.25,
+                    mipmap_count = 4,
+                },
+                {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+                    scale = 0.25,
+                    mipmap_count = 4
+                }
+            }
+        },
         flags = {},
         subgroup = 'intermediate-product',
         order = 'r[uranium-processing]-c[breeder-fuel-cell]',
