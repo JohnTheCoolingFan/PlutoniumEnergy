@@ -34,6 +34,37 @@ data:extend({
         },
         allow_decomposition = false
     },
+    -- Same as above, but barelling is built-in
+    {
+        type = 'recipe',
+        name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
+        localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
+        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+        icon_size = 64,
+        icon_mipmamps = 4,
+        category = 'chemistry',
+        enabled = false,
+        ingredients = {
+            { type = 'item',  name = 'used-up-uranium-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 25 },
+            { type = 'item',  name = 'empty-barrel',              amount = 1 }
+        },
+        energy_required = 1,
+        results = {
+            { type = 'fluid', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 1 }
+        },
+        order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing-with-barrelling]',
+        subgroup = 'intermediate-product',
+        show_amount_in_title = false,
+        always_show_products = true,
+        crafting_machine_tint = {
+            primary = { r = 0.651, g = 0.851, b = 0.075, a = 1.000 },   -- #A6D913
+            secondary = { r = 0.525, g = 0.694, b = 0.039, a = 1.000 }, -- #86b10a
+            tertiary = { r = 0.475, g = 0.541, b = 0.282, a = 1.000 },  -- #798a48
+            quaternary = { r = 0.753, g = 0.863, b = 0.075, a = 1.000 } -- #c0dc13
+        },
+        allow_decomposition = false
+    },
     {
         type = 'recipe',
         name = 'used-up-uranium-fuel-cell-solution-centrifuging',

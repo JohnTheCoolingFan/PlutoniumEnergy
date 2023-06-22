@@ -15,6 +15,10 @@ data:extend({
                 recipe = "advanced-nuclear-fuel-reprocessing"
             },
             {
+                type = "unlock-recipe",
+                recipe = "advanced-nuclear-fuel-reprocessing-with-barrelling"
+            },
+            {
                 type = 'unlock-recipe',
                 recipe = 'used-up-uranium-fuel-cell-solution-centrifuging'
             }
@@ -23,8 +27,8 @@ data:extend({
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 }
             },
             time = 30,
@@ -51,8 +55,8 @@ data:extend({
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 }
             },
             time = 35,
@@ -75,8 +79,8 @@ data:extend({
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 }
             },
             time = 30,
@@ -87,7 +91,8 @@ data:extend({
     {
         type = "technology",
         name = "plutonium-enrichment-process",
-        icon_size = 256, icon_mipmaps = 4,
+        icon_size = 256,
+        icon_mipmaps = 4,
         icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
         effects = {
             {
@@ -103,8 +108,8 @@ data:extend({
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
                 { "production-science-pack", 1 }
             },
             time = 30,
@@ -115,7 +120,8 @@ data:extend({
     {
         type = 'technology',
         name = 'nuclear-breeding',
-        icon_size = 256, icon_mipmaps = 4,
+        icon_size = 256,
+        icon_mipmaps = 4,
         icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
@@ -135,8 +141,8 @@ data:extend({
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },
-                { 'logistic-science-pack', 1 },
-                { 'chemical-science-pack', 1 },
+                { 'logistic-science-pack',   1 },
+                { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 }
             },
             -- TODO: adjust balance
@@ -148,7 +154,8 @@ data:extend({
     {
         type = 'technology',
         name = 'breeder-fuel-cell-from-uranium-cell',
-        icon_size = 256, icon_mipmaps = 4,
+        icon_size = 256,
+        icon_mipmaps = 4,
         icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
@@ -160,8 +167,8 @@ data:extend({
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },
-                { 'logistic-science-pack', 1 },
-                { 'chemical-science-pack', 1 },
+                { 'logistic-science-pack',   1 },
+                { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 }
             },
             time = 30,
@@ -172,7 +179,8 @@ data:extend({
     {
         type = 'technology',
         name = 'breeder-fuel-cell-from-MOX-fuel',
-        icon_size = 256, icon_mipmaps = 4,
+        icon_size = 256,
+        icon_mipmaps = 4,
         icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
         effects = {
             {
@@ -184,8 +192,8 @@ data:extend({
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },
-                { 'logistic-science-pack', 1 },
-                { 'chemical-science-pack', 1 },
+                { 'logistic-science-pack',   1 },
+                { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 }
             },
             time = 30,
