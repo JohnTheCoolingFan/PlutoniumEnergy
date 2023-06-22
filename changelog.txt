@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+Date: 2023-06-22
+  Minor Changes:
+    - Changed name of a fluid used in advanced nuclear fuel reprocessing to
+      "Uranium nuclear waste solution"
+  Integration:
+    - Improved IR2 compatibility by making breeder fuel cells in line with
+      other cells
+  Balancing:
+    - Added advanced nuclear fuel reprocessing recipe that also puts the fluid
+      in the barrel in one action without needing a separate assembler
+---------------------------------------------------------------------------------------------------
 Version: 1.4.7
 Date: 2023-06-18
   Graphics:
