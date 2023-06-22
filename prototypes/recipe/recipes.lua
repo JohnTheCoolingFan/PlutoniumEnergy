@@ -192,23 +192,86 @@ data:extend({
     {
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing',
-        category = 'centrifuging',
-        energy_required = 100,
-        enabled = false,
-        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png',
+        localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing' },
+        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png', -- TODO
         icon_size = 64,
+        icon_mipmamps = 4,
+        category = 'chemistry',
+        enabled = false,
         ingredients = {
-            { 'used-up-breeder-fuel-cell', 10 }
+            { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 50 }
         },
-        subgroup = 'intermediate-product',
+        energy_required = 1,
+        results = {
+            { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 100 }
+        },
         order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
+        subgroup = 'intermediate-product',
+        show_amount_in_title = false,
+        always_show_products = true,
+        crafting_machine_tint = {
+            -- small TODO: write down colors
+            primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 },   -- #77002E
+            secondary = { r = 0.694, g = 0.000, b = 0.039, a = 1.000 }, --
+            tertiary = { r = 0.541, g = 0.000, b = 0.282, a = 1.000 },  --
+            quaternary = { r = 0.863, g = 0.0, b = 0.075, a = 1.000 }   --
+        },
+        allow_decomposition = false
+    },
+    {
+        type = 'recipe',
+        name = 'breeder-fuel-cell-reprocessing-with-barrelling',
+        localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
+        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png', -- TODO
+        icon_size = 64,
+        icon_mipmamps = 4,
+        category = 'chemistry',
+        enabled = false,
+        ingredients = {
+            { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 100 },
+            { type = 'item',  name = 'empty-barrel',              amount = 2 }
+        },
+        energy_required = 1,
+        results = {
+            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 2 }
+        },
+        order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing-with-barrelling]',
+        subgroup = 'intermediate-product',
+        show_amount_in_title = false,
+        always_show_products = true,
+        crafting_machine_tint = {
+            -- small TODO: write down colors
+            primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 },   -- #77002E
+            secondary = { r = 0.694, g = 0.000, b = 0.039, a = 1.000 }, --
+            tertiary = { r = 0.541, g = 0.000, b = 0.282, a = 1.000 },  --
+            quaternary = { r = 0.863, g = 0.0, b = 0.075, a = 1.000 }   --
+        },
+        allow_decomposition = false
+    },
+    {
+        type = 'recipe',
+        name = 'used-up-breeder-fuel-cell-solution-centrifuging',
+        icon = '__PlutoniumEnergy__/graphics/icons/used-up-uranium-fuel-cell-solution-centrifuging.png', -- TODO
+        icon_size = 64,
+        icon_mipmamps = 4,
+        category = 'centrifuging',
+        enabled = false,
+        ingredients = {
+            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 10 }
+        },
+        energy_required = 40,
+        results = {
+            { type = 'item', name = 'plutonium-238', amount = 10 },
+            { type = 'item', name = 'plutonium-239', amount = 1,  probability = 0.5 },
+            { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
+        },
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
         },
-        results = {
-            { 'plutonium-238', 20 },
-            { 'plutonium-239', 1 }
-        },
+        order = 'r[uranium-processing]-g[used-up-breeder-fuel-cell-solution-centrifuging]',
+        subgroup = 'intermediate-product',
         allow_decomposition = false
     },
 
