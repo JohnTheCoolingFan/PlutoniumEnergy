@@ -135,6 +135,14 @@ data:extend({
             {
                 type = 'unlock-recipe',
                 recipe = 'breeder-fuel-cell-reprocessing'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'breeder-fuel-reprocessing-with-barrelling'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'used-up-breeder-fuel-cell-solution-centrifuging'
             }
         },
         prerequisites = { 'plutonium-processing', 'kovarex-enrichment-process' },
