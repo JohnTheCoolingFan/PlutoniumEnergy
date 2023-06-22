@@ -336,6 +336,10 @@ if mods["IndustrialRevolution"] then
     }
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 1 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
+        { name = "steel-scrap", amount = 1 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
+        { name = "lead-scrap", amount = 1 })
     -- Subgroup and ordering fixes
     data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'ir2-fuels'
     data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'ir2-fuels'
