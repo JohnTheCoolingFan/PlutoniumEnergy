@@ -5,7 +5,7 @@ local limitation_to_add = {
     'plutonium-fuel',
     'plutonium-enrichment-process',
     'used-up-uranium-fuel-cell-solution-centrifuging',
-    'breeder-fuel-cell-reprocessing',
+    'used-up-breeder-fuel-cell-solution-centrifuging',
     'breeder-fuel-cell',
     'breeder-fuel-cell-from-uranium-cell',
     'breeder-fuel-cell-from-MOX-fuel'
