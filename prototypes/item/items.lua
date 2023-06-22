@@ -8,6 +8,27 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
         icon_size = 64,
         icon_mipmaps = 4,
+        pictures =
+        {
+            layers =
+            {
+                {
+                    size = 64,
+                    filename = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
+                    scale = 0.25,
+                    mipmap_count = 4
+                },
+                {
+                    draw_as_light = true,
+                    blend_mode = "additive",
+                    size = 64,
+                    filename = "__base__/graphics/icons/uranium-235.png",
+                    scale = 0.25,
+                    tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+                    mipmap_count = 4
+                }
+            }
+        },
         flags = {},
         subgroup = "intermediate-product",
         order = "g[plutonium-239]",
