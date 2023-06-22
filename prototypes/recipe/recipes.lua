@@ -301,6 +301,27 @@ if mods["IndustrialRevolution"] then
         { "uranium-238",        19 },
         { "plutonium-239",      1 }
     }
+    data.raw['recipe']['breeder-fuel-cell'].ingredients = {
+        { 'lead-plate-special', 10 },
+        { 'plutonium-239',      1 },
+        { 'uranium-238',        19 }
+    }
+    data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].ingredients = {
+        { 'lead-plate-special',        5 },
+        { 'used-up-uranium-fuel-cell', 5 },
+        { 'plutonium-239',             1 }
+    }
+    data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].ingredients = {
+        { 'lead-plate-special', 5 },
+        { 'used-up-MOX-fuel',   5 },
+        { 'uranium-238',        10 }
+    }
+    data.raw['recipe']['breeder-fuel-cell-reprocessing'].results = {
+        { 'plutonium-238', 20 },
+        { 'plutonium-239', 1 },
+        { 'steel-scarp',   4 },
+        { 'lead-scrap',    2 }
+    }
     data.raw['recipe']['MOX-reactor'].ingredients = {
         { "lead-plate-special", 80 },
         { "computer-mk3",       4 },
