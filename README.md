@@ -1,6 +1,6 @@
 # Plutonium Energy
 
-This mod adds new material - plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows some interestingg designs.
+This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows some interesting designs.
 [Google spreadsheet with various info](https://docs.google.com/spreadsheets/d/1ErBNFJ-bGifedeo_S45z2P69XyfoaVpoCdMMLYrjy2k/edit?usp=sharing)
 ![MOX reactor overview](https://imgur.com/H5eEPbn.png)
 ![Advanced nuclear fuel reprocessing overview](https://imgur.com/1kE8Q3r.png)
@@ -22,9 +22,12 @@ And with energy generation part comes along destructive part. This mod also adds
 
 #### Mod compatibility
 
-I didn't do much of specialised compatibility with otehr mods unless specified (here or in optional dependencies).
+I didn't do much of specialised compatibility with other mods unless specified (here or in optional dependencies).
 
 * Krastorio 2 compatibility mod made by Midnighttigger: https://mods.factorio.com/mod/plutoniumenergy-krastorio2
+* Adjusted recipes for IR2
+* Specialized compatibility with Schall's Radioactive Waste
+* Fixes to work with Bob's Metals, Chemicals and Intermediates
 
 #### Join my [Discord server](https://discord.gg/rqkaeYJhzS) to get latest news about my mods and just to talk with each other. It's mainly Russian, but everyone is welcome.
 [![Discord server](https://discordapp.com/api/guilds/370167294439063564/widget.png?style=banner2)](https://discord.gg/KPnETvMDYk)
