@@ -15,10 +15,10 @@ And with energy generation part comes along destructive part. This mod also adds
 *   English (en) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Russian / Русский (ru) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Ukrainian / Українська (uk) by [IgorLutiy](https://github.com/IgorLutiy)
-*   German / Deutsch (de) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
-*   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
-*   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke)
-*   Polish / Polski (pl) by Guru [TSM]#8528
+*   German / Deutsch (de) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
+*   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
+*   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
+*   Polish / Polski (pl) by Guru [TSM]#8528 ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
 
 #### Mod compatibility
 
