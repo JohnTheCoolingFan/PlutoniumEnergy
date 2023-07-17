@@ -51,7 +51,7 @@ data:extend({
         },
         energy_required = 1,
         results = {
-            { type = 'fluid', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 1 }
+            { type = 'item', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 1 }
         },
         order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing-with-barrelling]',
         subgroup = 'intermediate-product',
