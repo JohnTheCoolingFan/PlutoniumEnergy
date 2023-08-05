@@ -1,14 +1,12 @@
 require("prototypes.technology.ammo")
 
--- TODO: update technology icons
--- TODO: re-visit the technology costs and breeder fuel cells techs
-
 data:extend({
     {
         type = "technology",
         name = "plutonium-processing",
-        icon_size = 128,
         icon = "__PlutoniumEnergy__/graphics/technology/plutonium-processing.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
@@ -40,7 +38,8 @@ data:extend({
         type = "technology",
         name = "plutonium-nuclear-power",
         icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png",
-        icon_size = 128,
+        icon_size = 256,
+        icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
@@ -68,7 +67,8 @@ data:extend({
         type = "technology",
         name = "MOX-fuel-reprocessing",
         icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-reprocessing.png",
-        icon_size = 128,
+        icon_size = 256,
+        icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
@@ -122,7 +122,7 @@ data:extend({
         name = 'nuclear-breeding',
         icon_size = 256,
         icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/nuclear-breeding.png',
         effects = {
             {
                 type = 'unlock-recipe',
@@ -156,7 +156,7 @@ data:extend({
         name = 'breeder-fuel-cell-from-uranium-cell',
         icon_size = 256,
         icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-uranium-cell.png',
         effects = {
             {
                 type = 'unlock-recipe',
@@ -181,7 +181,7 @@ data:extend({
         name = 'breeder-fuel-cell-from-MOX-fuel',
         icon_size = 256,
         icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel.png',
         effects = {
             {
                 type = 'unlock-recipe',

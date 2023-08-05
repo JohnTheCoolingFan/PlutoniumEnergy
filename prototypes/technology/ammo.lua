@@ -4,7 +4,8 @@ if settings.startup['enable-plutonium-ammo'].value then
             type = "technology",
             name = "plutonium-ammo",
             icon = "__PlutoniumEnergy__/graphics/technology/plutonium-ammo.png",
-            icon_size = 128,
+            icon_size = 256,
+            icon_mipmaps = 4,
             effects = {
                 {
                     type = "unlock-recipe",
@@ -24,10 +25,10 @@ if settings.startup['enable-plutonium-ammo'].value then
                 count = 1250,
                 ingredients = {
                     { "automation-science-pack", 1 },
-                    { "logistic-science-pack", 1 },
-                    { "chemical-science-pack", 1 },
-                    { "military-science-pack", 1 },
-                    { "utility-science-pack", 1 }
+                    { "logistic-science-pack",   1 },
+                    { "chemical-science-pack",   1 },
+                    { "military-science-pack",   1 },
+                    { "utility-science-pack",    1 }
                 },
                 time = 50
             },
@@ -39,8 +40,9 @@ data:extend({
     {
         type = "technology",
         name = "plutonium-atomic-bomb",
-        icon_size = 128,
         icon = "__PlutoniumEnergy__/graphics/technology/plutonium-atomic-bomb.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
@@ -52,11 +54,11 @@ data:extend({
             count = 6000,
             ingredients = {
                 { "automation-science-pack", 1 },
-                { "logistic-science-pack", 1 },
-                { "chemical-science-pack", 1 },
-                { "military-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "military-science-pack",   1 },
                 { "production-science-pack", 1 },
-                { "utility-science-pack", 1 }
+                { "utility-science-pack",    1 }
             },
             time = 60
         },
