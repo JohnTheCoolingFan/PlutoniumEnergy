@@ -89,35 +89,6 @@ data:extend({
         order = "e-p-b-d"
     },
     {
-        type = "technology",
-        name = "plutonium-enrichment-process",
-        icon_size = 256,
-        icon_mipmaps = 4,
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
-        effects = {
-            {
-                type = 'unlock-recipe',
-                recipe = 'plutonium-enrichment-process'
-            },
-            {
-                type = 'unlock-recipe',
-                recipe = 'plutonium-fuel'
-            }
-        },
-        prerequisites = { "plutonium-processing", "kovarex-enrichment-process" },
-        unit = {
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "chemical-science-pack",   1 },
-                { "production-science-pack", 1 }
-            },
-            time = 30,
-            count = 2000
-        },
-        order = "e-p-b-d"
-    },
-    {
         type = 'technology',
         name = 'nuclear-breeding',
         icon_size = 256,
