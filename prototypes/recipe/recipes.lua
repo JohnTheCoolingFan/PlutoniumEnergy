@@ -155,7 +155,7 @@ data:extend({
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
         icon_size = 64,
         category = 'centrifuging',
-        energy_required = 20,
+        energy_required = 15,
         enabled = false,
         ingredients = {
             { 'iron-plate',                10 },
@@ -175,7 +175,7 @@ data:extend({
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel.png',
         icon_size = 64,
         category = 'centrifuging',
-        energy_required = 10,
+        energy_required = 7.5,
         enabled = false,
         ingredients = {
             { 'iron-plate',       5 },
