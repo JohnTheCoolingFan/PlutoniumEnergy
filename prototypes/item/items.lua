@@ -31,7 +31,7 @@ data:extend({
         },
         flags = {},
         subgroup = "intermediate-product",
-        order = "s[plutonium-239]",
+        order = "r[uranium-238]-a[plutonium-239]",
         stack_size = 100
     },
     {
@@ -42,7 +42,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "intermediate-product",
-        order = "s[plutonium-238]",
+        order = "r[uranium-238]-b[plutonium-238]",
         stack_size = 100
     },
 
@@ -169,7 +169,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = 'intermediate-product',
-        order = 'j[used-up-breeder-fuel-cell]',
+        order = 's[used-up-xbreeder-fuel-cell]',
         stack_size = 20
     },
 
