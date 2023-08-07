@@ -34,8 +34,8 @@ data:extend({
         },
         allow_decomposition = false
     },
-    -- Same as above, but barelling is built-in
     {
+        -- Same as above, but barelling is built-in
         type = 'recipe',
         name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
@@ -221,6 +221,7 @@ data:extend({
         allow_decomposition = false
     },
     {
+        -- Same, but with barrelling in a single step
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
