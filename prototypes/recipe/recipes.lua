@@ -319,7 +319,7 @@ if mods["IndustrialRevolution"] then
     data.raw['recipe']['breeder-fuel-cell-reprocessing'].results = {
         { 'plutonium-238', 20 },
         { 'plutonium-239', 1 },
-        { 'steel-scarp',   4 },
+        { 'steel-scrap',   4 },
         { 'lead-scrap',    2 }
     }
     data.raw['recipe']['MOX-reactor'].ingredients = {
