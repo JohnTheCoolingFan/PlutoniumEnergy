@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.10
+Date: 2023-08-07
+  Graphics:
+    - Remade majority of technology icons for better quality, better
+      consistency with vanilla and mipmaps
+---------------------------------------------------------------------------------------------------
 Version: 1.4.9
 Date: 2023-07-17
   Fixes:
