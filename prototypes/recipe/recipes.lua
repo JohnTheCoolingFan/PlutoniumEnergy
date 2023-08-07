@@ -155,18 +155,18 @@ data:extend({
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
         icon_size = 64,
         category = 'centrifuging',
-        energy_required = 10,
+        energy_required = 20,
         enabled = false,
         ingredients = {
-            { 'iron-plate',                5 },
-            { 'used-up-uranium-fuel-cell', 5 },
+            { 'iron-plate',                10 },
+            { 'used-up-uranium-fuel-cell', 10 },
             { 'plutonium-239',             1 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
         result = 'breeder-fuel-cell',
-        result_count = 5,
+        result_count = 10,
         allow_decomposition = false
     },
     {
