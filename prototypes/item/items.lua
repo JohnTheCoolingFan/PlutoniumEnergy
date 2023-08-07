@@ -31,7 +31,7 @@ data:extend({
         },
         flags = {},
         subgroup = "intermediate-product",
-        order = "g[plutonium-239]",
+        order = "s[plutonium-239]",
         stack_size = 100
     },
     {
@@ -42,7 +42,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "intermediate-product",
-        order = "g[plutonium-238]",
+        order = "s[plutonium-238]",
         stack_size = 100
     },
 
@@ -124,7 +124,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "intermediate-product",
-        order = "i[used-up-MOX-fuel]",
+        order = "s[used-up-MOX-fuel]",
         stack_size = 50
     },
 
