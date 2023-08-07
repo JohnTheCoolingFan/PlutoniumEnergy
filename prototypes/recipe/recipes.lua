@@ -125,7 +125,8 @@ data:extend({
         results = {
             {
                 name = "plutonium-239",
-                amount = 1
+                amount = 1,
+                probability = 0.15
             },
             {
                 name = "plutonium-238",
