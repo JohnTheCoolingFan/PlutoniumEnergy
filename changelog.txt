@@ -4,6 +4,8 @@ Date: 2023-08-07
   Graphics:
     - Remade majority of technology icons for better quality, better
       consistency with vanilla and mipmaps
+  Minor changes:
+    - Fixed item order of Plutonium isotopes and various nuclear fuel cells
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.9
 Date: 2023-07-17
