@@ -264,7 +264,7 @@ data:extend({
         energy_required = 40,
         results = {
             { type = 'item', name = 'plutonium-238', amount = 10 },
-            { type = 'item', name = 'plutonium-239', amount = 1,  probability = 0.5 },
+            { type = 'item', name = 'plutonium-239', amount = 2 },
             { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
         },
         crafting_machine_tint = {
@@ -418,14 +418,24 @@ if mods["IndustrialRevolution"] then
             amount = 1
         }
     }
+    -- Advanced nuclear fuel reprocessing tweaks
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { name = "steel-scrap", amount = 1 })
+        { type = "item", name = "steel-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { name = "lead-scrap", amount = 1 })
+        { type = "item", name = "lead-scrap", amount = 1 })
+    -- Breeder reprocessing tweaks
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount = 2 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barreling'].results,
+        { type = "item", name = "steel-scrap", amount = 2 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barreling'].results,
+        { type = "item", name = "lead-scrap", amount = 2 })
     -- Subgroup and ordering fixes
     data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'ir2-fuels'
+    data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].subgroup = 'ir2-fuels'
+    data.raw['recipe']['breeder-fuel-cell-reprocessing'].subgroup = 'ir2-fuels'
     data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'ir2-fuels'
     data.raw['recipe']['MOX-fuel'].subgroup = 'ir2-fuels'
     data.raw['recipe']['MOX-fuel'].category = 'centrifuging'
