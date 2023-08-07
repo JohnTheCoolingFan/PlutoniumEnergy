@@ -138,7 +138,7 @@ data:extend({
             },
             {
                 type = 'unlock-recipe',
-                recipe = 'breeder-fuel-reprocessing-with-barrelling'
+                recipe = 'breeder-fuel-cell-reprocessing-with-barrelling'
             },
             {
                 type = 'unlock-recipe',
