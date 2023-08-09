@@ -254,7 +254,7 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[13].action.radius = 50
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 
-elseif mods['IndustrialRevolution'] then
+elseif mods['IndustrialRevolution3'] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw['artillery-projectile']['atomic-artillery-projectile'])
 
     plutonium_atomic_artillery_projectile.name = 'plutonium-atomic-artillery-projectile'
