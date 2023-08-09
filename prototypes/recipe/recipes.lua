@@ -287,15 +287,8 @@ data:extend({
     }
 })
 
-if mods["IndustrialRevolution"] then
-    -- Recipe tweaks
-    data.raw['recipe']['plutonium-fuel'].ingredients = {
-        { "rocket-fuel",   1 },
-        { "plutonium-239", 1 }
-    }
-    data.raw['recipe']['plutonium-fuel'].energy_required = 90
-    data.raw['recipe']['plutonium-fuel'].category = 'chemistry'
-    -- Add Shielded Steel plate to recipes
+if mods["IndustrialRevolution3"] then
+    -- Add radation shielding to recipes
     data.raw['recipe']['MOX-fuel'].ingredients = {
         { "lead-plate-special", 10 },
         { "uranium-238",        19 },
@@ -357,13 +350,4 @@ if mods["IndustrialRevolution"] then
     }
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { name = "steel-scrap", amount = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { name = "lead-scrap", amount = 1 })
-    -- Subgroup and ordering fixes
-    data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['MOX-fuel'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['MOX-fuel'].category = 'centrifuging'
 end
