@@ -351,15 +351,8 @@ data:extend({
     }
 })
 
-if mods["IndustrialRevolution"] then
-    -- Recipe tweaks
-    data.raw['recipe']['plutonium-fuel'].ingredients = {
-        { "rocket-fuel",   1 },
-        { "plutonium-239", 1 }
-    }
-    data.raw['recipe']['plutonium-fuel'].energy_required = 90
-    data.raw['recipe']['plutonium-fuel'].category = 'chemistry'
-    -- Add Shielded Steel plate to recipes
+if mods["IndustrialRevolution3"] then
+    -- Add radation shielding to recipes
     data.raw['recipe']['MOX-fuel'].ingredients = {
         { "lead-plate-special", 10 },
         { "uranium-238",        19 },
@@ -383,7 +376,7 @@ if mods["IndustrialRevolution"] then
     data.raw['recipe']['breeder-fuel-cell-reprocessing'].results = {
         { 'plutonium-238', 20 },
         { 'plutonium-239', 1 },
-        { 'steel-scarp',   4 },
+        { 'steel-scrap',   4 },
         { 'lead-scrap',    2 }
     }
     data.raw['recipe']['MOX-reactor'].ingredients = {
@@ -422,22 +415,4 @@ if mods["IndustrialRevolution"] then
     -- Advanced nuclear fuel reprocessing tweaks
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { type = "item", name = "steel-scrap", amount = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].results,
-        { type = "item", name = "lead-scrap", amount = 1 })
-    -- Breeder reprocessing tweaks
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount = 2 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount = 2 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barreling'].results,
-        { type = "item", name = "steel-scrap", amount = 2 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barreling'].results,
-        { type = "item", name = "lead-scrap", amount = 2 })
-    -- Subgroup and ordering fixes
-    data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['breeder-fuel-cell-reprocessing'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['MOX-fuel'].subgroup = 'ir2-fuels'
-    data.raw['recipe']['MOX-fuel'].category = 'centrifuging'
 end
