@@ -57,7 +57,7 @@ end
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
 if settings.startup['enable-plutonium-ammo'].value then
-    if mods["IndustrialRevolution"] then
+    if mods["IndustrialRevolution3"] then
         --adds lead plates to the ammo recipes
         data:extend({
                 {
@@ -66,7 +66,7 @@ if settings.startup['enable-plutonium-ammo'].value then
                     enabled = false,
                     energy_required = 10,
                     ingredients = {
-                        {"piercing-rounds-magazine", 1},
+                        {"chromium-magazine", 1},
                         {"lead-plate", 2},
                         {"plutonium-238", 1}
                     },
@@ -96,7 +96,7 @@ if settings.startup['enable-plutonium-ammo'].value then
                     },
                     result = "explosive-plutonium-cannon-shell"
                 },
-                -- makes an atomic artillery shell, IR2's replacement for an atomic bomb
+                -- makes an atomic artillery shell, IR3's replacement for an atomic bomb
                 {
                     type = "recipe",
                     name = "plutonium-atomic-artillery-shell",
