@@ -124,7 +124,6 @@ data:extend({
                 { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 }
             },
-            -- TODO: adjust balance
             time = 30,
             count = 1000
         },
