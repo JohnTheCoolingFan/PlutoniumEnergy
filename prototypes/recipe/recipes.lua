@@ -288,11 +288,12 @@ data:extend({
 })
 
 if mods["IndustrialRevolution3"] then
-    -- Add radation shielding to recipes
+    -- Add radiation shielding to recipes
     data.raw['recipe']['MOX-fuel'].ingredients = {
         { "lead-plate-special", 10 },
-        { "uranium-238",        19 },
-        { "plutonium-239",      1 }
+        { "uranium-235",   1 },
+        { "plutonium-239", 3 },
+        { "plutonium-238", 15 }
     }
     data.raw['recipe']['breeder-fuel-cell'].ingredients = {
         { 'lead-plate-special', 10 },
@@ -309,12 +310,6 @@ if mods["IndustrialRevolution3"] then
         { 'used-up-MOX-fuel',   5 },
         { 'uranium-238',        10 }
     }
-    data.raw['recipe']['breeder-fuel-cell-reprocessing'].results = {
-        { 'plutonium-238', 20 },
-        { 'plutonium-239', 1 },
-        { 'steel-scrap',   4 },
-        { 'lead-scrap',    2 }
-    }
     data.raw['recipe']['MOX-reactor'].ingredients = {
         { "lead-plate-special", 80 },
         { "computer-mk3",       4 },
@@ -329,25 +324,13 @@ if mods["IndustrialRevolution3"] then
         { "graphite",           160 },
         { "refined-concrete",   500 }
     }
-    -- Add lead scrap to reprocessing recipes
-    data.raw["recipe"]["MOX-fuel-reprocessing"].results = {
-        {
-            name = "plutonium-239",
-            amount = 1
-        },
-        {
-            name = "plutonium-238",
-            amount = 5
-        },
-        {
-            name = "steel-scrap",
-            amount = 2
-        },
-        {
-            name = "lead-scrap",
-            amount = 1
-        }
-    }
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 1 })
+    -- Add steel and lead scrap to reprocessing recipes
+    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
+    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount = 4 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
 end
