@@ -30,6 +30,9 @@ if mods['IndustrialRevolution3'] then
     end       
 
     -- IR3 uses barreling machines
+    data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
+    data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].enabled = false
+
     for index, effect in pairs(data.raw['technology']['plutonium-processing'].effects) do
         if effect.recipe == "advanced-nuclear-fuel-reprocessing-with-barrelling" then
             table.remove(data.raw['technology']['plutonium-processing'].effects, index)
