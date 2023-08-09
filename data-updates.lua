@@ -3,7 +3,7 @@ if mods['bobplates'] then
     data.raw['technology']['plutonium-enrichment-process'].hidden = true
     -- I'll leave this here just in case, although this shouldn't be required
     if data.raw['technology']['plutonium-atomic-bomb'] then
-        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = {'atomic-bomb'}
+        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = { 'atomic-bomb' }
     end
     --data.raw['technology']['plutonium-processing'].effects = {} -- Broken. Why did I do this in the first place?
 end
@@ -16,7 +16,8 @@ if mods['IndustrialRevolution3'] then
 
     if data.raw['technology']['plutonium-atomic-bomb'] then
         -- Note to future self: atomic bombs are replaced by artillery shells in IR2
-        data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'}}
+        data.raw['technology']['plutonium-atomic-bomb'].effects = {
+            { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
     end
 
     -- IR3 removes uranium-fuel, not a usable fuel for vehicles
@@ -27,7 +28,7 @@ if mods['IndustrialRevolution3'] then
         if effect.recipe == "plutonium-fuel" then
             table.remove(data.raw['technology']['plutonium-enrichment-process'].effects, index)
         end
-    end       
+    end
 
     -- IR3 uses barreling machines
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
@@ -36,6 +37,15 @@ if mods['IndustrialRevolution3'] then
     for index, effect in pairs(data.raw['technology']['plutonium-processing'].effects) do
         if effect.recipe == "advanced-nuclear-fuel-reprocessing-with-barrelling" then
             table.remove(data.raw['technology']['plutonium-processing'].effects, index)
+        end
+    end
+
+    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].hidden = true
+    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].enabled = false
+
+    for index, effect in pairs(data.raw['technology']['nuclear-breeding'].effects) do
+        if effect.recipe == "breeder-fuel-cell-reprocessing-with-barrelling" then
+            table.remove(data.raw['technology']['nuclear-breeding'].effects, index)
         end
     end
 
