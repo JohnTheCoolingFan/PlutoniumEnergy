@@ -243,11 +243,10 @@ data:extend({
         show_amount_in_title = false,
         always_show_products = true,
         crafting_machine_tint = {
-            -- small TODO: write down colors
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 },   -- #77002E
-            secondary = { r = 0.694, g = 0.000, b = 0.039, a = 1.000 }, --
-            tertiary = { r = 0.541, g = 0.000, b = 0.282, a = 1.000 },  --
-            quaternary = { r = 0.863, g = 0.0, b = 0.075, a = 1.000 }   --
+            secondary = { r = 0.694, g = 0.000, b = 0.039, a = 1.000 }, -- #B1000A
+            tertiary = { r = 0.541, g = 0.000, b = 0.282, a = 1.000 },  -- #8A0048
+            quaternary = { r = 0.863, g = 0.000, b = 0.075, a = 1.000 } -- #DC0013
         },
         allow_decomposition = false
     },
