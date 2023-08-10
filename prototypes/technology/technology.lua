@@ -89,35 +89,6 @@ data:extend({
         order = "e-p-b-d"
     },
     {
-        type = "technology",
-        name = "plutonium-enrichment-process",
-        icon_size = 256,
-        icon_mipmaps = 4,
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-enrichment-process.png",
-        effects = {
-            {
-                type = 'unlock-recipe',
-                recipe = 'plutonium-enrichment-process'
-            },
-            {
-                type = 'unlock-recipe',
-                recipe = 'plutonium-fuel'
-            }
-        },
-        prerequisites = { "plutonium-processing", "kovarex-enrichment-process" },
-        unit = {
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "chemical-science-pack",   1 },
-                { "production-science-pack", 1 }
-            },
-            time = 30,
-            count = 2000
-        },
-        order = "e-p-b-d"
-    },
-    {
         type = 'technology',
         name = 'nuclear-breeding',
         icon_size = 256,
@@ -135,6 +106,14 @@ data:extend({
             {
                 type = 'unlock-recipe',
                 recipe = 'breeder-fuel-cell-reprocessing'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'breeder-fuel-cell-reprocessing-with-barrelling'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'used-up-breeder-fuel-cell-solution-centrifuging'
             }
         },
         prerequisites = { 'plutonium-processing', 'kovarex-enrichment-process' },
@@ -145,7 +124,6 @@ data:extend({
                 { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 }
             },
-            -- TODO: adjust balance
             time = 30,
             count = 1000
         },
