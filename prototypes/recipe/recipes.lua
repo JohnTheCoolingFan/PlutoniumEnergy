@@ -39,7 +39,16 @@ data:extend({
         type = 'recipe',
         name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
-        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+        icons = {
+            {
+                icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png'
+            },
+            {
+                icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
+                shift = { 3, 8 },
+                scale = 0.5 * 0.5
+            }
+        },
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
