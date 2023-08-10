@@ -155,7 +155,7 @@ data:extend({
         },
         flags = {},
         subgroup = 'intermediate-product',
-        order = 'r[uranium-processing]-c[breeder-fuel-cell]',
+        order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
         fuel_category = 'nuclear-breeder',
         burnt_result = 'used-up-breeder-fuel-cell',
         fuel_value = '10GJ',

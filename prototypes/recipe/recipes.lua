@@ -1,7 +1,8 @@
 require("prototypes.recipe.ammo")
 
--- Change kovarex recipe order
+-- Change some vanilla recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
+data.raw["recipe"]["nuclear-fuel-reprocessing"].order = "r[uranium-processing]-c[reprocessing]-a[regular-uranium]"
 
 data:extend({
     -- Advanced nuclear fuel reprocessing
@@ -22,7 +23,7 @@ data:extend({
         results = {
             { type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 50 }
         },
-        order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing]',
+        order = 'r[uranium-processing]-c[reprocessing]-b[advanced-uranium]-a[no-barreling]',
         subgroup = 'intermediate-product',
         show_amount_in_title = false,
         always_show_products = true,
@@ -62,7 +63,7 @@ data:extend({
         results = {
             { type = 'item', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 1 }
         },
-        order = 'r[uranium-processing]-c[advanced-nuclear-fuel-reprocessing-with-barrelling]',
+        order = 'r[uranium-processing]-c[reprocessing]-b[advanced-uranium]-b[with-barreling]',
         subgroup = 'intermediate-product',
         show_amount_in_title = false,
         always_show_products = true,
@@ -95,7 +96,7 @@ data:extend({
         crafting_machine_tint = {
             primary = { r = 0.651, g = 0.851, b = 0.075, a = 1.000 } -- #A6D913
         },
-        order = 'r[uranium-processing]-d[advanced-nuclear-fuel-reprocessing]',
+        order = 'r[uranium-processing]-c[reprocessing]-b[advanced-uranium]-c[centrifuging]',
         subgroup = 'intermediate-product',
         allow_decomposition = false
     },
@@ -126,7 +127,7 @@ data:extend({
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
-        order = "r[uranium-processing]-e[MOX-fuel-reprocessing]",
+        order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
         main_product = "",
         crafting_machine_tint = {
             primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
@@ -176,6 +177,7 @@ data:extend({
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
+        order = 'r[uranium-processing]-b[obreeder-fuel-cell]-b[uranium]',
         result = 'breeder-fuel-cell',
         result_count = 10,
         allow_decomposition = false
@@ -197,6 +199,7 @@ data:extend({
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
+        order = 'r[uranium-processing]-b[obreeder-fuel-cell]-c[mox]',
         result = 'breeder-fuel-cell',
         result_count = 5,
         allow_decomposition = false
@@ -218,7 +221,7 @@ data:extend({
         results = {
             { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 100 }
         },
-        order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing]',
+        order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-a[no-barreling]',
         subgroup = 'intermediate-product',
         show_amount_in_title = false,
         always_show_products = true,
@@ -258,7 +261,7 @@ data:extend({
         results = {
             { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 2 }
         },
-        order = 'r[uranium-processing]-f[breeder-fuel-cell-reprocessing-with-barrelling]',
+        order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-b[with-barreling]',
         subgroup = 'intermediate-product',
         show_amount_in_title = false,
         always_show_products = true,
@@ -290,7 +293,7 @@ data:extend({
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
         },
-        order = 'r[uranium-processing]-g[used-up-breeder-fuel-cell-solution-centrifuging]',
+        order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-c[centrifuging]',
         subgroup = 'intermediate-product',
         allow_decomposition = false
     },
