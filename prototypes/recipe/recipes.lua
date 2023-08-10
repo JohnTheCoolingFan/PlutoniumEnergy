@@ -155,6 +155,7 @@ data:extend({
         name = 'breeder-fuel-cell-from-uranium-cell',
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
         icon_size = 64,
+        icon_mipmaps = 4,
         category = 'centrifuging',
         energy_required = 15,
         enabled = false,
@@ -175,6 +176,7 @@ data:extend({
         name = 'breeder-fuel-cell-from-MOX-fuel',
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel.png',
         icon_size = 64,
+        icon_mipmaps = 4,
         category = 'centrifuging',
         energy_required = 7.5,
         enabled = false,
@@ -194,7 +196,7 @@ data:extend({
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing' },
-        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png',
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
@@ -224,7 +226,16 @@ data:extend({
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
-        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png', -- TODO
+        icons = {
+            {
+                icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png'
+            },
+            {
+                icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
+                shift = { 3, 8 },
+                scale = 0.5 * 0.5
+            }
+        },
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
@@ -253,7 +264,7 @@ data:extend({
     {
         type = 'recipe',
         name = 'used-up-breeder-fuel-cell-solution-centrifuging',
-        icon = '__PlutoniumEnergy__/graphics/icons/used-up-uranium-fuel-cell-solution-centrifuging.png', -- TODO
+        icon = '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell-solution-centrifuging.png',
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'centrifuging',
