@@ -1,4 +1,17 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.0
+Date: N/A
+  Major Changes:
+    - Breeder fuel cells reprocessing now uses the process similar to advanced
+      nuclear fuel reprocessing, dissolving a cell and centrifuging the
+      solution. Auto-barreling recipe is included.
+    - Removed plutonium enrichment process, replaced by the breeder reactor
+      cycle.
+    - MOX fuel reprocessing was significantly nerfed, now giving much less
+      Pu-239
+    - Tweaked recipes for making breeder fuel cells from other used up fuel
+      cells, making them a more profitable alternative.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.14
 Date: 2023-08-10
   Fixes:
@@ -25,7 +38,7 @@ Date: 2023-08-07
   Graphics:
     - Remade majority of technology icons for better quality, better
       consistency with vanilla and mipmaps
-  Minor changes:
+  Minor Changes:
     - Fixed item order of Plutonium isotopes and various nuclear fuel cells
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.9
