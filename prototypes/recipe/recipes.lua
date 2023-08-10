@@ -228,7 +228,7 @@ data:extend({
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
         icons = {
             {
-                icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png'
+                icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png'
             },
             {
                 icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
