@@ -45,7 +45,7 @@ data:extend({
             },
             {
                 icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
-                shift = { 3, 8 },
+                shift = { 8, -8 },
                 scale = 0.5 * 0.5
             }
         },
@@ -241,7 +241,7 @@ data:extend({
             },
             {
                 icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
-                shift = { 3, 8 },
+                shift = { 8, -8 },
                 scale = 0.5 * 0.5
             }
         },
