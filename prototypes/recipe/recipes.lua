@@ -364,8 +364,8 @@ if mods["IndustrialRevolution3"] then
         { 'uranium-238',        19 }
     }
     data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].ingredients = {
-        { 'lead-plate-special',        5 },
-        { 'used-up-uranium-fuel-cell', 5 },
+        { 'lead-plate-special',        10 },
+        { 'used-up-uranium-fuel-cell', 10 },
         { 'plutonium-239',             1 }
     }
     data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].ingredients = {
