@@ -52,7 +52,7 @@ if mods['IndustrialRevolution3'] then
     data.raw['item']['breeder-reactor'].subgroup = "ir-nuclear-machines"
     data.raw['item']['breeder-reactor'].order = "f[nuclear-energy]-a[reactor]"
 
-    data.raw['recipe']['MOX-fuel'].subgroup = "intermediate-product"
+    -- data.raw['recipe']['MOX-fuel'].subgroup is assigned in recipes.lua
     data.raw['recipe']['MOX-fuel'].order = "r[uranium-processing]-e[MOX-fuel-processing]"
 
     data.raw['item']['MOX-fuel'].subgroup = "intermediate-product"
