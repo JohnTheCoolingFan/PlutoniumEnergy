@@ -324,6 +324,7 @@ if mods["IndustrialRevolution3"] then
         { "graphite",           160 },
         { "refined-concrete",   500 }
     }
+
     -- Add steel and lead scrap to reprocessing recipes
     table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
     table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
@@ -333,4 +334,22 @@ if mods["IndustrialRevolution3"] then
 
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+
+    -- new subgroup, IR3 has many 'intermediate-products'
+    data:extend({{
+        type = 'item-subgroup',
+        name = 'pe',
+        group = 'intermediate-products',
+        order = 'gz',
+    }})
+
+    data.raw['recipe']['MOX-fuel'].subgroup = 'pe'
+    data.raw['recipe']['breeder-fuel-cell'].subgroup = 'pe'
+    data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'pe'
+    data.raw['recipe']['breeder-fuel-cell-reprocessing'].subgroup = 'pe'
+    data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].subgroup = 'pe'
+    data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'pe'
+    data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].subgroup = 'pe'
+    data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].subgroup = 'pe'
+    data.raw['recipe']['used-up-uranium-fuel-cell-solution-centrifuging'].subgroup = 'pe'
 end
