@@ -194,7 +194,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "energy",
-        order = "f[nuclear-energy]-c[breeder-reactor]",
+        order = "f[nuclear-energy]-b[Obreeder-reactor]",
         place_result = "breeder-reactor",
         stack_size = 10
     }
