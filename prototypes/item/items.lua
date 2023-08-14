@@ -155,10 +155,10 @@ data:extend({
         },
         flags = {},
         subgroup = 'intermediate-product',
-        order = 'r[uranium-processing]-c[breeder-fuel-cell]',
+        order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
         fuel_category = 'nuclear-breeder',
         burnt_result = 'used-up-breeder-fuel-cell',
-        fuel_value = '10GJ',
+        fuel_value = '5GJ',
         stack_size = 20
     },
     {
@@ -194,7 +194,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "energy",
-        order = "f[nuclear-energy]-c[breeder-reactor]",
+        order = "f[nuclear-energy]-b[Obreeder-reactor]",
         place_result = "breeder-reactor",
         stack_size = 10
     }

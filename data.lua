@@ -7,7 +7,6 @@ require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
 require("prototypes.fluid.fluids")
 
--- TODO: icons for breeder technologies
 -- TODO: improve compatibility with Realistic Reactors
 
 -- Space Exploration compatibility by Polish DeathCare
@@ -17,8 +16,8 @@ if mods['space-exploration'] then
 
     if not se_delivery_cannon_recipes then se_delivery_cannon_recipes = {} end
 
-    se_delivery_cannon_recipes['plutonium-239'] = {name='plutonium-239'}
-    se_delivery_cannon_recipes['plutonium-238'] = {name='plutonium-238'}
+    se_delivery_cannon_recipes['plutonium-239'] = { name = 'plutonium-239' }
+    se_delivery_cannon_recipes['plutonium-238'] = { name = 'plutonium-238' }
 
     if not se_delivery_cannon_ammo_recipes then se_delivery_cannon_ammo_recipes = {} end
 
@@ -27,8 +26,8 @@ if mods['space-exploration'] then
         name = 'plutonium-atomic-bomb',
         amount = 1,
         ingredients = {
-            {'plutonium-atomic-bomb', 1},
-            {data_util.mod_prefix..'delivery-cannon-weapon-capsule', 1}
+            { 'plutonium-atomic-bomb',                                1 },
+            { data_util.mod_prefix .. 'delivery-cannon-weapon-capsule', 1 }
         }
     }
 end

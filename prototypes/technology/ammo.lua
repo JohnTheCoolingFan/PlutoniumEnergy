@@ -49,7 +49,7 @@ data:extend({
                 recipe = "plutonium-atomic-bomb"
             }
         },
-        prerequisites = { "plutonium-enrichment-process", "atomic-bomb" },
+        prerequisites = { "nuclear-breeding", "atomic-bomb" },
         unit = {
             count = 6000,
             ingredients = {
@@ -58,7 +58,8 @@ data:extend({
                 { "chemical-science-pack",   1 },
                 { "military-science-pack",   1 },
                 { "production-science-pack", 1 },
-                { "utility-science-pack",    1 }
+                { "utility-science-pack",    1 },
+                { "space-science-pack",      1 }
             },
             time = 60
         },

@@ -1,9 +1,7 @@
 if mods['bobplates'] then
-    -- Disable some recipes
-    data.raw['technology']['plutonium-enrichment-process'].hidden = true
     -- I'll leave this here just in case, although this shouldn't be required
     if data.raw['technology']['plutonium-atomic-bomb'] then
-        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = {'atomic-bomb'}
+        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = { 'atomic-bomb' }
     end
     --data.raw['technology']['plutonium-processing'].effects = {} -- Broken. Why did I do this in the first place?
 end
@@ -16,18 +14,13 @@ if mods['IndustrialRevolution3'] then
 
     if data.raw['technology']['plutonium-atomic-bomb'] then
         -- Note to future self: atomic bombs are replaced by artillery shells in IR2
-        data.raw['technology']['plutonium-atomic-bomb'].effects = {{type='unlock-recipe', recipe='plutonium-atomic-artillery-shell'}}
+        data.raw['technology']['plutonium-atomic-bomb'].effects = {
+            { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
     end
 
     -- IR3 removes uranium-fuel, not a usable fuel for vehicles
     data.raw['recipe']['plutonium-fuel'].hidden = true
     data.raw['recipe']['plutonium-fuel'].enabled = false
-
-    for index, effect in pairs(data.raw['technology']['plutonium-enrichment-process'].effects) do
-        if effect.recipe == "plutonium-fuel" then
-            table.remove(data.raw['technology']['plutonium-enrichment-process'].effects, index)
-        end
-    end       
 
     -- IR3 uses barreling machines
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
@@ -36,6 +29,15 @@ if mods['IndustrialRevolution3'] then
     for index, effect in pairs(data.raw['technology']['plutonium-processing'].effects) do
         if effect.recipe == "advanced-nuclear-fuel-reprocessing-with-barrelling" then
             table.remove(data.raw['technology']['plutonium-processing'].effects, index)
+        end
+    end
+
+    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].hidden = true
+    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].enabled = false
+
+    for index, effect in pairs(data.raw['technology']['nuclear-breeding'].effects) do
+        if effect.recipe == "breeder-fuel-cell-reprocessing-with-barrelling" then
+            table.remove(data.raw['technology']['nuclear-breeding'].effects, index)
         end
     end
 
@@ -52,7 +54,7 @@ if mods['IndustrialRevolution3'] then
     data.raw['item']['breeder-reactor'].subgroup = "ir-nuclear-machines"
     data.raw['item']['breeder-reactor'].order = "f[nuclear-energy]-a[reactor]"
 
-    data.raw['recipe']['MOX-fuel'].subgroup = "intermediate-product"
+    -- data.raw['recipe']['MOX-fuel'].subgroup is assigned in recipes.lua
     data.raw['recipe']['MOX-fuel'].order = "r[uranium-processing]-e[MOX-fuel-processing]"
 
     data.raw['item']['MOX-fuel'].subgroup = "intermediate-product"
@@ -71,6 +73,7 @@ end
 if mods['SchallRadioactiveWaste'] then
     ---@diagnostic disable: undefined-global
     SchallRadioactiveWaste_add_incineration_recipe('used-up-MOX-fuel', 22.3, 0.9)
+    SchallRadioactiveWaste_add_incineration_recipe('used-up-breeder-fuel-cell', 45.0, 1.5)
     SchallRadioactiveWaste_add_incineration_recipe('plutonium-238', 3, 0.85)
     SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 700, 0.85)
 
