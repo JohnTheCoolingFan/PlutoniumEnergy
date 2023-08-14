@@ -73,6 +73,7 @@ end
 if mods['SchallRadioactiveWaste'] then
     ---@diagnostic disable: undefined-global
     SchallRadioactiveWaste_add_incineration_recipe('used-up-MOX-fuel', 22.3, 0.9)
+    SchallRadioactiveWaste_add_incineration_recipe('used-up-breeder-fuel-cell', 45.0, 1.5)
     SchallRadioactiveWaste_add_incineration_recipe('plutonium-238', 3, 0.85)
     SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 700, 0.85)
 
