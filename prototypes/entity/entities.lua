@@ -246,7 +246,7 @@ data:extend({
         flags = { 'placeable-neutral', 'player-creation' },
         minable = { mining_time = 0.5, result = 'breeder-reactor' },
         max_health = 750,
-        corpse = 'breeder-reactor-remnants', -- TODO
+        corpse = 'breeder-reactor-remnants',
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = "5MW",
         neighbour_bonus = 1,
