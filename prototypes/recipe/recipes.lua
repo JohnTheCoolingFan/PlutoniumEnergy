@@ -315,33 +315,6 @@ data:extend({
         result = "plutonium-fuel"
     },
 
-    -- Plutonium enrichment process
-    {
-        type = "recipe",
-        name = "plutonium-enrichment-process",
-        energy_required = 80,
-        enabled = false,
-        category = "centrifuging",
-        ingredients = {
-            { 'plutonium-239', 30 },
-            { 'plutonium-238', 10 },
-        },
-        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-enrichment-process.png",
-        icon_size = 64,
-        icon_mipmaps = 4,
-        subgroup = "intermediate-product",
-        order = "r[uranium-processing]-f[plutonium-enrichment-process]",
-        main_product = "",
-        crafting_machine_tint = {
-            primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
-        },
-        results = {
-            { 'plutonium-239', 32 },
-            { 'plutonium-238', 2 },
-        },
-        allow_decomposition = false
-    },
-
     -- Reactors
     {
         type = "recipe",
@@ -422,12 +395,12 @@ if mods["IndustrialRevolution3"] then
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
 
     -- new subgroup, IR3 has many 'intermediate-products'
-    data:extend({{
+    data:extend({ {
         type = 'item-subgroup',
         name = 'pe',
         group = 'intermediate-products',
         order = 'gz',
-    }})
+    } })
 
     data.raw['recipe']['MOX-fuel'].subgroup = 'pe'
     data.raw['recipe']['breeder-fuel-cell'].subgroup = 'pe'
