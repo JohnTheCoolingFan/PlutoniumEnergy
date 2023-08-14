@@ -158,7 +158,7 @@ data:extend({
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
         fuel_category = 'nuclear-breeder',
         burnt_result = 'used-up-breeder-fuel-cell',
-        fuel_value = '10GJ',
+        fuel_value = '5GJ',
         stack_size = 20
     },
     {
