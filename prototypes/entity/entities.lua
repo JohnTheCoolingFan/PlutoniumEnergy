@@ -2,11 +2,11 @@ require "util"
 
 data:extend({
     {
-        type = 'reactor',
-        name = 'MOX-reactor',
-        icon = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png',
-        icon_size = 64,
-        icon_mipmaps = 4,
+        type                                 = 'reactor',
+        name                                 = 'MOX-reactor',
+        icon                                 = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png',
+        icon_size                            = 64,
+        icon_mipmaps                         = 4,
         flags                                = { 'placeable-neutral', 'player-creation' },
         minable                              = { mining_time = 0.5, result = 'MOX-reactor' },
         max_health                           = 400,
@@ -246,7 +246,7 @@ data:extend({
         flags = { 'placeable-neutral', 'player-creation' },
         minable = { mining_time = 0.5, result = 'breeder-reactor' },
         max_health = 750,
-        corpse = 'nuclear-reactor-remnants',     -- TODO
+        corpse = 'breeder-reactor-remnants', -- TODO
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = "5MW",
         neighbour_bonus = 1,
@@ -265,7 +265,7 @@ data:extend({
         collision_box = { { -3.2, -3.2 }, { 3.2, 3.2 } },
         selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
         damaged_trigger_effect = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
-        lower_layer_picture = {     -- TODO: connect pipes nicely
+        lower_layer_picture = { -- TODO: connect pipes nicely
             filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes.png',
             width = 220,
             height = 220,
@@ -278,7 +278,7 @@ data:extend({
                 shift = util.by_pixel(-1, -5)
             }
         },
-        heat_lower_layer_picture = {     -- TODO: connect pipes nicely
+        heat_lower_layer_picture = { -- TODO: connect pipes nicely
             filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes-heated.png',
             width = 220,
             height = 220,
@@ -467,7 +467,7 @@ data:extend({
                 }
             }
         },
-        heat_connection_patches_connected = {     -- TODO
+        heat_connection_patches_connected = { -- TODO
             sheet = apply_heat_pipe_glow {
                 filename =
                 "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches-heated.png",
@@ -484,7 +484,7 @@ data:extend({
                 }
             }
         },
-        heat_connection_patches_disconnected = {     -- TODO
+        heat_connection_patches_disconnected = { -- TODO
             sheet = apply_heat_pipe_glow {
                 filename =
                 "__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-connect-patches-heated.png",
