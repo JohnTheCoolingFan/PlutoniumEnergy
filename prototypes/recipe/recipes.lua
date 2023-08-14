@@ -407,7 +407,6 @@ if mods["IndustrialRevolution3"] then
     data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'pe'
     data.raw['recipe']['breeder-fuel-cell-reprocessing'].subgroup = 'pe'
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].subgroup = 'pe'
-    data.raw['recipe']['plutonium-enrichment-process'].subgroup = 'pe'
     data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].subgroup = 'pe'
     data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].subgroup = 'pe'
     data.raw['recipe']['used-up-uranium-fuel-cell-solution-centrifuging'].subgroup = 'pe'
