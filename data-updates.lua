@@ -1,6 +1,4 @@
 if mods['bobplates'] then
-    -- Disable some recipes
-    data.raw['technology']['plutonium-enrichment-process'].hidden = true
     -- I'll leave this here just in case, although this shouldn't be required
     if data.raw['technology']['plutonium-atomic-bomb'] then
         data.raw['technology']['plutonium-atomic-bomb'].prerequisites = { 'atomic-bomb' }
@@ -23,12 +21,6 @@ if mods['IndustrialRevolution3'] then
     -- IR3 removes uranium-fuel, not a usable fuel for vehicles
     data.raw['recipe']['plutonium-fuel'].hidden = true
     data.raw['recipe']['plutonium-fuel'].enabled = false
-
-    for index, effect in pairs(data.raw['technology']['plutonium-enrichment-process'].effects) do
-        if effect.recipe == "plutonium-fuel" then
-            table.remove(data.raw['technology']['plutonium-enrichment-process'].effects, index)
-        end
-    end
 
     -- IR3 uses barreling machines
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
