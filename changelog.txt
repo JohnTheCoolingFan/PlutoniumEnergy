@@ -11,6 +11,9 @@ Date: N/A
       Pu-239
     - Tweaked recipes for making breeder fuel cells from other used up fuel
       cells, making them a more profitable alternative.
+  Compatibility:
+    - Temporarily disabled compatibility with Atomic Artillery and Schall
+      Artillery
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.14
 Date: 2023-08-10
