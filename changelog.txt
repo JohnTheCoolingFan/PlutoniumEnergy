@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.0
-Date: N/A
+Date: 2023-08-15
   Major Changes:
     - Breeder fuel cells reprocessing now uses the process similar to advanced
       nuclear fuel reprocessing, dissolving a cell and centrifuging the
