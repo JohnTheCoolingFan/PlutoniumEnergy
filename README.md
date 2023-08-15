@@ -1,9 +1,13 @@
 # Plutonium Energy
 
-This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows some interesting designs.
-![MOX reactor overview](https://imgur.com/H5eEPbn.png)
-![Advanced nuclear fuel reprocessing overview](https://imgur.com/1kE8Q3r.png)
-![MOX reactor close-up](https://i.imgur.com/r1qVtf1.png)
+This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows for some interesting designs.
+![MOX reactor overview](https://imgur.com/uc9aJ01)
+The Plutonium is obtained through an Advanced nuclear fuel reprocessing process, which involves dissolving the used-up uranium nuclear fuel cells in acid and centrifuging the solution to get more useful fissile material.
+![Advanced nuclear fuel reprocessing overview](https://imgur.com/1oZ4edv)
+But that is not the only way of obtaining Plutonium. There is also a breeder reactor, a huge (7x7) building, which also uses bigger cells. But its power output is much lower, as generating power is not its primary purpose. Breeder nuclear fuel cells can be made from other used-up nuclear cells, providing an alternative way of reprocessing these cells.
+![Breeder reactor overview](https://imgur.com/iUHxdjf)
+The breeder reactor's purpose is to generate more Plutonium than it takes in. Combined with ability to use otehr used-up cells to make new breeder cells, it is an efficient way to make more Plutonium for creation of MOX fuel.
+![Breeder fuel cells reprocessing overview](https://imgur.com/uVdkBv8)
 And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one. And if you installed mods that add uranium artillery shell / bomb, this mod also adds a plutonium variant (See optional dependencies for an estimated list of mods supported for this feature).
 [Video comparison](https://youtu.be/HY6p4fRM6Uk)
 ![Uranium and Plutonium atomic bombs comparison](https://imgur.com/P1cqH06.png)
@@ -36,9 +40,8 @@ I didn't do much of specialised compatibility with other mods unless specified (
 *   [Realistic Reactors](https://mods.factorio.com/mod/RealisticReactors) - Impressing mod that makes reactors more complicated and realistic. Has support for other mods, including Plutonium Energy.
 *   [RITEG](https://mods.factorio.com/mod/RITEG) - Good mod that adds [RITEGs](https://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator)
 *   [Realistic Reactor Glow](https://mods.factorio.com/mod/RealisticReactorGlow) - Changes reactor's glow from green to more realistic cyan (Similar to how MOX reactor glows)
-*   [Advanced Atomics mod](https://mods.factorio.com/mod/Advanced-Atomics) - Discontinued mod that adds a lot of uranium and plutonium stuff, supported in Plutonium Energy.
 
-Other my mods:
+Other mods made by me:
 
 *   [Random Factorio Things](https://mods.factorio.com/mods/John_TheCF/RandomFactorioThings)
 *   [No Artillery Map Reveal](https://mods.factorio.com/mods/John_TheCF/NoArtilleryMapReveal)
@@ -48,9 +51,7 @@ Mod source code is also available at [Gitlab](https://gitlab.com/JohnTheCoolingF
 
 # Support
 
-If you would like to support me, you can donate me using BTC, BCH or ETH (images are too large, so it's just a link):
-[Bitcoin Cash (BCH)](https://imgur.com/tBASbzf.png)
-[Bitcoint (BTC)](https://imgur.com/NwaMwIX.png)
-[Ethereum (ETH)](https://imgur.com/IkvweGC.png)
+If you would like to support me, you can donate me via cryptocurrencies:
+ETH: `0x00c6aefcc4987393394587CCdcCb4f465aF9a67d` - accepts eth and otehr tokens on the ethereum network.
 
 You can also contact me on discord, if you would like to donate in some other way.
