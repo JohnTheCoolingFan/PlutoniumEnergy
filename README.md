@@ -1,7 +1,7 @@
 # Plutonium Energy
 
 This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows for some interesting designs.
-![MOX reactor overview](https://imgur.com/uc9aJ01.png)
+![MOX reactor overview](https://imgur.com/XFRHskM.png)
 The Plutonium is obtained through an Advanced nuclear fuel reprocessing process, which involves dissolving the used-up uranium nuclear fuel cells in acid and centrifuging the solution to get more useful fissile material.
 ![Advanced nuclear fuel reprocessing overview](https://imgur.com/1oZ4edv.png)
 But that is not the only way of obtaining Plutonium. There is also a breeder reactor, a huge (7x7) building, which also uses bigger cells. But its power output is much lower, as generating power is not its primary purpose. Breeder nuclear fuel cells can be made from other used-up nuclear cells, providing an alternative way of reprocessing these cells.
