@@ -13,9 +13,11 @@ if mods['IndustrialRevolution3'] then
     end
 
     if data.raw['technology']['plutonium-atomic-bomb'] then
-        -- Note to future self: atomic bombs are replaced by artillery shells in IR2
-        data.raw['technology']['plutonium-atomic-bomb'].effects = {
-            { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
+        -- Note to future self: atomic bombs are replaced by artillery shells in IR3
+        if settings.startup['enable-plutonium-ammo'].value then
+            data.raw['technology']['plutonium-atomic-bomb'].effects = {
+                { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
+        end
     end
 
     -- IR3 removes uranium-fuel, not a usable fuel for vehicles
@@ -63,11 +65,13 @@ if mods['IndustrialRevolution3'] then
     data.raw['item']['used-up-MOX-fuel'].subgroup = "intermediate-product"
     data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
 
-    data.raw['recipe']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
-    data.raw['recipe']['plutonium-rounds-magazine'].order = 'c-q'
+    if settings.startup['enable-plutonium-ammo'].value then
+        data.raw['recipe']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
+        data.raw['recipe']['plutonium-rounds-magazine'].order = 'c-q'
 
-    data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
-    data.raw['ammo']['plutonium-rounds-magazine'].order = 'c-q'
+        data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
+        data.raw['ammo']['plutonium-rounds-magazine'].order = 'c-q'
+    end
 end
 
 if mods['SchallRadioactiveWaste'] then
