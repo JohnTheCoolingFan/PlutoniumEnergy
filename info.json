@@ -7,9 +7,7 @@
     "homepage": "https://discord.gg/KPnETvMDYk",
     "dependencies": [
         "base >= 1.1.0",
-        "? AtomicArtillery >= 0.2.1",
         "? SchallUraniumProcessing",
-        "? SchallArtillery >= 1.0.0",
         "? SchallRadioactiveWaste",
         "? bobplates",
         "? bobwarfare",
