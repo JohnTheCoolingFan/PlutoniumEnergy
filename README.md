@@ -28,7 +28,7 @@ And with energy generation part comes along destructive part. This mod also adds
 I didn't do much of specialised compatibility with other mods unless specified (here or in optional dependencies).
 
 * Krastorio 2 compatibility mod made by Midnighttigger: https://mods.factorio.com/mod/plutoniumenergy-krastorio2
-* Adjusted recipes for IR2
+* Adjusted recipes for IR3
 * Specialized compatibility with Schall's Radioactive Waste
 * Fixes to work with Bob's Metals, Chemicals and Intermediates
 
