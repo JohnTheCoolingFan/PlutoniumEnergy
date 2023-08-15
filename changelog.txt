@@ -12,8 +12,8 @@ Date: N/A
     - Tweaked recipes for making breeder fuel cells from other used up fuel
       cells, making them a more profitable alternative.
   Compatibility:
-    - Temporarily disabled compatibility with Atomic Artillery and Schall
-      Artillery
+    - Temporarily disabeld compatibility with various atomic artillery mods
+      due to unreliability (See issue #76 on github)
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.14
 Date: 2023-08-10
