@@ -384,15 +384,18 @@ if mods["IndustrialRevolution3"] then
         { "refined-concrete",   500 }
     }
 
-    -- Add steel and lead scrap to reprocessing recipes
-    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
-    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+    -- Add steel, lead, and concrete scrap to reprocessing recipes
+    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "steel-scrap", amount_max = 3, amount_min = 1 })
+    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
+    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
 
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount = 4 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount_max = 3, amount_min = 1 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
 
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount = 4 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount = 2 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount_max = 3, amount_min = 1 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
+    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
 
     -- new subgroup, IR3 has many 'intermediate-products'
     data:extend({ {
@@ -410,4 +413,5 @@ if mods["IndustrialRevolution3"] then
     data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].subgroup = 'pe'
     data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].subgroup = 'pe'
     data.raw['recipe']['used-up-uranium-fuel-cell-solution-centrifuging'].subgroup = 'pe'
+    data.raw['recipe']['used-up-breeder-fuel-cell-solution-centrifuging'].subgroup = 'pe'
 end
