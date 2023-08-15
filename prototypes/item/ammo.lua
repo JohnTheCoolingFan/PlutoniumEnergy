@@ -1,3 +1,4 @@
+--[[
 if mods['bobwarfare'] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 
@@ -37,6 +38,7 @@ if mods['SchallArtillery'] then
     data:extend({sc_plutonium_aa_sh})
 
 end
+]]
 
 
 if settings.startup['enable-plutonium-ammo'].value then
@@ -66,7 +68,7 @@ if settings.startup['enable-plutonium-ammo'].value then
                             },
                             {
                                 type = "damage",
-                                damage = {amount = 36, type = "physical"}
+                                damage = { amount = 36, type = "physical" }
                             }
                         }
                     }

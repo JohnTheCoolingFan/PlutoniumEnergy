@@ -78,10 +78,13 @@ if mods['SchallRadioactiveWaste'] then
     SchallRadioactiveWaste_add_incineration_recipe('plutonium-239', 700, 0.85)
 
     SchallRadioactiveWaste_add_radioactive_effects('plutonium-atomic-rocket', 84, 2.8, 70)
+
+    --[[
     if data.raw['artillery-projectile']['plutonium-atomic-artillery-projectile'] then
         SchallRadioactiveWaste_add_radioactive_effects('plutonium-atomic-artillery-projectile', 84, 2.8, 70)
     end
     if data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'] then
         SchallRadioactiveWaste_add_radioactive_effects('Schall-plutonium-atomic-artillery-projectile', 84, 2.8, 70)
     end
+    ]]
 end

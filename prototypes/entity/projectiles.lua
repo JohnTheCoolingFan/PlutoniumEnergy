@@ -55,12 +55,12 @@ local plutonium_atomic_rocket_action =
             },
             {
                 type = "damage",
-                damage = {amount = 560, type = "explosion"} -- This
+                damage = { amount = 560, type = "explosion" } -- This
             },
             {
                 type = "create-entity",
                 entity_name = "huge-scorchmark",
-                offsets = {{ 0, -0.5 }},
+                offsets = { { 0, -0.5 } },
                 check_buildability = true
             },
             {
@@ -73,15 +73,15 @@ local plutonium_atomic_rocket_action =
                 include_decals = true,
                 invoke_decorative_trigger = true,
                 decoratives_with_trigger_only = false, -- if true, destroys only decoratives that have trigger_effect set
-                radius = 20 -- large radius for demostrative purposes -- This
+                radius = 20                            -- large radius for demostrative purposes -- This
             },
             {
                 type = "create-decorative",
                 decorative = "nuclear-ground-patch",
                 spawn_min_radius = 16.5, -- This
                 spawn_max_radius = 17.5, -- This
-                spawn_min = 45, -- This
-                spawn_max = 60, -- This
+                spawn_min = 45,          -- This
+                spawn_max = 60,          -- This
                 apply_projection = true,
                 spread_evenly = true
             },
@@ -93,7 +93,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 1400, -- This
-                    radius = 10, -- This
+                    radius = 10,         -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -111,7 +111,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 1400, -- This
-                    radius = 50, -- This
+                    radius = 50,         -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -130,7 +130,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 1400, -- This
-                    radius = 36, -- This
+                    radius = 36,         -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -149,7 +149,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 980, -- This
-                    radius = 6, -- This
+                    radius = 6,         -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -168,7 +168,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 1400, -- This
-                    radius = 11, -- This
+                    radius = 11,         -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -187,7 +187,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 420, -- This
-                    radius = 36, -- This
+                    radius = 36,        -- This
                     action_delivery =
                     {
                         type = "projectile",
@@ -206,7 +206,7 @@ local plutonium_atomic_rocket_action =
                     target_entities = false,
                     trigger_from_target = true,
                     repeat_count = 14, -- This
-                    radius = 11, -- This
+                    radius = 11,       -- This
                     action_delivery =
                     {
                         type = "instant",
@@ -229,18 +229,19 @@ local projectiles = {}
 
 local plutonium_cannon_shell_explosion = util.table.deepcopy(data.raw["explosion"]["big-explosion"])
 plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
-plutonium_cannon_shell_explosion.animations[1].tint = {r = 0.1, g = 0.9, b = 0.7}
+plutonium_cannon_shell_explosion.animations[1].tint = { r = 0.1, g = 0.9, b = 0.7 }
 table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
 for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
-    spritesheet.tint = {r = 0.1, g = 0.9, b = 0.7}
+    spritesheet.tint = { r = 0.1, g = 0.9, b = 0.7 }
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
 
+--[[
 if mods['bobwarfare'] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
 
@@ -334,169 +335,170 @@ if mods['SchallArtillery'] then
     table.insert(projectiles, sc_plutonium_aa_pj)
 
 end
+]]
 
 data:extend(projectiles)
 
 data:extend({
-        {
-            type = "projectile",
-            name = "plutonium-cannon-projectile",
-            flags = {"not-on-map"},
-            collision_box = {{-0.3, -1.1}, {0.3, 1.1}},
-            acceleration = 0,
-            direction_only = true,
-            piercing_damage = 600,
-            action = {
-                type = "direct",
-                action_delivery = {
-                    type = "instant",
-                    target_effects = {
-                        {
-                            type = "damage",
-                            damage = {amount = 600 , type = "physical"}
-                        },
-                        {
-                            type = "damage",
-                            damage = {amount = 300 , type = "explosion"}
-                        },
-                        {
-                            type = "create-entity",
-                            entity_name = "plutonium-cannon-explosion"
-                        }
+    {
+        type = "projectile",
+        name = "plutonium-cannon-projectile",
+        flags = { "not-on-map" },
+        collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
+        acceleration = 0,
+        direction_only = true,
+        piercing_damage = 600,
+        action = {
+            type = "direct",
+            action_delivery = {
+                type = "instant",
+                target_effects = {
+                    {
+                        type = "damage",
+                        damage = { amount = 600, type = "physical" }
+                    },
+                    {
+                        type = "damage",
+                        damage = { amount = 300, type = "explosion" }
+                    },
+                    {
+                        type = "create-entity",
+                        entity_name = "plutonium-cannon-explosion"
                     }
                 }
-            },
-            final_action = {
-                type = "direct",
-                action_delivery = {
-                    type = "instant",
-                    target_effects = {
-                        {
-                            type = "create-entity",
-                            entity_name = "small-scorchmark",
-                            check_buildability = true
-                        }
-                    }
-                }
-            },
-            animation = {
-                filename = "__base__/graphics/entity/bullet/bullet.png",
-                frame_count = 1,
-                width = 3,
-                height = 50,
-                priority = "high"
             }
         },
-        {
-            type = "projectile",
-            name = "explosive-plutonium-cannon-projectile",
-            flags = {"not-on-map"},
-            collision_box = {{-0.3, -1.1}, {0.3, 1.1}},
-            acceleration = 0,
-            piercing_damage = 150,
-            action = {
-                type = "direct",
-                action_delivery = {
-                    type = "instant",
-                    target_effects = {
-                        {
-                            type = "damage",
-                            damage = {amount = 525 , type = "physical"}
-                        },
-                        {
-                            type = "create-entity",
-                            entity_name = "plutonium-cannon-explosion"
-                        }
+        final_action = {
+            type = "direct",
+            action_delivery = {
+                type = "instant",
+                target_effects = {
+                    {
+                        type = "create-entity",
+                        entity_name = "small-scorchmark",
+                        check_buildability = true
                     }
                 }
-            },
-            final_action = {
-                type = "direct",
-                action_delivery = {
-                    type = "instant",
-                    target_effects = {
-                        {
-                            type = "create-entity",
-                            entity_name = "plutonium-cannon-shell-explosion"
-                        },
-                        {
-                            type = "nested-result",
-                            action = {
-                                type = "area",
-                                radius = 4.25,
-                                action_delivery = {
-                                    type = "instant",
-                                    target_effects = {
-                                        {
-                                            type = "damage",
-                                            damage = {amount = 475, type = "explosion"}
-                                        },
-                                        {
-                                            type = "create-entity",
-                                            entity_name = "plutonium-cannon-explosion"
-                                        }
+            }
+        },
+        animation = {
+            filename = "__base__/graphics/entity/bullet/bullet.png",
+            frame_count = 1,
+            width = 3,
+            height = 50,
+            priority = "high"
+        }
+    },
+    {
+        type = "projectile",
+        name = "explosive-plutonium-cannon-projectile",
+        flags = { "not-on-map" },
+        collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
+        acceleration = 0,
+        piercing_damage = 150,
+        action = {
+            type = "direct",
+            action_delivery = {
+                type = "instant",
+                target_effects = {
+                    {
+                        type = "damage",
+                        damage = { amount = 525, type = "physical" }
+                    },
+                    {
+                        type = "create-entity",
+                        entity_name = "plutonium-cannon-explosion"
+                    }
+                }
+            }
+        },
+        final_action = {
+            type = "direct",
+            action_delivery = {
+                type = "instant",
+                target_effects = {
+                    {
+                        type = "create-entity",
+                        entity_name = "plutonium-cannon-shell-explosion"
+                    },
+                    {
+                        type = "nested-result",
+                        action = {
+                            type = "area",
+                            radius = 4.25,
+                            action_delivery = {
+                                type = "instant",
+                                target_effects = {
+                                    {
+                                        type = "damage",
+                                        damage = { amount = 475, type = "explosion" }
+                                    },
+                                    {
+                                        type = "create-entity",
+                                        entity_name = "plutonium-cannon-explosion"
                                     }
                                 }
                             }
-                        },
-                        {
-                            type = "create-entity",
-                            entity_name = "small-scorchmark",
-                            check_buildability = true
                         }
+                    },
+                    {
+                        type = "create-entity",
+                        entity_name = "small-scorchmark",
+                        check_buildability = true
                     }
                 }
-            },
-            animation = {
-                filename = "__base__/graphics/entity/bullet/bullet.png",
-                frame_count = 1,
-                width = 3,
-                height = 50,
-                priority = "high"
             }
         },
+        animation = {
+            filename = "__base__/graphics/entity/bullet/bullet.png",
+            frame_count = 1,
+            width = 3,
+            height = 50,
+            priority = "high"
+        }
+    },
+    {
+        type = "projectile",
+        name = "plutonium-atomic-rocket",
+        flags = { "not-on-map" },
+        acceleration = 0.005,
+        turn_speed = 0.003,
+        turning_speed_increases_exponentially_with_projectile_speed = true,
+        action = plutonium_atomic_rocket_action,
+        --light = {intensity = 0.8, size = 15},
+        animation =
         {
-            type = "projectile",
-            name = "plutonium-atomic-rocket",
-            flags = {"not-on-map"},
-            acceleration = 0.005,
-            turn_speed = 0.003,
-            turning_speed_increases_exponentially_with_projectile_speed = true,
-            action = plutonium_atomic_rocket_action,
-            --light = {intensity = 0.8, size = 15},
-            animation =
+            filename = "__base__/graphics/entity/rocket/rocket.png",
+            draw_as_glow = true,
+            frame_count = 8,
+            line_length = 8,
+            width = 9,
+            height = 35,
+            shift = { 0, 0 },
+            priority = "high"
+        },
+        shadow =
+        {
+            filename = "__base__/graphics/entity/rocket/rocket-shadow.png",
+            frame_count = 1,
+            width = 7,
+            height = 24,
+            priority = "high",
+            shift = { 0, 0 }
+        },
+        smoke =
+        {
             {
-                filename = "__base__/graphics/entity/rocket/rocket.png",
-                draw_as_glow = true,
-                frame_count = 8,
-                line_length = 8,
-                width = 9,
-                height = 35,
-                shift = {0, 0},
-                priority = "high"
-            },
-            shadow =
-            {
-                filename = "__base__/graphics/entity/rocket/rocket-shadow.png",
-                frame_count = 1,
-                width = 7,
-                height = 24,
-                priority = "high",
-                shift = {0, 0}
-            },
-            smoke =
-            {
-                {
-                    name = "smoke-fast",
-                    deviation = {0.15, 0.15},
-                    frequency = 1,
-                    position = {0, 1},
-                    slow_down_factor = 1,
-                    starting_frame = 3,
-                    starting_frame_deviation = 5,
-                    starting_frame_speed = 0,
-                    starting_frame_speed_deviation = 5
-                }
+                name = "smoke-fast",
+                deviation = { 0.15, 0.15 },
+                frequency = 1,
+                position = { 0, 1 },
+                slow_down_factor = 1,
+                starting_frame = 3,
+                starting_frame_deviation = 5,
+                starting_frame_speed = 0,
+                starting_frame_speed_deviation = 5
             }
         }
-    })
+    }
+})
