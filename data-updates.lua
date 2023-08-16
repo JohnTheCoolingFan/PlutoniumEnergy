@@ -7,6 +7,9 @@ if mods['bobplates'] then
 end
 
 if mods['IndustrialRevolution3'] then
+    -- IR3 uses a barreling technology
+    data.raw['technology']['plutonium-processing'].prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing", "ir-barrelling" }
+
     if data.raw['technology']['plutonium-ammo'] then
         data.raw['technology']['plutonium-ammo'].unit.count = 2000
         data.raw['technology']['plutonium-ammo'].unit.time = 60
@@ -19,10 +22,6 @@ if mods['IndustrialRevolution3'] then
                 { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
         end
     end
-
-    -- IR3 removes uranium-fuel, not a usable fuel for vehicles
-    data.raw['recipe']['plutonium-fuel'].hidden = true
-    data.raw['recipe']['plutonium-fuel'].enabled = false
 
     -- IR3 uses barreling machines
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
@@ -43,32 +42,32 @@ if mods['IndustrialRevolution3'] then
         end
     end
 
-    -- assign IR3 subgroups
-    data.raw['recipe']['MOX-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['recipe']['MOX-reactor'].order = "f[nuclear-energy]-a[reactor]"
-
+    -- assign IR3 subgroups to items
     data.raw['item']['MOX-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['item']['MOX-reactor'].order = "f[nuclear-energy]-a[reactor]"
-
-    data.raw['recipe']['breeder-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['recipe']['breeder-reactor'].order = "f[nuclear-energy]-a[reactor]"
+    data.raw['item']['MOX-reactor'].order = "f[nuclear-energy]-a[mox-reactor]"
 
     data.raw['item']['breeder-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['item']['breeder-reactor'].order = "f[nuclear-energy]-a[reactor]"
+    data.raw['item']['breeder-reactor'].order = "f[nuclear-energy]-a[breeder-reactor]"
 
-    -- data.raw['recipe']['MOX-fuel'].subgroup is assigned in recipes.lua
-    data.raw['recipe']['MOX-fuel'].order = "r[uranium-processing]-e[MOX-fuel-processing]"
+    data.raw['item']['MOX-fuel'].subgroup = "ir-fuels"
+    data.raw['item']['MOX-fuel'].order = "zz[mox-fuel]"
 
-    data.raw['item']['MOX-fuel'].subgroup = "intermediate-product"
-    data.raw['item']['MOX-fuel'].order = "r[uranium-processing]-e[MOX-fuel-processing]"
+    data.raw['item']['used-up-MOX-fuel'].subgroup = "ir-fuels"
+    data.raw['item']['used-up-MOX-fuel'].order = "zz[mox-fuel-used]"
 
-    data.raw['item']['used-up-MOX-fuel'].subgroup = "intermediate-product"
-    data.raw['item']['used-up-MOX-fuel'].order = 'r[used-up-uranium-fuel-cell]-b'
+    data.raw['item']['breeder-fuel-cell'].subgroup = "ir-fuels"
+    data.raw['item']['breeder-fuel-cell'].order = "zz[breeder-fuel-cell]"
+
+    data.raw['item']['used-up-breeder-fuel-cell'].subgroup = "ir-fuels"
+    data.raw['item']['used-up-breeder-fuel-cell'].order = "zz[breeder-fuel-cell-used]"
+
+    data.raw['item']['plutonium-238'].subgroup = "ir-fuels"
+    data.raw['item']['plutonium-238'].order = "cc[plutonium-238]"
+
+    data.raw['item']['plutonium-239'].subgroup = "ir-fuels"
+    data.raw['item']['plutonium-239'].order = "cc[plutonium-239]"
 
     if settings.startup['enable-plutonium-ammo'].value then
-        data.raw['recipe']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
-        data.raw['recipe']['plutonium-rounds-magazine'].order = 'c-q'
-
         data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
         data.raw['ammo']['plutonium-rounds-magazine'].order = 'c-q'
     end
