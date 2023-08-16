@@ -404,9 +404,9 @@ if mods["IndustrialRevolution3"] then
     table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
     table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results, { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
 
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount_max = 3, amount_min = 1 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "steel-scrap", amount_max = 6, amount_min = 3 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "lead-scrap", amount_max = 4, amount_min = 2 })
+    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results, { name = "concrete-scrap", amount_max = 4, amount_min = 2 })
 
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "steel-scrap", amount_max = 3, amount_min = 1 })
     table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results, { name = "lead-scrap", amount_max = 2, amount_min = 1 })
