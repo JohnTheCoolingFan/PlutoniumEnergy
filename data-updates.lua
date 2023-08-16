@@ -23,10 +23,6 @@ if mods['IndustrialRevolution3'] then
         end
     end
 
-    -- IR3 removes uranium-fuel, not a usable fuel for vehicles
-    data.raw['recipe']['plutonium-fuel'].hidden = true
-    data.raw['recipe']['plutonium-fuel'].enabled = false
-
     -- IR3 uses barreling machines
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
     data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].enabled = false
