@@ -1,5 +1,6 @@
 local ammo_recipes = {}
 
+--[[
 if mods['bobwarfare'] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
 
@@ -53,6 +54,7 @@ if mods['SchallArtillery'] then
     table.insert(ammo_recipes, sc_plutonium_aa_sh)
 
 end
+]]
 
 if ammo_recipes[1] then data:extend(ammo_recipes) end
 
