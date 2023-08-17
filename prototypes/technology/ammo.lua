@@ -67,6 +67,7 @@ data:extend({
     }
 
 })
+--[[
 if mods['bobwarfare'] then
     table.insert(data.raw['technology']['bob-atomic-artillery-shell'].effects,
         { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' })
@@ -78,3 +79,4 @@ if mods['SchallArtillery'] then
     table.insert(data.raw['technology']['Schall-artillery-shell-2'].effects,
         { type = 'unlock-recipe', recipe = 'Schall-plutonium-atomic-artillery-shell' })
 end
+]]
