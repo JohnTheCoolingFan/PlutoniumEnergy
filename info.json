@@ -10,7 +10,6 @@
         "? SchallUraniumProcessing",
         "? SchallRadioactiveWaste",
         "? bobplates",
-        "? AtomicRocketScreenBurn",
         "? IndustrialRevolution3 >= 3.1.5",
         "? space-exploration"
     ],
