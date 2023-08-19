@@ -3,6 +3,7 @@ local limitation_to_add = {
     'advanced-nuclear-fuel-reprocessing',
     'MOX-fuel', 'MOX-fuel-reprocessing',
     'plutonium-fuel',
+    'breeder-fuel-cell-reprocessing',
     'used-up-uranium-fuel-cell-solution-centrifuging',
     'used-up-breeder-fuel-cell-solution-centrifuging',
     'breeder-fuel-cell',
