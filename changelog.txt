@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2023-08-19
+  Minor Changes:
+    - Removed optional dependency for AtomicRocketScreenBurn, as it was not
+      updated to Factorio 1.1
+  Balancing:
+    - Added breeder fuel cell reprocessing to productivity whitelist
+---------------------------------------------------------------------------------------------------
 Version: 1.5.3
 Date: 2023-08-17
   Fixes:
