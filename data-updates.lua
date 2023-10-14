@@ -95,6 +95,6 @@ end
 
 -- check for tech prerequisites
 
-if not data['technology']['kovarex-enrivhment-process'] then
-    table.remove(data['technology']['nuclear-breeding'].prerequisites, 2)
+if not data.raw['technology']['kovarex-enrivhment-process'] then
+    table.remove(data.raw['technology']['nuclear-breeding'].prerequisites, 2)
 end
