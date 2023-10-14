@@ -8,7 +8,8 @@ end
 
 if mods['IndustrialRevolution3'] then
     -- IR3 uses a barreling technology
-    data.raw['technology']['plutonium-processing'].prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing", "ir-barrelling" }
+    data.raw['technology']['plutonium-processing'].prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing",
+        "ir-barrelling" }
 
     if data.raw['technology']['plutonium-ammo'] then
         data.raw['technology']['plutonium-ammo'].unit.count = 2000
