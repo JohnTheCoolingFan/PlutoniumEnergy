@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.5
+Date: 2023-10-14
+  Fixes:
+    - If kovarex enrichment process technoloogy is not available, Nuclear
+      breeding technology will not depend on it now
+---------------------------------------------------------------------------------------------------
 Version: 1.5.4
 Date: 2023-08-19
   Minor Changes:
