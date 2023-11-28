@@ -374,14 +374,12 @@ if mods["IndustrialRevolution3"] then
         { "computer-mk3",       4 },
         { "heat-pipe",          4 },
         { "graphite",           60 },
-        { "refined-concrete",   200 },
     }
     data.raw['recipe']['breeder-reactor'].ingredients = {
         { "lead-plate-special", 200 },
         { "computer-mk3",       6 },
         { "heat-pipe",          12 },
         { "graphite",           160 },
-        { "refined-concrete",   500 }
     }
 
     data.raw['recipe']['MOX-reactor'].subgroup = "ir-nuclear-machines"
