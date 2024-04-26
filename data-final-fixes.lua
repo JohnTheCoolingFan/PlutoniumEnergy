@@ -7,8 +7,6 @@ local limitation_to_add = {
     'used-up-uranium-fuel-cell-solution-centrifuging',
     'used-up-breeder-fuel-cell-solution-centrifuging',
     'breeder-fuel-cell',
-    'breeder-fuel-cell-from-uranium-cell',
-    'breeder-fuel-cell-from-MOX-fuel'
 }
 for _, module in pairs(data.raw['module']) do
     if module.limitation and module.effect.productivity then
