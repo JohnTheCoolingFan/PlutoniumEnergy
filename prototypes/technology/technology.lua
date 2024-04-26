@@ -114,6 +114,10 @@ data:extend({
             {
                 type = 'unlock-recipe',
                 recipe = 'used-up-breeder-fuel-cell-solution-centrifuging'
+            },
+            {
+                type = 'unlock-recipe',
+                recipe = 'plutonium-fuel'
             }
         },
         prerequisites = { 'plutonium-processing', 'kovarex-enrichment-process' },
