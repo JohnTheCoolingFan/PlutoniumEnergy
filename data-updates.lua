@@ -93,7 +93,7 @@ if mods['SchallRadioactiveWaste'] then
     ]]
 end
 
-if mods['SchallRadioactiveWaste'] then
+if mods['SchallUraniumProcessing'] then
 	data.raw["recipe"]["MOX-fuel"].ingredients = {
 		{ "iron-plate",				10 },
 		{ "uranium-low-enriched",	1 },
