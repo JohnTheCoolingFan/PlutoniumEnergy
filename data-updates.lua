@@ -93,6 +93,15 @@ if mods['SchallRadioactiveWaste'] then
     ]]
 end
 
+if mods['SchallUraniumProcessing'] then
+	data.raw["recipe"]["MOX-fuel"].ingredients = {
+		{ "iron-plate",				10 },
+		{ "uranium-low-enriched",	1 },
+		{ "plutonium-239",			3 },
+		{ "plutonium-238",			15 }
+	}
+end
+
 -- check for tech prerequisites
 
 if not data.raw['technology']['kovarex-enrivhment-process'] then
