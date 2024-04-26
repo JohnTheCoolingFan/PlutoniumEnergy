@@ -122,7 +122,7 @@ data:extend({
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-MOX-fuel", 5 } },
+        ingredients = { { "used-up-MOX-fuel", 10 } },
         icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png",
         icon_size = 64,
         icon_mipmaps = 4,
@@ -286,8 +286,8 @@ data:extend({
         },
         energy_required = 40,
         results = {
-            { type = 'item', name = 'plutonium-238', amount = 10 },
-            { type = 'item', name = 'plutonium-239', amount = 2 },
+            { type = 'item', name = 'plutonium-238', amount_min = 4, amount_max = 6, probability = 0.75 },
+            { type = 'item', name = 'plutonium-239', amount = 1, probability = 0.75 },
             { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
         },
         crafting_machine_tint = {
