@@ -28,6 +28,7 @@ And with energy generation part comes along destructive part. This mod also adds
 *   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
 *   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
 *   Polish / Polski (pl) by Guru [TSM]#8528 ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
+*   Czech / Čeština (cs) by psicho100pro
 
 #### Mod compatibility
 
