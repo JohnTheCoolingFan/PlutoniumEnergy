@@ -240,6 +240,61 @@ for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
+local trigger_functions = {}
+
+function trigger_functions.multiply_effect(effect, multiplier)
+    if effect.repeat_count and effect.repeat_count > 1 then
+        effect.repeat_count = math.floor(effect.repeat_count * multiplier)
+    end
+    if effect.type == "nested-result" then
+        trigger_functions.multiply_action(effect.action, multiplier)
+    end
+    if effect.type == "damage" then
+        effect.damage.amount = math.floor(effect.damage.amount * multiplier)
+    end
+    if effect.type == "set-tile" then
+        effect.radius = effect.radius * multiplier
+    end
+    if effect.type == "destroy-cliffs" then
+        effect.radius = effect.radius * multiplier
+    end
+    if effect.type == "create-decorative" then
+        effect.spawn_max = math.floor(effect.spawn_max * multiplier)
+        effect.spawn_max_radius = effect.spawn_max_radius * multiplier
+        effect.spawn_min_radius = effect.spawn_min_radius * multiplier
+    end
+end
+
+function trigger_functions.multiply_delivery(delivery, multiplier)
+    if delivery.type == "projectile" then
+        delivery.starting_speed = delivery.starting_speed * multiplier
+    end
+end
+
+function trigger_functions.multiply_action(action, multiplier)
+    if action.repeat_count and action.repeat_count > 1 then
+        action.repeat_count = math.floor(action.repeat_count * multiplier)
+    end
+    if action.type == "area" then
+        action.radius = action.radius * multiplier
+    elseif action.type == "line" then
+        action.range = action.range * multiplier
+        action.width = action.width * multiplier
+    elseif action.type == "cluster" then
+        action.cluster_count = math.floor(action.cluster_count * multiplier)
+        action.distance = action.distance * multiplier
+    end
+    if action.action_delivery then
+        if action.action_delivery.target_effects and #action.action_delivery.target_effects > 0 then
+            for _, effect in pairs(action.action_delivery.target_effects) do
+                trigger_functions.multiply_effect(effect, multiplier)
+            end
+        end
+        if action.action_delivery.type then
+            trigger_functions.multiply_delivery(action.action_delivery, multiplier)
+        end
+    end
+end
 
 --[[
 if mods['bobwarfare'] then
