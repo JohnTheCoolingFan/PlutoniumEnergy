@@ -240,102 +240,124 @@ for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
+local trigger_functions = {}
 
---[[
+function trigger_functions.multiply_effect(effect, multiplier)
+    if effect.repeat_count and effect.repeat_count > 1 then
+        effect.repeat_count = math.floor(effect.repeat_count * multiplier)
+    end
+    if effect.type == "nested-result" then
+        trigger_functions.multiply_action(effect.action, multiplier)
+    end
+    if effect.type == "damage" then
+        effect.damage.amount = math.floor(effect.damage.amount * multiplier)
+    end
+    if effect.type == "set-tile" then
+        effect.radius = effect.radius * multiplier
+    end
+    if effect.type == "destroy-cliffs" then
+        effect.radius = effect.radius * multiplier
+    end
+    if effect.type == "create-decorative" then
+        effect.spawn_max = math.floor(effect.spawn_max * multiplier)
+        effect.spawn_max_radius = effect.spawn_max_radius * multiplier
+        effect.spawn_min_radius = effect.spawn_min_radius * multiplier
+    end
+end
+
+function trigger_functions.multiply_delivery(delivery, multiplier)
+    if delivery.type == "projectile" then
+        delivery.starting_speed = delivery.starting_speed * multiplier
+    end
+end
+
+function trigger_functions.multiply_action(action, multiplier)
+    if action.repeat_count and action.repeat_count > 1 then
+        action.repeat_count = math.floor(action.repeat_count * multiplier)
+    end
+    if action.type == "area" then
+        action.radius = action.radius * multiplier
+    elseif action.type == "line" then
+        action.range = action.range * multiplier
+        action.width = action.width * multiplier
+    elseif action.type == "cluster" then
+        action.cluster_count = math.floor(action.cluster_count * multiplier)
+        action.distance = action.distance * multiplier
+    end
+    if action.action_delivery then
+        if action.action_delivery.target_effects and #action.action_delivery.target_effects > 0 then
+            for _, effect in pairs(action.action_delivery.target_effects) do
+                trigger_functions.multiply_effect(effect, multiplier)
+            end
+        end
+        if action.action_delivery.type then
+            trigger_functions.multiply_delivery(action.action_delivery, multiplier)
+        end
+    end
+end
+
 if mods['bobwarfare'] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
+    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
+        data.raw["artillery-projectile"]["atomic-artillery-projectile"]
+    )
 
     plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
 
-    plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+    plutonium_atomic_artillery_projectile.picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    plutonium_atomic_artillery_projectile.chart_picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[7].damage.amount = 560
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[13].action.repeat_count = 2800
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[13].action.radius = 50
+    trigger_functions.multiply_action(plutonium_atomic_artillery_projectile.action, 1.4)
+
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
-
 elseif mods['IndustrialRevolution3'] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw['artillery-projectile']['atomic-artillery-projectile'])
+    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
+        data.raw['artillery-projectile']['atomic-artillery-projectile']
+    )
 
     plutonium_atomic_artillery_projectile.name = 'plutonium-atomic-artillery-projectile'
-    plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+    plutonium_atomic_artillery_projectile.picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    plutonium_atomic_artillery_projectile.chart_picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
     plutonium_atomic_artillery_projectile.action = plutonium_atomic_rocket_action
 
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
-
 elseif mods["AtomicArtillery"] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(data.raw["artillery-projectile"]["atomic-artillery-projectile"])
+    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
+        data.raw["artillery-projectile"]["atomic-artillery-projectile"]
+    )
 
     plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
 
-    plutonium_atomic_artillery_projectile.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+    plutonium_atomic_artillery_projectile.picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    plutonium_atomic_artillery_projectile.chart_picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].action.radius = 49
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[1].action.action_delivery.target_effects[1].damage.amount = 2100
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[2].radius = 13
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.radius = 49
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[3].action.action_delivery.starting_speed = 0.5*0.7*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[4].action.radius = 13
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[4].action.action_delivery.starting_speed = 0.6*0.8*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[14].action.radius = 36
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[14].action.action_delivery.starting_speed = 0.5*0.7*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[15].action.repeat_count = 980
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[15].action.radius = 6
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[15].action.action_delivery.starting_speed = 0.5*0.65*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[16].action.repeat_count = 1400
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[16].action.radius = 11
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[16].action.action_delivery.starting_speed = 0.5*0.65*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[17].action.repeat_count = 420 -- Nice
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[17].action.radius = 36
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[17].action.action_delivery.starting_speed = 0.5*0.65*1.4
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[18].action.repeat_count = 14
-    plutonium_atomic_artillery_projectile.action.action_delivery.target_effects[18].action.radius = 11
+    trigger_functions.multiply_action(plutonium_atomic_artillery_projectile.action, 1.4)
+
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 end
 
 if mods['SchallArtillery'] then
-    local sc_plutonium_aa_pj = util.table.deepcopy(data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'])
+    local sc_plutonium_aa_pj = util.table.deepcopy(
+        data.raw['artillery-projectile']['Schall-atomic-artillery-projectile']
+    )
 
     sc_plutonium_aa_pj.name = 'Schall-plutonium-atomic-artillery-projectile'
 
-    sc_plutonium_aa_pj.picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    sc_plutonium_aa_pj.chart_picture.filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
+    sc_plutonium_aa_pj.picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
+    sc_plutonium_aa_pj.chart_picture.filename =
+    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[7].damage.amount = 560                   -- 400 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[10].radius = 20                          -- 14 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[11].spawn_min_radius = 16.5              -- Rough numbers
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[11].spawn_max_radius = 17.5
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[11].spawn_min = 45
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[11].spawn_max = 60
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[12].action.repeat_count = 1400           -- 1000 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[12].action.radius = 10                   -- 7 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[12].action.action_delivery.starting_speed = 0.5*0.8 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[13].action.repeat_count = 1400           -- 1000 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[13].action.radius = 50                   -- 35 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[13].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[14].action.repeat_count = 1400           -- 1000 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[14].action.radius = 36                   -- 26 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[14].action.action_delivery.starting_speed = 0.5*0.7 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[15].action.repeat_count = 980            -- 700 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[15].action.radius = 6                    -- 4 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[15].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[16].action.repeat_count = 1400           -- 1000 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[16].action.radius = 11                   -- 8 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[16].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[17].action.repeat_count = 420            -- 300 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[17].action.radius = 36                   -- 26 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[17].action.action_delivery.starting_speed = 0.5*0.65 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[18].action.repeat_count = 14             -- 10 * 1.4
-    sc_plutonium_aa_pj.action.action_delivery.target_effects[18].action.radius = 11                   -- 8 * 1.4
+    trigger_functions.multiply_action(sc_plutonium_aa_pj.action, 1.4)
 
     table.insert(projectiles, sc_plutonium_aa_pj)
-
 end
-]]
 
 data:extend(projectiles)
 
