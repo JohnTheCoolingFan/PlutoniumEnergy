@@ -382,7 +382,7 @@ if mods['SchallArtillery'] then
     sc_plutonium_aa_pj.chart_picture.filename =
     "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    trigger_functions.multiply_action(sc_plutonium_aa_pj.action)
+    trigger_functions.multiply_action(sc_plutonium_aa_pj.action, 1.4)
 
     --[[
     sc_plutonium_aa_pj.action.action_delivery.target_effects[7].damage.amount = 560      -- 400 * 1.4
