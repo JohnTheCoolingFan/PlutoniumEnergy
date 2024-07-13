@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.0
+Date: 2024-07-13
+  Major Changes:
+    - Added back plutonium atomic artillery shell, with stats computed
+      procedurally. Currently supported mods are: Bob's Warfare, Industrial
+      Revolution 3, Atomic Artillery and Schall Artillery.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.8
 Date: 2024-05-12
   Locale:
