@@ -11,7 +11,7 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_shell.ammo_type.action.action_delivery.projectile =
     "plutonium-atomic-artillery-projectile"
     data:extend({ plutonium_atomic_artillery_shell })
-elseif mods["AtomicArtillery"] then
+elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["ammo"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"

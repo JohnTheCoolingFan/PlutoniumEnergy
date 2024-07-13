@@ -20,7 +20,7 @@ if mods['bobwarfare'] then
     plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
     plutonium_atomic_artillery_shell.expensive.result = "plutonium-atomic-artillery-shell"
     table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
-elseif mods["AtomicArtillery"] then
+elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
     local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
 
     plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"

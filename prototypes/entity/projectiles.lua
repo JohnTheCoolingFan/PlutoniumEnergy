@@ -325,7 +325,7 @@ elseif mods['IndustrialRevolution3'] then
     plutonium_atomic_artillery_projectile.action = plutonium_atomic_rocket_action
 
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
-elseif mods["AtomicArtillery"] then
+elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(
         data.raw["artillery-projectile"]["atomic-artillery-projectile"]
     )
