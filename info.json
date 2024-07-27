@@ -1,6 +1,6 @@
 {
     "name": "PlutoniumEnergy",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "title": "Plutonium Energy",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/KPnETvMDYk",
@@ -13,7 +13,7 @@
         "? IndustrialRevolution3 >= 3.1.5",
         "? space-exploration",
         "? bobwarfare",
-        "? AtomnicArtillery",
+        "? AtomicArtillery",
         "? AtomicArtilleryRedux",
         "? SchallArtillery",
         "? IndustrialRevolution3"
