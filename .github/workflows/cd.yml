@@ -2,9 +2,8 @@ name: release
 
 # Controls when the workflow will run
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types: [published]
 
 jobs:
   build:
