@@ -97,6 +97,7 @@ if settings.startup['enable-plutonium-ammo'].value then
             {
                 type = "recipe",
                 name = "plutonium-atomic-artillery-shell",
+                enabled = false,
                 energy_required = 60,
                 ingredients = {
                     { "artillery-shell", 1 },
