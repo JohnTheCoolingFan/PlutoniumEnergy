@@ -90,7 +90,7 @@ data:extend({
         results = {
             { type = 'item', name = 'uranium-238',   amount_min = 8, amount_max = 10 },
             { type = 'item', name = 'plutonium-238', amount_min = 3, amount_max = 6 },
-            { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.25 },
+            { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.02 },
             { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 }
         },
         crafting_machine_tint = {
@@ -109,9 +109,8 @@ data:extend({
         enabled = false,
         ingredients = {
             { "iron-plate",    10 },
-            { "uranium-235",   1 },
-            { "plutonium-239", 3 },
-            { "plutonium-238", 15 }
+            { "plutonium-239", 4 },
+            { "plutonium-238", 16 }
         },
         result = "MOX-fuel",
         result_count = 10
@@ -136,11 +135,11 @@ data:extend({
             {
                 name = "plutonium-239",
                 amount = 1,
-                probability = 0.15
+                probability = 0.01
             },
             {
                 name = "plutonium-238",
-                amount = 5
+                amount = 4
             }
         },
         allow_decomposition = false
@@ -286,9 +285,9 @@ data:extend({
         },
         energy_required = 40,
         results = {
-            { type = 'item', name = 'plutonium-238', amount_min = 4, amount_max = 6, probability = 0.75 },
-            { type = 'item', name = 'plutonium-239', amount = 1, probability = 0.75 },
-            { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
+            { type = 'item', name = 'plutonium-238', amount_min = 4, amount_max = 6,      probability = 0.75 },
+            { type = 'item', name = 'plutonium-239', amount = 2 },
+            { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 },
         },
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
