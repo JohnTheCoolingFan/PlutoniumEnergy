@@ -157,7 +157,7 @@ data:extend({
             { 'uranium-238',   19 }
         },
         result = 'breeder-fuel-cell',
-        result_count = 5
+        result_count = 2
     },
     {
         type = 'recipe',
@@ -169,7 +169,7 @@ data:extend({
         energy_required = 15,
         enabled = false,
         ingredients = {
-            { 'iron-plate',                10 },
+            { 'iron-plate',                20 },
             { 'used-up-uranium-fuel-cell', 10 },
             { 'plutonium-239',             1 }
         },
@@ -178,7 +178,7 @@ data:extend({
         },
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-b[uranium]',
         result = 'breeder-fuel-cell',
-        result_count = 10,
+        result_count = 4,
         allow_decomposition = false
     },
     {
@@ -191,7 +191,7 @@ data:extend({
         energy_required = 7.5,
         enabled = false,
         ingredients = {
-            { 'iron-plate',       5 },
+            { 'iron-plate',       10 },
             { 'used-up-MOX-fuel', 5 },
             { 'uranium-238',      10 }
         },
@@ -200,7 +200,7 @@ data:extend({
         },
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-c[mox]',
         result = 'breeder-fuel-cell',
-        result_count = 5,
+        result_count = 2,
         allow_decomposition = false
     },
     {
@@ -214,11 +214,11 @@ data:extend({
         enabled = false,
         ingredients = {
             { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 50 }
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 125 }
         },
-        energy_required = 1,
+        energy_required = 2,
         results = {
-            { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 100 }
+            { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 250 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-a[no-barreling]',
         subgroup = 'intermediate-product',
@@ -253,12 +253,12 @@ data:extend({
         enabled = false,
         ingredients = {
             { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 100 },
-            { type = 'item',  name = 'empty-barrel',              amount = 2 }
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 125 },
+            { type = 'item',  name = 'empty-barrel',              amount = 5 }
         },
-        energy_required = 1,
+        energy_required = 2.5,
         results = {
-            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 2 }
+            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 5 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-b[with-barreling]',
         subgroup = 'intermediate-product',

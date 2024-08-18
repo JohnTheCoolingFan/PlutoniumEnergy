@@ -248,7 +248,7 @@ data:extend({
         max_health = 750,
         corpse = 'breeder-reactor-remnants',
         dying_explosion = 'nuclear-reactor-explosion',
-        consumption = "5MW",
+        consumption = "25MW",
         neighbour_bonus = 1,
         energy_source = {
             type = 'burner',
