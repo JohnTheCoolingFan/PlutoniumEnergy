@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.5
+Date: 2024-08-18
+  Balancing:
+    - Decreased Plutonium-239 output from advanced uranium fuel cell
+      reprocessing from 0.25 to 0.02
+    - Increased amount of Plutonium-239 from breeder fuel cell reprocessing
+      from 0.75 to 2
+    - Increased Breeder reactor power consumption to 25MW
+    - Increased Breeder fuel cell energy value to 12.5GJ
+    - Decreased Breeder fuel cell stack size to 5
+    - Reduced breeder fuel cell output from recipes by a factor of 2.5
+    - Changed breeder fuel cell recipes iron plate requirements to be 5 per
+      cell instead of varying in alternative recipes
+    - Increased time, resource usage and output of Breeder fuel cell
+      reprocessing recipes by a factor of 2.5 except for amount of cells
+    - Removed Uranium-235 from MOX fuel recipe
+    - Increased Plutonium-239 requirement for MOX fuel from 3 to 4
+    - Increased Plutonium-238 requirement for MOX fuel from 15 to 16
+    - Decreased Plutonium-239 output from MOX fuel reprocessing from 0.15 to
+      0.01
+    - Decreased Plutonium-238 output from Mox fuel reprocessing from 5 to 4
+---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2024-08-15
   Integration:
