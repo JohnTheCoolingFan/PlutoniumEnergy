@@ -378,7 +378,7 @@ Date: 2021-01-11
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 2021-01-11
-  Balancning:
+  Balancing:
     - Removed industrial reactor
     - Removed Uranium-238 excess neutron capture recipe
     - Removed Plutonium-239 alpha decay recipe
