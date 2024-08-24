@@ -285,9 +285,9 @@ data:extend({
         },
         energy_required = 40,
         results = {
-            { type = 'item', name = 'plutonium-238', amount_min = 4, amount_max = 6,      probability = 0.75 },
+            { type = 'item', name = 'plutonium-238', amount = 4 },
             { type = 'item', name = 'plutonium-239', amount = 2 },
-            { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 },
+            { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
         },
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
