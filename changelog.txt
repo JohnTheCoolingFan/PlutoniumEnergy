@@ -6,8 +6,8 @@ Date: 2024-08-18
       reprocessing from 0.25 to 0.02
     - Increased amount of Plutonium-239 from breeder fuel cell reprocessing
       from 0.75 to 2
-    - Increased Breeder reactor power consumption to 25MW
-    - Increased Breeder fuel cell energy value to 12.5GJ
+    - Increased Breeder reactor power consumption to 20MW
+    - Increased Breeder fuel cell energy value to 10GJ
     - Decreased Breeder fuel cell stack size to 5
     - Reduced breeder fuel cell output from recipes by a factor of 2.5
     - Changed breeder fuel cell recipes iron plate requirements to be 5 per

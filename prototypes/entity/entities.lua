@@ -214,7 +214,7 @@ data:extend({
         },
         heat_connection_patches_disconnected = {
             sheet = apply_heat_pipe_glow {
-                filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
+                filename = '__PlutoniumEn2.5ergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                 width = 32,
                 height = 32,
                 variation_count = 8,
@@ -248,7 +248,7 @@ data:extend({
         max_health = 750,
         corpse = 'breeder-reactor-remnants',
         dying_explosion = 'nuclear-reactor-explosion',
-        consumption = "25MW",
+        consumption = "20MW",
         neighbour_bonus = 1,
         energy_source = {
             type = 'burner',
