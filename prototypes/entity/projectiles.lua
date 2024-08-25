@@ -78,10 +78,10 @@ local plutonium_atomic_rocket_action =
             {
                 type = "create-decorative",
                 decorative = "nuclear-ground-patch",
-                spawn_min_radius = 30, -- This
-                spawn_max_radius = 32, -- This
-                spawn_min = 55,        -- This
-                spawn_max = 80,        -- This
+                spawn_min_radius = 21.5, -- This
+                spawn_max_radius = 22.5, -- This
+                spawn_min = 55,          -- This
+                spawn_max = 80,          -- This
                 apply_projection = true,
                 spread_evenly = true
             },
