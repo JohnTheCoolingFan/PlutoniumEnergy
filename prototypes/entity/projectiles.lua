@@ -1,5 +1,12 @@
 local sounds = require("__base__.prototypes.entity.sounds")
 
+local atomic_bomb_fire = util.table.deepcopy(data.raw['fire']['fire-flame'])
+
+atomic_bomb_fire.name = 'atomic-bomb-fire-flame'
+atomic_bomb_fire.initial_lifetime = 2700
+
+data:extend({ atomic_bomb_fire })
+
 local plutonium_atomic_rocket_action =
 {
     type = "direct",
@@ -87,6 +94,23 @@ local plutonium_atomic_rocket_action =
             },
             {
                 type = "nested-result",
+                action = {
+                    type = "area",
+                    target_entities = false,
+                    trigger_from_target = true,
+                    repeat_count = 4000,
+                    radius = 35,
+                    action_delivery = {
+                        type = "instant",
+                        target_effects = {
+                            type = "create-fire",
+                            entity_name = "atomic-bomb-fire-flame",
+                        }
+                    }
+                }
+            },
+            {
+                type = "nested-result",
                 action =
                 {
                     type = "area",
@@ -110,7 +134,7 @@ local plutonium_atomic_rocket_action =
                     type = "area",
                     target_entities = false,
                     trigger_from_target = true,
-                    repeat_count = 2500, -- This
+                    repeat_count = 4000, -- This
                     radius = 100,        -- This
                     action_delivery =
                     {
