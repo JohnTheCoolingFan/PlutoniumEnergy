@@ -150,14 +150,16 @@ end
 data:extend({
     {
         type = "recipe",
-        name = "plutonium-atomic-bomb",
+        name = "plutonium-atomic-artillery-shell",
         enabled = false,
         energy_required = 50,
         ingredients = {
             { "rocket-control-unit", 10 },
-            { "explosives",          10 },
-            { "plutonium-239",       35 }
+            { "radar",               1 },
+            { "explosives",          30 },
+            { "plutonium-239",       35 },
+            { "steel-plate",         15 }
         },
-        result = "plutonium-atomic-bomb"
+        result = "plutonium-atomic-artillery-shell"
     }
 })

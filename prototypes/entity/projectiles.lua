@@ -7,7 +7,7 @@ atomic_bomb_fire.initial_lifetime = 2700
 
 data:extend({ atomic_bomb_fire })
 
-local plutonium_atomic_rocket_action =
+local plutonium_atomic_bomb_action =
 {
     type = "direct",
     action_delivery =
@@ -65,6 +65,14 @@ local plutonium_atomic_rocket_action =
                 damage = { amount = 1000, type = "explosion" } -- This
             },
             {
+                type = "damage",
+                damage = { amount = 500, type = "physical" } -- This
+            },
+            {
+                type = "damage",
+                damage = { amount = 1000, type = "fire" } -- This
+            },
+            {
                 type = "create-entity",
                 entity_name = "huge-scorchmark",
                 offsets = { { 0, -0.5 } },
@@ -76,6 +84,8 @@ local plutonium_atomic_rocket_action =
             },
             {
                 type = "destroy-decoratives",
+                from_render_layer = "decorative",
+                to_render_layer = "object",
                 include_soft_decoratives = true, -- soft decoratives are decoratives with grows_through_rail_path = true
                 include_decals = true,
                 invoke_decorative_trigger = true,
@@ -346,7 +356,7 @@ elseif mods['IndustrialRevolution3'] then
     plutonium_atomic_artillery_projectile.chart_picture.filename =
     "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
 
-    plutonium_atomic_artillery_projectile.action = plutonium_atomic_rocket_action
+    plutonium_atomic_artillery_projectile.action = plutonium_atomic_bomb_action
 
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
 elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
@@ -510,7 +520,7 @@ data:extend({
         acceleration = 0.005,
         turn_speed = 0.003,
         turning_speed_increases_exponentially_with_projectile_speed = true,
-        action = plutonium_atomic_rocket_action,
+        action = plutonium_atomic_bomb_action,
         --light = {intensity = 0.8, size = 15},
         animation =
         {
@@ -546,5 +556,41 @@ data:extend({
                 starting_frame_speed_deviation = 5
             }
         }
+    },
+    {
+        type = "projectile",
+        name = "plutonium-atomic-artillery-projectile",
+        flags = { "not-on-map" },
+        reveal_map = true,
+        map_color = { r = 0, g = 1, b = 1 },
+        picture =
+        {
+            filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png",
+            draw_as_glow = true,
+            width = 64,
+            height = 64,
+            scale = 0.5
+        },
+        shadow =
+        {
+            filename = "__base__/graphics/entity/artillery-projectile/hr-shell-shadow.png",
+            width = 64,
+            height = 64,
+            scale = 0.5
+        },
+        chart_picture =
+        {
+            filename =
+            "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png",
+            flags = { "icon" },
+            frame_count = 1,
+            width = 64,
+            height = 64,
+            priority = "high",
+            scale = 0.25
+        },
+        height_from_ground = 280 / 64,
+        action = plutonium_atomic_bomb_action,
+
     }
 })

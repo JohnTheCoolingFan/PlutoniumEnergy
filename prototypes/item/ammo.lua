@@ -143,31 +143,31 @@ end
 data:extend({
     {
         type = "ammo",
-        name = "plutonium-atomic-bomb",
-        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-bomb.png",
+        name = "plutonium-atomic-artillery-shell",
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
         ammo_type = {
-            range_modifier = 5,
-            cooldown_modifier = 10,
+            category = "artillery",
             target_type = "position",
-            category = "rocket",
             action = {
                 type = "direct",
                 action_delivery = {
                     type = "projectile",
-                    projectile = "plutonium-atomic-rocket",
-                    starting_speed = 0.05,
+                    projectile = "plutonium-atomic-artillery-projectile",
+                    starting_speed = 1,
+                    direction_deviation = 0,
+                    range_deviation = 0,
                     source_effects = {
-                        type = "create-entity",
-                        entity_name = "explosion-hit"
+                        type = "create-explosion",
+                        entity_name = "artillery-cannon-muzzle-flash"
                     }
                 }
             }
         },
         subgroup = "ammo",
         order = "d[rocket-launcher]-c[atomic-bomb]",
-        stack_size = 10
+        stack_size = 1
     }
 })

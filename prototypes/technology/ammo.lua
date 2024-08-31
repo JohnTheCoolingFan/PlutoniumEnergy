@@ -46,10 +46,10 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "plutonium-atomic-bomb"
+                recipe = "plutonium-atomic-artillery-shell"
             }
         },
-        prerequisites = { "nuclear-breeding", "atomic-bomb" },
+        prerequisites = { "nuclear-breeding", "atomic-bomb", "artillery" },
         unit = {
             count = 6000,
             ingredients = {
