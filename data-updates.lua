@@ -17,6 +17,9 @@ if mods['IndustrialRevolution3'] then
             { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
     end
 
+    data.raw['ammo']['plutonium-atomic-artillery-shell'].icon =
+    '__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell-IR3.png'
+
     local function hide_recipe(name, technology_name)
         data.raw['recipe'][name].hidden = true
         data.raw['recipe'][name].enabled = false
