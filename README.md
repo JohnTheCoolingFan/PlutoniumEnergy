@@ -1,9 +1,5 @@
 # Plutonium Energy
 
-## Repo structure
-
-`master` is the default branch, `dev` previously was used for latest changes and `master` for current release, but that caused more confusion than any good, so `dev` is not used anymore.
-
 ## Description
 
 This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows for some interesting designs.
