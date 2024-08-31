@@ -14,53 +14,42 @@ if mods['IndustrialRevolution3'] then
             { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
     end
 
-    -- IR3 uses barreling machines
-    data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].hidden = true
-    data.raw['recipe']['advanced-nuclear-fuel-reprocessing-with-barrelling'].enabled = false
-
-    for index, effect in pairs(data.raw['technology']['plutonium-processing'].effects) do
-        if effect.recipe == "advanced-nuclear-fuel-reprocessing-with-barrelling" then
-            table.remove(data.raw['technology']['plutonium-processing'].effects, index)
+    local function hide_recipe(name, technology_name)
+        data.raw['recipe'][name].hidden = true
+        data.raw['recipe'][name].enabled = false
+        if technology_name ~= nil then
+            for index, effect in pairs(data.raw['technology'][technology_name].effects) do
+                if effect.recipe == name then
+                    table.remove(data.raw['technology'][technology_name].effects, index)
+                end
+            end
         end
     end
 
-    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].hidden = true
-    data.raw['recipe']['breeder-fuel-cell-reprocessing-with-barrelling'].enabled = false
+    -- IR3 uses barreling machines
+    hide_recipe('advanced-nuclear-fuel-reprocessing-with-barrelling', 'plutonium-processing')
+    hide_recipe('breeder-fuel-cell-reprocessing-with-barrelling', 'nuclear-breeding')
 
-    for index, effect in pairs(data.raw['technology']['nuclear-breeding'].effects) do
-        if effect.recipe == "breeder-fuel-cell-reprocessing-with-barrelling" then
-            table.remove(data.raw['technology']['nuclear-breeding'].effects, index)
+    local function subgroup_and_order(name, subgroup, order, item_type)
+        if item_type == nil then
+            item_type = 'item'
         end
+        data.raw[item_type][name].subgroup = subgroup
+        data.raw[item_type][name].order = order
     end
 
     -- assign IR3 subgroups to items
-    data.raw['item']['MOX-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['item']['MOX-reactor'].order = "f[nuclear-energy]-a[mox-reactor]"
-
-    data.raw['item']['breeder-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['item']['breeder-reactor'].order = "f[nuclear-energy]-a[breeder-reactor]"
-
-    data.raw['item']['MOX-fuel'].subgroup = "ir-fuels"
-    data.raw['item']['MOX-fuel'].order = "zz[mox-fuel]"
-
-    data.raw['item']['used-up-MOX-fuel'].subgroup = "ir-fuels"
-    data.raw['item']['used-up-MOX-fuel'].order = "zz[mox-fuel-used]"
-
-    data.raw['item']['breeder-fuel-cell'].subgroup = "ir-fuels"
-    data.raw['item']['breeder-fuel-cell'].order = "zz[breeder-fuel-cell]"
-
-    data.raw['item']['used-up-breeder-fuel-cell'].subgroup = "ir-fuels"
-    data.raw['item']['used-up-breeder-fuel-cell'].order = "zz[breeder-fuel-cell-used]"
-
-    data.raw['item']['plutonium-238'].subgroup = "ir-fuels"
-    data.raw['item']['plutonium-238'].order = "cc[plutonium-238]"
-
-    data.raw['item']['plutonium-239'].subgroup = "ir-fuels"
-    data.raw['item']['plutonium-239'].order = "cc[plutonium-239]"
+    subgroup_and_order('MOX-reactor', 'ir-nuclear-machines', 'f[nuclear-energy]-a[mox-reactor]')
+    subgroup_and_order('breeder-reactor', 'ir-nuclear-machines', 'f[nuclear-energy]-a[breeder-reactor]')
+    subgroup_and_order('MOX-fuel', 'ir-fuels', 'zz[mox-fuel]')
+    subgroup_and_order('used-up-MOX-fuel', 'ir-fuels', 'zz[mox-fuel-used]')
+    subgroup_and_order('breeder-fuel-cell', 'ir-fuels', 'zz[breeder-fuel-cell]')
+    subgroup_and_order('used-up-breeder-fuel-cell', 'ir-fuels', 'zz[breeder-fuel-cell-used]')
+    subgroup_and_order('plutonium-238', 'ir-fuels', 'cc[plutonium-238]')
+    subgroup_and_order('plutonium-239', 'ir-fuels', 'cc[plutonium-239]')
 
     if settings.startup['enable-plutonium-ammo'].value then
-        data.raw['ammo']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
-        data.raw['ammo']['plutonium-rounds-magazine'].order = 'c-q'
+        subgroup_and_order('plutonium-rounds-magazine', 'ir-ammo', 'c-q', 'ammo')
     end
 end
 
@@ -73,14 +62,9 @@ if mods['SchallRadioactiveWaste'] then
 
     SchallRadioactiveWaste_add_radioactive_effects('plutonium-atomic-rocket', 84, 2.8, 70)
 
-    --[[
     if data.raw['artillery-projectile']['plutonium-atomic-artillery-projectile'] then
         SchallRadioactiveWaste_add_radioactive_effects('plutonium-atomic-artillery-projectile', 84, 2.8, 70)
     end
-    if data.raw['artillery-projectile']['Schall-atomic-artillery-projectile'] then
-        SchallRadioactiveWaste_add_radioactive_effects('Schall-plutonium-atomic-artillery-projectile', 84, 2.8, 70)
-    end
-    ]]
 end
 
 -- check for tech prerequisites
