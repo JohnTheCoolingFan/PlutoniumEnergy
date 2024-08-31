@@ -1,11 +1,3 @@
-if mods['bobplates'] then
-    -- I'll leave this here just in case, although this shouldn't be required
-    if data.raw['technology']['plutonium-atomic-bomb'] then
-        data.raw['technology']['plutonium-atomic-bomb'].prerequisites = { 'atomic-bomb' }
-    end
-    --data.raw['technology']['plutonium-processing'].effects = {} -- Broken. Why did I do this in the first place?
-end
-
 if mods['IndustrialRevolution3'] then
     -- IR3 uses a barreling technology
     data.raw['technology']['plutonium-processing'].prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing",
@@ -18,10 +10,8 @@ if mods['IndustrialRevolution3'] then
 
     if data.raw['technology']['plutonium-atomic-bomb'] then
         -- Note to future self: atomic bombs are replaced by artillery shells in IR3
-        if settings.startup['enable-plutonium-ammo'].value then
-            data.raw['technology']['plutonium-atomic-bomb'].effects = {
-                { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
-        end
+        data.raw['technology']['plutonium-atomic-bomb'].effects = {
+            { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' } }
     end
 
     -- IR3 uses barreling machines
@@ -91,15 +81,6 @@ if mods['SchallRadioactiveWaste'] then
         SchallRadioactiveWaste_add_radioactive_effects('Schall-plutonium-atomic-artillery-projectile', 84, 2.8, 70)
     end
     ]]
-end
-
-if mods['SchallUraniumProcessing'] then
-	data.raw["recipe"]["MOX-fuel"].ingredients = {
-		{ "iron-plate",				10 },
-		{ "uranium-low-enriched",	1 },
-		{ "plutonium-239",			3 },
-		{ "plutonium-238",			15 }
-	}
 end
 
 -- check for tech prerequisites

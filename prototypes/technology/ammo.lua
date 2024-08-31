@@ -67,17 +67,7 @@ data:extend({
     }
 
 })
-if mods['bobwarfare'] then
-    table.insert(data.raw['technology']['bob-atomic-artillery-shell'].effects,
-        { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' })
-elseif mods["IndustrialRevoltuion3"] then
+if mods["IndustrialRevoltuion3"] then
     table.insert(data.raw['technology']['plutonium-ammo'].effects,
         { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' })
-elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
-    table.insert(data.raw["technology"]["plutonium-ammo"].effects,
-        { type = "unlock-recipe", recipe = "plutonium-atomic-artillery-shell" })
-end
-if mods['SchallArtillery'] then
-    table.insert(data.raw['technology']['Schall-artillery-shell-2'].effects,
-        { type = 'unlock-recipe', recipe = 'Schall-plutonium-atomic-artillery-shell' })
 end

@@ -1,56 +1,5 @@
 local ammo_recipes = {}
 
-if mods['bobwarfare'] then
-    local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
-
-    plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
-
-    plutonium_atomic_artillery_shell.normal.ingredients = {
-        { "steel-plate",   8 },
-        { "plastic-bar",   8 },
-        { "explosives",    30 },
-        { "plutonium-239", 30 }
-    }
-    plutonium_atomic_artillery_shell.expensive.ingredients = {
-        { "steel-plate",   16 },
-        { "plastic-bar",   16 },
-        { "explosives",    30 },
-        { "plutonium-239", 30 }
-    }
-    plutonium_atomic_artillery_shell.normal.result = "plutonium-atomic-artillery-shell"
-    plutonium_atomic_artillery_shell.expensive.result = "plutonium-atomic-artillery-shell"
-    table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
-elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
-    local plutonium_atomic_artillery_shell = util.table.deepcopy(data.raw["recipe"]["atomic-artillery-shell"])
-
-    plutonium_atomic_artillery_shell.name = "plutonium-atomic-artillery-shell"
-
-    plutonium_atomic_artillery_shell.ingredients = {
-        { "plutonium-atomic-bomb",            1 },
-        { "explosive-plutonium-cannon-shell", 4 },
-        { "rocket-control-unit",              3 },
-        { "radar",                            1 }
-    }
-    plutonium_atomic_artillery_shell.result = "plutonium-atomic-artillery-shell"
-    table.insert(ammo_recipes, plutonium_atomic_artillery_shell)
-end
-
-if mods['SchallArtillery'] then
-    local sc_plutonium_aa_sh = util.table.deepcopy(data.raw['recipe']['Schall-atomic-artillery-shell'])
-
-    sc_plutonium_aa_sh.name = 'Schall-plutonium-atomic-artillery-shell'
-
-    sc_plutonium_aa_sh.ingredients = {
-        { 'explosive-cannon-shell', 6 },
-        { 'radar',                  1 },
-        { 'rocket-control-unit',    12 },
-        { 'explosives',             15 },
-        { 'plutonium-239',          35 }
-    }
-    sc_plutonium_aa_sh.result = 'Schall-plutonium-atomic-artillery-shell'
-    table.insert(ammo_recipes, sc_plutonium_aa_sh)
-end
-
 if #ammo_recipes > 0 then data:extend(ammo_recipes) end
 
 if settings.startup['enable-plutonium-ammo'].value then
