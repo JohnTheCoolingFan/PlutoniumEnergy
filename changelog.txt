@@ -2,6 +2,10 @@
 Version: 1.6.5
 Date: 2024-08-18
   Balancing:
+    - Replaced Plutonium Atomic bomb by Plutonium Atomic Artillery shell.
+      Also significantly increased the damage and range of the Plutoinium
+      atomic explosion. The recipe is a combination of both Artillery Shell
+      and Atomic Bomb.
     - Decreased Plutonium-239 output from advanced uranium fuel cell
       reprocessing from 0.25 to 0.02
     - Increased amount of Plutonium-239 from breeder fuel cell reprocessing
