@@ -1,5 +1,6 @@
 local sounds = require("__base__.prototypes.entity.sounds")
 
+-- Plutonium Atomic Bomb fire entity
 local atomic_bomb_fire = util.table.deepcopy(data.raw['fire']['fire-flame'])
 
 atomic_bomb_fire.name = 'atomic-bomb-fire-flame'
@@ -7,6 +8,7 @@ atomic_bomb_fire.initial_lifetime = 2700
 
 data:extend({ atomic_bomb_fire })
 
+-- Plutonium Atomic bomb action (explosion)
 local plutonium_atomic_bomb_action =
 {
     type = "direct",
@@ -261,11 +263,11 @@ local plutonium_atomic_bomb_action =
 
 local projectiles = {}
 
+-- Plutonium cannon shell explosions
 local plutonium_cannon_shell_explosion = util.table.deepcopy(data.raw["explosion"]["big-explosion"])
 plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
 plutonium_cannon_shell_explosion.animations[1].tint = { r = 0.1, g = 0.9, b = 0.7 }
 table.insert(projectiles, plutonium_cannon_shell_explosion)
-
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
@@ -274,6 +276,7 @@ for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
 end
 table.insert(projectiles, plutonium_cannon_explosion)
 
+-- Action/trigger modification functions
 local trigger_functions = {}
 
 function trigger_functions.multiply_effect(effect, multiplier)
@@ -330,22 +333,8 @@ function trigger_functions.multiply_action(action, multiplier)
     end
 end
 
-if mods['bobwarfare'] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
-        data.raw["artillery-projectile"]["atomic-artillery-projectile"]
-    )
-
-    plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
-
-    plutonium_atomic_artillery_projectile.picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
-
-    trigger_functions.multiply_action(plutonium_atomic_artillery_projectile.action, 1.4)
-
-    table.insert(projectiles, plutonium_atomic_artillery_projectile)
-elseif mods['IndustrialRevolution3'] then
+-- IR3 atomic artillery
+if mods['IndustrialRevolution3'] then
     local plutonium_atomic_artillery_projectile = util.table.deepcopy(
         data.raw['artillery-projectile']['atomic-artillery-projectile']
     )
@@ -359,43 +348,13 @@ elseif mods['IndustrialRevolution3'] then
     plutonium_atomic_artillery_projectile.action = plutonium_atomic_bomb_action
 
     table.insert(projectiles, plutonium_atomic_artillery_projectile)
-elseif mods["AtomicArtillery"] or mods["AtomicArtilleryRedux"] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
-        data.raw["artillery-projectile"]["atomic-artillery-projectile"]
-    )
-
-    plutonium_atomic_artillery_projectile.name = "plutonium-atomic-artillery-projectile"
-
-    plutonium_atomic_artillery_projectile.picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
-
-    trigger_functions.multiply_action(plutonium_atomic_artillery_projectile.action, 1.4)
-
-    table.insert(projectiles, plutonium_atomic_artillery_projectile)
-end
-
-if mods['SchallArtillery'] then
-    local sc_plutonium_aa_pj = util.table.deepcopy(
-        data.raw['artillery-projectile']['Schall-atomic-artillery-projectile']
-    )
-
-    sc_plutonium_aa_pj.name = 'Schall-plutonium-atomic-artillery-projectile'
-
-    sc_plutonium_aa_pj.picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    sc_plutonium_aa_pj.chart_picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
-
-    trigger_functions.multiply_action(sc_plutonium_aa_pj.action, 1.4)
-
-    table.insert(projectiles, sc_plutonium_aa_pj)
 end
 
 data:extend(projectiles)
 
+-- Rest of the prototypes
 data:extend({
+    -- Regular cannon projectile
     {
         type = "projectile",
         name = "plutonium-cannon-projectile",
@@ -445,6 +404,7 @@ data:extend({
             priority = "high"
         }
     },
+    -- Explosive cannon projectile
     {
         type = "projectile",
         name = "explosive-plutonium-cannon-projectile",
@@ -513,6 +473,7 @@ data:extend({
             priority = "high"
         }
     },
+    -- Plutonium atomic rocket (not used, replaced by atomic artillery)
     {
         type = "projectile",
         name = "plutonium-atomic-rocket",
@@ -557,6 +518,7 @@ data:extend({
             }
         }
     },
+    -- Plutonium Atomic Artillery projectile, replacement for Plutonium atomic bomb
     {
         type = "projectile",
         name = "plutonium-atomic-artillery-projectile",
