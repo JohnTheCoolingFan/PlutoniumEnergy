@@ -347,27 +347,21 @@ data:extend({
 
 if mods["IndustrialRevolution3"] then
     -- Add radiation shielding to recipes
-    data.raw['recipe']['MOX-fuel'].ingredients = {
-        { "lead-plate-special", 10 },
-        { "uranium-235",        1 },
-        { "plutonium-239",      3 },
-        { "plutonium-238",      15 }
-    }
-    data.raw['recipe']['breeder-fuel-cell'].ingredients = {
-        { 'lead-plate-special', 10 },
-        { 'plutonium-239',      1 },
-        { 'uranium-238',        19 }
-    }
-    data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].ingredients = {
-        { 'lead-plate-special',        10 },
-        { 'used-up-uranium-fuel-cell', 10 },
-        { 'plutonium-239',             1 }
-    }
-    data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].ingredients = {
-        { 'lead-plate-special', 5 },
-        { 'used-up-MOX-fuel',   5 },
-        { 'uranium-238',        10 }
-    }
+
+    for name, amount in pairs({
+        ['MOX-fuel'] = 10,
+        ['breeder-fuel-cell'] = 10,
+        ['breeder-fuel-cell-from-uranium-cell'] = 10,
+        ['breeder-fuel-cell-from-MOX-fuel'] = 10
+    }) do
+        for i, ingredient in pairs(data.raw['recipe'][name].ingredients) do
+            if ingredient[0] == 'iron-plate' then
+                table.remove(data.raw['recipe'][name].ingredients, i)
+            end
+        end
+        table.insert(data.raw['recipe'][name].ingredients, { 'lead-plate-special', amount })
+    end
+
     data.raw['recipe']['MOX-reactor'].ingredients = {
         { "lead-plate-special", 80 },
         { "computer-mk3",       4 },
@@ -381,42 +375,52 @@ if mods["IndustrialRevolution3"] then
         { "graphite",           160 },
     }
 
-    data.raw['recipe']['MOX-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['recipe']['MOX-reactor'].order = "f[nuclear-energy]-a[mox-reactor]"
+    local function subgroup_and_order(name, subgroup, order, item_type)
+        if item_type == nil then
+            item_type = 'item'
+        end
+        data.raw[item_type][name].subgroup = subgroup
+        data.raw[item_type][name].order = order
+    end
 
-    data.raw['recipe']['breeder-reactor'].subgroup = "ir-nuclear-machines"
-    data.raw['recipe']['breeder-reactor'].order = "f[nuclear-energy]-a[breeder-reactor]"
+    subgroup_and_order('MOX-reactor', 'ir-nuclear-machines', 'f[nuclear-energy]-a[mox-reactor]', 'recipe')
+
+    subgroup_and_order('breeder-reactor', 'ir-nuclear-machines', 'f[nuclear-energy]-a[breeder-reactor]', 'recipe')
 
     if settings.startup['enable-plutonium-ammo'].value then
-        data.raw['recipe']['plutonium-rounds-magazine'].subgroup = 'ir-ammo'
-        data.raw['recipe']['plutonium-rounds-magazine'].order = 'c-q'
+        subgroup_and_order('plutonium-rounds-magazine', 'ir-ammo', 'c-q', 'recipe')
     end
 
     -- IR3 removes uranium-fuel, not a usable fuel for vehicles
     data.raw['recipe']['plutonium-fuel'].hidden = true
     data.raw['recipe']['plutonium-fuel'].enabled = false
 
+
     -- Add steel, lead, and concrete scrap to reprocessing recipes
-    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results,
-        { name = "steel-scrap", amount_max = 3, amount_min = 1 })
-    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results,
-        { name = "lead-scrap", amount_max = 2, amount_min = 1 })
-    table.insert(data.raw['recipe']['MOX-fuel-reprocessing'].results,
-        { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
+    for name, items in pairs({
+        ['MOX-fuel-reprocessing'] = {
+            { name = "steel-scrap",    amount_max = 3, amount_min = 1 },
+            { name = "lead-scrap",     amount_max = 2, amount_min = 1 },
+            { name = "concrete-scrap", amount_max = 2, amount_min = 1 }
+        },
 
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results,
-        { name = "steel-scrap", amount_max = 6, amount_min = 3 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results,
-        { name = "lead-scrap", amount_max = 4, amount_min = 2 })
-    table.insert(data.raw['recipe']['breeder-fuel-cell-reprocessing'].results,
-        { name = "concrete-scrap", amount_max = 4, amount_min = 2 })
+        ['breeder-fuel-cell-reprocessing'] = {
+            { name = "steel-scrap",    amount_max = 6, amount_min = 3 },
+            { name = "lead-scrap",     amount_max = 4, amount_min = 2 },
+            { name = "concrete-scrap", amount_max = 4, amount_min = 2 }
+        },
 
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results,
-        { name = "steel-scrap", amount_max = 3, amount_min = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results,
-        { name = "lead-scrap", amount_max = 2, amount_min = 1 })
-    table.insert(data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].results,
-        { name = "concrete-scrap", amount_max = 2, amount_min = 1 })
+        ['advanced-nuclear-fuel-reprocessing'] = {
+            { name = "steel-scrap",    amount_max = 3, amount_min = 1 },
+            { name = "lead-scrap",     amount_max = 2, amount_min = 1 },
+            { name = "concrete-scrap", amount_max = 2, amount_min = 1 }
+        }
+
+    }) do
+        for _, item in pairs(items) do
+            table.insert(data.raw['recipe'][name].results, item)
+        end
+    end
 
     -- new subgroup, after uranium recipes
     data:extend({ {
@@ -425,13 +429,17 @@ if mods["IndustrialRevolution3"] then
         group = 'ir-processing',
         order = 'zzzz',
     } })
-    data.raw['recipe']['MOX-fuel'].subgroup = 'pe'
-    data.raw['recipe']['breeder-fuel-cell'].subgroup = 'pe'
-    data.raw['recipe']['MOX-fuel-reprocessing'].subgroup = 'pe'
-    data.raw['recipe']['breeder-fuel-cell-reprocessing'].subgroup = 'pe'
-    data.raw['recipe']['advanced-nuclear-fuel-reprocessing'].subgroup = 'pe'
-    data.raw['recipe']['breeder-fuel-cell-from-MOX-fuel'].subgroup = 'pe'
-    data.raw['recipe']['breeder-fuel-cell-from-uranium-cell'].subgroup = 'pe'
-    data.raw['recipe']['used-up-uranium-fuel-cell-solution-centrifuging'].subgroup = 'pe'
-    data.raw['recipe']['used-up-breeder-fuel-cell-solution-centrifuging'].subgroup = 'pe'
+    for _, name in pairs({
+        'MOX-fuel',
+        'breeder-fuel-cell',
+        'MOX-fuel-reprocessing',
+        'breeder-fuel-cell-reprocessing',
+        'advanced-nuclear-fuel-reprocessing',
+        'breeder-fuel-cell-from-MOX-fuel',
+        'breeder-fuel-cell-from-uranium-cell',
+        'used-up-uranium-fuel-cell-solution-centrifuging',
+        'used-up-breeder-fuel-cell-solution-centrifuging'
+    }) do
+        data.raw['recipe'][name].subgroup = 'pe'
+    end
 end
