@@ -107,12 +107,12 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         ammo_type = {
-            category = "artillery",
+            category = "artillery-shell",
             target_type = "position",
             action = {
                 type = "direct",
                 action_delivery = {
-                    type = "projectile",
+                    type = "artillery",
                     projectile = "plutonium-atomic-artillery-projectile",
                     starting_speed = 1,
                     direction_deviation = 0,

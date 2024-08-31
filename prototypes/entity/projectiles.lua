@@ -521,7 +521,7 @@ data:extend({
     },
     -- Plutonium Atomic Artillery projectile, replacement for Plutonium atomic bomb
     {
-        type = "projectile",
+        type = "artillery-projectile",
         name = "plutonium-atomic-artillery-projectile",
         flags = { "not-on-map" },
         reveal_map = true,
