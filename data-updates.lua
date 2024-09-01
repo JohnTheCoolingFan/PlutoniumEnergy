@@ -78,3 +78,21 @@ end
 if not data.raw['technology']['kovarex-enrivhment-process'] then
     table.remove(data.raw['technology']['nuclear-breeding'].prerequisites, 2)
 end
+
+-- Add artillery shell damage bonus
+
+local function affects_ammotype(effects, ammotype)
+    for _, effect in pairs(effects) do
+        if effect.type == "ammo-damage" and effect.ammo_category == ammotype then
+            return true
+        end
+    end
+    return false
+end
+
+for name, tech in pairs(data.raw['technology']) do
+    if tech.effects ~= nil and affects_ammotype(tech.effects, "rocket") then
+        table.insert(data.raw['technology'][name].effects,
+            { type = "ammo-damage", ammo_category = "artillery-shell", modifier = 0.2 })
+    end
+end
