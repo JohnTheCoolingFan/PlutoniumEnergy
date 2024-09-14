@@ -107,7 +107,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         ammo_type = {
-            category = "artillery-shell",
+            category = "nuclear-artillery",
             target_type = "position",
             action = {
                 type = "direct",
