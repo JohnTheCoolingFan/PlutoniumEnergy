@@ -5,6 +5,7 @@ require("prototypes.entity.projectiles")
 require("prototypes.recipe.recipes")
 require("prototypes.technology.technology")
 require("prototypes.categories.fuel-category")
+require("prototypes.categories.ammo-category")
 require("prototypes.fluid.fluids")
 
 -- TODO: improve compatibility with Realistic Reactors
@@ -26,7 +27,7 @@ if mods['space-exploration'] then
         name = 'plutonium-atomic-bomb',
         amount = 1,
         ingredients = {
-            { 'plutonium-atomic-bomb',                                1 },
+            { 'plutonium-atomic-bomb',                                  1 },
             { data_util.mod_prefix .. 'delivery-cannon-weapon-capsule', 1 }
         }
     }
