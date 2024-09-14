@@ -167,13 +167,14 @@ local plutonium_atomic_bomb_action =
                     type = "area",
                     target_entities = false,
                     trigger_from_target = true,
-                    repeat_count = 4000,
+                    repeat_count = 2000,
                     radius = 35,
                     action_delivery = {
                         type = "instant",
                         target_effects = {
                             type = "create-fire",
                             entity_name = "atomic-bomb-fire-flame",
+                            tile_collision_mask = { "water-tile" }
                         }
                     }
                 }
