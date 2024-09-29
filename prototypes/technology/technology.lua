@@ -43,7 +43,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "MOX-fuel"
+                recipe = "MOX-fuel-cell"
             },
             {
                 type = "unlock-recipe",
@@ -65,14 +65,14 @@ data:extend({
     },
     {
         type = "technology",
-        name = "MOX-fuel-reprocessing",
-        icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-reprocessing.png",
+        name = "MOX-fuel-cell-reprocessing",
+        icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-cell-reprocessing.png",
         icon_size = 256,
         icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "MOX-fuel-reprocessing"
+                recipe = "MOX-fuel-cell-reprocessing"
             },
         },
         prerequisites = { "plutonium-nuclear-power" },
@@ -160,17 +160,17 @@ data:extend({
     },
     {
         type = 'technology',
-        name = 'breeder-fuel-cell-from-MOX-fuel',
+        name = 'breeder-fuel-cell-from-MOX-fuel-cell',
         icon_size = 256,
         icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel.png',
+        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel-cell.png',
         effects = {
             {
                 type = 'unlock-recipe',
-                recipe = 'breeder-fuel-cell-from-MOX-fuel'
+                recipe = 'breeder-fuel-cell-from-MOX-fuel-cell'
             }
         },
-        prerequisites = { 'nuclear-breeding', 'MOX-fuel-reprocessing' },
+        prerequisites = { 'nuclear-breeding', 'MOX-fuel-cell-reprocessing' },
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },

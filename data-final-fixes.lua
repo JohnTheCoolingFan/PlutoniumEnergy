@@ -1,7 +1,7 @@
 -- Add some recipes to productivty modules limitation (which is whitelist for some reason)
 local limitation_to_add = {
     'advanced-nuclear-fuel-reprocessing',
-    'MOX-fuel', 'MOX-fuel-reprocessing',
+    'MOX-fuel-cell', 'MOX-fuel-cell-reprocessing',
     'plutonium-fuel',
     'breeder-fuel-cell-reprocessing',
     'used-up-uranium-fuel-cell-solution-centrifuging',
@@ -18,7 +18,7 @@ end
 
 local function replace_subgroup(prototype_type, replace_with, targets_list)
     for _, name in pairs(targets_list) do
-        log("Replacing subgroup of "..prototype_type.." named `"..name.."` with `"..replace_with.."`")
+        log("Replacing subgroup of " .. prototype_type .. " named `" .. name .. "` with `" .. replace_with .. "`")
         if data.raw[prototype_type][name] then
             data.raw[prototype_type][name].subgroup = replace_with
         else
@@ -42,10 +42,10 @@ local nuclear_fuel_list_recipes = {
     'plutonium-fuel'
 }
 local uranium_fuel_cell_list_recipes = {
-    'MOX-fuel',
+    'MOX-fuel-cell',
     'breeder-fuel-cell',
     'breeder-fuel-cell-from-uranium-cell',
-    'breeder-fuel-cell-from-MOX-fuel',
+    'breeder-fuel-cell-from-MOX-fuel-cell',
     'breeder-fuel-cell-reprocessing',
     'used-up-uranium-fuel-cell-solution-centrifuging',
     'used-up-breeder-fuel-cell-solution-centrifuging',

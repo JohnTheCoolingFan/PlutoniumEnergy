@@ -86,15 +86,15 @@ data:extend({
     -- MOX fuel (nuclear)
     {
         type = "item",
-        name = "MOX-fuel",
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
+        name = "MOX-fuel-cell",
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
         icon_size = 64,
         icon_mipmaps = 4,
         pictures = {
             layers = {
                 {
                     size = 64,
-                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel.png",
+                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
                     scale = 0.25,
                     mipmap_count = 4,
                 },
@@ -110,21 +110,21 @@ data:extend({
         },
         flags = {},
         subgroup = "intermediate-product",
-        order = "r[uranium-processing]-b[MOX-fuel]",
+        order = "r[uranium-processing]-b[MOX-fuel-cell]",
         fuel_category = "MOX",
-        burnt_result = "used-up-MOX-fuel",
+        burnt_result = "used-up-MOX-fuel-cell",
         fuel_value = "20GJ",
         stack_size = 50
     },
     {
         type = "item",
-        name = "used-up-MOX-fuel",
-        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel.png",
+        name = "used-up-MOX-fuel-cell",
+        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
         subgroup = "intermediate-product",
-        order = "s[used-up-MOX-fuel]",
+        order = "s[used-up-MOX-fuel-cell]",
         stack_size = 50
     },
 

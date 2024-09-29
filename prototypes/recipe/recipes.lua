@@ -104,7 +104,7 @@ data:extend({
     -- MOX fuel and reprocessing
     {
         type = 'recipe',
-        name = "MOX-fuel",
+        name = "MOX-fuel-cell",
         energy_required = 10,
         enabled = false,
         ingredients = {
@@ -112,17 +112,17 @@ data:extend({
             { "plutonium-239", 4 },
             { "plutonium-238", 16 }
         },
-        result = "MOX-fuel",
+        result = "MOX-fuel-cell",
         result_count = 10
     },
     {
         type = "recipe",
-        name = "MOX-fuel-reprocessing",
+        name = "MOX-fuel-cell-reprocessing",
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-MOX-fuel", 10 } },
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-reprocessing.png",
+        ingredients = { { "used-up-MOX-fuel-cell", 10 } },
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-reprocessing.png",
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
@@ -183,17 +183,17 @@ data:extend({
     },
     {
         type = 'recipe',
-        name = 'breeder-fuel-cell-from-MOX-fuel',
-        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel.png',
+        name = 'breeder-fuel-cell-from-MOX-fuel-cell',
+        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel-cell.png',
         icon_size = 64,
         icon_mipmaps = 4,
         category = 'centrifuging',
         energy_required = 7.5,
         enabled = false,
         ingredients = {
-            { 'iron-plate',       10 },
-            { 'used-up-MOX-fuel', 5 },
-            { 'uranium-238',      10 }
+            { 'iron-plate',            10 },
+            { 'used-up-MOX-fuel-cell', 5 },
+            { 'uranium-238',           10 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
@@ -349,10 +349,10 @@ if mods["IndustrialRevolution3"] then
     -- Add radiation shielding to recipes
 
     for name, amount in pairs({
-        ['MOX-fuel'] = 10,
+        ['MOX-fuel-cell'] = 10,
         ['breeder-fuel-cell'] = 10,
         ['breeder-fuel-cell-from-uranium-cell'] = 10,
-        ['breeder-fuel-cell-from-MOX-fuel'] = 10
+        ['breeder-fuel-cell-from-MOX-fuel-cell'] = 10
     }) do
         for i, ingredient in pairs(data.raw['recipe'][name].ingredients) do
             if ingredient[0] == 'iron-plate' then
@@ -398,7 +398,7 @@ if mods["IndustrialRevolution3"] then
 
     -- Add steel, lead, and concrete scrap to reprocessing recipes
     for name, items in pairs({
-        ['MOX-fuel-reprocessing'] = {
+        ['MOX-fuel-cell-reprocessing'] = {
             { name = "steel-scrap",    amount_max = 3, amount_min = 1 },
             { name = "lead-scrap",     amount_max = 2, amount_min = 1 },
             { name = "concrete-scrap", amount_max = 2, amount_min = 1 }
@@ -430,12 +430,12 @@ if mods["IndustrialRevolution3"] then
         order = 'zzzz',
     } })
     for _, name in pairs({
-        'MOX-fuel',
+        'MOX-fuel-cell',
         'breeder-fuel-cell',
-        'MOX-fuel-reprocessing',
+        'MOX-fuel-cell-reprocessing',
         'breeder-fuel-cell-reprocessing',
         'advanced-nuclear-fuel-reprocessing',
-        'breeder-fuel-cell-from-MOX-fuel',
+        'breeder-fuel-cell-from-MOX-fuel-cell',
         'breeder-fuel-cell-from-uranium-cell',
         'used-up-uranium-fuel-cell-solution-centrifuging',
         'used-up-breeder-fuel-cell-solution-centrifuging'
