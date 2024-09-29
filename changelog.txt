@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.6.5
-Date: 2024-08-18
+Version: 1.7.0
+Date: 2024-09-29
   Balancing:
     - Replaced Plutonium Atomic bomb by Plutonium Atomic Artillery shell.
       Also significantly increased the damage and range of the Plutoinium
