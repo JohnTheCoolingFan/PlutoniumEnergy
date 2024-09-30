@@ -67,7 +67,3 @@ data:extend({
     }
 
 })
-if mods["IndustrialRevoltuion3"] then
-    table.insert(data.raw['technology']['plutonium-ammo'].effects,
-        { type = 'unlock-recipe', recipe = 'plutonium-atomic-artillery-shell' })
-end
