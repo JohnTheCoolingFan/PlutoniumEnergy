@@ -83,18 +83,18 @@ data:extend({
         stack_size = 1
     },
 
-    -- MOX fuel (nuclear)
+    -- Plutonium fuel cell
     {
         type = "item",
-        name = "MOX-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
+        name = "plutonium-fuel-cell",
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
         icon_size = 64,
         icon_mipmaps = 4,
         pictures = {
             layers = {
                 {
                     size = 64,
-                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
+                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
                     scale = 0.25,
                     mipmap_count = 4,
                 },
@@ -103,6 +103,51 @@ data:extend({
                     flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
+                    scale = 0.25,
+                    mipmap_count = 4
+                }
+            }
+        },
+        flags = {},
+        subgroup = "intermediate-product",
+        order = "r[uranium-processing]-c[plutonium-fuel-cell]",
+        fuel_category = "nuclear",
+        burnt_result = "used-up-plutonium-fuel-cell",
+        fuel_value = "20GJ",
+        stack_size = 50
+    },
+    {
+        type = "item",
+        name = "used-up-plutonium-fuel-cell",
+        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png", -- TODO
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = {},
+        subgroup = "intermediate-product",
+        order = "t[used-up-plutonium-fuel-cell]",
+        stack_size = 50
+    },
+
+    -- MOX fuel (nuclear)
+    {
+        type = "item",
+        name = "MOX-fuel-cell",
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+        icon_size = 64,
+        icon_mipmaps = 4,
+        pictures = {
+            layers = {
+                {
+                    size = 64,
+                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+                    scale = 0.25,
+                    mipmap_count = 4,
+                },
+                {
+                    draw_as_light = true,
+                    flags = { "light" },
+                    size = 64,
+                    filename = "__base__/graphics/icons/uranium-fuel-cell-light.png", -- TODO
                     scale = 0.25,
                     mipmap_count = 4
                 }
@@ -119,7 +164,7 @@ data:extend({
     {
         type = "item",
         name = "used-up-MOX-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png",
+        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png", -- TODO
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
