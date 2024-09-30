@@ -11,12 +11,12 @@ se_delivery_cannon_recipes['plutonium-238'] = { name = 'plutonium-238' }
 
 if not se_delivery_cannon_ammo_recipes then se_delivery_cannon_ammo_recipes = {} end
 
-se_delivery_cannon_ammo_recipes['plutonium-atomic-bomb'] = {
+se_delivery_cannon_ammo_recipes['plutonium-atomic-artillery-shell'] = {
     type = 'ammo',
-    name = 'plutonium-atomic-bomb',
+    name = 'plutonium-atomic-artillery-shell',
     amount = 1,
     ingredients = {
-        { 'plutonium-atomic-bomb',                                  1 },
+        { 'plutonium-atomic-artillery-shell',                       1 },
         { data_util.mod_prefix .. 'delivery-cannon-weapon-capsule', 1 }
     }
 }
