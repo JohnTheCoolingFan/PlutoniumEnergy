@@ -1,5 +1,5 @@
 if mods['IndustrialRevolution3'] then
-    require('compat.IndustrialRevolution3')
+    require('compat.IndustrialRevolution3.main')
 end
 
 if mods['SchallRadioactiveWaste'] then
