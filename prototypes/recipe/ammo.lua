@@ -1,7 +1,3 @@
-local ammo_recipes = {}
-
-if #ammo_recipes > 0 then data:extend(ammo_recipes) end
-
 if settings.startup['enable-plutonium-ammo'].value then
     if mods["IndustrialRevolution3"] then
         --adds lead plates to the ammo recipes
