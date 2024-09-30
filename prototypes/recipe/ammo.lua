@@ -42,19 +42,6 @@ if settings.startup['enable-plutonium-ammo'].value then
                 },
                 result = "explosive-plutonium-cannon-shell"
             },
-            -- makes an atomic artillery shell, IR3's replacement for an atomic bomb
-            {
-                type = "recipe",
-                name = "plutonium-atomic-artillery-shell",
-                enabled = false,
-                energy_required = 60,
-                ingredients = {
-                    { "artillery-shell", 1 },
-                    { "lead-plate",      30 },
-                    { "plutonium-239",   20 }
-                },
-                result = "atomic-artillery-shell"
-            }
         })
     else
         data:extend({
