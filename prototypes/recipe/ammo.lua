@@ -1,82 +1,62 @@
+local IR3 = mods["IndustrialRevolution3"]
+
 if settings.startup['enable-plutonium-ammo'].value then
-    if mods["IndustrialRevolution3"] then
-        --adds lead plates to the ammo recipes
-        data:extend({
-            {
-                type = "recipe",
-                name = "plutonium-rounds-magazine",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
+    data:extend({
+        {
+            type = "recipe",
+            name = "plutonium-rounds-magazine",
+            enabled = false,
+            energy_required = 10,
+            ingredients = IR3 and
+                {
                     { "chromium-magazine", 1 },
                     { "lead-plate",        2 },
                     { "plutonium-238",     1 }
-                },
-                result = "plutonium-rounds-magazine"
-            },
-            {
-                type = "recipe",
-                name = "plutonium-cannon-shell",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
-                    { "cannon-shell",  1 },
-                    { "lead-plate",    4 },
-                    { "plutonium-238", 1 }
-                },
-                result = "plutonium-cannon-shell"
-            },
-            {
-                type = "recipe",
-                name = "explosive-plutonium-cannon-shell",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
-                    { "explosive-cannon-shell", 1 },
-                    { "lead-plate",             4 },
-                    { "plutonium-238",          1 }
-                },
-                result = "explosive-plutonium-cannon-shell"
-            },
-        })
-    else
-        data:extend({
-            -- Ammo
-            {
-                type = "recipe",
-                name = "plutonium-rounds-magazine",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
+                }
+                or
+                {
                     { "piercing-rounds-magazine", 1 },
                     { "plutonium-238",            1 }
                 },
-                result = "plutonium-rounds-magazine"
-            },
-            {
-                type = "recipe",
-                name = "plutonium-cannon-shell",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
+            result = "plutonium-rounds-magazine"
+        },
+        {
+            type = "recipe",
+            name = "plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = IR3 and
+                {
+                    { "cannon-shell",  1 },
+                    { "lead-plate",    4 },
+                    { "plutonium-238", 1 }
+                }
+                or
+                {
                     { "cannon-shell",  1 },
                     { "plutonium-238", 1 }
                 },
-                result = "plutonium-cannon-shell"
-            },
-            {
-                type = "recipe",
-                name = "explosive-plutonium-cannon-shell",
-                enabled = false,
-                energy_required = 10,
-                ingredients = {
+            result = "plutonium-cannon-shell"
+        },
+        {
+            type = "recipe",
+            name = "explosive-plutonium-cannon-shell",
+            enabled = false,
+            energy_required = 10,
+            ingredients = IR3 and
+                {
+                    { "explosive-cannon-shell", 1 },
+                    { "lead-plate",             4 },
+                    { "plutonium-238",          1 }
+                }
+                or
+                {
                     { "explosive-cannon-shell", 1 },
                     { "plutonium-238",          1 }
                 },
-                result = "explosive-plutonium-cannon-shell"
-            }
-        })
-    end
+            result = "explosive-plutonium-cannon-shell"
+        },
+    })
 end
 
 data:extend({
