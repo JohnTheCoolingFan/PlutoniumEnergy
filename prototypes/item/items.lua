@@ -87,14 +87,14 @@ data:extend({
     {
         type = "item",
         name = "plutonium-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel-cell.png",
         icon_size = 64,
         icon_mipmaps = 4,
         pictures = {
             layers = {
                 {
                     size = 64,
-                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+                    filename = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel-cell.png",
                     scale = 0.25,
                     mipmap_count = 4,
                 },
@@ -132,16 +132,14 @@ data:extend({
     {
         type = "item",
         name = "MOX-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
         icon_size = 64,
-        icon_mipmaps = 4,
         pictures = {
             layers = {
                 {
                     size = 64,
-                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png", -- TODO
+                    filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
                     scale = 0.25,
-                    mipmap_count = 4,
                 },
                 {
                     draw_as_light = true,
@@ -164,9 +162,8 @@ data:extend({
     {
         type = "item",
         name = "used-up-MOX-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png",
         icon_size = 64,
-        icon_mipmaps = 4,
         flags = {},
         subgroup = "intermediate-product",
         order = "s[used-up-MOX-fuel-cell]",
