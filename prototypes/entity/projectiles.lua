@@ -475,51 +475,6 @@ data:extend({
             priority = "high"
         }
     },
-    -- Plutonium atomic rocket (not used, replaced by atomic artillery)
-    {
-        type = "projectile",
-        name = "plutonium-atomic-rocket",
-        flags = { "not-on-map" },
-        acceleration = 0.005,
-        turn_speed = 0.003,
-        turning_speed_increases_exponentially_with_projectile_speed = true,
-        action = plutonium_atomic_bomb_action,
-        --light = {intensity = 0.8, size = 15},
-        animation =
-        {
-            filename = "__base__/graphics/entity/rocket/rocket.png",
-            draw_as_glow = true,
-            frame_count = 8,
-            line_length = 8,
-            width = 9,
-            height = 35,
-            shift = { 0, 0 },
-            priority = "high"
-        },
-        shadow =
-        {
-            filename = "__base__/graphics/entity/rocket/rocket-shadow.png",
-            frame_count = 1,
-            width = 7,
-            height = 24,
-            priority = "high",
-            shift = { 0, 0 }
-        },
-        smoke =
-        {
-            {
-                name = "smoke-fast",
-                deviation = { 0.15, 0.15 },
-                frequency = 1,
-                position = { 0, 1 },
-                slow_down_factor = 1,
-                starting_frame = 3,
-                starting_frame_deviation = 5,
-                starting_frame_speed = 0,
-                starting_frame_speed_deviation = 5
-            }
-        }
-    },
     -- Plutonium Atomic Artillery projectile, replacement for Plutonium atomic bomb
     {
         type = "artillery-projectile",
