@@ -9,6 +9,8 @@ Date: 2024-09-29
     - The MOX fuel cell as a concept has been split into two:
       Plutonium fuel cell is a fuel cell made with plutonium which can be used in a regular reactor
       MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
+  Graphics:
+    - Added a new custom icon for the MOX fuel cell, previous icon reused for Plutonium fuel cell
   Balancing:
     - Decreased Plutonium-239 output from advanced uranium fuel cell
       reprocessing from 0.25 to 0.02
