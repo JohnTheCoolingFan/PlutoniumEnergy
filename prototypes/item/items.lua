@@ -120,7 +120,7 @@ data:extend({
     {
         type = "item",
         name = "used-up-plutonium-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/icons/used-up-plutonium-fuel-cell.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
