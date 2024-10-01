@@ -114,6 +114,7 @@ data:extend({
         fuel_category = "nuclear",
         burnt_result = "used-up-plutonium-fuel-cell",
         fuel_value = "20GJ",
+        fuel_glow_color = { 0, 1, 1, 0 },
         stack_size = 50
     },
     {
