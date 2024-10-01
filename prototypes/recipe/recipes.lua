@@ -101,28 +101,29 @@ data:extend({
         allow_decomposition = false
     },
 
-    -- MOX fuel and reprocessing
+    -- Plutonium fuel cell and reprocessing
     {
         type = 'recipe',
-        name = "MOX-fuel-cell",
+        name = "plutonium-fuel-cell",
         energy_required = 10,
         enabled = false,
         ingredients = {
             { "iron-plate",    10 },
-            { "plutonium-239", 4 },
-            { "plutonium-238", 16 }
+            { "plutonium-239", 1 },
+            { "plutonium-238", 4 },
+            { "uranium-238",   15 }
         },
-        result = "MOX-fuel-cell",
+        result = "plutonium-fuel-cell",
         result_count = 10
     },
     {
         type = "recipe",
-        name = "MOX-fuel-cell-reprocessing",
+        name = "plutonium-fuel-cell-reprocessing",
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-MOX-fuel-cell", 10 } },
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-reprocessing.png",
+        ingredients = { { "used-up-plutonium-fuel-cell", 10 } },
+        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel-cell-reprocessing.png",
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
@@ -139,6 +140,49 @@ data:extend({
             },
             {
                 name = "plutonium-238",
+                amount = 4
+            }
+        },
+        allow_decomposition = false
+    },
+
+    -- MOX fuel cell and reprocessing
+    {
+        type = 'recipe',
+        name = "MOX-fuel-cell",
+        energy_required = 10,
+        enabled = false,
+        ingredients = {
+            { "iron-plate",    10 },
+            { "uranium-238",   15 },
+            { "plutonium-238", 5 }
+        },
+        result = "MOX-fuel-cell",
+        result_count = 10
+    },
+    {
+        type = "recipe",
+        name = "MOX-fuel-cell-reprocessing",
+        energy_required = 50,
+        enabled = false,
+        category = "centrifuging",
+        ingredients = { { "used-up-MOX-fuel-cell", 10 } },
+        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-reprocessing.png", -- TODO
+        icon_size = 64,
+        icon_mipmaps = 4,
+        subgroup = "intermediate-product",
+        order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
+        main_product = "",
+        crafting_machine_tint = {
+            primary = { r = 0.000, g = 1.000, b = 0.7, a = 1.000 }
+        },
+        results = {
+            {
+                name = "plutonium-238",
+                amount = 3
+            },
+            {
+                name = "uranium-238",
                 amount = 4
             }
         },
