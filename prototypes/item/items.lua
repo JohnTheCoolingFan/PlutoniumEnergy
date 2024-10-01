@@ -156,8 +156,8 @@ data:extend({
         order = "r[uranium-processing]-b[MOX-fuel-cell]",
         fuel_category = "MOX",
         burnt_result = "used-up-MOX-fuel-cell",
-        fuel_value = "20GJ",
-        stack_size = 50
+        fuel_value = "5GJ",
+        stack_size = 100
     },
     {
         type = "item",
@@ -167,7 +167,7 @@ data:extend({
         flags = {},
         subgroup = "intermediate-product",
         order = "s[used-up-MOX-fuel-cell]",
-        stack_size = 50
+        stack_size = 100
     },
 
     -- Breeder fuel cell (nuclear)

@@ -158,7 +158,7 @@ data:extend({
             { "plutonium-238", 5 }
         },
         result = "MOX-fuel-cell",
-        result_count = 10
+        result_count = 20
     },
     {
         type = "recipe",
@@ -166,7 +166,7 @@ data:extend({
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-MOX-fuel-cell", 10 } },
+        ingredients = { { "used-up-MOX-fuel-cell", 20 } },
         icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-reprocessing.png", -- TODO
         icon_size = 64,
         icon_mipmaps = 4,
