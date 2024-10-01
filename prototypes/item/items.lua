@@ -128,7 +128,7 @@ data:extend({
         stack_size = 50
     },
 
-    -- MOX fuel (nuclear)
+    -- MOX fuel cell
     {
         type = "item",
         name = "MOX-fuel-cell",
@@ -156,7 +156,7 @@ data:extend({
         order = "r[uranium-processing]-b[MOX-fuel-cell]",
         fuel_category = "MOX",
         burnt_result = "used-up-MOX-fuel-cell",
-        fuel_value = "5GJ",
+        fuel_value = "3GJ",
         stack_size = 100
     },
     {
