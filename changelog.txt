@@ -9,9 +9,12 @@ Date: 2024-09-29
     - The MOX fuel cell as a concept has been split into two:
       Plutonium fuel cell is a fuel cell made with plutonium which can be used in a regular reactor
       MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
+  Minor changes:
+    - Rearranged nuclear cells, reprocessing and enrichment recipes in the recipe menu.
   Graphics:
     - Added a new custom icon for the MOX fuel cell, previous icon reused for Plutonium fuel cell
-    - Uranium Waste solution and Plutonium-rich Nuclear Waste solution icons updated to be more distinct.
+    - Uranium Waste solution and Plutonium-rich Nuclear Waste solution icons have been updated.
+      They now appear much more distinct and won't be mistaken for lubricant.
       Also updated colors for flow and barrells, they appear distinctly bright now.
     - Changed style of the reprocessing recipe icons for improved clarity.
   Balancing:
