@@ -145,7 +145,7 @@ data:extend({
         icons = reprocessing_icon('__PlutoniumEnergy__/graphics/icons/used-up-plutonium-fuel-cell.png', { 0, 1, 1, 1 }),
         icon_size = 64,
         icon_mipmaps = 4,
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
         main_product = "",
         crafting_machine_tint = {
@@ -189,7 +189,7 @@ data:extend({
         icons = reprocessing_icon('__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png', { 0, 1, 0.5, 1 }),
         icon_size = 64,
         icon_mipmaps = 4,
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
         main_product = "",
         crafting_machine_tint = {
@@ -284,7 +284,7 @@ data:extend({
             { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 250 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-a[no-barreling]',
-        subgroup = 'intermediate-product',
+        subgroup = 'nuclear-breeding',
         show_amount_in_title = false,
         always_show_products = true,
         crafting_machine_tint = {
@@ -316,7 +316,7 @@ data:extend({
             { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 5 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-b[with-barreling]',
-        subgroup = 'intermediate-product',
+        subgroup = 'nuclear-breeding',
         show_amount_in_title = false,
         always_show_products = true,
         crafting_machine_tint = {
@@ -348,7 +348,7 @@ data:extend({
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-c[centrifuging]',
-        subgroup = 'intermediate-product',
+        subgroup = 'nuclear-breeding',
         allow_decomposition = false
     },
 

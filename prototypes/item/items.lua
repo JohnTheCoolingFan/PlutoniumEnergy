@@ -109,7 +109,7 @@ data:extend({
             }
         },
         flags = {},
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-c[plutonium-fuel-cell]",
         fuel_category = "nuclear",
         burnt_result = "used-up-plutonium-fuel-cell",
@@ -124,7 +124,7 @@ data:extend({
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "t[used-up-plutonium-fuel-cell]",
         stack_size = 50
     },
@@ -152,7 +152,7 @@ data:extend({
             }
         },
         flags = {},
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-b[MOX-fuel-cell]",
         fuel_category = "MOX",
         burnt_result = "used-up-MOX-fuel-cell",
@@ -165,7 +165,7 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png",
         icon_size = 64,
         flags = {},
-        subgroup = "intermediate-product",
+        subgroup = "nuclear-plutonium",
         order = "s[used-up-MOX-fuel-cell]",
         stack_size = 100
     },
@@ -196,7 +196,7 @@ data:extend({
             }
         },
         flags = {},
-        subgroup = 'intermediate-product',
+        subgroup = 'nuclear-breeding',
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
         fuel_category = 'nuclear-breeder',
         burnt_result = 'used-up-breeder-fuel-cell',
@@ -210,7 +210,7 @@ data:extend({
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {},
-        subgroup = 'intermediate-product',
+        subgroup = 'nuclear-breeding',
         order = 's[used-up-xbreeder-fuel-cell]',
         stack_size = 20
     },
