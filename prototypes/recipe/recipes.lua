@@ -1,5 +1,33 @@
 require("prototypes.recipe.ammo")
 
+local function reprocessing_icon(cell_icon_path, tint)
+    local result = {
+        {
+            icon = '__PlutoniumEnergy__/graphics/icons/reprocessing/reprocessing-bottom.png',
+            tint = tint
+        },
+        {
+            icon = cell_icon_path,
+            scale = 0.625 * 0.5
+        },
+        {
+            icon = '__PlutoniumEnergy__/graphics/icons/reprocessing/reprocessing-top.png',
+            tint = tint
+        }
+    }
+    return result
+end
+
+local function reprocessing_icon_barrel(cell_icon_path, tint)
+    local result = reprocessing_icon(cell_icon_path, tint)
+    table.insert(result, {
+        icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
+        shift = { 8, -8 },
+        scale = 0.25
+    })
+    return result
+end
+
 -- Change some vanilla recipe order
 data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
 data.raw["recipe"]["nuclear-fuel-reprocessing"].order = "r[uranium-processing]-c[reprocessing]-a[regular-uranium]"
@@ -10,7 +38,7 @@ data:extend({
         type = 'recipe',
         name = 'advanced-nuclear-fuel-reprocessing',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing' },
-        icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png',
+        icons = reprocessing_icon('__base__/graphics/icons/used-up-uranium-fuel-cell.png', { 0, 1, 0, 1 }),
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
@@ -40,16 +68,7 @@ data:extend({
         type = 'recipe',
         name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
-        icons = {
-            {
-                icon = '__PlutoniumEnergy__/graphics/icons/advanced-nuclear-fuel-reprocessing.png'
-            },
-            {
-                icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
-                shift = { 8, -8 },
-                scale = 0.5 * 0.5
-            }
-        },
+        icons = reprocessing_icon_barrel('__base__/graphics/icons/used-up-uranium-fuel-cell.png', { 0, 1, 0, 1 }),
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
@@ -123,7 +142,7 @@ data:extend({
         enabled = false,
         category = "centrifuging",
         ingredients = { { "used-up-plutonium-fuel-cell", 10 } },
-        icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel-cell-reprocessing.png",
+        icons = reprocessing_icon('__PlutoniumEnergy__/graphics/icons/used-up-plutonium-fuel-cell.png', { 0, 1, 1, 1 }),
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
@@ -167,7 +186,7 @@ data:extend({
         enabled = false,
         category = "centrifuging",
         ingredients = { { "used-up-MOX-fuel-cell", 20 } },
-        icon = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-reprocessing.png", -- TODO
+        icons = reprocessing_icon('__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png', { 0, 1, 0.5, 1 }),
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
@@ -251,7 +270,7 @@ data:extend({
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing' },
-        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png',
+        icons = reprocessing_icon('__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png', { 1, 0, 1, 1 }),
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
@@ -281,16 +300,8 @@ data:extend({
         type = 'recipe',
         name = 'breeder-fuel-cell-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
-        icons = {
-            {
-                icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-reprocessing.png'
-            },
-            {
-                icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
-                shift = { 8, -8 },
-                scale = 0.5 * 0.5
-            }
-        },
+        icons = reprocessing_icon_barrel('__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png',
+            { 1, 0, 1, 1 }),
         icon_size = 64,
         icon_mipmamps = 4,
         category = 'chemistry',
