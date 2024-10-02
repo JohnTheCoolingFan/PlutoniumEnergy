@@ -11,6 +11,9 @@ Date: 2024-09-29
       MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
   Graphics:
     - Added a new custom icon for the MOX fuel cell, previous icon reused for Plutonium fuel cell
+    - Uranium Waste solution and Plutonium-rich Nuclear Waste solution icons updated to be more distinct.
+      Also updated colors for flow and barrells, they appear distinctly bright now.
+    - Changed style of the reprocessing recipe icons for improved clarity.
   Balancing:
     - Decreased Plutonium-239 output from advanced uranium fuel cell
       reprocessing from 0.25 to 0.02
