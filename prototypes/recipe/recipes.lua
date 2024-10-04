@@ -32,7 +32,7 @@ local function reprocessing_icon_barrel(cell_icon_path, tint, secondary_tint)
     table.insert(result, {
         icon = '__base__/graphics/icons/fluid/barreling/empty-barrel.png',
         shift = { 8, -8 },
-        scale = 0.25
+        scale = 0.5 * 0.5
     })
     return result
 end
@@ -245,9 +245,20 @@ data:extend({
     {
         type = 'recipe',
         name = 'breeder-fuel-cell-from-uranium-cell',
-        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-uranium-cell.png',
-        icon_size = 64,
-        icon_mipmaps = 4,
+        icons = {
+            {
+                icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
+                icon_size = 64,
+                icon_mipmaps = 4,
+            },
+            {
+                icon = '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
+                icon_size = 64,
+                icon_mipmaps = 4,
+                scale = 0.5 * 0.6,
+                shift = { 8, -8 }
+            }
+        },
         category = 'centrifuging',
         energy_required = 15,
         enabled = false,
@@ -267,9 +278,20 @@ data:extend({
     {
         type = 'recipe',
         name = 'breeder-fuel-cell-from-MOX-fuel-cell',
-        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-from-MOX-fuel-cell.png',
-        icon_size = 64,
-        icon_mipmaps = 4,
+        icons = {
+            {
+                icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
+                icon_size = 64,
+                icon_mipmaps = 4,
+            },
+            {
+                icon = '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png',
+                icon_size = 64,
+                icon_mipmaps = 4,
+                scale = 0.5 * 0.6,
+                shift = { 8, -8 }
+            }
+        },
         category = 'centrifuging',
         energy_required = 7.5,
         enabled = false,
