@@ -1,0 +1,36 @@
+name: Build and upload mod file
+
+# Controls when the workflow will run
+on:
+  release:
+    types: [prereleased]
+
+jobs:
+  build:
+    name: Build and upload to the release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Download rfmp
+        uses: robinraju/release-downloader@v1
+        with:
+          repository: JohnTheCoolingFan/rfmp
+          fileName: rfmp-linux
+          latest: true
+      
+      - name: Get full mod file name
+        run: |
+          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' info.json)
+          echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
+
+      - name: Pack a mod
+        run: |
+          chmod +x ./rfmp-linux
+          ./rfmp-linux --no-clean --install-dir .
+      
+      - name: Upload file to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.MODFILENAME }}
