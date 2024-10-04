@@ -1,4 +1,4 @@
-name: release
+name: Build and Release to mod portal
 
 # Controls when the workflow will run
 on:
