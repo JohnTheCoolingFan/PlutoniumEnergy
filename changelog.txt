@@ -1,11 +1,23 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.6.5
-Date: 2024-08-18
-  Balancing:
+Version: 1.7.0
+Date: 2024-09-29
+  Major Changes:
     - Replaced Plutonium Atomic bomb by Plutonium Atomic Artillery shell.
       Also significantly increased the damage and range of the Plutoinium
       atomic explosion. The recipe is a combination of both Artillery Shell
       and Atomic Bomb.
+    - The MOX fuel cell as a concept has been split into two:
+      Plutonium fuel cell is a fuel cell made with plutonium which can be used in a regular reactor
+      MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
+  Minor changes:
+    - Rearranged nuclear cells, reprocessing and enrichment recipes in the recipe menu.
+  Graphics:
+    - Added a new custom icon for the MOX fuel cell, previous icon reused for Plutonium fuel cell
+    - Uranium Waste solution and Plutonium-rich Nuclear Waste solution icons have been updated.
+      They now appear much more distinct and won't be mistaken for lubricant.
+      Also updated colors for flow and barrells, they appear distinctly bright now.
+    - Changed style of the reprocessing recipe icons for improved clarity.
+  Balancing:
     - Decreased Plutonium-239 output from advanced uranium fuel cell
       reprocessing from 0.25 to 0.02
     - Increased amount of Plutonium-239 from breeder fuel cell reprocessing
@@ -20,12 +32,6 @@ Date: 2024-08-18
       cell instead of varying in alternative recipes
     - Increased time, resource usage and output of Breeder fuel cell
       reprocessing recipes by a factor of 2.5 except for amount of cells
-    - Removed Uranium-235 from MOX fuel recipe
-    - Increased Plutonium-239 requirement for MOX fuel from 3 to 4
-    - Increased Plutonium-238 requirement for MOX fuel from 15 to 16
-    - Decreased Plutonium-239 output from MOX fuel reprocessing from 0.15 to
-      0.01
-    - Decreased Plutonium-238 output from Mox fuel reprocessing from 5 to 4
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2024-08-15

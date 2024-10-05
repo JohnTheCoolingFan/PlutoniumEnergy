@@ -1,0 +1,18 @@
+{
+    "item":
+    [
+        ["MOX-fuel", "MOX-fuel-cell"],
+        ["used-up-MOX-fuel", "used-up-MOX-fuel-cell"]
+    ],
+    "technology":
+    [
+        ["MOX-fuel-reprocessing", "MOX-fuel-cell-reprocessing"],
+        ["breeder-fuel-cell-from-MOX-fuel", "breeder-fuel-cell-from-MOX-fuel-cell"]
+    ],
+    "recipe":
+    [
+        ["MOX-fuel", "MOX-fuel-cell"],
+        ["MOX-fuel-reprocessing", "MOX-fuel-cell-reprocessing"],
+        ["breeder-fuel-cell-from-MOX-fuel", "breeder-fuel-cell-from-MOX-fuel-cell"]
+    ]
+}

@@ -43,11 +43,7 @@ data:extend({
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "MOX-fuel"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "MOX-reactor"
+                recipe = "plutonium-fuel-cell"
             }
         },
         prerequisites = { "plutonium-processing" },
@@ -65,17 +61,50 @@ data:extend({
     },
     {
         type = "technology",
-        name = "MOX-fuel-reprocessing",
-        icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-reprocessing.png",
+        name = "MOX-nuclear-power",
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png", -- TODO
         icon_size = 256,
         icon_mipmaps = 4,
         effects = {
             {
                 type = "unlock-recipe",
-                recipe = "MOX-fuel-reprocessing"
+                recipe = "MOX-fuel-cell"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "MOX-reactor"
+            }
+        },
+        prerequisites = { "plutonium-processing" },
+        unit = {
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 }
+            },
+            time = 35,
+            count = 500
+        },
+        order = "e-p-b-d"
+    },
+    {
+        type = "technology",
+        name = "plutonium-reprocessing",
+        icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-cell-reprocessing.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "plutonium-fuel-cell-reprocessing"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "MOX-fuel-cell-reprocessing"
             },
         },
-        prerequisites = { "plutonium-nuclear-power" },
+        prerequisites = { "plutonium-nuclear-power", "MOX-nuclear-power" },
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
@@ -120,7 +149,7 @@ data:extend({
                 recipe = 'plutonium-fuel'
             }
         },
-        prerequisites = { 'plutonium-processing', 'kovarex-enrichment-process' },
+        prerequisites = { 'plutonium-nuclear-power', 'kovarex-enrichment-process' },
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },
@@ -160,17 +189,17 @@ data:extend({
     },
     {
         type = 'technology',
-        name = 'breeder-fuel-cell-from-MOX-fuel',
+        name = 'breeder-fuel-cell-from-MOX-fuel-cell',
         icon_size = 256,
         icon_mipmaps = 4,
-        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel.png',
+        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel-cell.png',
         effects = {
             {
                 type = 'unlock-recipe',
-                recipe = 'breeder-fuel-cell-from-MOX-fuel'
+                recipe = 'breeder-fuel-cell-from-MOX-fuel-cell'
             }
         },
-        prerequisites = { 'nuclear-breeding', 'MOX-fuel-reprocessing' },
+        prerequisites = { 'nuclear-breeding', 'plutonium-reprocessing' },
         unit = {
             ingredients = {
                 { 'automation-science-pack', 1 },
@@ -184,4 +213,4 @@ data:extend({
         order = 'e-p-d-b'
     }
 })
-if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['plutonium-nuclear-power'].effects[2] = nil end
+if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['MOX-nuclear-power'].effects[2] = nil end
