@@ -12,6 +12,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: 'mod'
       
       - name: Download rfmp
         uses: robinraju/release-downloader@v1
@@ -28,7 +30,7 @@ jobs:
       - name: Pack a mod
         run: |
           chmod +x ./rfmp-linux
-          ./rfmp-linux --no-clean --install-dir .
+          (cd mod; ../rfmp-linux --no-clean --install-dir ../)
       
       - name: Upload file to release
         uses: softprops/action-gh-release@v2
