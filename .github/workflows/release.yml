@@ -24,7 +24,7 @@ jobs:
       
       - name: Get full mod file name
         run: |
-          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' info.json)
+          MFNAME=$(jq -r '.name + "_" + .version + ".zip"' ./mod/info.json)
           echo "MODFILENAME=$MFNAME" >> $GITHUB_ENV
 
       - name: Pack a mod
