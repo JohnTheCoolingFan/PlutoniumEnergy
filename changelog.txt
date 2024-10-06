@@ -33,6 +33,7 @@ Date: 2024-09-29
     - Increased time, resource usage and output of Breeder fuel cell
       reprocessing recipes by a factor of 2.5 except for amount of cells
     - Technology cost has been rebalanced. Notably, Nuclear breeding now requires space science.
+    - Reduced cost of the MOX reactor to 200 of each ingredient.
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2024-08-15
