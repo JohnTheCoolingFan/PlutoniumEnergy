@@ -30,7 +30,7 @@ data:extend({
                 { "production-science-pack", 1 }
             },
             time = 30,
-            count = 400
+            count = 1000
         },
         order = "e-p-b-d"
     },
@@ -55,7 +55,7 @@ data:extend({
                 { "production-science-pack", 1 }
             },
             time = 35,
-            count = 1000
+            count = 750
         },
         order = "e-p-b-d"
     },
@@ -113,7 +113,7 @@ data:extend({
                 { "production-science-pack", 1 }
             },
             time = 30,
-            count = 200
+            count = 500
         },
         order = "e-p-b-d"
     },
@@ -156,6 +156,7 @@ data:extend({
                 { 'logistic-science-pack',   1 },
                 { 'chemical-science-pack',   1 },
                 { 'production-science-pack', 1 },
+                { 'space-science-pack',      1 },
             },
             time = 30,
             count = 1000
