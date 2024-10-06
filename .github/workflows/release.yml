@@ -41,8 +41,11 @@ jobs:
         uses: JohnTheCoolingFan/factorio-mod-publish@v1
         with:
           factorio_token: ${{ secrets.FACTORIO_TOKEN }}
+          info_json_file: './mod/info.json'
 
       - name: Send notification on Discord
         uses: JohnTheCoolingFan/factorio-mod-discord-announce@v1
         with:
           discord_webhook: ${{ secrets.DISCORD_NEW_WEBHOOK }}
+          info_json_file: './mod/info.json'
+          changelog_file: './mod/changelog.txt'
