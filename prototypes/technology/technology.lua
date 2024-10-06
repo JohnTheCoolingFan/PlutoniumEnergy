@@ -191,7 +191,6 @@ data:extend({
         type = 'technology',
         name = 'breeder-fuel-cell-from-MOX-fuel-cell',
         icon_size = 256,
-        icon_mipmaps = 4,
         icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel-cell.png',
         effects = {
             {
