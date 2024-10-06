@@ -62,7 +62,7 @@ data:extend({
     {
         type = "technology",
         name = "MOX-nuclear-power",
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png", -- TODO
+        icon = "__PlutoniumEnergy__/graphics/technology/MOX-nuclear-power.png",
         icon_size = 256,
         icon_mipmaps = 4,
         effects = {
@@ -91,7 +91,7 @@ data:extend({
     {
         type = "technology",
         name = "plutonium-reprocessing",
-        icon = "__PlutoniumEnergy__/graphics/technology/MOX-fuel-cell-reprocessing.png",
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-reprocessing.png",
         icon_size = 256,
         icon_mipmaps = 4,
         effects = {
