@@ -422,10 +422,10 @@ data:extend({
         energy_required = 8,
         enabled = false,
         ingredients = {
-            { "concrete",         400 },
-            { "steel-plate",      400 },
-            { "advanced-circuit", 400 },
-            { "copper-plate",     400 }
+            { "concrete",         200 },
+            { "steel-plate",      200 },
+            { "advanced-circuit", 200 },
+            { "copper-plate",     200 }
         },
         result = "MOX-reactor",
         requester_paste_multiplier = 1
