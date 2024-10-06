@@ -32,6 +32,7 @@ Date: 2024-09-29
       cell instead of varying in alternative recipes
     - Increased time, resource usage and output of Breeder fuel cell
       reprocessing recipes by a factor of 2.5 except for amount of cells
+    - Technology cost has been rebalanced. Notably, Nuclear breeding now requires space science.
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.4
 Date: 2024-08-15
