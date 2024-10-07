@@ -17,6 +17,8 @@ And with energy generation part comes along destructive part. This mod also adds
 
 #### Available languages:
 
+The localization has been migrated to Crowdin: https://crowdin.com/project/factorio-mods-localization
+
 *   English (en) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Russian / Русский (ru) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
 *   Ukrainian / Українська (uk) by [IgorLutiy](https://github.com/IgorLutiy)
