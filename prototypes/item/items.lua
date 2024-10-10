@@ -212,7 +212,7 @@ data:extend({
         flags = {},
         subgroup = 'nuclear-breeding',
         order = 's[used-up-xbreeder-fuel-cell]',
-        stack_size = 20
+        stack_size = 5
     },
 
     -- Machines
