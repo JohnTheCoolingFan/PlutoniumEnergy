@@ -34,12 +34,31 @@ local function affects_ammotype(effects, ammotype)
     return nil
 end
 
-for name, tech in pairs(data.raw['technology']) do
-    if tech.effects ~= nil then
-        local ammotype_effect = affects_ammotype(tech.effects, 'rocket')
-        if ammotype_effect then
-            table.insert(data.raw['technology'][name].effects,
-                { type = "ammo-damage", ammo_category = "nuclear-artillery", modifier = ammotype_effect })
+if data.raw['ammo']['atomic-bomb'] and data.raw['ammo']['atomic-bomb'].ammo_type then
+    local nuclear_artillery_base_ammotype
+    local atomic_bomb_prototype = data.raw['ammo']['atomic-bomb']
+
+    if atomic_bomb_prototype.ammo_type.category then
+        nuclear_artillery_base_ammotype = { atomic_bomb_prototype.ammo_type.category }
+    elseif atomic_bomb_prototype.ammo_type[1] then
+        nuclear_artillery_base_ammotype = {}
+        for _, ammotype in pairs(atomic_bomb_prototype.ammo_type) do
+            table.insert(nuclear_artillery_base_ammotype, ammotype.category)
+        end
+    else
+        log("Error: atomic bomb has no correct ammo type, not critical")
+        nuclear_artillery_base_ammotype = {}
+    end
+
+    for _, ammotype in pairs(nuclear_artillery_base_ammotype) do
+        for name, tech in pairs(data.raw['technology']) do
+            if tech.effects ~= nil then
+                local ammotype_effect = affects_ammotype(tech.effects, ammotype)
+                if ammotype_effect then
+                    table.insert(data.raw['technology'][name].effects,
+                        { type = "ammo-damage", ammo_category = "nuclear-artillery", modifier = ammotype_effect })
+                end
+            end
         end
     end
 end
