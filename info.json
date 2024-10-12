@@ -12,6 +12,6 @@
         "? IndustrialRevolution3 >= 3.1.5",
         "? space-exploration"
     ],
-    "description": "Adds processing of Plutoinium, which is generated in a nuclear reaction. It can be used to extract even more energy or incinerate enemies with new ammunition.",
+    "description": "Adds processing of Plutoinium, which is crated from nuclear fission of Uranium. It can be used to extract even more energy or incinerate enemies with new ammunition.",
     "factorio_version": "1.1"
 }
