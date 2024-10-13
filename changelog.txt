@@ -9,6 +9,7 @@ Date: 2024-09-29
     - The MOX fuel cell as a concept has been split into two:
       Plutonium fuel cell is a fuel cell made with plutonium which can be used in a regular reactor
       MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
+      MOX reactor now has a higher neighbour bonus of 150%
   Minor changes:
     - Rearranged nuclear cells, reprocessing and enrichment recipes in the recipe menu.
   Graphics:
@@ -18,6 +19,8 @@ Date: 2024-09-29
       Also updated colors for flow and barrells, they appear distinctly bright now.
     - Changed style of the reprocessing recipe icons for improved clarity.
   Balancing:
+    - MOX reactor neighbour bonus increased to 150%
+    - Breeder reactor neighbour bonus decreased to 50%
     - Decreased Plutonium-239 output from advanced uranium fuel cell
       reprocessing from 0.25 to 0.02
     - Increased amount of Plutonium-239 from breeder fuel cell reprocessing

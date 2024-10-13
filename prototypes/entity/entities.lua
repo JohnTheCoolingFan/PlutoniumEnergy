@@ -13,7 +13,7 @@ data:extend({
         corpse                               = 'MOX-reactor-remnants',
         dying_explosion                      = 'nuclear-reactor-explosion',
         consumption                          = '20MW',
-        neighbour_bonus                      = 1,
+        neighbour_bonus                      = 1.5,
         energy_source                        = {
             type = 'burner',
             fuel_category = 'MOX',
@@ -249,7 +249,7 @@ data:extend({
         corpse = 'breeder-reactor-remnants',
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = "20MW",
-        neighbour_bonus = 1,
+        neighbour_bonus = 0.5,
         energy_source = {
             type = 'burner',
             fuel_category = 'nuclear-breeder',
