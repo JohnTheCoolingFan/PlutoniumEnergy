@@ -2,17 +2,15 @@
 
 ## Description
 
-This mod adds new nuclear material - Plutonium (238 and 239 isotopes). Using it, you can make nuclear fuel (MOX fuel) which generates energy 2 times slower, but has 2.5 times more energy in one cell (comparing to uranium). MOX reactor is also smaller (3x3 instead of 5x5), which allows for some interesting designs.
-![MOX reactor overview](https://imgur.com/XFRHskM.png)
-The Plutonium is obtained through an Advanced nuclear fuel reprocessing process, which involves dissolving the used-up uranium nuclear fuel cells in acid and centrifuging the solution to get more useful fissile material.
-![Advanced nuclear fuel reprocessing overview](https://imgur.com/1oZ4edv.png)
-But that is not the only way of obtaining Plutonium. There is also a breeder reactor, a huge (7x7) building, which also uses bigger cells. But its power output is much lower, as generating power is not its primary purpose. Breeder nuclear fuel cells can be made from other used-up nuclear cells, providing an alternative way of reprocessing these cells.
-![Breeder reactor overview](https://imgur.com/iUHxdjf.png)
-The breeder reactor's purpose is to generate more Plutonium than it takes in. Combined with ability to use otehr used-up cells to make new breeder cells, it is an efficient way to make more Plutonium for creation of MOX fuel.
-![Breeder fuel cells reprocessing overview](https://imgur.com/uVdkBv8.png)
-And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one. And if you installed mods that add uranium artillery shell / bomb, this mod also adds a plutonium variant (See optional dependencies for an estimated list of mods supported for this feature).
-[Video comparison](https://youtu.be/HY6p4fRM6Uk)
-![Uranium and Plutonium atomic bombs comparison](https://imgur.com/P1cqH06.png)
+This mod adds new nuclear material - Plutonium (238 and 239 isotopes). You can get ir by using an advanced reprocessing process for Uranium nuclear fuel.
+![Advanced Nuclear fuel reprocessing](.img/Advanced%20Nuclear%20fuel%20Reprocessing.png)
+Using it, you can make Plutonium-based nuclear fuel for the regular reactor or MOX fuel, which is a mix of Uranium and Plutonium. the MOX reactor is smaller and has a lower energy output alone, but has an increased neighbour bonus.
+![Plutonium Energy generation](.img/Plutonium%20Energy%20generation.png)
+If you want to produce a lot of Plutonium, you will need to use Nuclear Breeding. It's a way to generate more Plutonium by burning a cell in a special Breeder reactor.
+![Nuclear breeding](.img/Nuclear%20Breeding.png)
+And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one.
+And as an explosive cherry on top - the Plutonium Atomic bomb is an Artillery Shell with a very powerful explosion
+![Plutonium Artillery shell explosion](.img/Plutonium%20nuke.mp4)
 
 
 #### Available languages:
@@ -20,15 +18,6 @@ And with energy generation part comes along destructive part. This mod also adds
 The localization has been migrated to Crowdin: https://crowdin.com/project/factorio-mods-localization
 
 More info can be found here: https://github.com/dima74/factorio-mods-localization?tab=readme-ov-file#how-to-translate-using-crowdin
-
-*   English (en) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
-*   Russian / Русский (ru) by [JohnTheCF](https://mods.factorio.com/user/john_thecf)
-*   Ukrainian / Українська (uk) by [IgorLutiy](https://github.com/IgorLutiy)
-*   German / Deutsch (de) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
-*   Traditional Chinese / 正體中文 (zh-TW) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
-*   Simplified Chinese / 简体中文 (zh-CN) by [Shallfalke](https://mods.factorio.com/user/Schallfalke) ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
-*   Polish / Polski (pl) by Guru [TSM]#8528 ([OUTDATED](https://github.com/JohnTheCoolingFan/PlutoniumEnergy/issues/80))
-*   Czech / Čeština (cs) by psicho100pro
 
 #### Mod compatibility
 
@@ -45,7 +34,7 @@ I didn't do much of specialised compatibility with other mods unless specified (
 
 #### Other mods about nuclear energy:
 
-*   [Realistic Reactors](https://mods.factorio.com/mod/RealisticReactors) - Impressing mod that makes reactors more complicated and realistic. Has support for other mods, including Plutonium Energy.
+*   [Realistic Reactors](https://mods.factorio.com/mod/RealisticReactors) - Impressing mod that makes reactors more complicated and realistic. Has support for other mods, partially Plutonium Energy. Full support from PE side is planned.
 *   [RITEG](https://mods.factorio.com/mod/RITEG) - Good mod that adds [RITEGs](https://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator)
 *   [Realistic Reactor Glow](https://mods.factorio.com/mod/RealisticReactorGlow) - Changes reactor's glow from green to more realistic cyan (Similar to how MOX reactor glows)
 
@@ -60,6 +49,6 @@ Mod source code is also available at [Gitlab](https://gitlab.com/JohnTheCoolingF
 # Support
 
 If you would like to support me, you can donate me via cryptocurrencies:
-ETH: `0x00c6aefcc4987393394587CCdcCb4f465aF9a67d` - accepts eth and otehr tokens on the ethereum network.
+ETH: `0x00c6aefcc4987393394587CCdcCb4f465aF9a67d` - accepts eth and other tokens on the ethereum network.
 
 You can also contact me on discord, if you would like to donate in some other way.
