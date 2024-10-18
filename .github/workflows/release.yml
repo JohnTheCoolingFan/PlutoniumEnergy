@@ -49,3 +49,15 @@ jobs:
           discord_webhook: ${{ secrets.DISCORD_NEW_WEBHOOK }}
           info_json_file: './mod/info.json'
           changelog_file: './mod/changelog.txt'
+
+      - name: Process README for mod portal
+        run: |
+          sed 's/!\[\(.\+\)\](\(.\+\))/![\1](https:\/\/raw\.githubusercontent\.com\/JohnTheCoolingFan\/PlutoniumEnergy\/refs\/heads\/main\/\2)/' README.md > README-mod-portal.md
+
+      - name: Update mod portal description
+        uses: JohnTheCoolingFan/factorio-mod-details@v1
+        with:
+          factorio_token: ${{ secrets.FACTORIO_TOKEN }}
+          mod_name: PlutoniumEnergy
+          description_file: README-mod-portal.md
+
