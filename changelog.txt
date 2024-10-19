@@ -18,6 +18,8 @@ Date: 2024-09-29
       They now appear much more distinct and won't be mistaken for lubricant.
       Also updated colors for flow and barrells, they appear distinctly bright now.
     - Changed style of the reprocessing recipe icons for improved clarity.
+  Localization:
+    - Localization has been offloaded to Crowin via Factorio Mods Localization project.
   Balancing:
     - MOX reactor neighbour bonus increased to 150%
     - Breeder reactor neighbour bonus decreased to 50%
