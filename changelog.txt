@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.0
-Date: 2024-09-29
+Date: 2024-10-19
   Major Changes:
     - Replaced Plutonium Atomic bomb by Plutonium Atomic Artillery shell.
       Also significantly increased the damage and range of the Plutoinium
