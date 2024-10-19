@@ -52,7 +52,7 @@ jobs:
 
       - name: Process README for mod portal
         run: |
-          sed 's/!\[\(.\+\)\](\(.\+\))/![\1](https:\/\/raw\.githubusercontent\.com\/JohnTheCoolingFan\/PlutoniumEnergy\/refs\/heads\/main\/\2)/' README.md > README-mod-portal.md
+          sed 's/!\[\(.\+\)\](\(.\+\))/![\1](https:\/\/raw\.githubusercontent\.com\/JohnTheCoolingFan\/PlutoniumEnergy\/refs\/heads\/main\/\2)/' mod/README.md > README-mod-portal.md
 
       - name: Update mod portal description
         uses: JohnTheCoolingFan/factorio-mod-details@v1
