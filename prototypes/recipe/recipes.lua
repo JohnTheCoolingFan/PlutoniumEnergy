@@ -48,7 +48,7 @@ data:extend({
         name = 'advanced-nuclear-fuel-reprocessing',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing' },
         icons = reprocessing_icon(
-            '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
+            '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
             { 0, 1, 0, 1 }, 0.75
         ),
         icon_size = 64,
@@ -56,8 +56,8 @@ data:extend({
         category = 'chemistry',
         enabled = false,
         ingredients = {
-            { type = 'item',  name = 'used-up-uranium-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 25 }
+            { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',              amount = 25 }
         },
         energy_required = 1,
         results = {
@@ -81,7 +81,7 @@ data:extend({
         name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
         icons = reprocessing_icon_barrel(
-            '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
+            '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
             { 0, 1, 0, 1 }, 0.75
         ),
         icon_size = 64,
@@ -89,9 +89,9 @@ data:extend({
         category = 'chemistry',
         enabled = false,
         ingredients = {
-            { type = 'item',  name = 'used-up-uranium-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 25 },
-            { type = 'item',  name = 'empty-barrel',              amount = 1 }
+            { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',              amount = 25 },
+            { type = 'item',  name = 'barrel',                     amount = 1 }
         },
         energy_required = 1,
         results = {
@@ -124,7 +124,7 @@ data:extend({
             { type = 'item', name = 'uranium-238',   amount_min = 8, amount_max = 10 },
             { type = 'item', name = 'plutonium-238', amount_min = 3, amount_max = 6 },
             { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.02 },
-            { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 }
+            { type = 'item', name = 'barrel',        amount = 10,    catalyst_amount = 10 }
         },
         crafting_machine_tint = {
             primary = { r = 0.651, g = 0.851, b = 0.075, a = 1.000 } -- #A6D913
@@ -141,13 +141,12 @@ data:extend({
         energy_required = 10,
         enabled = false,
         ingredients = {
-            { "iron-plate",    10 },
-            { "plutonium-239", 1 },
-            { "plutonium-238", 4 },
-            { "uranium-238",   15 }
+            { type = "item", name = "iron-plate",    amount = 10 },
+            { type = "item", name = "plutonium-239", amount = 1 },
+            { type = "item", name = "plutonium-238", amount = 4 },
+            { type = "item", name = "uranium-238",   amount = 15 }
         },
-        result = "plutonium-fuel-cell",
-        result_count = 10
+        results = { { type = "item", name = "plutonium-fuel-cell", amount = 10 } },
     },
     {
         type = "recipe",
@@ -155,7 +154,9 @@ data:extend({
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-plutonium-fuel-cell", 10 } },
+        ingredients = {
+            { type = "item", name = "used-up-plutonium-fuel-cell", amount = 10 }
+        },
         icons = reprocessing_icon(
             '__PlutoniumEnergy__/graphics/icons/used-up-plutonium-fuel-cell.png',
             { 0, 1, 1, 1 }, 0.75
@@ -170,11 +171,13 @@ data:extend({
         },
         results = {
             {
+                type = "item",
                 name = "plutonium-239",
                 amount = 1,
                 probability = 0.01
             },
             {
+                type = "item",
                 name = "plutonium-238",
                 amount = 4
             }
@@ -189,12 +192,11 @@ data:extend({
         energy_required = 10,
         enabled = false,
         ingredients = {
-            { "iron-plate",    10 },
-            { "uranium-238",   15 },
-            { "plutonium-238", 5 }
+            { type = "item", name = "iron-plate",    amount = 10 },
+            { type = "item", name = "uranium-238",   amount = 15 },
+            { type = "item", name = "plutonium-238", amount = 5 }
         },
-        result = "MOX-fuel-cell",
-        result_count = 20
+        results = { { type = "item", name = "MOX-fuel-cell", amount = 20 } },
     },
     {
         type = "recipe",
@@ -202,7 +204,7 @@ data:extend({
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "used-up-MOX-fuel-cell", 20 } },
+        ingredients = { { type = "item", name = "used-up-MOX-fuel-cell", amount = 20 } },
         icons = reprocessing_icon(
             '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png',
             { 0, 1, 0.5, 1 }, 0.75
@@ -217,10 +219,12 @@ data:extend({
         },
         results = {
             {
+                type = "item",
                 name = "plutonium-238",
                 amount = 3
             },
             {
+                type = "item",
                 name = "uranium-238",
                 amount = 4
             }
@@ -235,12 +239,11 @@ data:extend({
         energy_required = 10,
         enabled = false,
         ingredients = {
-            { 'iron-plate',    10 },
-            { 'plutonium-239', 1 },
-            { 'uranium-238',   19 }
+            { type = "item", name = 'iron-plate',    amount = 10 },
+            { type = "item", name = 'plutonium-239', amount = 1 },
+            { type = "item", name = 'uranium-238',   amount = 19 }
         },
-        result = 'breeder-fuel-cell',
-        result_count = 2
+        results = { { type = "item", name = 'breeder-fuel-cell', amount = 2 } },
     },
     {
         type = 'recipe',
@@ -252,7 +255,7 @@ data:extend({
                 icon_mipmaps = 4,
             },
             {
-                icon = '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
+                icon = '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
                 icon_size = 64,
                 icon_mipmaps = 4,
                 scale = 0.5 * 0.6,
@@ -263,16 +266,15 @@ data:extend({
         energy_required = 15,
         enabled = false,
         ingredients = {
-            { 'iron-plate',                20 },
-            { 'used-up-uranium-fuel-cell', 10 },
-            { 'plutonium-239',             1 }
+            { type = "item", name = 'iron-plate',                 amount = 20 },
+            { type = "item", name = 'depleted-uranium-fuel-cell', amount = 10 },
+            { type = "item", name = 'plutonium-239',              amount = 1 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-b[uranium]',
-        result = 'breeder-fuel-cell',
-        result_count = 4,
+        results = { { type = "item", name = 'breeder-fuel-cell', amount = 4 } },
         allow_decomposition = false
     },
     {
@@ -296,16 +298,15 @@ data:extend({
         energy_required = 7.5,
         enabled = false,
         ingredients = {
-            { 'iron-plate',            10 },
-            { 'used-up-MOX-fuel-cell', 5 },
-            { 'uranium-238',           10 }
+            { type = "item", name = 'iron-plate',            amount = 10 },
+            { type = "item", name = 'used-up-MOX-fuel-cell', amount = 5 },
+            { type = "item", name = 'uranium-238',           amount = 10 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
         },
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-c[mox]',
-        result = 'breeder-fuel-cell',
-        result_count = 2,
+        results = { { type = "item", name = 'breeder-fuel-cell', amount = 2 } },
         allow_decomposition = false
     },
     {
@@ -356,7 +357,7 @@ data:extend({
         ingredients = {
             { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
             { type = 'fluid', name = 'sulfuric-acid',             amount = 125 },
-            { type = 'item',  name = 'empty-barrel',              amount = 5 }
+            { type = 'item',  name = 'barrel',                    amount = 5 }
         },
         energy_required = 2.5,
         results = {
@@ -388,7 +389,7 @@ data:extend({
         results = {
             { type = 'item', name = 'plutonium-238', amount = 4 },
             { type = 'item', name = 'plutonium-239', amount = 2 },
-            { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
+            { type = 'item', name = 'barrel',        amount = 10, catalyst_amount = 10 },
         },
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
@@ -405,14 +406,17 @@ data:extend({
         energy_required = 40,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { "plutonium-239", 1 }, { "nuclear-fuel", 1 } },
+        ingredients = {
+            { type = "item", name = "plutonium-239", amount = 1 },
+            { type = "item", name = "nuclear-fuel",  amount = 1 }
+        },
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
         icon_size = 64,
         icon_mipmaps = 4,
         crafting_machine_tint = {
             primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
         },
-        result = "plutonium-fuel"
+        results = { { type = "item", name = "plutonium-fuel", amount = 1 } }
     },
 
     -- Reactors
@@ -422,12 +426,12 @@ data:extend({
         energy_required = 8,
         enabled = false,
         ingredients = {
-            { "concrete",         200 },
-            { "steel-plate",      200 },
-            { "advanced-circuit", 200 },
-            { "copper-plate",     200 }
+            { type = "item", name = "concrete",         amount = 200 },
+            { type = "item", name = "steel-plate",      amount = 200 },
+            { type = "item", name = "advanced-circuit", amount = 200 },
+            { type = "item", name = "copper-plate",     amount = 200 }
         },
-        result = "MOX-reactor",
+        results = { { type = "item", name = "MOX-reactor", amount = 1 } },
         requester_paste_multiplier = 1
     },
     {
@@ -436,12 +440,12 @@ data:extend({
         energy_required = 8,
         enabled = false,
         ingredients = {
-            { "concrete",         1000 },
-            { "steel-plate",      1000 },
-            { "advanced-circuit", 1000 },
-            { "copper-plate",     1000 }
+            { type = "item", name = "concrete",         amount = 1000 },
+            { type = "item", name = "steel-plate",      amount = 1000 },
+            { type = "item", name = "advanced-circuit", amount = 1000 },
+            { type = "item", name = "copper-plate",     amount = 1000 }
         },
-        result = "breeder-reactor",
+        results = { { type = "item", name = "breeder-reactor", amount = 1 } },
         requester_paste_multiplier = 1
     }
 })

@@ -9,16 +9,16 @@ if settings.startup['enable-plutonium-ammo'].value then
             energy_required = 10,
             ingredients = IR3 and
                 {
-                    { "chromium-magazine", 1 },
-                    { "lead-plate",        2 },
-                    { "plutonium-238",     1 }
+                    { type = "item", name = "chromium-magazine", amount = 1 },
+                    { type = "item", name = "lead-plate",        amount = 2 },
+                    { type = "item", name = "plutonium-238",     amount = 1 }
                 }
                 or
                 {
-                    { "piercing-rounds-magazine", 1 },
-                    { "plutonium-238",            1 }
+                    { type = "item", name = "piercing-rounds-magazine", amount = 1 },
+                    { type = "item", name = "plutonium-238",            amount = 1 }
                 },
-            result = "plutonium-rounds-magazine"
+            results = { { type = "item", name = "plutonium-rounds-magazine", amount = 1 } }
         },
         {
             type = "recipe",
@@ -27,16 +27,16 @@ if settings.startup['enable-plutonium-ammo'].value then
             energy_required = 10,
             ingredients = IR3 and
                 {
-                    { "cannon-shell",  1 },
-                    { "lead-plate",    4 },
-                    { "plutonium-238", 1 }
+                    { type = "item", name = "cannon-shell",  amount = 1 },
+                    { type = "item", name = "lead-plate",    amount = 4 },
+                    { type = "item", name = "plutonium-238", amount = 1 }
                 }
                 or
                 {
-                    { "cannon-shell",  1 },
-                    { "plutonium-238", 1 }
+                    { type = "item", name = "cannon-shell",  amount = 1 },
+                    { type = "item", name = "plutonium-238", amount = 1 }
                 },
-            result = "plutonium-cannon-shell"
+            results = { { type = "item", name = "plutonium-cannon-shell", amount = 1 } }
         },
         {
             type = "recipe",
@@ -45,16 +45,16 @@ if settings.startup['enable-plutonium-ammo'].value then
             energy_required = 10,
             ingredients = IR3 and
                 {
-                    { "explosive-cannon-shell", 1 },
-                    { "lead-plate",             4 },
-                    { "plutonium-238",          1 }
+                    { type = "item", name = "explosive-cannon-shell", amount = 1 },
+                    { type = "item", name = "lead-plate",             amount = 4 },
+                    { type = "item", name = "plutonium-238",          amount = 1 }
                 }
                 or
                 {
-                    { "explosive-cannon-shell", 1 },
-                    { "plutonium-238",          1 }
+                    { type = "item", name = "explosive-cannon-shell", amount = 1 },
+                    { type = "item", name = "plutonium-238",          amount = 1 }
                 },
-            result = "explosive-plutonium-cannon-shell"
+            results = { { type = "item", name = "explosive-plutonium-cannon-shell", amount = 1 } }
         },
     })
 end
@@ -66,12 +66,12 @@ data:extend({
         enabled = false,
         energy_required = 50,
         ingredients = {
-            { "rocket-control-unit", 10 },
-            { "radar",               1 },
-            { "explosives",          30 },
-            { "plutonium-239",       35 },
-            { "steel-plate",         15 }
+            { type = "item", name = "processing-unit", amount = 10 },
+            { type = "item", name = "radar",           amount = 1 },
+            { type = "item", name = "explosives",      amount = 30 },
+            { type = "item", name = "plutonium-239",   amount = 35 },
+            { type = "item", name = "steel-plate",     amount = 15 }
         },
-        result = "plutonium-atomic-artillery-shell"
+        results = { { type = "item", name = "plutonium-atomic-artillery-shell", amount = 1 } }
     }
 })

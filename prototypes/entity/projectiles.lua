@@ -79,7 +79,7 @@ local plutonium_atomic_bomb_action =
                 tile_name = "nuclear-ground",
                 radius = 17, -- This
                 apply_projection = true,
-                tile_collision_mask = { "water-tile" }
+                tile_collision_mask = { layers = { water_tile = true } }
             },
             {
                 type = "destroy-cliffs",
@@ -174,7 +174,7 @@ local plutonium_atomic_bomb_action =
                         target_effects = {
                             type = "create-fire",
                             entity_name = "atomic-bomb-fire-flame",
-                            tile_collision_mask = { "water-tile" }
+                            tile_collision_mask = { layers = { water_tile = true } }
                         }
                     }
                 }
@@ -309,7 +309,7 @@ local plutonium_atomic_bomb_action =
                             {
                                 type = "create-entity",
                                 entity_name = "nuclear-smouldering-smoke-source",
-                                tile_collision_mask = { "water-tile" }
+                                tile_collision_mask = { layers = { water_tile = true } }
                             }
                         }
                     }
@@ -333,24 +333,6 @@ for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
     spritesheet.tint = { r = 0.1, g = 0.9, b = 0.7 }
 end
 table.insert(projectiles, plutonium_cannon_explosion)
-
-
--- IR3 atomic artillery
-if mods['IndustrialRevolution3'] then
-    local plutonium_atomic_artillery_projectile = util.table.deepcopy(
-        data.raw['artillery-projectile']['atomic-artillery-projectile']
-    )
-
-    plutonium_atomic_artillery_projectile.name = 'plutonium-atomic-artillery-projectile'
-    plutonium_atomic_artillery_projectile.picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png"
-    plutonium_atomic_artillery_projectile.chart_picture.filename =
-    "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-artillery-shoot-map-visualization.png"
-
-    plutonium_atomic_artillery_projectile.action = plutonium_atomic_bomb_action
-
-    table.insert(projectiles, plutonium_atomic_artillery_projectile)
-end
 
 data:extend(projectiles)
 
@@ -492,7 +474,7 @@ data:extend({
         },
         shadow =
         {
-            filename = "__base__/graphics/entity/artillery-projectile/hr-shell-shadow.png",
+            filename = "__base__/graphics/entity/artillery-projectile/shell-shadow.png",
             width = 64,
             height = 64,
             scale = 0.5
