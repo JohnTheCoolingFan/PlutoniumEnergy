@@ -1,7 +1,7 @@
 -- This file patches the vanilla reactor to have a glow that is tinted based on fuel
 
 -- Check if Realistic Reactor Glow is present, don't tweak if it is installed.
-if not mods["REalisticReactorGlow"] then
+if not mods["RealisticReactorGlow"] then
     -- Patch reactor prototype
 
     local nuclear_reactor = data.raw['reactor']['nuclear-reactor']
