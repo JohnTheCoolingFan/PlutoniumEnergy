@@ -15,7 +15,7 @@ Date: 2024-10-19
       Plutonium fuel cell is a fuel cell made with plutonium which can be used in a regular reactor
       MOX fuel cell is made from a combination of Pu-238 and U-238 and can be used in a MOX reactor
       MOX reactor now has a higher neighbour bonus of 150%
-  Minor changes:
+  Minor Changes:
     - Rearranged nuclear cells, reprocessing and enrichment recipes in the recipe menu.
   Graphics:
     - Added a new custom icon for the MOX fuel cell, previous icon reused for Plutonium fuel cell
@@ -202,7 +202,7 @@ Date: 2023-06-18
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.6
 Date: 2023-04-09
-  Minor changes:
+  Minor Changes:
     - Added recipe tints to recipes done in centrifuge, using Centrifuge Tint
       System mod
 ---------------------------------------------------------------------------------------------------
@@ -237,7 +237,7 @@ Date: 2022-05-13
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.0
 Date: 2022-05-12
-  Major changes:
+  Major Changes:
     - Added breeder reactor. It's a way to get plutonium from uranium or used
       up uranium or MOX fuel cells.
 ---------------------------------------------------------------------------------------------------
@@ -266,7 +266,7 @@ Date: 2022-01-09
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.6
 Date: 2022-01-09
-  Minor changes:
+  Minor Changes:
     - Reverted some change in IR2 integration code
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.5
@@ -276,7 +276,7 @@ Date: 2022-01-09
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.4
 Date: 2022-01-05
-  Minor changes:
+  Minor Changes:
     - Increased MOX reactor selection box to 3x3 (2.9x2.9 previously). Collision box untouched.
   Graphics:
     - Fixes to MOX reactor heat connections alignments, glow visuals
@@ -295,7 +295,7 @@ Date: 2021-12-10
     - Reduced Plutonium enrichment process time from 120 seconds to 80
     - Reduced plutonium fuel crafting time from 90 seconds to 40
       IR2 recipe still has the same time requirement
-  Minor changes:
+  Minor Changes:
     - Added recipe tint for Advanced nuclear fuel reprocessing
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.2
@@ -312,7 +312,7 @@ Date: 2021-12-07
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
 Date: 2021-12-02
-  Major changes:
+  Major Changes:
     - Added Used-up uranium fuel cell solution
     - Advanced nuclear fuel reprocessing now produces aforementioned solution
       This solution is then processed in centrifuge
@@ -351,7 +351,7 @@ Date: 2021-07-05
   Integration:
     - Updated support for Space Exploration by Polish DeathCare
       Plutonium atomic bomb can now be packed into weapon delivery cannons
-  Minor changes:
+  Minor Changes:
     - Updated release dates in changelog to ISO8601 (calendar, extended format)
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.10
@@ -388,7 +388,7 @@ Date: 2021-03-03
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
 Date: 2021-02-28
-  Major changes:
+  Major Changes:
     - Added a setting to enable/disable plutonium ammo.
   Locale:
     - Updated Russian locale for plutonium rounds magazine to match the original game translation.
@@ -433,11 +433,11 @@ Date: 2021-01-11
       Allows to convert Pu-238 and U-238 to Pu-239 and U-235
     - Changed output of advanced nuclear fuel reprocessing
       Added 3x plutonium-238 as a product
-  Major changes:
+  Major Changes:
     - Added Plutonium fuel
       Purpose is the same as uranium (nuclear) fuel. One item golds 2 times more energy than
       nuclear rocket fuel, but effects are halved.
-  Minor changes:
+  Minor Changes:
     - Removed prefix from internal names, should improve compatibility.
   Graphics:
     - Added MOX reactor remnants (yes they weren't added in prevoous update)
@@ -455,7 +455,7 @@ Date: 2020-12-29
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.26
 Date: 2020-11-24
-  Major changes:
+  Major Changes:
     - Update for Factorio 1.1
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.25
@@ -521,14 +521,14 @@ Date: 2020-08-19
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.16
 Date: 2020-08-15
-  Minor changes:
+  Minor Changes:
     - Icon sprites are now mipmaps and 64x64 max size
   Graphics:
     - Fixed MOX reactor's heat pipes texture misalignment
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.15
 Date: 2020-08-15
-  Minor changes:
+  Minor Changes:
     - Some recipes now always show their products.
   Locale:
     - Fixed localised names for some isotope recipes
@@ -548,7 +548,7 @@ Version: 1.1.12
 Date: 2020-08-14
   Fixes:
     - Hotfix: Removed plutonium atomic bomb due to new atomic bomb effects in 1.0.0
-  Minor changes:
+  Minor Changes:
     - Requires 1.0.0 game version
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.11
@@ -564,18 +564,18 @@ Date: 2020-04-24
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.9
 Date: 2020-04-09
-  Minor changes:
+  Minor Changes:
     - Added Polish locale by Guru [TSM]#8528
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8
 Date: 2020-03-17
-  Minor changes:
+  Minor Changes:
     - Added support for Schall Uranium Processing. Item names are consistent now. Added a setting
       to choose a product of advanced nuclear fuel reprocessing.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.7
 Date: 2020-01-29
-  Minor changes:
+  Minor Changes:
     - Update for 0.18
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.6
@@ -585,12 +585,12 @@ Date: 2019-09-21
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.5
 Date: 2019-08-21
-  Minor changes:
+  Minor Changes:
     - Uranium-238 excess neutron capture recipe can be disabled with mod setting
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.4
 Date: 2019-08-08
-  Minor changes:
+  Minor Changes:
     - Changelog now can be opened from in-game mod menu.
   Balancing:
     - Reveted deletion of Uranium-238 excess neutron capture recipe.
@@ -603,7 +603,7 @@ Date: 2019-08-02
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 2019-07-03
-  Minor changes:
+  Minor Changes:
     - Added setting to disable MOX reactor recipe.
   Locale:
     - Added locale for MOX fuel category.
@@ -647,7 +647,7 @@ Version: 1.0.22
 Date: 2019-05-19
   Fixes:
     - Fixed error caused by 1.0.20 migration script.
-  Minor changes:
+  Minor Changes:
     - Removed "1.0.20.lua" migration file.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.21
@@ -707,12 +707,12 @@ Date: 2019-03-03
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.14
 Date: 2019-02-26
-  Minor changes:
+  Minor Changes:
     - Added thumbnail.png.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.13
 Date: 2019-02-26
-  Minor changes:
+  Minor Changes:
     - Update to Factorio 0.17.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.12
@@ -775,12 +775,12 @@ Version: 1.0.3
 Date: 2018-10-20
   Balancing:
     - Added Uranium-238 excess neutron capture recipe for getting Pu-239.
-  Minor changes:
+  Minor Changes:
     - Localisation improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2018-10-20
-  Minor changes:
+  Minor Changes:
     - Added migration files (plutonium fuel cells => MOX fuel,
       plutonium centrifuge => industrial reactor).
       Old saves are now partialy compatible with 1.x.x.
@@ -792,7 +792,7 @@ Date: 2018-10-15
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2018-10-14
-  Major changes:
+  Major Changes:
     - Removed Plutonium Centrifuge.
     - Added Industrial reactor.
     - Added MOX reactor.
@@ -820,7 +820,7 @@ Date: 2018-09-23
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2018-09-20
-  Major changes:
+  Major Changes:
     - Added Plutonium ammo (uranium ammo analogue).
   Integration:
     - Added integration with Realistic nukes mod (https://mods.factorio.com/mod/real-nukes).
@@ -836,16 +836,16 @@ Date: 2018-08-02
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.9
 Date: 2018-05-04
-  Minor changes:
+  Minor Changes:
     - Removed dependency of JohnCore because it was stupid.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 2018-03-22
-  Minor changes:
+  Minor Changes:
     - Some texture and item order improvements.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.7
 Date: 2017-12-18
-  Minor changes:
+  Minor Changes:
     - Updated for 0.16
     - Added changelog.txt
