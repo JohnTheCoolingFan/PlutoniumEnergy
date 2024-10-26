@@ -1,5 +1,9 @@
 require("prototypes.item.ammo")
 
+data.raw['item']['heat-pipe'].order = 'f[nuclear-energy]-d[heat-pipe]'
+data.raw['item']['heat-exchanger'].order = 'f[nuclear-energy]-e[heat-exchanger]'
+data.raw['item']['steam-turbine'].order = 'f[nuclear-energy]-f[steam-turbine]'
+
 data:extend({
     -- Common resources
     {
@@ -246,7 +250,7 @@ data:extend({
         icon_mipmaps = 4,
         flags = {},
         subgroup = "energy",
-        order = "f[nuclear-energy]-b[Obreeder-reactor]",
+        order = "f[nuclear-energy]-c[breeder-reactor]",
         place_result = "breeder-reactor",
         stack_size = 10,
         weight = 2 * tons,
