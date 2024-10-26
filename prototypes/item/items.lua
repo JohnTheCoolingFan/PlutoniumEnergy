@@ -32,7 +32,8 @@ data:extend({
         flags = {},
         subgroup = "intermediate-product",
         order = "r[uranium-238]-a[plutonium-239]",
-        stack_size = 100
+        stack_size = 100,
+        weight = 50 * kg
     },
     {
         type = "item",
@@ -43,7 +44,8 @@ data:extend({
         flags = {},
         subgroup = "intermediate-product",
         order = "r[uranium-238]-b[plutonium-238]",
-        stack_size = 100
+        stack_size = 100,
+        weight = 50 * kg
     },
 
     -- Plutonium nuclear fuel (the one that burns)
@@ -80,7 +82,8 @@ data:extend({
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
         order = "q[xplutonium-rocket-fuel]",
-        stack_size = 1
+        stack_size = 1,
+        weight = 100 * kg
     },
 
     -- Plutonium fuel cell
@@ -115,7 +118,8 @@ data:extend({
         burnt_result = "used-up-plutonium-fuel-cell",
         fuel_value = "20GJ",
         fuel_glow_color = { 0, 1, 1, 0 },
-        stack_size = 50
+        stack_size = 50,
+        weight = 100 * kg
     },
     {
         type = "item",
@@ -126,7 +130,8 @@ data:extend({
         flags = {},
         subgroup = "nuclear-plutonium",
         order = "t[used-up-plutonium-fuel-cell]",
-        stack_size = 50
+        stack_size = 50,
+        weight = 100 * kg
     },
 
     -- MOX fuel cell
@@ -157,7 +162,8 @@ data:extend({
         fuel_category = "MOX",
         burnt_result = "used-up-MOX-fuel-cell",
         fuel_value = "3GJ",
-        stack_size = 100
+        stack_size = 100,
+        weight = 50 * kg
     },
     {
         type = "item",
@@ -167,7 +173,8 @@ data:extend({
         flags = {},
         subgroup = "nuclear-plutonium",
         order = "s[used-up-MOX-fuel-cell]",
-        stack_size = 100
+        stack_size = 100,
+        weight = 50 * kg
     },
 
     -- Breeder fuel cell (nuclear)
@@ -201,7 +208,8 @@ data:extend({
         fuel_category = 'nuclear-breeder',
         burnt_result = 'used-up-breeder-fuel-cell',
         fuel_value = '10GJ',
-        stack_size = 5
+        stack_size = 5,
+        weight = 1000 * kg
     },
     {
         type = 'item',
@@ -212,7 +220,8 @@ data:extend({
         flags = {},
         subgroup = 'nuclear-breeding',
         order = 's[used-up-xbreeder-fuel-cell]',
-        stack_size = 5
+        stack_size = 5,
+        weight = 1000 * kg
     },
 
     -- Machines
@@ -226,7 +235,8 @@ data:extend({
         subgroup = "energy",
         order = "f[nuclear-energy]-b[MOX-reactor]",
         place_result = "MOX-reactor",
-        stack_size = 10
+        stack_size = 10,
+        weight = 0.5 * tons,
     },
     {
         type = "item",
@@ -238,6 +248,7 @@ data:extend({
         subgroup = "energy",
         order = "f[nuclear-energy]-b[Obreeder-reactor]",
         place_result = "breeder-reactor",
-        stack_size = 10
+        stack_size = 10,
+        weight = 2 * tons,
     }
 })
