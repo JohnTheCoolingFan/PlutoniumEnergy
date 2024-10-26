@@ -4,6 +4,8 @@ Date: 2024-10-26
   Fixes:
     - Assigned appropriate weights to items
     - Small tweaks to item ordering among reactors
+    - Fixed breeder fuel cell from depleted cells locale
+    - Fixed nuclear waste solutions' grouping in Factoriopedia
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2024-10-21
