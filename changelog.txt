@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.2
+Date: 2024-10-26
+  Fixes:
+    - Assigned appropriate weights to items
+    - Small tweaks to item ordering among reactors
+---------------------------------------------------------------------------------------------------
 Version: 1.7.1
 Date: 2024-10-21
   Major Changes:
