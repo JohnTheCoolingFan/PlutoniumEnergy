@@ -1,3 +1,5 @@
+local item_sounds = require("__base__.prototypes.item_sounds")
+
 require("prototypes.item.ammo")
 
 data.raw['item']['heat-pipe'].order = 'f[nuclear-energy]-d[heat-pipe]'
@@ -33,9 +35,11 @@ data:extend({
                 }
             }
         },
-        flags = {},
         subgroup = "intermediate-product",
         order = "r[uranium-238]-a[plutonium-239]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
         weight = 50 * kg
     },
@@ -45,9 +49,11 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-238.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {},
         subgroup = "intermediate-product",
         order = "r[uranium-238]-b[plutonium-238]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
         weight = 50 * kg
     },
@@ -86,6 +92,9 @@ data:extend({
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
         order = "q[xplutonium-rocket-fuel]",
+        inventory_move_sound = item_sounds.fuel_cell_inventory_move,
+        pick_sound = item_sounds.fuel_cell_inventory_pickup,
+        drop_sound = item_sounds.fuel_cell_inventory_move,
         stack_size = 1,
         weight = 100 * kg
     },
@@ -115,9 +124,11 @@ data:extend({
                 }
             }
         },
-        flags = {},
         subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-c[plutonium-fuel-cell]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = "nuclear",
         burnt_result = "depleted-plutonium-fuel-cell",
         fuel_value = "20GJ",
@@ -131,9 +142,11 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/depleted-plutonium-fuel-cell.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {},
         subgroup = "nuclear-plutonium",
         order = "t[depleted-plutonium-fuel-cell]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 50,
         weight = 100 * kg
     },
@@ -163,6 +176,9 @@ data:extend({
         flags = {},
         subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-b[MOX-fuel-cell]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = "MOX",
         burnt_result = "depleted-MOX-fuel-cell",
         fuel_value = "3GJ",
@@ -174,9 +190,11 @@ data:extend({
         name = "depleted-MOX-fuel-cell",
         icon = "__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png",
         icon_size = 64,
-        flags = {},
         subgroup = "nuclear-plutonium",
         order = "s[depleted-MOX-fuel-cell]",
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
         weight = 50 * kg
     },
@@ -206,9 +224,11 @@ data:extend({
                 }
             }
         },
-        flags = {},
         subgroup = 'nuclear-breeding',
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = 'nuclear-breeder',
         burnt_result = 'depleted-breeder-fuel-cell',
         fuel_value = '10GJ',
@@ -221,9 +241,11 @@ data:extend({
         icon = '__PlutoniumEnergy__/graphics/icons/depleted-breeder-fuel-cell.png',
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {},
         subgroup = 'nuclear-breeding',
         order = 's[depleted-xbreeder-fuel-cell]',
+        inventory_move_sound = item_sounds.nuclear_inventory_move,
+        pick_sound = item_sounds.nuclear_inventory_pickup,
+        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 5,
         weight = 1000 * kg
     },
@@ -235,9 +257,11 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/MOX-reactor.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {},
         subgroup = "energy",
         order = "f[nuclear-energy]-b[MOX-reactor]",
+        inventory_move_sound = item_sounds.reactor_inventory_move,
+        pick_sound = item_sounds.reactor_inventory_pickup,
+        drop_sound = item_sounds.reactor_inventory_move,
         place_result = "MOX-reactor",
         stack_size = 10,
         weight = 0.5 * tons,
@@ -248,9 +272,11 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/breeder-reactor.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {},
         subgroup = "energy",
         order = "f[nuclear-energy]-c[breeder-reactor]",
+        inventory_move_sound = item_sounds.reactor_inventory_move,
+        pick_sound = item_sounds.reactor_inventory_pickup,
+        drop_sound = item_sounds.reactor_inventory_move,
         place_result = "breeder-reactor",
         stack_size = 10,
         weight = 2 * tons,
