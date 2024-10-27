@@ -6,6 +6,8 @@ Date: 2024-10-26
     - Finished swapping of the terms "used-up" to "depleted"
     - Assigned appropriate weights to ammo items
     - Assigned appropriate inventory sound effects to items
+    - Updated reactor remnants graphics
+    - Removed unused "medium" resolution sprites
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2024-10-26

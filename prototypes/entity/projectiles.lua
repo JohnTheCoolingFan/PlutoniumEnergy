@@ -466,7 +466,7 @@ data:extend({
         map_color = { r = 0, g = 1, b = 1 },
         picture =
         {
-            filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/hr-plutonium-atomic-shell.png",
+            filename = "__PlutoniumEnergy__/graphics/entity/plutonium-artillery-projectile/plutonium-atomic-shell.png",
             draw_as_glow = true,
             width = 64,
             height = 64,
