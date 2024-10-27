@@ -4,6 +4,8 @@ Date: 2024-10-26
   Minor changes:
     - Internal terminology swap
     - Finished swapping of the terms "used-up" to "depleted"
+    - Assigned appropriate weights to ammo items
+    - Assigned appropriate inventory sound effects to items
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2024-10-26
