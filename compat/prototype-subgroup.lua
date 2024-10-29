@@ -45,21 +45,18 @@ local nuclear_fuel_list_recipes = {
 }
 -- Recipes that need to have the subgroup of uranium fuel cell recipe
 local uranium_fuel_cell_list_recipes = {
+    --'kovarex-enrichment-process',
+    'advanced-nuclear-fuel-reprocessing',
+    'advanced-nuclear-fuel-reprocessing-with-barrelling',
+    'uranium-fuel-cell-waste-solution-centrifuging',
     --'MOX-fuel-cell',
+    --'MOX-fuel-reprocessing',
     --'breeder-fuel-cell',
     --'breeder-fuel-cell-from-uranium-cell',
     --'breeder-fuel-cell-from-MOX-fuel-cell',
     --'breeder-fuel-cell-reprocessing',
-    'used-up-uranium-fuel-cell-solution-centrifuging',
-    --'used-up-breeder-fuel-cell-solution-centrifuging',
-    'advanced-nuclear-fuel-reprocessing',
-    'advanced-nuclear-fuel-reprocessing-with-barrelling',
-    'used-up-uranium-fuel-cell-solution-centrifuging',
-    --'MOX-fuel-reprocessing',
-    --'breeder-fuel-cell-reprocessing',
     --'breeder-fuel-cell-reprocessing-with-barrelling',
-    --'used-up-breeder-fuel-cell-solution-centrifuging',
-    'kovarex-enrichment-process',
+    --'breeder-fuel-cell-waste-solution-centrifuging',
 }
 -- Items that need to have the subgroup of nuclear fuel item
 local nuclear_fuel_list_items = {
@@ -67,8 +64,13 @@ local nuclear_fuel_list_items = {
 }
 -- Items that need to have the subgroup of uranium fuel cell
 local uranium_fuel_cell_list_items = {
+    'depleted-uranium-fuel-cell'
     --'MOX-fuel',
     --'breeder-fuel-cell'
+}
+local uranium_list_items = {
+    'plutonium-239',
+    'plutonium-238',
 }
 
 
@@ -106,6 +108,7 @@ end
 
 -- Subgroups to replace with
 replace_item_subgroup('nuclear-uranium', { 'uranium-fuel-cell' })
+replace_recipe_subgroup('nuclear-uranium', { 'uranium-fuel-cell' })
 replace_recipe_subgroup('nuclear-uranium', { 'nuclear-fuel-reprocessing' })
 
 local nuclear_fuel_recipe_subgroup = data.raw['recipe']['nuclear-fuel'].subgroup
@@ -113,6 +116,7 @@ local uranium_fuel_cell_recipe_subgroup = data.raw['recipe']['nuclear-fuel-repro
 
 local nuclear_fuel_item_subgroup = data.raw['item']['nuclear-fuel'].subgroup
 local uranium_fuel_cell_item_subgroup = data.raw['item']['uranium-fuel-cell'].subgroup
+local uranium_item_subgroup = data.raw['item']['uranium-238'].subgroup
 
 -- And call the functions
 if nuclear_fuel_recipe_subgroup then
@@ -127,4 +131,7 @@ if nuclear_fuel_item_subgroup then
 end
 if uranium_fuel_cell_item_subgroup then
     replace_item_subgroup(uranium_fuel_cell_item_subgroup, uranium_fuel_cell_list_items)
+end
+if uranium_item_subgroup then
+    replace_item_subgroup(uranium_item_subgroup, uranium_list_items)
 end

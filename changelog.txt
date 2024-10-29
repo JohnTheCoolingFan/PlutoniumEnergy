@@ -8,6 +8,7 @@ Date: 2024-10-26
     - Assigned appropriate inventory sound effects to items
     - Updated reactor remnants graphics
     - Removed unused "medium" resolution sprites
+    - Adjusted grouping and ordering of items and recipes
   Balancing:
     - Reworked plutonium fuel
       In the recipe, nuclear fuel was replaced by rocket fuel

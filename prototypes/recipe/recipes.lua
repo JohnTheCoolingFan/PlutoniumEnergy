@@ -38,7 +38,7 @@ local function reprocessing_icon_barrel(cell_icon_path, tint, secondary_tint)
 end
 
 -- Change some vanilla recipe order
-data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-f[kovarex-enrichment-process]"
+data.raw["recipe"]["kovarex-enrichment-process"].order = "r[uranium-processing]-g[kovarex-enrichment-process]"
 data.raw["recipe"]["nuclear-fuel-reprocessing"].order = "r[uranium-processing]-c[reprocessing]-a[regular-uranium]"
 
 data:extend({
