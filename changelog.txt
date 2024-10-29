@@ -8,6 +8,11 @@ Date: 2024-10-26
     - Assigned appropriate inventory sound effects to items
     - Updated reactor remnants graphics
     - Removed unused "medium" resolution sprites
+  Balancing:
+    - Reworked plutonium fuel
+      In the recipe, nuclear fuel was replaced by rocket fuel
+      Fuel value was raied to 3GJ
+      Vehicle acceleration bonus was raised to +200% and top speed is +25%
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2024-10-26

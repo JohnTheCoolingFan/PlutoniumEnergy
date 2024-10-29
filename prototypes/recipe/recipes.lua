@@ -403,12 +403,12 @@ data:extend({
     {
         type = "recipe",
         name = "plutonium-fuel",
-        energy_required = 40,
+        energy_required = 90,
         enabled = false,
         category = "centrifuging",
         ingredients = {
             { type = "item", name = "plutonium-239", amount = 1 },
-            { type = "item", name = "nuclear-fuel",  amount = 1 }
+            { type = "item", name = "rocket-fuel",   amount = 1 }
         },
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
         icon_size = 64,

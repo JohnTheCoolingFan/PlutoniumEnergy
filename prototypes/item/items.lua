@@ -72,7 +72,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
-                    scale = 0.25,
+                    scale = 0.5,
                     mipmap_count = 4
                 },
                 {
@@ -80,18 +80,18 @@ data:extend({
                     flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/nuclear-fuel-light.png",
-                    scale = 0.25,
+                    scale = 0.5,
                     mipmap_count = 4
                 }
             }
         },
         fuel_category = "chemical",
-        fuel_value = "2.42GJ",               -- 2 times the stored power...
-        fuel_acceleration_multiplier = 1.75, -- ...only half the effects
-        fuel_top_speed_multiplier = 1.075,
+        fuel_value = "3GJ",
+        fuel_acceleration_multiplier = 3.0,
+        fuel_top_speed_multiplier = 1.25,
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
-        order = "q[xplutonium-rocket-fuel]",
+        order = "r[uranium-processing]-f[plutonium-fuel]",
         inventory_move_sound = item_sounds.fuel_cell_inventory_move,
         pick_sound = item_sounds.fuel_cell_inventory_pickup,
         drop_sound = item_sounds.fuel_cell_inventory_move,
