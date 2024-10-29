@@ -18,7 +18,7 @@ data:extend({
             },
             {
                 type = 'unlock-recipe',
-                recipe = 'used-up-uranium-fuel-cell-solution-centrifuging'
+                recipe = 'uranium-fuel-cell-waste-solution-centrifuging'
             }
         },
         prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing", "fluid-handling" },
@@ -142,7 +142,7 @@ data:extend({
             },
             {
                 type = 'unlock-recipe',
-                recipe = 'used-up-breeder-fuel-cell-solution-centrifuging'
+                recipe = 'breeder-fuel-cell-waste-solution-centrifuging'
             },
             {
                 type = 'unlock-recipe',

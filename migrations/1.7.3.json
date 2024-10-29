@@ -1,0 +1,19 @@
+
+{
+    "item":
+    [
+        ["used-up-MOX-fuel-cell", "depleted-MOX-fuel-cell"],
+        ["used-up-plutonium-fuel-cell", "depleted-plutonium-fuel-cell"],
+        ["used-up-breeder-fuel-cell", "depleted-breeder-fuel-cell"]
+    ],
+    "fluid":
+    [
+        ["used-up-uranium-fuel-cell-solution", "uranium-fuel-cell-waste-solution"],
+        ["used-up-breeder-fuel-cell-solution", "breeder-fuel-cell-waste-solution"]
+    ],
+    "recipe":
+    [
+        ["used-up-uranium-fuel-cell-solution-centrifuging", "uranium-fuel-cell-waste-solution-centrifuging"],
+        ["used-up-breeder-fuel-cell-solution-centrifuging", "breeder-fuel-cell-waste-solution-centrifuging"]
+    ]
+}

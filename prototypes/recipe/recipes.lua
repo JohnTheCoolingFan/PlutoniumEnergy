@@ -61,7 +61,7 @@ data:extend({
         },
         energy_required = 1,
         results = {
-            { type = 'fluid', name = 'used-up-uranium-fuel-cell-solution', amount = 50 }
+            { type = 'fluid', name = 'uranium-fuel-cell-waste-solution', amount = 50 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-b[advanced-uranium]-a[no-barreling]',
         subgroup = 'intermediate-product',
@@ -95,7 +95,7 @@ data:extend({
         },
         energy_required = 1,
         results = {
-            { type = 'item', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 1 }
+            { type = 'item', name = 'uranium-fuel-cell-waste-solution-barrel', amount = 1 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-b[advanced-uranium]-b[with-barreling]',
         subgroup = 'intermediate-product',
@@ -111,13 +111,13 @@ data:extend({
     },
     {
         type = 'recipe',
-        name = 'used-up-uranium-fuel-cell-solution-centrifuging',
-        icon = '__PlutoniumEnergy__/graphics/icons/used-up-uranium-fuel-cell-solution-centrifuging.png',
+        name = 'uranium-fuel-cell-waste-solution-centrifuging',
+        icon = '__PlutoniumEnergy__/graphics/icons/uranium-fuel-cell-waste-solution-centrifuging.png',
         icon_size = 64,
         category = 'centrifuging',
         enabled = false,
         ingredients = {
-            { type = 'item', name = 'used-up-uranium-fuel-cell-solution-barrel', amount = 10 }
+            { type = 'item', name = 'uranium-fuel-cell-waste-solution-barrel', amount = 10 }
         },
         energy_required = 60,
         results = {
@@ -155,16 +155,16 @@ data:extend({
         enabled = false,
         category = "centrifuging",
         ingredients = {
-            { type = "item", name = "used-up-plutonium-fuel-cell", amount = 10 }
+            { type = "item", name = "depleted-plutonium-fuel-cell", amount = 10 }
         },
         icons = reprocessing_icon(
-            '__PlutoniumEnergy__/graphics/icons/used-up-plutonium-fuel-cell.png',
+            '__PlutoniumEnergy__/graphics/icons/depleted-plutonium-fuel-cell.png',
             { 0, 1, 1, 1 }, 0.75
         ),
         icon_size = 64,
         icon_mipmaps = 4,
         subgroup = "nuclear-plutonium",
-        order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
+        order = "r[uranium-processing]-c[reprocessing]-d[plutonium]",
         main_product = "",
         crafting_machine_tint = {
             primary = { r = 0.000, g = 1.000, b = 0.961, a = 1.000 } -- #00FFF5
@@ -204,9 +204,9 @@ data:extend({
         energy_required = 50,
         enabled = false,
         category = "centrifuging",
-        ingredients = { { type = "item", name = "used-up-MOX-fuel-cell", amount = 20 } },
+        ingredients = { { type = "item", name = "depleted-MOX-fuel-cell", amount = 20 } },
         icons = reprocessing_icon(
-            '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png',
+            '__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png',
             { 0, 1, 0.5, 1 }, 0.75
         ),
         icon_size = 64,
@@ -287,7 +287,7 @@ data:extend({
                 icon_mipmaps = 4,
             },
             {
-                icon = '__PlutoniumEnergy__/graphics/icons/used-up-MOX-fuel-cell.png',
+                icon = '__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png',
                 icon_size = 64,
                 icon_mipmaps = 4,
                 scale = 0.5 * 0.6,
@@ -298,9 +298,9 @@ data:extend({
         energy_required = 7.5,
         enabled = false,
         ingredients = {
-            { type = "item", name = 'iron-plate',            amount = 10 },
-            { type = "item", name = 'used-up-MOX-fuel-cell', amount = 5 },
-            { type = "item", name = 'uranium-238',           amount = 10 }
+            { type = "item", name = 'iron-plate',             amount = 10 },
+            { type = "item", name = 'depleted-MOX-fuel-cell', amount = 5 },
+            { type = "item", name = 'uranium-238',            amount = 10 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
@@ -314,7 +314,7 @@ data:extend({
         name = 'breeder-fuel-cell-reprocessing',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing' },
         icons = reprocessing_icon(
-            '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png',
+            '__PlutoniumEnergy__/graphics/icons/depleted-breeder-fuel-cell.png',
             { 1, 0, 1, 1 }, 0.75
         ),
         icon_size = 64,
@@ -322,12 +322,12 @@ data:extend({
         category = 'chemistry',
         enabled = false,
         ingredients = {
-            { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 125 }
+            { type = 'item',  name = 'depleted-breeder-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',              amount = 125 }
         },
         energy_required = 2,
         results = {
-            { type = 'fluid', name = 'used-up-breeder-fuel-cell-solution', amount = 250 }
+            { type = 'fluid', name = 'breeder-fuel-cell-waste-solution', amount = 250 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-a[no-barreling]',
         subgroup = 'nuclear-breeding',
@@ -347,7 +347,7 @@ data:extend({
         name = 'breeder-fuel-cell-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.breeder-fuel-cell-reprocessing-with-barreling' },
         icons = reprocessing_icon_barrel(
-            '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell.png',
+            '__PlutoniumEnergy__/graphics/icons/depleted-breeder-fuel-cell.png',
             { 1, 0, 1, 1 }, 0.75
         ),
         icon_size = 64,
@@ -355,13 +355,13 @@ data:extend({
         category = 'chemistry',
         enabled = false,
         ingredients = {
-            { type = 'item',  name = 'used-up-breeder-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',             amount = 125 },
-            { type = 'item',  name = 'barrel',                    amount = 5 }
+            { type = 'item',  name = 'depleted-breeder-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',              amount = 125 },
+            { type = 'item',  name = 'barrel',                     amount = 5 }
         },
         energy_required = 2.5,
         results = {
-            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 5 }
+            { type = 'item', name = 'breeder-fuel-cell-waste-solution-barrel', amount = 5 }
         },
         order = 'r[uranium-processing]-c[reprocessing]-d[breeder]-b[with-barreling]',
         subgroup = 'nuclear-breeding',
@@ -377,13 +377,13 @@ data:extend({
     },
     {
         type = 'recipe',
-        name = 'used-up-breeder-fuel-cell-solution-centrifuging',
-        icon = '__PlutoniumEnergy__/graphics/icons/used-up-breeder-fuel-cell-solution-centrifuging.png',
+        name = 'breeder-fuel-cell-waste-solution-centrifuging',
+        icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-waste-solution-centrifuging.png',
         icon_size = 64,
         category = 'centrifuging',
         enabled = false,
         ingredients = {
-            { type = 'item', name = 'used-up-breeder-fuel-cell-solution-barrel', amount = 10 }
+            { type = 'item', name = 'breeder-fuel-cell-waste-solution-barrel', amount = 10 }
         },
         energy_required = 40,
         results = {
