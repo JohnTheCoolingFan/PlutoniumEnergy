@@ -211,6 +211,60 @@ data:extend({
             count = 500
         },
         order = 'e-p-d-b'
+    },
+    {
+        type = "technology",
+        name = "fission-reactor-equipment-from-plutonium",
+        icons = util.technology_icon_constant_equipment(
+        "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-plutonium.png"),
+        prerequisites = { "fission-reactor-equipment", "plutonium-nuclear-power" },
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "fission-reactor-equipment-from-plutonium"
+            }
+        },
+        unit =
+        {
+            count = 50,
+            ingredients =
+            {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "utility-science-pack",    1 }
+            },
+            time = 20
+        }
+    },
+    {
+        type = "technology",
+        name = "fission-reactor-equipment-from-MOX-fuel",
+        icons = util.technology_icon_constant_equipment(
+        "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-MOX-fuel.png"),
+        prerequisites = { "fission-reactor-equipment", "MOX-nuclear-power" },
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "fission-reactor-equipment-from-MOX-fuel"
+            }
+        },
+        unit =
+        {
+            count = 50,
+            ingredients =
+            {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "military-science-pack",   1 },
+                { "utility-science-pack",    1 }
+            },
+            time = 20
+        }
     }
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['MOX-nuclear-power'].effects[2] = nil end

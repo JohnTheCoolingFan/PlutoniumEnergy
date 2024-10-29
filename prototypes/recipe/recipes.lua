@@ -447,6 +447,40 @@ data:extend({
         },
         results = { { type = "item", name = "breeder-reactor", amount = 1 } },
         requester_paste_multiplier = 1
+    },
+
+    -- Alternative equipment recipes
+    {
+        type = "recipe",
+        name = "fission-reactor-equipment-from-plutonium",
+        localised_name = { "recipe-name.fission-reactor-equipment-from-plutonium" },
+        icon = "__PlutoniumEnergy__/graphics/icons/fission-reactor-equipment-from-plutonium.png",
+        enabled = false,
+        energy_required = 10,
+        allow_decomposition = false,
+        auto_recycle = false,
+        ingredients = {
+            { type = "item", name = "processing-unit",       amount = 200 },
+            { type = "item", name = "low-density-structure", amount = 50 },
+            { type = "item", name = "plutonium-fuel-cell",   amount = 1 }
+        },
+        results = { { type = "item", name = "fission-reactor-equipment", amount = 1 } },
+    },
+    {
+        type = "recipe",
+        name = "fission-reactor-equipment-from-MOX-fuel",
+        localised_name = { "recipe-name.fission-reactor-equipment-from-MOX-fuel" },
+        icon = "__PlutoniumEnergy__/graphics/icons/fission-reactor-equipment-from-MOX-fuel.png",
+        enabled = false,
+        energy_required = 10,
+        allow_decomposition = false,
+        auto_recycle = false,
+        ingredients = {
+            { type = "item", name = "processing-unit",       amount = 200 },
+            { type = "item", name = "low-density-structure", amount = 50 },
+            { type = "item", name = "MOX-fuel-cell",         amount = 10 }
+        },
+        results = { { type = "item", name = "fission-reactor-equipment", amount = 1 } },
     }
 })
 
