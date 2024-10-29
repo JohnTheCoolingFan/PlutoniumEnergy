@@ -4,6 +4,11 @@ Date: 2024-10-26
   Major Changes:
     - Added alternative recipes and technologies for making dission reqctor equipment.
       It can be made from 1 Plutonium fuel cell or 10 MOX fuel cells.
+  Balancing:
+    - Reworked plutonium fuel:
+      In the recipe, nuclear fuel was replaced by rocket fuel
+      Fuel value was raied to 3GJ
+      Vehicle acceleration bonus was raised to +200% and top speed is +25%
   Minor changes:
     - Internal terminology swap
     - Finished swapping of the terms "used-up" to "depleted"
@@ -12,11 +17,6 @@ Date: 2024-10-26
     - Updated reactor remnants graphics
     - Removed unused "medium" resolution sprites
     - Adjusted grouping and ordering of items and recipes
-  Balancing:
-    - Reworked plutonium fuel:
-      In the recipe, nuclear fuel was replaced by rocket fuel
-      Fuel value was raied to 3GJ
-      Vehicle acceleration bonus was raised to +200% and top speed is +25%
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.2
 Date: 2024-10-26
