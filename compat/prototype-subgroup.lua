@@ -135,3 +135,7 @@ end
 if uranium_item_subgroup then
     replace_item_subgroup(uranium_item_subgroup, uranium_list_items)
 end
+
+if mods["IntermodalContainers"] then
+    require("__IntermodalContainers__.prototypes.container-subgroups")
+end
