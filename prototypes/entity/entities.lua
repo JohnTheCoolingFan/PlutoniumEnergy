@@ -1,20 +1,19 @@
-require "util"
+require("util")
+require("circuit-connector-sprites")
 
 data:extend({
     {
-        type                                 = 'reactor',
-        name                                 = 'MOX-reactor',
-        icon                                 = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png',
-        icon_size                            = 64,
-        icon_mipmaps                         = 4,
-        flags                                = { 'placeable-neutral', 'player-creation' },
-        minable                              = { mining_time = 0.5, result = 'MOX-reactor' },
-        max_health                           = 400,
-        corpse                               = 'MOX-reactor-remnants',
-        dying_explosion                      = 'nuclear-reactor-explosion',
-        consumption                          = '20MW',
-        neighbour_bonus                      = 1.5,
-        energy_source                        = {
+        type = 'reactor',
+        name = 'MOX-reactor',
+        icon = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png',
+        flags = { 'placeable-neutral', 'player-creation' },
+        minable = { mining_time = 0.5, result = 'MOX-reactor' },
+        max_health = 400,
+        corpse = 'MOX-reactor-remnants',
+        dying_explosion = 'nuclear-reactor-explosion',
+        consumption = '20MW',
+        neighbour_bonus = 1.5,
+        energy_source = {
             type = 'burner',
             fuel_categories = { 'MOX' },
             effectivity = 1,
@@ -26,17 +25,17 @@ data:extend({
                 maximum_intensity = 0.95
             }
         },
-        collision_box                        = { { -1.2, -1.2 }, { 1.2, 1.2 } },
-        selection_box                        = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-        damaged_trigger_effect               = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
-        lower_layer_picture                  = {
+        collision_box = { { -1.2, -1.2 }, { 1.2, 1.2 } },
+        selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
+        damaged_trigger_effect = data.raw['reactor']['nuclear-reactor'].damaged_trigger_effect,
+        lower_layer_picture = {
             filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes.png',
             width = 192,
             height = 188,
             scale = 0.5,
             shift = util.by_pixel(-1, -5)
         },
-        heat_lower_layer_picture             = apply_heat_pipe_glow {
+        heat_lower_layer_picture = apply_heat_pipe_glow {
             filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-pipes-heated.png',
             width = 192,
             height = 188,
@@ -44,7 +43,7 @@ data:extend({
             shift = util.by_pixel(-0.5, -4.5)
         },
 
-        picture                              = {
+        picture = {
             layers = {
                 {
                     filename = '__base__/graphics/entity/nuclear-reactor/reactor.png',
@@ -64,7 +63,7 @@ data:extend({
             }
         },
 
-        working_light_picture                = {
+        working_light_picture = {
             filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-lights-color.png',
             blend_mode = 'additive',
             draw_as_glow = true,
@@ -74,7 +73,7 @@ data:extend({
             shift = { -0.03125, -0.1875 }
         },
 
-        heat_buffer                          = {
+        heat_buffer = {
             max_temperature = 1000,
             specific_heat = '10MJ',
             max_transfer = '10GW',
@@ -121,7 +120,7 @@ data:extend({
                 shift = util.by_pixel(-2, -16)
             }
         },
-        connection_patches_connected         = {
+        connection_patches_connected = {
             sheet = {
                 filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png',
                 width = 64,
@@ -130,7 +129,7 @@ data:extend({
                 variation_count = 8,
             }
         },
-        connection_patches_disconnected      = {
+        connection_patches_disconnected = {
             sheet = {
                 filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches.png',
                 width = 64,
@@ -140,7 +139,7 @@ data:extend({
                 scale = 0.5
             }
         },
-        heat_connection_patches_connected    = {
+        heat_connection_patches_connected = {
             sheet = apply_heat_pipe_glow {
                 filename =
                 '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
@@ -162,18 +161,29 @@ data:extend({
             }
         },
 
-        vehicle_impact_sound                 = data.raw['reactor']['nuclear-reactor'].vehicle_impact_sound,
-        open_sound                           = data.raw['reactor']['nuclear-reactor'].open_sound,
-        close_sound                          = data.raw['reactor']['nuclear-reactor'].close_sound,
-        working_sound                        = data.raw['reactor']['nuclear-reactor'].working_sound,
-        meltdown_action                      = data.raw['reactor']['nuclear-reactor'].meltdown_action
+        impact_category = "metal-large",
+        vehicle_impact_sound = data.raw['reactor']['nuclear-reactor'].vehicle_impact_sound,
+        open_sound = data.raw['reactor']['nuclear-reactor'].open_sound,
+        close_sound = data.raw['reactor']['nuclear-reactor'].close_sound,
+        working_sound = data.raw['reactor']['nuclear-reactor'].working_sound,
+        meltdown_action = data.raw['reactor']['nuclear-reactor'].meltdown_action,
+
+        default_temperature_signal = data.raw['reactor']['nuclear-reactor'].default_temperature_signal,
+        circuit_wire_max_distance = data.raw['reactor']['nuclear-reactor'].circuit_wire_max_distance,
+        circuit_connector = circuit_connector_definitions.create_single(
+            universal_connector_template,
+            {
+                variation = 27,
+                main_offset = util.by_pixel(40 * 0.6, 40 * 0.6),
+                shadow_offset = util.by_pixel(45 * 0.6, 54.5 * 0.6),
+                show_shadow = false
+            }
+        )
     },
     {
         type = 'reactor',
         name = 'breeder-reactor',
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-reactor.png',
-        icon_size = 64,
-        icon_mipmaps = 4,
         flags = { 'placeable-neutral', 'player-creation' },
         minable = { mining_time = 0.5, result = 'breeder-reactor' },
         max_health = 750,
@@ -364,10 +374,23 @@ data:extend({
             }
         },
 
+        impact_category = "metal-large",
         vehicle_impact_sound = data.raw['reactor']['nuclear-reactor'].vehicle_impact_sound,
         open_sound = data.raw['reactor']['nuclear-reactor'].open_sound,
         close_sound = data.raw['reactor']['nuclear-reactor'].close_sound,
         working_sound = data.raw['reactor']['nuclear-reactor'].working_sound,
-        meltdown_action = data.raw['reactor']['nuclear-reactor'].meltdown_action
+        meltdown_action = data.raw['reactor']['nuclear-reactor'].meltdown_action,
+
+        default_temperature_signal = data.raw['reactor']['nuclear-reactor'].default_temperature_signal,
+        circuit_wire_max_distance = data.raw['reactor']['nuclear-reactor'].circuit_wire_max_distance,
+        circuit_connector = circuit_connector_definitions.create_single(
+            universal_connector_template,
+            {
+                variation = 27,
+                main_offset = util.by_pixel(40 * 1.4, 40 * 1.4),
+                shadow_offset = util.by_pixel(45 * 1.4, 54.5 * 1.4),
+                show_shadow = false
+            }
+        )
     }
 })
