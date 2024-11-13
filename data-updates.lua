@@ -17,3 +17,7 @@ if not data.raw['technology']['kovarex-enrivhment-process'] then
 end
 
 require('compat.nuclear-artillery')
+
+if data.raw['item']['fusion-power-cell'] then
+    data.raw['item']['fusion-power-cell'].icon = "__PlutoniumEnergy__/graphics/icons/fusion-power-cell.png"
+end
