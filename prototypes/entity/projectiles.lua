@@ -324,11 +324,23 @@ local projectiles = {}
 -- Plutonium cannon shell explosions
 local plutonium_cannon_shell_explosion = util.table.deepcopy(data.raw["explosion"]["big-explosion"])
 plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
+plutonium_cannon_shell_explosion.icons =
+{
+    { icon = "__base__/graphics/icons/explosion.png" },
+    { icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png" }
+}
+plutonium_cannon_shell_explosion.order = "a-c-f"
 plutonium_cannon_shell_explosion.animations[1].tint = { r = 0.1, g = 0.9, b = 0.7 }
 table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
+plutonium_cannon_explosion.icons =
+{
+    { icon = "__base__/graphics/icons/explosion.png" },
+    { icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png" }
+}
+plutonium_cannon_explosion.order = "a-c-e"
 for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
     spritesheet.tint = { r = 0.1, g = 0.9, b = 0.7 }
 end
@@ -346,7 +358,7 @@ data:extend({
         collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
         acceleration = 0,
         direction_only = true,
-        piercing_damage = 600,
+        piercing_damage = data.raw['projectile']['uranium-cannon-projectile'].piercing_damage,
         action = {
             type = "direct",
             action_delivery = {
@@ -354,11 +366,11 @@ data:extend({
                 target_effects = {
                     {
                         type = "damage",
-                        damage = { amount = 600, type = "physical" }
+                        damage = { amount = 3000, type = "physical" }
                     },
                     {
                         type = "damage",
-                        damage = { amount = 300, type = "explosion" }
+                        damage = { amount = 250, type = "explosion" }
                     },
                     {
                         type = "create-entity",
@@ -395,7 +407,7 @@ data:extend({
         flags = { "not-on-map" },
         collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
         acceleration = 0,
-        piercing_damage = 150,
+        piercing_damage = data.raw['projectile']['explosive-uranium-cannon-projectile'].piercing_damage,
         action = {
             type = "direct",
             action_delivery = {
