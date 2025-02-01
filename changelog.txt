@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.7
+Date: 2025-02-01
+  Fixes:
+    - Fixed productivity not being enabled for any recipes.
+      This is caused by the change in Factorio modding API, switching from per-module limitations
+      to per-recipe.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.6
 Date: 2025-01-15
   Graphics:
