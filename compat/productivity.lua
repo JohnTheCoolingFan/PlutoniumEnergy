@@ -17,3 +17,9 @@ for _, module in pairs(data.raw['module']) do
         end
     end
 end
+
+for _, recipe_name in pairs(limitation_to_add) do
+    if data.raw['recipe'][recipe_name] then
+        data.raw['recipe'][recipe_name].allow_productivity = true
+    end
+end
