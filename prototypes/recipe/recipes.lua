@@ -55,6 +55,7 @@ data:extend({
         icon_mipmamps = 4,
         category = 'chemistry',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
             { type = 'fluid', name = 'sulfuric-acid',              amount = 25 }
@@ -191,6 +192,7 @@ data:extend({
         name = "MOX-fuel-cell",
         energy_required = 10,
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = "item", name = "iron-plate",    amount = 10 },
             { type = "item", name = "uranium-238",   amount = 15 },
@@ -203,6 +205,7 @@ data:extend({
         name = "MOX-fuel-cell-reprocessing",
         energy_required = 50,
         enabled = false,
+        allow_productivity = true,
         category = "centrifuging",
         ingredients = { { type = "item", name = "depleted-MOX-fuel-cell", amount = 20 } },
         icons = reprocessing_icon(
@@ -238,6 +241,7 @@ data:extend({
         name = 'breeder-fuel-cell',
         energy_required = 10,
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = "item", name = 'iron-plate',    amount = 10 },
             { type = "item", name = 'plutonium-239', amount = 1 },
@@ -321,6 +325,7 @@ data:extend({
         icon_mipmamps = 4,
         category = 'chemistry',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = 'item',  name = 'depleted-breeder-fuel-cell', amount = 1 },
             { type = 'fluid', name = 'sulfuric-acid',              amount = 125 }
@@ -405,6 +410,7 @@ data:extend({
         name = "plutonium-fuel",
         energy_required = 90,
         enabled = false,
+        allow_productivity = true,
         category = "centrifuging",
         ingredients = {
             { type = "item", name = "plutonium-239", amount = 1 },
