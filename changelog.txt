@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.9
+Date: 2025-02-11
+  Fixes:
+    - Added productivity to  Plutonium fuel cell and Plutonium fuel cell reprocessing recipes
+    - Fixed depleted fuel cell solution centrifuging recipes not having productivity
+---------------------------------------------------------------------------------------------------
 Version: 1.7.8
 Date: 2025-02-09
   Graphics:
