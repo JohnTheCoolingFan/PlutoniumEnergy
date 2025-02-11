@@ -38,7 +38,9 @@ if data.raw['ammo']['atomic-bomb'] and data.raw['ammo']['atomic-bomb'].ammo_type
     local nuclear_artillery_base_ammotype
     local atomic_bomb_prototype = data.raw['ammo']['atomic-bomb']
 
-    if atomic_bomb_prototype.ammo_type.category then
+    if atomic_bomb_prototype.ammo_category then
+        nuclear_artillery_base_ammotype = { atomic_bomb_prototype.ammo_category }
+    elseif atomic_bomb_prototype.ammo_type.category then
         nuclear_artillery_base_ammotype = { atomic_bomb_prototype.ammo_type.category }
     elseif atomic_bomb_prototype.ammo_type[1] then
         nuclear_artillery_base_ammotype = {}
