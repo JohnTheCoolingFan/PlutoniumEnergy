@@ -117,6 +117,7 @@ data:extend({
         icon_size = 64,
         category = 'centrifuging',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = 'item', name = 'uranium-fuel-cell-waste-solution-barrel', amount = 10 }
         },
@@ -141,6 +142,7 @@ data:extend({
         name = "plutonium-fuel-cell",
         energy_required = 10,
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = "item", name = "iron-plate",    amount = 10 },
             { type = "item", name = "plutonium-239", amount = 1 },
@@ -154,6 +156,7 @@ data:extend({
         name = "plutonium-fuel-cell-reprocessing",
         energy_required = 50,
         enabled = false,
+        allow_productivity = true,
         category = "centrifuging",
         ingredients = {
             { type = "item", name = "depleted-plutonium-fuel-cell", amount = 10 }
@@ -387,6 +390,7 @@ data:extend({
         icon_size = 64,
         category = 'centrifuging',
         enabled = false,
+        allow_productivity = true,
         ingredients = {
             { type = 'item', name = 'breeder-fuel-cell-waste-solution-barrel', amount = 10 }
         },

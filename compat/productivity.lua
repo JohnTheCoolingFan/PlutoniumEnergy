@@ -18,10 +18,11 @@ log("Tweaking productivity restrictions")
 local limitation_to_add = {
     'advanced-nuclear-fuel-reprocessing',
     'MOX-fuel-cell', 'MOX-fuel-cell-reprocessing',
+    'plutonium-fuel-cell', 'plutonium-fuel-cell-reprocessing',
     'plutonium-fuel',
     'breeder-fuel-cell-reprocessing',
-    'used-up-uranium-fuel-cell-solution-centrifuging',
-    'used-up-breeder-fuel-cell-solution-centrifuging',
+    'uranium-fuel-cell-waste-solution-centrifuging',
+    'breeder-fuel-cell-waste-solution-centrifuging',
     'breeder-fuel-cell',
 }
 for _, module in pairs(data.raw['module']) do
@@ -34,6 +35,12 @@ end
 
 for _, recipe_name in pairs(limitation_to_add) do
     if data.raw['recipe'][recipe_name] then
-        data.raw['recipe'][recipe_name].allow_productivity = true
+        if data.raw['recipe'][recipe_name].allow_productivity == nil then
+            data.raw['recipe'][recipe_name].allow_productivity = true
+        else
+            log("Skipping recipe with `allow_productivity` already set: `" .. recipe_name .. "`")
+        end
+    else
+        log("Warning: recipe `" .. recipe_name .. "` not found")
     end
 end
