@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.12
+Date: 2025-03-26
+  Fixes:
+    - Fixed productivity on centrifuging of solution barrels creating more barrels than were put in.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.11
 Date: 2025-03-08
   Localization:
