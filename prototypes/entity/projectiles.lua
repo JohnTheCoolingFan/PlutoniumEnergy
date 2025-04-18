@@ -121,15 +121,15 @@ local plutonium_atomic_bomb_action =
             },
             {
                 type = "damage",
-                damage = { amount = 1000, type = "explosion" } -- This
+                damage = { amount = 2000, type = "explosion" } -- This
             },
             {
                 type = "damage",
-                damage = { amount = 500, type = "physical" } -- This
+                damage = { amount = 1000, type = "physical" } -- This
             },
             {
                 type = "damage",
-                damage = { amount = 1000, type = "fire" } -- This
+                damage = { amount = 2000, type = "fire" } -- This
             },
             {
                 type = "create-entity",

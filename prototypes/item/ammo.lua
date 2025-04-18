@@ -116,7 +116,7 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        ammo_category = "nuclear-artillery",
+        ammo_category = "artillery-shell",
         ammo_type = {
             target_type = "position",
             action = {
