@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.13
+Date: 2025-04-18
+  Fixes:
+    - Fixed Plutonium Atomic Artillery shell not having manual artillery targeting if the targeting
+      remote uses a ArtilleryFlare that has shot_category set.
+  Balancing:
+    - Plutonium Atomic Artillery shell now uses the same ammo category as a regular artillery shell.
+    - Doubled damage from Plutonium Atomic Artillery shell.
+---------------------------------------------------------------------------------------------------
 Version: 1.7.12
 Date: 2025-03-26
   Fixes:
