@@ -16,7 +16,7 @@ se_delivery_cannon_ammo_recipes['plutonium-atomic-artillery-shell'] = {
     name = 'plutonium-atomic-artillery-shell',
     amount = 1,
     ingredients = {
-        { 'plutonium-atomic-artillery-shell',                       1 },
-        { data_util.mod_prefix .. 'delivery-cannon-weapon-capsule', 1 }
+        { type = "item", name = 'plutonium-atomic-artillery-shell',                       amount = 1 },
+        { type = "item", name = data_util.mod_prefix .. 'delivery-cannon-weapon-capsule', amount = 1 }
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "PlutoniumEnergy",
-    "version": "1.7.13",
+    "version": "1.7.14",
     "title": "Plutonium Energy",
     "author": "JohnTheCoolingFan",
     "contact": "https://discord.gg/KPnETvMDYk",
@@ -10,7 +10,7 @@
         "? SchallUraniumProcessing",
         "? SchallRadioactiveWaste",
         "? IndustrialRevolution3 >= 3.1.5",
-        "? space-exploration"
+        "? space-exploration >= 0.7.0"
     ],
     "description": "Adds processing of Plutonium, which is created from nuclear fission of Uranium. It can be used to extract even more energy or incinerate enemies with new ammunition.",
     "factorio_version": "2.0"
