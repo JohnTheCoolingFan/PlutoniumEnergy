@@ -21,7 +21,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
-                    scale = 0.25,
+                    scale = 0.5,
                     mipmap_count = 4
                 },
                 {
@@ -29,7 +29,7 @@ data:extend({
                     blend_mode = "additive",
                     size = 64,
                     filename = "__base__/graphics/icons/uranium-235.png",
-                    scale = 0.25,
+                    scale = 0.5,
                     tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
                     mipmap_count = 4
                 }
