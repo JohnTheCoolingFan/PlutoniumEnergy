@@ -19,7 +19,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/plutonium-239.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4
                 },
                 {
@@ -27,7 +27,7 @@ data:extend({
                     blend_mode = "additive",
                     size = 64,
                     filename = "__base__/graphics/icons/uranium-235.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
                     mipmap_count = 4
                 }
@@ -62,7 +62,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4
                 },
                 {
@@ -70,7 +70,7 @@ data:extend({
                     flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/nuclear-fuel-light.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4
                 }
             }
@@ -97,7 +97,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/plutonium-fuel-cell.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4,
                 },
                 {
@@ -105,7 +105,7 @@ data:extend({
                     flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4
                 }
             }
@@ -140,14 +140,14 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell.png",
-                    scale = 0.5,
+                    scale = 0.25,
                 },
                 {
                     draw_as_light = true,
                     flags = { "light" },
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/MOX-fuel-cell-light.png",
-                    scale = 0.5,
+                    scale = 0.25,
                 }
             }
         },
@@ -181,7 +181,7 @@ data:extend({
                 {
                     size = 64,
                     filename = "__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4,
                 },
                 {
@@ -189,7 +189,7 @@ data:extend({
                     flags = { "light" },
                     size = 64,
                     filename = "__base__/graphics/icons/uranium-fuel-cell-light.png",
-                    scale = 0.5,
+                    scale = 0.25,
                     mipmap_count = 4
                 }
             }
