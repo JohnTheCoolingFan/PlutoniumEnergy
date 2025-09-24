@@ -70,7 +70,7 @@ Date: 2024-11-09
 Version: 1.7.3
 Date: 2024-10-26
   Major Changes:
-    - Added alternative recipes and technologies for making dission reqctor equipment.
+    - Added alternative recipes and technologies for making fission reactor equipment.
       It can be made from 1 Plutonium fuel cell or 10 MOX fuel cells.
   Balancing:
     - Reworked plutonium fuel:
