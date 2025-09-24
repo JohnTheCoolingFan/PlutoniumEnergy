@@ -211,7 +211,8 @@ data:extend({
             count = 500
         },
         order = 'e-p-d-b'
-    },
+    }
+    --[[ -- Does not exist in 1.1
     {
         type = "technology",
         name = "fission-reactor-equipment-from-plutonium",
@@ -243,7 +244,7 @@ data:extend({
         type = "technology",
         name = "fission-reactor-equipment-from-MOX-fuel",
         icons = util.technology_icon_constant_equipment(
-        "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-MOX-fuel.png"),
+            "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-MOX-fuel.png"),
         prerequisites = { "fission-reactor-equipment", "MOX-nuclear-power" },
         effects =
         {
@@ -266,5 +267,6 @@ data:extend({
             time = 20
         }
     }
+    ]]
 })
 if settings.startup['PE-disable-MOX-reactor'].value then data.raw['technology']['MOX-nuclear-power'].effects[2] = nil end

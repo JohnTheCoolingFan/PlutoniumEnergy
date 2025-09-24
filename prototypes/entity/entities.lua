@@ -6,6 +6,8 @@ data:extend({
         type = 'reactor',
         name = 'MOX-reactor',
         icon = '__PlutoniumEnergy__/graphics/icons/MOX-reactor.png',
+        icon_size = 64,
+        mipmap_cpunt = 4,
         flags = { 'placeable-neutral', 'player-creation' },
         minable = { mining_time = 0.5, result = 'MOX-reactor' },
         max_health = 400,
@@ -46,14 +48,14 @@ data:extend({
         picture = {
             layers = {
                 {
-                    filename = '__base__/graphics/entity/nuclear-reactor/reactor.png',
+                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor.png',
                     width = 302,
                     height = 318,
                     scale = 0.3,
                     shift = util.by_pixel(-3, -7)
                 },
                 {
-                    filename = '__base__/graphics/entity/nuclear-reactor/reactor-shadow.png',
+                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-shadow.png',
                     width = 525,
                     height = 323,
                     scale = 0.25,
@@ -113,7 +115,7 @@ data:extend({
                 }
             },
             heat_picture = apply_heat_pipe_glow {
-                filename = '__base__/graphics/entity/nuclear-reactor/reactor-heated.png',
+                filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-heated.png',
                 width = 192,
                 height = 192,
                 scale = 0.3,
@@ -170,20 +172,13 @@ data:extend({
 
         default_temperature_signal = data.raw['reactor']['nuclear-reactor'].default_temperature_signal,
         circuit_wire_max_distance = data.raw['reactor']['nuclear-reactor'].circuit_wire_max_distance,
-        circuit_connector = circuit_connector_definitions.create_single(
-            universal_connector_template,
-            {
-                variation = 27,
-                main_offset = util.by_pixel(40 * 0.6, 40 * 0.6),
-                shadow_offset = util.by_pixel(45 * 0.6, 54.5 * 0.6),
-                show_shadow = false
-            }
-        )
     },
     {
         type = 'reactor',
         name = 'breeder-reactor',
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-reactor.png',
+        icon_size = 64,
+        mipmap_cpunt = 4,
         flags = { 'placeable-neutral', 'player-creation' },
         minable = { mining_time = 0.5, result = 'breeder-reactor' },
         max_health = 750,
@@ -224,14 +219,14 @@ data:extend({
         picture = {
             layers = {
                 {
-                    filename = '__base__/graphics/entity/nuclear-reactor/reactor.png',
+                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor.png',
                     width = 302,
                     height = 318,
                     shift = util.by_pixel(-5, -7),
                     scale = 0.7
                 },
                 {
-                    filename = '__base__/graphics/entity/nuclear-reactor/reactor-shadow.png',
+                    filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-shadow.png',
                     width = 525,
                     height = 323,
                     scale = 0.7,
@@ -323,7 +318,7 @@ data:extend({
             },
 
             heat_picture = apply_heat_pipe_glow {
-                filename = '__base__/graphics/entity/nuclear-reactor/reactor-heated.png',
+                filename = '__base__/graphics/entity/nuclear-reactor/hr-reactor-heated.png',
                 width = 216,
                 height = 256,
                 scale = 0.7,
@@ -383,14 +378,5 @@ data:extend({
 
         default_temperature_signal = data.raw['reactor']['nuclear-reactor'].default_temperature_signal,
         circuit_wire_max_distance = data.raw['reactor']['nuclear-reactor'].circuit_wire_max_distance,
-        circuit_connector = circuit_connector_definitions.create_single(
-            universal_connector_template,
-            {
-                variation = 27,
-                main_offset = util.by_pixel(40 * 1.4, 40 * 1.4),
-                shadow_offset = util.by_pixel(45 * 1.4, 54.5 * 1.4),
-                show_shadow = false
-            }
-        )
     }
 })

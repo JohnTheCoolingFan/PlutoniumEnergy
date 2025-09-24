@@ -64,7 +64,7 @@ local nuclear_fuel_list_items = {
 }
 -- Items that need to have the subgroup of uranium fuel cell
 local uranium_fuel_cell_list_items = {
-    'depleted-uranium-fuel-cell'
+    'used-up-uranium-fuel-cell'
     --'MOX-fuel',
     --'breeder-fuel-cell'
 }

@@ -13,14 +13,17 @@ local function reprocessing_icon(cell_icon_path, tint, secondary_tint)
     local result = {
         {
             icon = '__PlutoniumEnergy__/graphics/icons/reprocessing/reprocessing-bottom.png',
+            icon_size = 64,
             tint = secondary_tint or tint
         },
         {
             icon = cell_icon_path,
+            icon_size = 64,
             scale = 0.625 * 0.5
         },
         {
             icon = '__PlutoniumEnergy__/graphics/icons/reprocessing/reprocessing-top.png',
+            icon_size = 64,
             tint = tint
         }
     }
@@ -48,7 +51,7 @@ data:extend({
         name = 'advanced-nuclear-fuel-reprocessing',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing' },
         icons = reprocessing_icon(
-            '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
+            '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
             { 0, 1, 0, 1 }, 0.75
         ),
         icon_size = 64,
@@ -57,8 +60,8 @@ data:extend({
         enabled = false,
         allow_productivity = true,
         ingredients = {
-            { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',              amount = 25 }
+            { type = 'item',  name = 'used-up-uranium-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 25 }
         },
         energy_required = 1,
         results = {
@@ -82,7 +85,7 @@ data:extend({
         name = 'advanced-nuclear-fuel-reprocessing-with-barrelling',
         localised_name = { 'recipe-name.advanced-nuclear-fuel-reprocessing-with-barrelling' },
         icons = reprocessing_icon_barrel(
-            '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
+            '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
             { 0, 1, 0, 1 }, 0.75
         ),
         icon_size = 64,
@@ -90,9 +93,9 @@ data:extend({
         category = 'chemistry',
         enabled = false,
         ingredients = {
-            { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
-            { type = 'fluid', name = 'sulfuric-acid',              amount = 25 },
-            { type = 'item',  name = 'barrel',                     amount = 1 }
+            { type = 'item',  name = 'used-up-uranium-fuel-cell', amount = 1 },
+            { type = 'fluid', name = 'sulfuric-acid',             amount = 25 },
+            { type = 'item',  name = 'empty-barrel',              amount = 1 }
         },
         energy_required = 1,
         results = {
@@ -126,7 +129,7 @@ data:extend({
             { type = 'item', name = 'uranium-238',   amount_min = 8, amount_max = 10 },
             { type = 'item', name = 'plutonium-238', amount_min = 3, amount_max = 6 },
             { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.02 },
-            { type = 'item', name = 'barrel',        amount = 10,    ignored_by_productivity = 10 }
+            { type = 'item', name = 'empty-barrel',  amount = 10,    catalyst_amount = 10 }
         },
         crafting_machine_tint = {
             primary = { r = 0.651, g = 0.851, b = 0.075, a = 1.000 } -- #A6D913
@@ -262,7 +265,7 @@ data:extend({
                 icon_mipmaps = 4,
             },
             {
-                icon = '__base__/graphics/icons/depleted-uranium-fuel-cell.png',
+                icon = '__base__/graphics/icons/used-up-uranium-fuel-cell.png',
                 icon_size = 64,
                 icon_mipmaps = 4,
                 scale = 0.5 * 0.6,
@@ -273,9 +276,9 @@ data:extend({
         energy_required = 15,
         enabled = false,
         ingredients = {
-            { type = "item", name = 'iron-plate',                 amount = 20 },
-            { type = "item", name = 'depleted-uranium-fuel-cell', amount = 10 },
-            { type = "item", name = 'plutonium-239',              amount = 1 }
+            { type = "item", name = 'iron-plate',                amount = 20 },
+            { type = "item", name = 'used-up-uranium-fuel-cell', amount = 10 },
+            { type = "item", name = 'plutonium-239',             amount = 1 }
         },
         crafting_machine_tint = {
             primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
@@ -365,7 +368,7 @@ data:extend({
         ingredients = {
             { type = 'item',  name = 'depleted-breeder-fuel-cell', amount = 1 },
             { type = 'fluid', name = 'sulfuric-acid',              amount = 125 },
-            { type = 'item',  name = 'barrel',                     amount = 5 }
+            { type = 'item',  name = 'empty-barrel',               amount = 5 }
         },
         energy_required = 2.5,
         results = {
@@ -398,7 +401,7 @@ data:extend({
         results = {
             { type = 'item', name = 'plutonium-238', amount = 4 },
             { type = 'item', name = 'plutonium-239', amount = 2 },
-            { type = 'item', name = 'barrel',        amount = 10, ignored_by_productivity = 10 },
+            { type = 'item', name = 'empty-barrel',  amount = 10, catalyst_amount = 10 },
         },
         crafting_machine_tint = {
             primary = { r = 0.467, g = 0.000, b = 0.180, a = 1.000 } -- #77002E
@@ -459,12 +462,14 @@ data:extend({
         requester_paste_multiplier = 1
     },
 
+    --[[ -- Does not exist in 1.1
     -- Alternative equipment recipes
     {
         type = "recipe",
         name = "fission-reactor-equipment-from-plutonium",
         localised_name = { "recipe-name.fission-reactor-equipment-from-plutonium" },
         icon = "__PlutoniumEnergy__/graphics/icons/fission-reactor-equipment-from-plutonium.png",
+        icon_size = 64,
         enabled = false,
         energy_required = 10,
         allow_decomposition = false,
@@ -481,6 +486,7 @@ data:extend({
         name = "fission-reactor-equipment-from-MOX-fuel",
         localised_name = { "recipe-name.fission-reactor-equipment-from-MOX-fuel" },
         icon = "__PlutoniumEnergy__/graphics/icons/fission-reactor-equipment-from-MOX-fuel.png",
+        icon_size = 64,
         enabled = false,
         energy_required = 10,
         allow_decomposition = false,
@@ -492,6 +498,7 @@ data:extend({
         },
         results = { { type = "item", name = "fission-reactor-equipment", amount = 1 } },
     }
+    ]]
 })
 
 if mods["IndustrialRevolution3"] then

@@ -79,7 +79,7 @@ local plutonium_atomic_bomb_action =
                 tile_name = "nuclear-ground",
                 radius = 17, -- This
                 apply_projection = true,
-                tile_collision_mask = { layers = { water_tile = true } }
+                tile_collision_mask = { "water-tile" }
             },
             {
                 type = "destroy-cliffs",
@@ -174,7 +174,7 @@ local plutonium_atomic_bomb_action =
                         target_effects = {
                             type = "create-fire",
                             entity_name = "atomic-bomb-fire-flame",
-                            tile_collision_mask = { layers = { water_tile = true } }
+                            tile_collision_mask = { "water-tile" }
                         }
                     }
                 }
@@ -309,7 +309,7 @@ local plutonium_atomic_bomb_action =
                             {
                                 type = "create-entity",
                                 entity_name = "nuclear-smouldering-smoke-source",
-                                tile_collision_mask = { layers = { water_tile = true } }
+                                tile_collision_mask = { "water-tile" }
                             }
                         }
                     }
@@ -324,22 +324,12 @@ local projectiles = {}
 -- Plutonium cannon shell explosions
 local plutonium_cannon_shell_explosion = util.table.deepcopy(data.raw["explosion"]["big-explosion"])
 plutonium_cannon_shell_explosion.name = "plutonium-cannon-shell-explosion"
-plutonium_cannon_shell_explosion.icons =
-{
-    { icon = "__base__/graphics/icons/explosion.png" },
-    { icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png" }
-}
 plutonium_cannon_shell_explosion.order = "a-c-f"
 plutonium_cannon_shell_explosion.animations[1].tint = { r = 0.1, g = 0.9, b = 0.7 }
 table.insert(projectiles, plutonium_cannon_shell_explosion)
 
 local plutonium_cannon_explosion = util.table.deepcopy(data.raw["explosion"]["explosion"])
 plutonium_cannon_explosion.name = "plutonium-cannon-explosion"
-plutonium_cannon_explosion.icons =
-{
-    { icon = "__base__/graphics/icons/explosion.png" },
-    { icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png" }
-}
 plutonium_cannon_explosion.order = "a-c-e"
 for _, spritesheet in pairs(plutonium_cannon_explosion.animations) do
     spritesheet.tint = { r = 0.1, g = 0.9, b = 0.7 }
@@ -486,7 +476,7 @@ data:extend({
         },
         shadow =
         {
-            filename = "__base__/graphics/entity/artillery-projectile/shell-shadow.png",
+            filename = "__base__/graphics/entity/artillery-projectile/hr-shell-shadow.png",
             width = 64,
             height = 64,
             scale = 0.5

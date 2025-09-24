@@ -1,5 +1,3 @@
-local item_sounds = require("__base__.prototypes.item_sounds")
-
 if settings.startup['enable-plutonium-ammo'].value then
     data:extend({
         -- Ammo
@@ -9,8 +7,8 @@ if settings.startup['enable-plutonium-ammo'].value then
             icon = "__PlutoniumEnergy__/graphics/icons/plutonium-rounds-magazine.png",
             icon_size = 64,
             icon_mipmaps = 4,
-            ammo_category = "bullet",
             ammo_type = {
+                category = "bullet",
                 action = {
                     type = "direct",
                     action_delivery = {
@@ -35,11 +33,7 @@ if settings.startup['enable-plutonium-ammo'].value then
             magazine_size = 10,
             subgroup = "ammo",
             order = "a[basic-clips]-d[plutonium-rounds-magazine]",
-            inventory_move_sound = item_sounds.ammo_small_inventory_move,
-            pick_sound = item_sounds.ammo_small_inventory_pickup,
-            drop_sound = item_sounds.ammo_small_inventory_move,
             stack_size = 200,
-            weight = 40 * kg
         },
         {
             type = "ammo",
@@ -47,8 +41,8 @@ if settings.startup['enable-plutonium-ammo'].value then
             icon = "__PlutoniumEnergy__/graphics/icons/plutonium-cannon-shell.png",
             icon_size = 64,
             icon_mipmaps = 4,
-            ammo_category = "cannon-shell",
             ammo_type = {
+                category = "cannon-shell",
                 target_type = "direction",
                 action = {
                     type = "direct",
@@ -68,11 +62,7 @@ if settings.startup['enable-plutonium-ammo'].value then
             },
             subgroup = "ammo",
             order = "d[explosive-cannon-shell]-c[yplutonium]",
-            inventory_move_sound = item_sounds.ammo_large_inventory_move,
-            pick_sound = item_sounds.ammo_large_inventory_pickup,
-            drop_sound = item_sounds.ammo_large_inventory_move,
             stack_size = 100,
-            weight = 40 * kg
         },
         {
             type = "ammo",
@@ -80,8 +70,8 @@ if settings.startup['enable-plutonium-ammo'].value then
             icon = "__PlutoniumEnergy__/graphics/icons/explosive-plutonium-cannon-shell.png",
             icon_size = 64,
             icon_mipmaps = 4,
-            ammo_category = "cannon-shell",
             ammo_type = {
+                category = "cannon-shell",
                 target_type = "direction",
                 action = {
                     type = "direct",
@@ -101,11 +91,7 @@ if settings.startup['enable-plutonium-ammo'].value then
             },
             subgroup = "ammo",
             order = "d[explosive-cannon-shell]-c[zplutonium]",
-            inventory_move_sound = item_sounds.ammo_large_inventory_move,
-            pick_sound = item_sounds.ammo_large_inventory_pickup,
-            drop_sound = item_sounds.ammo_large_inventory_move,
             stack_size = 100,
-            weight = 40 * kg
         }
     })
 end
@@ -116,8 +102,8 @@ data:extend({
         icon = "__PlutoniumEnergy__/graphics/icons/plutonium-atomic-artillery-shell.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        ammo_category = "artillery-shell",
         ammo_type = {
+            category = "artillery-shell",
             target_type = "position",
             action = {
                 type = "direct",
@@ -137,6 +123,5 @@ data:extend({
         subgroup = "ammo",
         order = "d[rocket-launcher]-c[atomic-bomb]",
         stack_size = 1,
-        weight = 150 * kg
     }
 })

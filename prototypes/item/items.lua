@@ -1,5 +1,3 @@
-local item_sounds = require("__base__.prototypes.item_sounds")
-
 require("prototypes.item.ammo")
 
 data.raw['item']['heat-pipe'].order = 'f[nuclear-energy]-d[heat-pipe]'
@@ -37,11 +35,7 @@ data:extend({
         },
         subgroup = "intermediate-product",
         order = "r[uranium-238]-a[plutonium-239]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
-        weight = 50 * kg
     },
     {
         type = "item",
@@ -51,11 +45,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "intermediate-product",
         order = "r[uranium-238]-b[plutonium-238]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
-        weight = 50 * kg
     },
 
     -- Plutonium nuclear fuel (the one that burns)
@@ -92,11 +82,7 @@ data:extend({
         -- fuel_glow_color = {r = 0.1, g = 1, b = 0.1},
         subgroup = "intermediate-product",
         order = "r[uranium-processing]-f[plutonium-fuel]",
-        inventory_move_sound = item_sounds.fuel_cell_inventory_move,
-        pick_sound = item_sounds.fuel_cell_inventory_pickup,
-        drop_sound = item_sounds.fuel_cell_inventory_move,
         stack_size = 1,
-        weight = 100 * kg
     },
 
     -- Plutonium fuel cell
@@ -126,15 +112,11 @@ data:extend({
         },
         subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-c[plutonium-fuel-cell]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = "nuclear",
         burnt_result = "depleted-plutonium-fuel-cell",
         fuel_value = "20GJ",
         fuel_glow_color = { 0, 1, 1, 0 },
         stack_size = 50,
-        weight = 100 * kg
     },
     {
         type = "item",
@@ -144,11 +126,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "nuclear-plutonium",
         order = "t[depleted-plutonium-fuel-cell]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 50,
-        weight = 100 * kg
     },
 
     -- MOX fuel cell
@@ -176,14 +154,10 @@ data:extend({
         flags = {},
         subgroup = "nuclear-plutonium",
         order = "r[uranium-processing]-b[MOX-fuel-cell]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = "MOX",
         burnt_result = "depleted-MOX-fuel-cell",
         fuel_value = "3GJ",
         stack_size = 100,
-        weight = 50 * kg
     },
     {
         type = "item",
@@ -192,11 +166,7 @@ data:extend({
         icon_size = 64,
         subgroup = "nuclear-plutonium",
         order = "s[depleted-MOX-fuel-cell]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
-        weight = 50 * kg
     },
 
     -- Breeder fuel cell (nuclear)
@@ -226,14 +196,10 @@ data:extend({
         },
         subgroup = 'nuclear-breeding',
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-a[regular]',
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         fuel_category = 'nuclear-breeder',
         burnt_result = 'depleted-breeder-fuel-cell',
         fuel_value = '10GJ',
         stack_size = 5,
-        weight = 1000 * kg
     },
     {
         type = 'item',
@@ -243,11 +209,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = 'nuclear-breeding',
         order = 's[depleted-xbreeder-fuel-cell]',
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 5,
-        weight = 1000 * kg
     },
 
     -- Machines
@@ -259,12 +221,8 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "energy",
         order = "f[nuclear-energy]-b[MOX-reactor]",
-        inventory_move_sound = item_sounds.reactor_inventory_move,
-        pick_sound = item_sounds.reactor_inventory_pickup,
-        drop_sound = item_sounds.reactor_inventory_move,
         place_result = "MOX-reactor",
         stack_size = 10,
-        weight = 0.5 * tons,
     },
     {
         type = "item",
@@ -274,11 +232,7 @@ data:extend({
         icon_mipmaps = 4,
         subgroup = "energy",
         order = "f[nuclear-energy]-c[breeder-reactor]",
-        inventory_move_sound = item_sounds.reactor_inventory_move,
-        pick_sound = item_sounds.reactor_inventory_pickup,
-        drop_sound = item_sounds.reactor_inventory_move,
         place_result = "breeder-reactor",
         stack_size = 10,
-        weight = 2 * tons,
     }
 })
