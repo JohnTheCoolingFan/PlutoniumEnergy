@@ -214,7 +214,7 @@ data:extend({
         },
         heat_connection_patches_disconnected = {
             sheet = apply_heat_pipe_glow {
-                filename = '__PlutoniumEn2.5ergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
+                filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-connect-patches-heated.png',
                 width = 32,
                 height = 32,
                 variation_count = 8,
