@@ -3,6 +3,8 @@ Version: 1.8.0
 Date: 2025-09-26
   Minor Changes:
     - Factorio 2.0 re-release
+  Fixes:
+    - Hidden some prototypes that are not supposed to be in factoriopedia
 ---------------------------------------------------------------------------------------------------
 Version: 1.7.16
 Date: 2025-09-24

@@ -354,6 +354,7 @@ data:extend({
     {
         type = "projectile",
         name = "plutonium-cannon-projectile",
+        hidden_in_factoriopedia = true,
         flags = { "not-on-map" },
         collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
         acceleration = 0,
@@ -404,6 +405,7 @@ data:extend({
     {
         type = "projectile",
         name = "explosive-plutonium-cannon-projectile",
+        hidden_in_factoriopedia = true,
         flags = { "not-on-map" },
         collision_box = { { -0.3, -1.1 }, { 0.3, 1.1 } },
         acceleration = 0,
@@ -473,6 +475,7 @@ data:extend({
     {
         type = "artillery-projectile",
         name = "plutonium-atomic-artillery-projectile",
+        hidden_in_factoriopedia = true,
         flags = { "not-on-map" },
         reveal_map = true,
         map_color = { r = 0, g = 1, b = 1 },
