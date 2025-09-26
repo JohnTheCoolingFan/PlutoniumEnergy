@@ -19,14 +19,14 @@ The localization has been migrated to Crowdin: https://crowdin.com/project/facto
 
 More info can be found here: https://github.com/dima74/factorio-mods-localization?tab=readme-ov-file#how-to-translate-using-crowdin
 
-The localization is usually synced into the git tree on saturdays, 4:30 AM UTC. An update would be released regularly to add the new localization.
+The localization is usually synced into the git tree on Saturday, 4:30 AM UTC. An update would be released regularly to add the new localization.
 
 #### Mod compatibility
 
 I didn't do much of specialised compatibility with other mods unless specified (here or in optional dependencies).
 
 * Krastorio 2 compatibility mod by Midnighttigger: https://mods.factorio.com/mod/plutoniumenergy-krastorio2
-* Anotehr Krastorio 2 compatibility mod by peikk0: https://mods.factorio.com/mod/plutonium-energy-k2-bz-compat
+* Another Krastorio 2 compatibility mod by peikk0: https://mods.factorio.com/mod/plutonium-energy-k2-bz-compat
 * Adjusted recipes for IR3
 * Specialized compatibility with Schall's Radioactive Waste
 * Fixes to work with Bob's Metals, Chemicals and Intermediates
