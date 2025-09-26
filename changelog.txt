@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.7.16
+Date: 2025-09-24
+  Changes:
+    - Downgrade to Factorio 1.1 to fix a bunch of bugs
+  Fixes:
+    - Fixed the error on load with low resolution sprites
+---------------------------------------------------------------------------------------------------
 Version: 1.7.15
 Date: 2025-07-26
   Fixes:
