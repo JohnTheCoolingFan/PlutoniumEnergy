@@ -63,7 +63,33 @@ local atomic_bomb_fire = util.table.deepcopy(data.raw['fire']['fire-flame'])
 atomic_bomb_fire.name = 'atomic-bomb-fire-flame'
 atomic_bomb_fire.initial_lifetime = 2700
 
-data:extend({ atomic_bomb_fire })
+local plutonium_nuke_explosion = util.table.deepcopy(data.raw['explosion']['nuke-explosion'])
+plutonium_nuke_explosion.name = 'plutonium-nuke-explosion'
+plutonium_nuke_explosion.animations.scale = plutonium_nuke_explosion.animations.scale * 3
+plutonium_nuke_explosion.animations.shift = util.by_pixel(0.5, -122.5 * 3)
+
+data:extend({ atomic_bomb_fire, plutonium_nuke_explosion })
+
+local function fire_area(radius, count)
+    return {
+        type = "nested-result",
+        action = {
+            type = "area",
+            target_entities = false,
+            trigger_from_target = true,
+            repeat_count = count,
+            radius = radius,
+            action_delivery = {
+                type = "instant",
+                target_effects = {
+                    type = "create-fire",
+                    entity_name = "atomic-bomb-fire-flame",
+                    tile_collision_mask = { layers = { water_tile = true } }
+                }
+            }
+        }
+    }
+end
 
 -- Plutonium Atomic bomb action (explosion)
 local plutonium_atomic_bomb_action =
@@ -88,7 +114,7 @@ local plutonium_atomic_bomb_action =
             },
             {
                 type = "create-entity",
-                entity_name = "nuke-explosion"
+                entity_name = "plutonium-nuke-explosion"
             },
             {
                 type = "camera-effect",
@@ -161,24 +187,10 @@ local plutonium_atomic_bomb_action =
                 apply_projection = true,
                 spread_evenly = true
             },
-            {
-                type = "nested-result",
-                action = {
-                    type = "area",
-                    target_entities = false,
-                    trigger_from_target = true,
-                    repeat_count = 2000,
-                    radius = 35,
-                    action_delivery = {
-                        type = "instant",
-                        target_effects = {
-                            type = "create-fire",
-                            entity_name = "atomic-bomb-fire-flame",
-                            tile_collision_mask = { layers = { water_tile = true } }
-                        }
-                    }
-                }
-            },
+            fire_area(50, 50),
+            fire_area(40, 500),
+            fire_area(20, 500),
+            fire_area(15, 200),
             {
                 type = "nested-result",
                 action =
