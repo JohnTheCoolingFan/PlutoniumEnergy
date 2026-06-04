@@ -1,6 +1,40 @@
 require("util")
 require("circuit-connector-sprites")
 
+local function neighbour_connections_cross(side_length, category)
+    if category == nil then
+        category = "nuclear-reactor"
+    end
+    local extent = side_length / 2.0
+    return {
+        connections = {
+            { location = { position = { 0, -extent }, direction = defines.direction.north }, category = category, neighbour_category = { category } },
+            { location = { position = { extent, 0 }, direction = defines.direction.east },   category = category, neighbour_category = { category } },
+            { location = { position = { 0, extent }, direction = defines.direction.south },  category = category, neighbour_category = { category } },
+            { location = { position = { -extent, 0 }, direction = defines.direction.west },  category = category, neighbour_category = { category } },
+        }
+    }
+end
+
+local function neighbour_connections_knight(side_length, offset, category)
+    if category == nil then
+        category = "nuclear-reactor"
+    end
+    local extent = side_length / 2.0
+    return {
+        connections = {
+            { location = { position = { offset, -extent }, direction = defines.direction.north },  category = category, neighbour_category = { category } },
+            { location = { position = { extent, offset }, direction = defines.direction.east },    category = category, neighbour_category = { category } },
+            { location = { position = { offset, extent }, direction = defines.direction.south },   category = category, neighbour_category = { category } },
+            { location = { position = { -extent, offset }, direction = defines.direction.west },   category = category, neighbour_category = { category } },
+            { location = { position = { -offset, -extent }, direction = defines.direction.north }, category = category, neighbour_category = { category } },
+            { location = { position = { extent, -offset }, direction = defines.direction.east },   category = category, neighbour_category = { category } },
+            { location = { position = { -offset, extent }, direction = defines.direction.south },  category = category, neighbour_category = { category } },
+            { location = { position = { -extent, -offset }, direction = defines.direction.west },  category = category, neighbour_category = { category } },
+        }
+    }
+end
+
 data:extend({
     {
         type = 'reactor',
@@ -13,6 +47,7 @@ data:extend({
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = '20MW',
         neighbour_bonus = 1.5,
+        neighbour_connectable = neighbour_connections_cross(3.0),
         energy_source = {
             type = 'burner',
             fuel_categories = { 'MOX' },
@@ -191,6 +226,7 @@ data:extend({
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = "20MW",
         neighbour_bonus = 0.5,
+        neighbour_connectable = neighbour_connections_knight(7.0, 2.0),
         energy_source = {
             type = 'burner',
             fuel_categories = { 'nuclear-breeder' },
@@ -394,3 +430,5 @@ data:extend({
         )
     }
 })
+
+data.raw['reactor']['nuclear-reactor'].neighbour_connectable = neighbour_connections_knight(5.0, 1.0)
