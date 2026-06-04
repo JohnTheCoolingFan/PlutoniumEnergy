@@ -53,7 +53,7 @@ data:extend({
         ),
         icon_size = 64,
         icon_mipmamps = 4,
-        category = 'chemistry',
+        categories = { 'chemistry' },
         enabled = false,
         allow_productivity = true,
         ingredients = {
@@ -87,7 +87,7 @@ data:extend({
         ),
         icon_size = 64,
         icon_mipmamps = 4,
-        category = 'chemistry',
+        categories = { 'chemistry' },
         enabled = false,
         ingredients = {
             { type = 'item',  name = 'depleted-uranium-fuel-cell', amount = 1 },
@@ -115,7 +115,7 @@ data:extend({
         name = 'uranium-fuel-cell-waste-solution-centrifuging',
         icon = '__PlutoniumEnergy__/graphics/icons/uranium-fuel-cell-waste-solution-centrifuging.png',
         icon_size = 64,
-        category = 'centrifuging',
+        categories = { 'centrifuging' },
         enabled = false,
         allow_productivity = true,
         ingredients = {
@@ -125,7 +125,7 @@ data:extend({
         results = {
             { type = 'item', name = 'uranium-238',   amount_min = 8, amount_max = 10 },
             { type = 'item', name = 'plutonium-238', amount_min = 3, amount_max = 6 },
-            { type = 'item', name = 'plutonium-239', amount = 1,     probability = 0.02 },
+            { type = 'item', name = 'plutonium-239', amount = 1,     independent_probability = 0.02 },
             { type = 'item', name = 'barrel',        amount = 10,    ignored_by_productivity = 10 }
         },
         crafting_machine_tint = {
@@ -157,7 +157,7 @@ data:extend({
         energy_required = 50,
         enabled = false,
         allow_productivity = true,
-        category = "centrifuging",
+        categories = { "centrifuging" },
         ingredients = {
             { type = "item", name = "depleted-plutonium-fuel-cell", amount = 10 }
         },
@@ -178,7 +178,7 @@ data:extend({
                 type = "item",
                 name = "plutonium-239",
                 amount = 1,
-                probability = 0.01
+                independent_probability = 0.01
             },
             {
                 type = "item",
@@ -209,7 +209,7 @@ data:extend({
         energy_required = 50,
         enabled = false,
         allow_productivity = true,
-        category = "centrifuging",
+        categories = { "centrifuging" },
         ingredients = { { type = "item", name = "depleted-MOX-fuel-cell", amount = 20 } },
         icons = reprocessing_icon(
             '__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png',
@@ -269,7 +269,7 @@ data:extend({
                 shift = { 8, -8 }
             }
         },
-        category = 'centrifuging',
+        categories = { 'centrifuging' },
         energy_required = 15,
         enabled = false,
         ingredients = {
@@ -301,7 +301,7 @@ data:extend({
                 shift = { 8, -8 }
             }
         },
-        category = 'centrifuging',
+        categories = { 'centrifuging' },
         energy_required = 7.5,
         enabled = false,
         ingredients = {
@@ -326,7 +326,7 @@ data:extend({
         ),
         icon_size = 64,
         icon_mipmamps = 4,
-        category = 'chemistry',
+        categories = { 'chemistry' },
         enabled = false,
         allow_productivity = true,
         ingredients = {
@@ -360,7 +360,7 @@ data:extend({
         ),
         icon_size = 64,
         icon_mipmamps = 4,
-        category = 'chemistry',
+        categories = { 'chemistry' },
         enabled = false,
         ingredients = {
             { type = 'item',  name = 'depleted-breeder-fuel-cell', amount = 1 },
@@ -388,7 +388,7 @@ data:extend({
         name = 'breeder-fuel-cell-waste-solution-centrifuging',
         icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell-waste-solution-centrifuging.png',
         icon_size = 64,
-        category = 'centrifuging',
+        categories = { 'centrifuging' },
         enabled = false,
         allow_productivity = true,
         ingredients = {
@@ -415,7 +415,7 @@ data:extend({
         energy_required = 90,
         enabled = false,
         allow_productivity = true,
-        category = "centrifuging",
+        categories = { "centrifuging" },
         ingredients = {
             { type = "item", name = "plutonium-239", amount = 1 },
             { type = "item", name = "rocket-fuel",   amount = 1 }
