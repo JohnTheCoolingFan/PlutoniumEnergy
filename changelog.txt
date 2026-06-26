@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.8.2
+Date: 2026-06-26
+  Changes:
+    - Factorio 2.1 compatibility
+    - Improved visuals of the atomic artillery explosion
+    - All the reactors can get neighbour bonuses from each other now
+    - Breeder nuclear reactor and regular reactor have more neighbour connection points.
+      Aligning at least 2 heat pipes would be enough for every reactor, to put simply.
+      For a more informative illustration, see https://imgur.com/80KcK9e
+---------------------------------------------------------------------------------------------------
 Version: 1.8.1
 Date: 2026-05-29
   Localization:
