@@ -131,6 +131,13 @@ data:extend({
                     shift = util.by_pixel(-3, -7)
                 },
                 {
+                    filename = '__PlutoniumEnergy__/graphics/entity/MOX-reactor/MOX-reactor-window.png',
+                    width = 302,
+                    height = 318,
+                    shift = util.by_pixel(-3, -7),
+                    scale = 0.3
+                },
+                {
                     filename = '__base__/graphics/entity/nuclear-reactor/reactor-shadow.png',
                     width = 525,
                     height = 323,
@@ -316,6 +323,13 @@ data:extend({
             layers = {
                 {
                     filename = '__base__/graphics/entity/nuclear-reactor/reactor.png',
+                    width = 302,
+                    height = 318,
+                    shift = util.by_pixel(-5, -7),
+                    scale = 0.7
+                },
+                {
+                    filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-window.png',
                     width = 302,
                     height = 318,
                     shift = util.by_pixel(-5, -7),
