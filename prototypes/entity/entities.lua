@@ -256,7 +256,18 @@ data:extend({
                 shadow_offset = util.by_pixel(45 * 0.6, 54.5 * 0.6),
                 show_shadow = false
             }
-        )
+        ),
+        water_reflection =
+        {
+            pictures =
+            {
+                filename = "__base__/graphics/entity/nuclear-reactor/nuclear-reactor-reflection.png",
+                width = 74,
+                height = 74,
+                scale = 5 * 0.6,
+            },
+            rotate = false,
+        }
     },
     {
         type = 'reactor',
@@ -471,7 +482,18 @@ data:extend({
                 shadow_offset = util.by_pixel(45 * 1.4, 54.5 * 1.4),
                 show_shadow = false
             }
-        )
+        ),
+        water_reflection =
+        {
+            pictures =
+            {
+                filename = "__base__/graphics/entity/nuclear-reactor/nuclear-reactor-reflection.png",
+                width = 74,
+                height = 74,
+                scale = 5 * 1.4,
+            },
+            rotate = false,
+        }
     }
 })
 
