@@ -1,6 +1,7 @@
 require("util")
 require("circuit-connector-sprites")
 
+-- returns reactor neighbour connections in the middle of every side
 local function neighbour_connections_cross(side_length, category)
     if category == nil then
         category = "nuclear-reactor"
@@ -16,6 +17,7 @@ local function neighbour_connections_cross(side_length, category)
     }
 end
 
+-- returns reactor neighbour connections in pairs offset from the middle
 local function neighbour_connections_knight(side_length, offset, category)
     if category == nil then
         category = "nuclear-reactor"
@@ -33,6 +35,47 @@ local function neighbour_connections_knight(side_length, offset, category)
             { location = { position = { -extent, -offset }, direction = defines.direction.west },  category = category, neighbour_category = { category } },
         }
     }
+end
+
+-- returns reactor neighbour connections between each pair of pip connections (assumign connections in corners, 2 tiles apart from centers, and odd side length)
+local function neighbour_connections_every_two(side_length, category)
+    local function rotate_90(vec, dir)
+        if dir == defines.direction.north then
+            return vec
+        elseif dir == defines.direction.west then
+            return { vec[2], -vec[1] }
+        elseif dir == defines.direction.south then
+            return { -vec[1], -vec[2] }
+        elseif dir == defines.direction.east then
+            return { -vec[2], vec[1] }
+        else
+            error("Invalid direction specified")
+        end
+    end
+
+    if category == nil then
+        category = "nuclear-reactor"
+    end
+
+    local iterend = (side_length / 2.0) - 1.5
+    local iterstart = -iterend
+    local result = {}
+
+    for _, direction in pairs({ defines.direction.north, defines.direction.east, defines.direction.south, defines.direction.west }) do
+        if side_length < 5 then
+            pos = rotate_90({ 0.0, -side_length / 2.0 }, direction)
+
+            table.insert(result,
+                { location = { position = pos, direction = direction }, category = category, neighbour_category = { category } })
+        else
+            for x = iterstart, iterend, 2 do
+                local pos = rotate_90({ x, -side_length / 2.0 }, direction)
+                table.insert(result,
+                    { location = { position = pos, direction = direction }, category = category, neighbour_category = { category } })
+            end
+        end
+    end
+    return { connections = result }
 end
 
 data:extend({
@@ -226,7 +269,8 @@ data:extend({
         dying_explosion = 'nuclear-reactor-explosion',
         consumption = "20MW",
         neighbour_bonus = 0.5,
-        neighbour_connectable = neighbour_connections_knight(7.0, 2.0),
+        --neighbour_connectable = neighbour_connections_knight(7.0, 2.0),
+        neighbour_connectable = neighbour_connections_every_two(7.0),
         energy_source = {
             type = 'burner',
             fuel_categories = { 'nuclear-breeder' },
@@ -431,4 +475,4 @@ data:extend({
     }
 })
 
-data.raw['reactor']['nuclear-reactor'].neighbour_connectable = neighbour_connections_knight(5.0, 1.0)
+data.raw['reactor']['nuclear-reactor'].neighbour_connectable = neighbour_connections_every_two(5.0)
