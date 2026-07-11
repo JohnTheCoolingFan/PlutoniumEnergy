@@ -311,7 +311,7 @@ data:extend({
             scale = 0.5,
             shift = util.by_pixel(-1, -5)
         },
-        heat_lower_layer_picture = { -- TODO: connect pipes nicely
+        heat_lower_layer_picture = apply_heat_pipe_glow { -- TODO: connect pipes nicely
             filename = '__PlutoniumEnergy__/graphics/entity/breeder-reactor/breeder-reactor-pipes-heated.png',
             width = 448,
             height = 444,
