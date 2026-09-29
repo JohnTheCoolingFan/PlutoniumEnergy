@@ -58,3 +58,22 @@ Removing Pu-239 from Plutonium fuel cell reprocessing as it serves no purpose re
 | cell                   | U-238 | U-235 | Pu-238 | Pu-239 | Energy (raw, without bonus) |
 | ---------------------- | ----- | ----- | ------ | ------ | --------------------------- |
 | plutonium x10          | -15   | 0     | -2     | -1     | 200 GJ                      |
+
+## 1.9.0, for real for real
+
+Alright, the final 1.9.0 table looks like this:
+
+| cell                   | U-238 | U-235 | Pu-238 | Pu-239 | Energy (raw, without bonus) |
+| ---------------------- | ----- | ----- | ------ | ------ | --------------------------- |
+| uranium (normal) x10   | -13   | -1    | 0      | 0      | 80 GJ                       |
+| uranium (advanced) x10 | -10   | -1    | +4.5   | +0.02  | 80 GJ                       |
+| MOX (normal) x20       | -15   | 0     | -5     | 0      | 60 GJ                       |
+| plutonium x10          | -15   | 0     | -2     | -1     | 200 GJ                      |
+| Normal Breeder x2      | -19   | 0     | +4     | +1     | 20 GJ                       |
+| Uranium (breeder) x10  | -19   | -1    | +8     | +3     | 120 GJ                      |
+
+This makes a clear loop of producing Plutonium-239 through depleted uranium fuel cell breeding and that being consumed by the Plutonium fuel cells. An excess of Plutonium-238 (which either of the breeding recipes produce in relation to the Plutonium fuel cell) can be consumed by the MOX fuel cells, which have their niches as either part of a mixed-size reactor setup or a dense heat generator (though, how useful that is for space platforms is unclear)
+
+Anyway, this is jsut a word dump for me to easier process the changes :)
+
+This file will be deleted before the changes are merged into main. But have fun reading from the git log :)
