@@ -2,14 +2,14 @@
 
 ## Description
 
-This mod adds new nuclear material - Plutonium (238 and 239 isotopes). You can get it by using an advanced reprocessing process for Uranium nuclear fuel.
+This mod adds a new type of nuclear material - Plutonium (238 and 239 isotopes). You can get it by using an advanced reprocessing process of Uranium nuclear fuel.
 ![Advanced Nuclear fuel reprocessing](.img/Advanced%20Nuclear%20fuel%20Reprocessing.png)
-With the new material, you can make Plutonium-based nuclear fuel for the regular reactor or MOX fuel, which is a mix of Uranium and Plutonium. the MOX reactor is smaller and has a lower energy output alone, but has an increased neighbour bonus.
+With this new material, you can make Plutonium-based nuclear fuel for the regular reactor, as well as MOX fuel out of the more common isotopes. The MOX reactor is smaller and has a lower energy output alone, but the neighbour bonus is increased and the cells produce no waste.
 ![Plutonium Energy generation](.img/Plutonium%20Energy%20generation.png)
-If you want to produce a lot of Plutonium, you will need to use Nuclear Breeding. It's a way to generate more Plutonium by burning a cell in a special Breeder reactor.
+Nuclear Breeding is a gateway to producing Plutonium in large quantities by burning a cell in a special reactor.
 ![Nuclear breeding](.img/Nuclear%20Breeding.png)
-And with energy generation part comes along destructive part. This mod also adds plutonium ammo - cannon shells, machine gun / pistol ammo, plutonium atomic bomb, which speaking with numbers is around 1.4 times more powerful than uranium one.
-And as an explosive cherry on top - the Plutonium Atomic bomb is an Artillery Shell with a very powerful explosion
+Besides energy generation, Plutonium also has a use for destruction. This mod adds plutonium ammo - cannon shells, machine gun / pistol ammo.
+And of course - the Plutonium Atomic bomb. It's an Artillery shell with a very powerful explosion.
 ![Plutonium Artillery shell explosion](.img/Plutonium%20nuke.mp4)
 
 
