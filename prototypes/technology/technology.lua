@@ -98,11 +98,7 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "plutonium-fuel-cell-reprocessing"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "MOX-fuel-cell-reprocessing"
-            },
+            }
         },
         prerequisites = { "plutonium-nuclear-power", "MOX-nuclear-power" },
         unit = {
@@ -189,34 +185,10 @@ data:extend({
         order = 'e-p-d-b'
     },
     {
-        type = 'technology',
-        name = 'breeder-fuel-cell-from-MOX-fuel-cell',
-        icon_size = 256,
-        icon = '__PlutoniumEnergy__/graphics/technology/breeder-fuel-cell-from-MOX-fuel-cell.png',
-        effects = {
-            {
-                type = 'unlock-recipe',
-                recipe = 'breeder-fuel-cell-from-MOX-fuel-cell'
-            }
-        },
-        prerequisites = { 'nuclear-breeding', 'plutonium-reprocessing' },
-        unit = {
-            ingredients = {
-                { 'automation-science-pack', 1 },
-                { 'logistic-science-pack',   1 },
-                { 'chemical-science-pack',   1 },
-                { 'production-science-pack', 1 }
-            },
-            time = 30,
-            count = 500
-        },
-        order = 'e-p-d-b'
-    },
-    {
         type = "technology",
         name = "fission-reactor-equipment-from-plutonium",
         icons = util.technology_icon_constant_equipment(
-        "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-plutonium.png"),
+            "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-plutonium.png"),
         prerequisites = { "fission-reactor-equipment", "plutonium-nuclear-power" },
         effects =
         {
@@ -243,7 +215,7 @@ data:extend({
         type = "technology",
         name = "fission-reactor-equipment-from-MOX-fuel",
         icons = util.technology_icon_constant_equipment(
-        "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-MOX-fuel.png"),
+            "__PlutoniumEnergy__/graphics/technology/fission-reactor-equipment-from-MOX-fuel.png"),
         prerequisites = { "fission-reactor-equipment", "MOX-nuclear-power" },
         effects =
         {

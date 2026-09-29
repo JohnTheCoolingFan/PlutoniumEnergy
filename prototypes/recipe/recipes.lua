@@ -176,14 +176,8 @@ data:extend({
         results = {
             {
                 type = "item",
-                name = "plutonium-239",
-                amount = 1,
-                independent_probability = 0.01
-            },
-            {
-                type = "item",
                 name = "plutonium-238",
-                amount = 4
+                amount = 2
             }
         },
         allow_decomposition = false
@@ -282,38 +276,6 @@ data:extend({
         },
         order = 'r[uranium-processing]-b[obreeder-fuel-cell]-b[uranium]',
         results = { { type = "item", name = 'breeder-fuel-cell', amount = 4 } },
-        allow_decomposition = false
-    },
-    {
-        type = 'recipe',
-        name = 'breeder-fuel-cell-from-MOX-fuel-cell',
-        icons = {
-            {
-                icon = '__PlutoniumEnergy__/graphics/icons/breeder-fuel-cell.png',
-                icon_size = 64,
-                icon_mipmaps = 4,
-            },
-            {
-                icon = '__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png',
-                icon_size = 64,
-                icon_mipmaps = 4,
-                scale = 0.5 * 0.6,
-                shift = { 8, -8 }
-            }
-        },
-        categories = { 'centrifuging' },
-        energy_required = 7.5,
-        enabled = false,
-        ingredients = {
-            { type = "item", name = 'iron-plate',             amount = 10 },
-            { type = "item", name = 'depleted-MOX-fuel-cell', amount = 5 },
-            { type = "item", name = 'uranium-238',            amount = 10 }
-        },
-        crafting_machine_tint = {
-            primary = { r = 1.000, g = 0.000, b = 0.388, a = 1.000 } -- #FF0063
-        },
-        order = 'r[uranium-processing]-b[obreeder-fuel-cell]-c[mox]',
-        results = { { type = "item", name = 'breeder-fuel-cell', amount = 2 } },
         allow_decomposition = false
     },
     {

@@ -52,3 +52,9 @@ This makes MOX:
 > Regular reprocessing of biphasic spent MOX is difficult because of the low solubility of PuO2 in nitric acid
 
 The dissolving step of reprocessing could also output the Plutonium contents immediately, with centrifuging being required for recovering the extra uranium.
+
+Removing Pu-239 from Plutonium fuel cell reprocessing as it serves no purpose really, and reducing the reprocessing Pu-238 output
+
+| cell                   | U-238 | U-235 | Pu-238 | Pu-239 | Energy (raw, without bonus) |
+| ---------------------- | ----- | ----- | ------ | ------ | --------------------------- |
+| plutonium x10          | -15   | 0     | -2     | -1     | 200 GJ                      |

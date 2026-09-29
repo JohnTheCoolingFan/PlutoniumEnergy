@@ -180,21 +180,7 @@ data:extend({
         pick_sound = item_sounds.nuclear_inventory_pickup,
         drop_sound = item_sounds.nuclear_inventory_move,
         fuel_categories = { "MOX" },
-        burnt_result = "depleted-MOX-fuel-cell",
         fuel_value = "3GJ",
-        stack_size = 100,
-        weight = 50 * kg
-    },
-    {
-        type = "item",
-        name = "depleted-MOX-fuel-cell",
-        icon = "__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png",
-        icon_size = 64,
-        subgroup = "nuclear-plutonium",
-        order = "s[depleted-MOX-fuel-cell]",
-        inventory_move_sound = item_sounds.nuclear_inventory_move,
-        pick_sound = item_sounds.nuclear_inventory_pickup,
-        drop_sound = item_sounds.nuclear_inventory_move,
         stack_size = 100,
         weight = 50 * kg
     },
