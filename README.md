@@ -41,12 +41,12 @@ I didn't do much of specialised compatibility with other mods unless specified (
 
 #### Other mods about nuclear energy:
 
-*   [Realistic Reactors](https://mods.factorio.com/mod/RealisticReactors) - Impressing mod that makes reactors more complicated and realistic. Has support for other mods, partially Plutonium Energy. Full support from PE side is planned.
-*   [RITEG](https://mods.factorio.com/mod/RITEG) - Good mod that adds [RITEGs](https://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator)
-*   [Realistic Reactor Glow](https://mods.factorio.com/mod/RealisticReactorGlow) - Changes reactor's glow from green to more realistic cyan (Similar to how MOX reactor glows)
+* [Realistic Reactors](https://mods.factorio.com/mod/RealisticReactors) - Impressing mod that makes reactors more complicated and realistic. Has support for other mods, partially Plutonium Energy. Full support from PE side is planned.
+* [RITEG](https://mods.factorio.com/mod/RITEG) - Good mod that adds [RITEGs](https://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator)
+* [Realistic Reactor Glow](https://mods.factorio.com/mod/RealisticReactorGlow) - Changes reactor's glow from green to more realistic cyan (Similar to how MOX reactor glows)
 
 Other mods made by me:
 
-*   [Random Factorio Things](https://mods.factorio.com/mods/John_TheCF/RandomFactorioThings)
-*   [No Artillery Map Reveal](https://mods.factorio.com/mods/John_TheCF/NoArtilleryMapReveal)
-*   [Placeable-off-grid](https://mods.factorio.com/mod/PlaceableOffGrid)
+* [Random Factorio Things](https://mods.factorio.com/mods/John_TheCF/RandomFactorioThings)
+* [No Artillery Map Reveal](https://mods.factorio.com/mods/John_TheCF/NoArtilleryMapReveal)
+* [Placeable-off-grid](https://mods.factorio.com/mod/PlaceableOffGrid)
