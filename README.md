@@ -4,14 +4,19 @@
 
 This mod adds a new type of nuclear material - Plutonium (238 and 239 isotopes). You can get it by using an advanced reprocessing process of Uranium nuclear fuel.
 ![Advanced Nuclear fuel reprocessing](.img/Advanced%20Nuclear%20fuel%20Reprocessing.png)
+
 With this new material, you can make Plutonium-based nuclear fuel for the regular reactor, as well as MOX fuel out of the more common isotopes. The MOX reactor is smaller and has a lower energy output alone, but the neighbour bonus is increased and the cells produce no waste.
 ![Plutonium Energy generation](.img/Plutonium%20Energy%20generation.png)
+
 Nuclear Breeding is a gateway to producing Plutonium in large quantities by burning a cell in a special reactor.
 ![Nuclear breeding](.img/Nuclear%20Breeding.png)
+
 Besides energy generation, Plutonium also has a use for destruction. This mod adds plutonium ammo - cannon shells, machine gun / pistol ammo.
 And of course - the Plutonium Atomic bomb. It's an Artillery shell with a very powerful explosion.
 ![Plutonium Artillery shell explosion](.img/Plutonium%20nuke.mp4)
 
+Since Factorio 2.1 (mod version 1.8.2), mods can set custom reactor neighbour connectivity. Plutonium Energy makes use of that feature, allowing to mix and match reactors, and overall making the connection requirements more lenient. The standard reactor has been changed as well.
+![Reactor Connectivity](.img/Reactor%20Connectivity.png)
 
 #### Available languages:
 
