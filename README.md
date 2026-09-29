@@ -45,12 +45,3 @@ Other mods made by me:
 *   [Random Factorio Things](https://mods.factorio.com/mods/John_TheCF/RandomFactorioThings)
 *   [No Artillery Map Reveal](https://mods.factorio.com/mods/John_TheCF/NoArtilleryMapReveal)
 *   [Placeable-off-grid](https://mods.factorio.com/mod/PlaceableOffGrid)
-
-Mod source code is also available at [Gitlab](https://gitlab.com/JohnTheCoolingFan/PlutoniumEnergy) (Mirrored from github)
-
-# Support
-
-If you would like to support me, you can donate me via cryptocurrencies:
-ETH: `0x00c6aefcc4987393394587CCdcCb4f465aF9a67d` - accepts eth and other tokens on the ethereum network.
-
-You can also contact me on discord, if you would like to donate in some other way.
