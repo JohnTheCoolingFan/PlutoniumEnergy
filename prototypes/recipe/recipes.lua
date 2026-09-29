@@ -197,40 +197,6 @@ data:extend({
         },
         results = { { type = "item", name = "MOX-fuel-cell", amount = 20 } },
     },
-    {
-        type = "recipe",
-        name = "MOX-fuel-cell-reprocessing",
-        energy_required = 50,
-        enabled = false,
-        allow_productivity = true,
-        categories = { "centrifuging" },
-        ingredients = { { type = "item", name = "depleted-MOX-fuel-cell", amount = 20 } },
-        icons = reprocessing_icon(
-            '__PlutoniumEnergy__/graphics/icons/depleted-MOX-fuel-cell.png',
-            { 0, 1, 0.5, 1 }, 0.75
-        ),
-        icon_size = 64,
-        icon_mipmaps = 4,
-        subgroup = "nuclear-plutonium",
-        order = "r[uranium-processing]-c[reprocessing]-c[MOX]",
-        main_product = "",
-        crafting_machine_tint = {
-            primary = { r = 0.000, g = 1.000, b = 0.7, a = 1.000 }
-        },
-        results = {
-            {
-                type = "item",
-                name = "plutonium-238",
-                amount = 3
-            },
-            {
-                type = "item",
-                name = "uranium-238",
-                amount = 4
-            }
-        },
-        allow_decomposition = false
-    },
 
     -- Breeder fuel cell
     {
