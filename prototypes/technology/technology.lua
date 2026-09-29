@@ -1,5 +1,13 @@
 require("prototypes.technology.ammo")
 
+--[[
+--
+-- Plutonium processing -> Nuclear breeding (trigger unlock on Pu-239) -> Plutonium power -> Pu reprocessing
+--                     '-> MOX power -> MOX personal fission          '                  '-> Pu personal fission
+--                                                                    '-> Breeder from depleted Uranium
+--
+--]]
+
 data:extend({
     {
         type = "technology",
@@ -21,7 +29,7 @@ data:extend({
                 recipe = 'uranium-fuel-cell-waste-solution-centrifuging'
             }
         },
-        prerequisites = { "uranium-processing", "nuclear-fuel-reprocessing", "fluid-handling" },
+        prerequisites = { "kovarex-enrichment-process", "nuclear-fuel-reprocessing", "fluid-handling" },
         unit = {
             ingredients = {
                 { "automation-science-pack", 1 },
@@ -31,85 +39,6 @@ data:extend({
             },
             time = 30,
             count = 1000
-        },
-        order = "e-p-b-d"
-    },
-    {
-        type = "technology",
-        name = "plutonium-nuclear-power",
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png",
-        icon_size = 256,
-        icon_mipmaps = 4,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-fuel-cell"
-            }
-        },
-        prerequisites = { "plutonium-processing" },
-        unit = {
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "chemical-science-pack",   1 },
-                { "production-science-pack", 1 }
-            },
-            time = 35,
-            count = 750
-        },
-        order = "e-p-b-d"
-    },
-    {
-        type = "technology",
-        name = "MOX-nuclear-power",
-        icon = "__PlutoniumEnergy__/graphics/technology/MOX-nuclear-power.png",
-        icon_size = 256,
-        icon_mipmaps = 4,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "MOX-fuel-cell"
-            },
-            {
-                type = "unlock-recipe",
-                recipe = "MOX-reactor"
-            }
-        },
-        prerequisites = { "plutonium-processing" },
-        unit = {
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "chemical-science-pack",   1 },
-                { "production-science-pack", 1 }
-            },
-            time = 35,
-            count = 500
-        },
-        order = "e-p-b-d"
-    },
-    {
-        type = "technology",
-        name = "plutonium-reprocessing",
-        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-reprocessing.png",
-        icon_size = 256,
-        icon_mipmaps = 4,
-        effects = {
-            {
-                type = "unlock-recipe",
-                recipe = "plutonium-fuel-cell-reprocessing"
-            }
-        },
-        prerequisites = { "plutonium-nuclear-power", "MOX-nuclear-power" },
-        unit = {
-            ingredients = {
-                { "automation-science-pack", 1 },
-                { "logistic-science-pack",   1 },
-                { "chemical-science-pack",   1 },
-                { "production-science-pack", 1 }
-            },
-            time = 30,
-            count = 500
         },
         order = "e-p-b-d"
     },
@@ -145,19 +74,12 @@ data:extend({
                 recipe = 'plutonium-fuel'
             }
         },
-        prerequisites = { 'plutonium-nuclear-power', 'kovarex-enrichment-process' },
-        unit = {
-            ingredients = {
-                { 'automation-science-pack', 1 },
-                { 'logistic-science-pack',   1 },
-                { 'chemical-science-pack',   1 },
-                { 'production-science-pack', 1 },
-                { 'space-science-pack',      1 },
-            },
-            time = 30,
-            count = 1000
+        prerequisites = { 'plutonium-processing' },
+        research_trigger = {
+            type = "craft-item",
+            item = "plutonium-239"
         },
-        order = 'e-p-d-b'
+        order = 'e-p-b-d'
     },
     {
         type = 'technology',
@@ -183,6 +105,85 @@ data:extend({
             count = 500
         },
         order = 'e-p-d-b'
+    },
+    {
+        type = "technology",
+        name = "plutonium-nuclear-power",
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-nuclear-power.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "plutonium-fuel-cell"
+            }
+        },
+        prerequisites = { "nuclear-breeding" },
+        unit = {
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 }
+            },
+            time = 35,
+            count = 750
+        },
+        order = "e-p-b-d"
+    },
+    {
+        type = "technology",
+        name = "plutonium-reprocessing",
+        icon = "__PlutoniumEnergy__/graphics/technology/plutonium-reprocessing.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "plutonium-fuel-cell-reprocessing"
+            }
+        },
+        prerequisites = { "plutonium-nuclear-power", "nuclear-fuel-reprocessing" },
+        unit = {
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 }
+            },
+            time = 30,
+            count = 500
+        },
+        order = "e-p-b-d"
+    },
+    {
+        type = "technology",
+        name = "MOX-nuclear-power",
+        icon = "__PlutoniumEnergy__/graphics/technology/MOX-nuclear-power.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
+        effects = {
+            {
+                type = "unlock-recipe",
+                recipe = "MOX-fuel-cell"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "MOX-reactor"
+            }
+        },
+        prerequisites = { "plutonium-processing" },
+        unit = {
+            ingredients = {
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 }
+            },
+            time = 35,
+            count = 500
+        },
+        order = "e-p-b-d"
     },
     {
         type = "technology",

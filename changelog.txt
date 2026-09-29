@@ -8,6 +8,10 @@ Date: TBA
     - Removed recipe for making Breeder fuel cells from depleted MOX cells
     - Removed the Pu-239 output from Plutonium fuel cell reprocessing and halved Pu-238 output
     - MOX fuel cells no longer produce a depleted fuel cell item
+    - Plutonium processing requires Kovarex enrichment process instead of Uranium processing
+    - Nuclear Breeding is unlocked after getting first Plutonium-239
+    - Plutonium nuclear power requires Nuclear breeding
+    - Plutonium reprocessing requires Nuclear fuel reprocessing instead of MOX fuel
   Graphics:
     - Recolored the "turned off" reactor window for MOX and breeder
     - Added water reflections for MOX and breeder reactors
