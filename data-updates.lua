@@ -10,10 +10,14 @@ if mods["RealisticReactors"] then
     require('compat.RealisticReactors')
 end
 
+if mods['RITEG'] then
+    require('compat.RITEG')
+end
+
 -- check for tech prerequisites
 
 if not data.raw['technology']['kovarex-enrivhment-process'] then
-    table.remove(data.raw['technology']['nuclear-breeding'].prerequisites, 2)
+    data.raw['technology']['plutonium-processing'].prerequisites[1] = 'uranium-processing'
 end
 
 --require('compat.nuclear-artillery')
