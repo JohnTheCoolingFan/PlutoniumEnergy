@@ -30,6 +30,7 @@ I didn't do much of specialised compatibility with other mods unless specified (
 
 * Krastorio 2 compatibility mod by Midnighttigger: https://mods.factorio.com/mod/plutoniumenergy-krastorio2
 * Another Krastorio 2 compatibility mod by peikk0: https://mods.factorio.com/mod/plutonium-energy-k2-bz-compat
+* Milestones: https://mods.factorio.com/mod/Milestones
 * Adjusted recipes for IR3
 * Specialized compatibility with Schall's Radioactive Waste
 * Fixes to work with Bob's Metals, Chemicals and Intermediates
