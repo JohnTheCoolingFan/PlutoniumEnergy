@@ -15,6 +15,8 @@ Date: 2026-10-10
   Graphics:
     - Recolored the "turned off" reactor window for MOX and breeder
     - Added water reflections for MOX and breeder reactors
+  Localization:
+    - Updated Swedish (sv-SE) localization
 ---------------------------------------------------------------------------------------------------
 Version: 1.8.3
 Date: 2026-09-22
