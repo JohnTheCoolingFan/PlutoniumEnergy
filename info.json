@@ -10,7 +10,8 @@
         "? SchallUraniumProcessing",
         "? SchallRadioactiveWaste",
         "? IndustrialRevolution3 >= 3.1.5",
-        "? space-exploration >= 0.7.0"
+        "? space-exploration >= 0.7.0",
+        "? Milestones"
     ],
     "description": "Adds processing of Plutonium, which is created from nuclear fission of Uranium. It can be used to extract even more energy or incinerate enemies with new ammunition.",
     "factorio_version": "2.1"
