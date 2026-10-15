@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.9.2
+Date: 2026-10-15
+  Fixes:
+    - Fixed typo in code fixing plutonium processing technology prerequisites, the technology will
+      depend on Kovarex enrichment process now unless another mod removes it
+---------------------------------------------------------------------------------------------------
 Version: 1.9.1
 Date: 2026-10-10
   Changes:
@@ -259,7 +265,7 @@ Date: 2023-11-28
 Version: 1.5.5
 Date: 2023-10-14
   Fixes:
-    - If kovarex enrichment process technoloogy is not available, Nuclear
+    - If kovarex enrichment process technology is not available, Nuclear
       breeding technology will not depend on it now
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.4
