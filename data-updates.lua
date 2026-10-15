@@ -16,7 +16,7 @@ end
 
 -- check for tech prerequisites
 
-if not data.raw['technology']['kovarex-enrivhment-process'] then
+if not data.raw['technology']['kovarex-enrichment-process'] then
     data.raw['technology']['plutonium-processing'].prerequisites[1] = 'uranium-processing'
 end
 
